@@ -30,33 +30,33 @@ export async function processNaturalLanguageQuery(
   }
 ): Promise<ChatResponse> {
   try {
-    const systemPrompt = `Sen REACH+ adlı akıllı destek sisteminin yapay zeka asistanısın. Deprem sonrası gençlere yardım ediyorsun. Türkçe yanıt ver.
+    const systemPrompt = `Sen REACH+ afet destek sisteminin AI asistanısın. Gençlere direkt, pratik ve net bilgiler veriyorsun. Türkçe yanıt ver.
 
 Kullanıcı bağlamı:
-- Konum: ${userContext.location || "Bilinmiyor"}
+- Konum: ${userContext.location || "İstanbul"}
 - Operatör: ${userContext.operator || "Bilinmiyor"}
-- Yaş: ${userContext.age || "Bilinmiyor"}
+- Yaş: ${userContext.age || "Genç"}
 
-Yanıtın şu formatta JSON olsun:
+ÖNEMLİ KURALLAR:
+- DIREKT ve NET yanıtlar ver
+- Gereksiz nazik sözler kullanma
+- Somut bilgi ve rakam ver
+- Hemen çözüm odaklı ol
+- Belirsiz ifadeler kullanma
+
+ÖRNEK İYİ YANITLAR:
+- "Kadıköy'de Türk Telekom kapsama %95, sinyal gücü 85/100. Şu anda çalışıyor."
+- "En yakın güvenli alan: Fenerbahçe Parkı (400m). Hemen oraya git."
+- "112'yi ara, adresini ver: [tam adres]"
+
+Yanıtın JSON formatı:
 {
-  "message": "Ana yanıt mesajı",
-  "suggestions": ["Öneriler listesi"],
-  "actionItems": [
-    {
-      "type": "location|network|emergency|general",
-      "title": "Eylem başlığı",
-      "data": {}
-    }
-  ]
+  "message": "Direkt, net yanıt",
+  "suggestions": ["Somut eylem önerileri"],
+  "actionItems": [{"type": "network|location|emergency", "title": "Net eylem", "data": {}}]
 }
 
-Sorular şunlar hakkında olabilir:
-1. Konum ve güvenli alanlar
-2. Operatör ve şebeke durumu
-3. Acil durum bilgileri
-4. Genel rehberlik
-
-Pratik, faydalı ve umut verici yanıtlar ver.`;
+Muğlak cevaplar verme - her zaman kesin bilgi ver.`;
 
     const response = await openai.chat.completions.create({
       model: "gpt-4o",
@@ -120,13 +120,13 @@ function getFallbackResponse(query: string, userContext: any): ChatResponse {
   
   if (lowerQuery.includes("nereye") || lowerQuery.includes("güvenli") || lowerQuery.includes("toplanma")) {
     return {
-      message: `${userContext.location || "Bulunduğunuz bölge"}de size en yakın güvenli toplanma alanları: Fenerbahçe Parkı (400m), Göztepe 60.Yıl Parkı (800m), ve Kadıköy Meydanı (1.2km). Acil durumda bu alanlara yönelin.`,
-      suggestions: ["Haritada göster", "Yol tarifi al", "Acil çantanı hazırla"],
+      message: `${userContext.location || "Kadıköy"}de en yakın güvenli alanlar: 1) Fenerbahçe Parkı (400m) 2) Göztepe 60.Yıl Parkı (800m) 3) Kadıköy Meydanı (1.2km). Şimdi Fenerbahçe Parkı'na git.`,
+      suggestions: ["Hemen Fenerbahçe Parkı'na git", "Acil çantanı al", "Ailenle iletişime geç"],
       actionItems: [
         {
           type: "location",
-          title: "Güvenli alanları göster",
-          data: { action: "show_safe_areas" }
+          title: "Fenerbahçe Parkı'na yön al",
+          data: { location: "Fenerbahçe Parkı", distance: "400m" }
         }
       ]
     };

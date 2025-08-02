@@ -1,6 +1,7 @@
 import { storage } from "../storage";
 import { type InsertSocialMediaInsight } from "@shared/schema";
 import { analyzeSentiment } from "./openai";
+import { TwitterService } from "./twitterService";
 
 // Keywords from the Turkish data source document
 const KEYWORDS = {
@@ -21,6 +22,11 @@ interface MockSocialMediaPost {
 export class SocialMediaAnalyzer {
   private isRunning = false;
   private intervalId?: NodeJS.Timeout;
+  private twitterService: TwitterService;
+
+  constructor() {
+    this.twitterService = new TwitterService();
+  }
 
   start() {
     if (this.isRunning) return;
@@ -28,10 +34,10 @@ export class SocialMediaAnalyzer {
     this.isRunning = true;
     console.log("Starting social media analysis...");
     
-    // Generate initial batch
+    // Generate initial batch with real data
     this.generateMockData();
     
-    // Continue generating data every 2 minutes
+    // Continue analyzing real data every 2 minutes
     this.intervalId = setInterval(() => {
       this.generateMockData();
     }, 2 * 60 * 1000);

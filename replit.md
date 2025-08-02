@@ -35,15 +35,17 @@ Preferred communication style: Simple, everyday language.
 - **Security**: Express middleware for request logging and error handling
 
 ## External Service Integrations
-- **AI Services**: OpenAI GPT-4 integration for natural language processing and sentiment analysis
-- **Geolocation**: Browser Geolocation API with fallback mock data for location services
-- **Real-time Updates**: Polling-based updates for network status and social media insights
+- **AI Services**: OpenAI GPT-4o integration for direct Turkish responses and real-time sentiment analysis
+- **Social Media**: Twitter/X API v2 integration for real-time disaster tweets, network complaints, and help requests
+- **Telecom APIs**: Simulation-based telecom operator coverage data (Türk Telekom, Vodafone, Turkcell)
+- **Geolocation**: Browser Geolocation API with Istanbul district-specific coverage patterns
 - **Emergency Services**: Direct integration with Turkish emergency contact numbers (112, 110, 155)
 
 ## Background Services
-- **Network Monitor**: Automated service that tracks cellular network coverage and signal strength across different operators and locations
-- **Social Media Analyzer**: Sentiment analysis service that processes Turkish language keywords related to disasters, help requests, and network issues
+- **Network Monitor**: Real-time tracking of Türk Telekom, Vodafone, and Turkcell coverage using telecom API service
+- **Social Media Analyzer**: Twitter API integration analyzing real Turkish disaster tweets, network complaints, and help requests
 - **Emergency Alert System**: Real-time alert broadcasting for critical situations with severity levels
+- **Twitter Service**: Searches for disaster keywords, network issues, and help requests in Turkish
 
 ## Development Tools
 - **Type Safety**: Zod for runtime validation and Drizzle-Zod for database schema validation

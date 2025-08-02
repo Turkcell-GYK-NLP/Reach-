@@ -1,5 +1,6 @@
 import { storage } from "../storage";
 import { type InsertNetworkStatus } from "@shared/schema";
+import { TelecomApiService } from "./telecomApiService";
 
 interface NetworkData {
   operator: string;
@@ -11,6 +12,7 @@ interface NetworkData {
 export class NetworkMonitor {
   private isRunning = false;
   private intervalId?: NodeJS.Timeout;
+  private telecomService: TelecomApiService;
   
   private readonly baseData: NetworkData[] = [
     { operator: "Turkcell", location: "Kadıköy", baseeCoverage: 94, baseSignal: 85 },
