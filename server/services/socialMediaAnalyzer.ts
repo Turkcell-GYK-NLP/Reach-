@@ -57,11 +57,12 @@ export class SocialMediaAnalyzer {
     
     for (const post of posts) {
       try {
-        const sentiment = await analyzeSentiment(post.text);
+        // Mock sentiment analysis instead of OpenAI API call
+        const mockSentiment = this.getMockSentiment(post.text);
         
         const insight: InsertSocialMediaInsight = {
           keyword: this.extractMainKeyword(post.text),
-          sentiment: sentiment.sentiment,
+          sentiment: mockSentiment,
           count: Math.floor(Math.random() * 200) + 10,
           category: post.category,
           location: post.location,
@@ -74,6 +75,25 @@ export class SocialMediaAnalyzer {
     }
     
     console.log(`Generated ${posts.length} social media insights`);
+  }
+
+  private getMockSentiment(text: string): "positive" | "negative" | "neutral" {
+    const lowerText = text.toLowerCase();
+    
+    // Positive keywords
+    if (lowerText.includes("iyi") || lowerText.includes("güzel") || lowerText.includes("teşekkür") || 
+        lowerText.includes("arttı") || lowerText.includes("güvenli") || lowerText.includes("yolunda")) {
+      return "positive";
+    }
+    
+    // Negative keywords
+    if (lowerText.includes("kötü") || lowerText.includes("çekmiyor") || lowerText.includes("arızalı") || 
+        lowerText.includes("acil") || lowerText.includes("yardım") || lowerText.includes("sorun") ||
+        lowerText.includes("kesildi") || lowerText.includes("enkaz")) {
+      return "negative";
+    }
+    
+    return "neutral";
   }
 
   private generateMockPosts(locations: string[]): MockSocialMediaPost[] {

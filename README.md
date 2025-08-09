@@ -32,7 +32,11 @@ REACH+, deprem ve afet sonrası gençlere yapay zeka destekli rehberlik sağlaya
 # ZIP dosyasını indirin ve çıkarın, sonra:
 cd reach-plus
 ```
-
+### Sanal ortam oluşturup aktif et
+```
+python -m venv venv
+source venv/bin/activate
+```
 ### 2. Bağımlılıkları Yükleyin
 ```bash
 npm install

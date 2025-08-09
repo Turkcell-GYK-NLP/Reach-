@@ -123,6 +123,36 @@ export const api = {
   },
 
   // Location
+  getCurrentLocation: async () => {
+    const response = await fetch("/api/location/current");
+    
+    if (!response.ok) {
+      throw new Error("Failed to get current location");
+    }
+    
+    return response.json();
+  },
+
+  getLocationByCoordinates: async (lat: number, lng: number) => {
+    const response = await fetch(`/api/location/by-coordinates?lat=${lat}&lng=${lng}`);
+    
+    if (!response.ok) {
+      throw new Error("Failed to get location by coordinates");
+    }
+    
+    return response.json();
+  },
+
+  getNearestSafeArea: async () => {
+    const response = await fetch("/api/location/nearest-safe-area");
+    
+    if (!response.ok) {
+      throw new Error("Failed to get nearest safe area");
+    }
+    
+    return response.json();
+  },
+
   getSafeAreas: async (location: string) => {
     const response = await fetch(`/api/safe-areas/${encodeURIComponent(location)}`);
     

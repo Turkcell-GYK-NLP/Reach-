@@ -1,8 +1,9 @@
 import OpenAI from "openai";
+import { locationService } from "./locationService";
 
 // the newest OpenAI model is "gpt-4o" which was released May 13, 2024. do not change this unless explicitly requested by the user
 const openai = new OpenAI({ 
-  apiKey: process.env.OPENAI_API_KEY || process.env.OPENAI_API_KEY_ENV_VAR || "default_key"
+  apiKey: process.env.OPENAI_API_KEY || process.env.OPENAI_API_KEY_ENV_VAR || "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"
 });
 
 export interface ChatResponse {
@@ -30,36 +31,61 @@ export async function processNaturalLanguageQuery(
   }
 ): Promise<ChatResponse> {
   try {
+    // Gerçek konum bilgisini al
+    const currentLocation = await locationService.getCurrentLocation();
+    const nearestSafeArea = await locationService.getNearestSafeArea();
+    
     const systemPrompt = `Sen REACH+ afet destek sisteminin AI asistanısın. Gençlere direkt, pratik ve net bilgiler veriyorsun. Türkçe yanıt ver.
 
 Kullanıcı bağlamı:
-- Konum: ${userContext.location || "İstanbul"}
+- Gerçek Konum: ${currentLocation.city}, ${currentLocation.district} (${currentLocation.latitude}, ${currentLocation.longitude})
+- En Yakın Güvenli Alan: ${nearestSafeArea.name} (${nearestSafeArea.distance}m uzaklıkta)
 - Operatör: ${userContext.operator || "Bilinmiyor"}
 - Yaş: ${userContext.age || "Genç"}
 
 ÖNEMLİ KURALLAR:
 - DIREKT ve NET yanıtlar ver
-- Gereksiz nazik sözler kullanma
 - Somut bilgi ve rakam ver
 - Hemen çözüm odaklı ol
 - Belirsiz ifadeler kullanma
+- Kullanıcıya nazik ol
+- Kullanıcının gerçek konumunu kullan
+- En yakın güvenli alanı öner
+- Koordinatları biliyorsun. Buna göre yol tarifi ver.
+
+SUGGESTION KURALLARI:
+- Suggestion'lar kullanıcının bir sonraki soracağı soru gibi olmalı
+- "Nasıl", "Nerede", "Ne zaman", "Hangi" gibi soru kelimeleri kullan
+- Kullanıcının verdiğin bilgiyi nasıl kullanacağını düşün
+- Örnek: "Fenerbahçe Parkı güvenli alan" cevabından sonra "Oraya nasıl giderim?" suggestion'ı ver
 
 ÖRNEK İYİ YANITLAR:
-- "Kadıköy'de Türk Telekom kapsama %95, sinyal gücü 85/100. Şu anda çalışıyor."
-- "En yakın güvenli alan: Fenerbahçe Parkı (400m). Hemen oraya git."
-- "112'yi ara, adresini ver: [tam adres]"
+- "${currentLocation.district}'de Türk Telekom kapsama %95, sinyal gücü 85/100. Şu anda çalışıyor."
+- "En yakın güvenli alan: ${nearestSafeArea.name} (${nearestSafeArea.distance}m). Hemen oraya git."
+- "112'yi ara, adresini ver: ${currentLocation.address}"
+
+ÖRNEK SUGGESTION'LAR:
+- Güvenli alan cevabından sonra: ["Oraya nasıl giderim?", "Acil çantamı alayım mı?", "Ailemle nasıl iletişime geçerim?"]
+- Operatör cevabından sonra: ["Şebekemi nasıl test ederim?", "Hangi operatörü kullanmalıyım?", "WiFi noktaları nerede?"]
+- Yol tarifi cevabından sonra: ["Hangi otobüsler gidiyor?", "Yürüyerek ne kadar sürer?", "Taksi ücreti ne kadar?"]
+
+GOOGLE MAPS ENTEGRASYONU:
+- Yol tarifi verirken Google Maps linki ekle
+- Kullanıcının gerçek konumundan başlayarak yönlendir
+- Link formatı: https://www.google.com/maps/dir/?api=1&origin=KULLANICI_LAT,KULLANICI_LNG&destination=HEDEF_LAT,HEDEF_LNG&travelmode=walking
 
 Yanıtın JSON formatı:
 {
   "message": "Direkt, net yanıt",
-  "suggestions": ["Somut eylem önerileri"],
+  "suggestions": ["Kullanıcının bir sonraki soracağı soru gibi suggestion'lar"],
   "actionItems": [{"type": "network|location|emergency", "title": "Net eylem", "data": {}}]
 }
 
 Muğlak cevaplar verme - her zaman kesin bilgi ver.`;
 
     const response = await openai.chat.completions.create({
-      model: "gpt-4o",
+      // use model gpt-4o-mini
+      model: "gpt-4o-mini",
       messages: [
         { role: "system", content: systemPrompt },
         { role: "user", content: query }
@@ -79,7 +105,7 @@ Muğlak cevaplar verme - her zaman kesin bilgi ver.`;
     console.error("OpenAI API error:", error);
     
     // Fallback responses based on common patterns
-    const fallbackResponses = getFallbackResponse(query, userContext);
+    const fallbackResponses = await getFallbackResponse(query, userContext);
     return fallbackResponses;
   }
 }
@@ -115,27 +141,97 @@ export async function analyzeSentiment(text: string): Promise<SentimentAnalysis>
   }
 }
 
-function getFallbackResponse(query: string, userContext: any): ChatResponse {
+async function getFallbackResponse(query: string, userContext: any): Promise<ChatResponse> {
   const lowerQuery = query.toLowerCase();
   
   if (lowerQuery.includes("nereye") || lowerQuery.includes("güvenli") || lowerQuery.includes("toplanma")) {
-    return {
-      message: `${userContext.location || "Kadıköy"}de en yakın güvenli alanlar: 1) Fenerbahçe Parkı (400m) 2) Göztepe 60.Yıl Parkı (800m) 3) Kadıköy Meydanı (1.2km). Şimdi Fenerbahçe Parkı'na git.`,
-      suggestions: ["Hemen Fenerbahçe Parkı'na git", "Acil çantanı al", "Ailenle iletişime geç"],
-      actionItems: [
-        {
-          type: "location",
-          title: "Fenerbahçe Parkı'na yön al",
-          data: { location: "Fenerbahçe Parkı", distance: "400m" }
-        }
-      ]
-    };
+    try {
+      const currentLocation = await locationService.getCurrentLocation();
+      const nearestSafeArea = await locationService.getNearestSafeArea();
+      
+      const fenerbahceCoords = "40.9839,29.0365";
+      const goztepeCoords = "40.9751,29.0515";
+      const kadikoyCoords = "40.9903,29.0264";
+      
+      return {
+        message: `${currentLocation.district}de en yakın güvenli alanlar: 1) ${nearestSafeArea.name} (${nearestSafeArea.distance}m) 2) Göztepe 60.Yıl Parkı (800m) 3) Kadıköy Meydanı (1.2km). Şimdi ${nearestSafeArea.name}'na git.`,
+        suggestions: ["Oraya nasıl giderim?", "Acil çantamı alayım mı?", "Ailemle nasıl iletişime geçerim?"],
+        actionItems: [
+          {
+            type: "location",
+            title: `${nearestSafeArea.name}'na Yön Al`,
+            data: { 
+              location: nearestSafeArea.name, 
+              distance: `${nearestSafeArea.distance}m`,
+              coordinates: `${nearestSafeArea.coordinates.lat},${nearestSafeArea.coordinates.lng}`
+            }
+          },
+          {
+            type: "location",
+            title: "Göztepe Parkı'na Yön Al",
+            data: { 
+              location: "Göztepe 60.Yıl Parkı", 
+              distance: "800m",
+              coordinates: goztepeCoords
+            }
+          },
+          {
+            type: "location",
+            title: "Kadıköy Meydanı'na Yön Al",
+            data: { 
+              location: "Kadıköy Meydanı", 
+              distance: "1.2km",
+              coordinates: kadikoyCoords
+            }
+          }
+        ]
+      };
+    } catch (error) {
+      // Fallback to static data if location service fails
+      const fenerbahceCoords = "40.9839,29.0365";
+      const goztepeCoords = "40.9751,29.0515";
+      const kadikoyCoords = "40.9903,29.0264";
+      
+      return {
+        message: `${userContext.location || "Kadıköy"}de en yakın güvenli alanlar: 1) Fenerbahçe Parkı (400m) 2) Göztepe 60.Yıl Parkı (800m) 3) Kadıköy Meydanı (1.2km). Şimdi Fenerbahçe Parkı'na git.`,
+        suggestions: ["Oraya nasıl giderim?", "Acil çantamı alayım mı?", "Ailemle nasıl iletişime geçerim?"],
+        actionItems: [
+          {
+            type: "location",
+            title: "Fenerbahçe Parkı'na Yön Al",
+            data: { 
+              location: "Fenerbahçe Parkı", 
+              distance: "400m",
+              coordinates: fenerbahceCoords
+            }
+          },
+          {
+            type: "location",
+            title: "Göztepe Parkı'na Yön Al",
+            data: { 
+              location: "Göztepe 60.Yıl Parkı", 
+              distance: "800m",
+              coordinates: goztepeCoords
+            }
+          },
+          {
+            type: "location",
+            title: "Kadıköy Meydanı'na Yön Al",
+            data: { 
+              location: "Kadıköy Meydanı", 
+              distance: "1.2km",
+              coordinates: kadikoyCoords
+            }
+          }
+        ]
+      };
+    }
   }
   
   if (lowerQuery.includes("operatör") || lowerQuery.includes("çekiyor") || lowerQuery.includes("sinyal")) {
     return {
       message: `${userContext.location || "Bölgeniz"}de operatör durumları: Turkcell %94 kapsama ile en iyi performansı gösteriyor. Vodafone %87, Türk Telekom %72 kapsama oranında.`,
-      suggestions: ["Şebeke testini çalıştır", "Operatör değiştir", "WiFi noktalarını bul"],
+      suggestions: ["Şebekemi nasıl test ederim?", "Hangi operatörü kullanmalıyım?", "WiFi noktaları nerede?"],
       actionItems: [
         {
           type: "network",
@@ -146,9 +242,58 @@ function getFallbackResponse(query: string, userContext: any): ChatResponse {
     };
   }
   
+  if (lowerQuery.includes("nasıl giderim") || lowerQuery.includes("yol tarifi")) {
+    const fenerbahceCoords = "40.9839,29.0365";
+    const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${fenerbahceCoords}&travelmode=walking`;
+    
+    return {
+      message: `Fenerbahçe Parkı'na gitmek için: Kadıköy merkezden Fenerbahçe yönüne giden otobüslere binin. Veya yürüyerek 15-20 dakikada ulaşabilirsiniz. Acil durumda taksi de kullanabilirsiniz.\n\n🗺️ **Google Maps'te açmak için tıklayın:** ${googleMapsUrl}`,
+      suggestions: ["Hangi otobüsler gidiyor?", "Yürüyerek ne kadar sürer?", "Taksi ücreti ne kadar?"],
+      actionItems: [
+        {
+          type: "transport",
+          title: "Google Maps'te Aç",
+          data: { 
+            destination: "Fenerbahçe Parkı",
+            coordinates: fenerbahceCoords,
+            mapsUrl: googleMapsUrl
+          }
+        }
+      ]
+    };
+  }
+  
+  if (lowerQuery.includes("acil çanta") || lowerQuery.includes("hazırlık")) {
+    return {
+      message: "Acil çantanızda şunlar olmalı: Su, konserve yiyecek, ilk yardım malzemeleri, el feneri, pil, şarj cihazı, kimlik fotokopisi, para, düdük. Hemen hazırlayın.",
+      suggestions: ["Hangi yiyecekleri almalıyım?", "İlk yardım çantası nerede bulunur?", "Başka ne hazırlamalıyım?"],
+      actionItems: [
+        {
+          type: "emergency",
+          title: "Acil çanta hazırla",
+          data: { action: "prepare_emergency_kit" }
+        }
+      ]
+    };
+  }
+  
+  if (lowerQuery.includes("aile") || lowerQuery.includes("iletişim")) {
+    return {
+      message: "Ailenizle iletişime geçmek için: Önce SMS deneyin, internet varsa WhatsApp kullanın. Şebeke yoksa yakındaki WiFi noktalarını arayın. Acil durumda 112 üzerinden mesaj gönderebilirsiniz.",
+      suggestions: ["SMS gönderemiyorum, ne yapayım?", "WiFi noktaları nerede?", "112'den nasıl mesaj gönderirim?"],
+      actionItems: [
+        {
+          type: "communication",
+          title: "Aile iletişimi",
+          data: { action: "contact_family" }
+        }
+      ]
+    };
+  }
+  
   return {
     message: "Size nasıl yardımcı olabilirim? Konum, operatör durumu, güvenli alanlar veya acil durum bilgileri hakkında soru sorabilirsiniz.",
-    suggestions: ["Güvenli alanları göster", "Şebeke durumu", "Acil numaralar"],
+    suggestions: ["Güvenli alanları göster", "Şebeke durumu nasıl?", "Acil numaralar neler?"],
     actionItems: []
   };
 }

@@ -9,19 +9,21 @@ import { Send, Mic } from "lucide-react";
 
 export default function ChatInterface() {
   const [inputMessage, setInputMessage] = useState("");
-  const { location } = useLocation();
+  const { location, error } = useLocation();
   const { messages, sendMessage, isTyping, isPending } = useChat();
 
-  const handleSendMessage = () => {
-    if (!inputMessage.trim() || isPending) return;
+  const handleSendMessage = (message?: string) => {
+    const messageToSend = message || inputMessage;
+    if (!messageToSend.trim() || isPending) return;
 
     const userContext = {
-      location: location?.district,
+      location: location?.district || location?.city,
       operator: "Turkcell", // This would come from user profile
       age: 22, // This would come from user profile
+      coordinates: location ? `${location.latitude},${location.longitude}` : undefined,
     };
 
-    sendMessage(inputMessage, userContext);
+    sendMessage(messageToSend, userContext);
     setInputMessage("");
   };
 
@@ -29,6 +31,17 @@ export default function ChatInterface() {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
       handleSendMessage();
+    }
+  };
+
+  const handleActionItemClick = (item: any) => {
+    if (item.type === "transport" && item.data?.mapsUrl) {
+      // Google Maps linkini yeni sekmede aç
+      window.open(item.data.mapsUrl, '_blank');
+    } else if (item.type === "location" && item.data?.coordinates) {
+      // Koordinat varsa Google Maps linki oluştur ve aç
+      const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${item.data.coordinates}&travelmode=walking`;
+      window.open(mapsUrl, '_blank');
     }
   };
 
@@ -44,6 +57,23 @@ export default function ChatInterface() {
       <CardHeader className="border-b border-gray-100">
         <CardTitle>Soru Sor</CardTitle>
         <p className="text-sm text-gray-600">Doğal dilde sorularınızı yazabilirsiniz</p>
+        {location && (
+          <div className="mt-2 text-xs text-gray-500">
+            📍 Konum: {location.district || location.city}, {location.country}
+            <span className="ml-2">({location.latitude.toFixed(4)}, {location.longitude.toFixed(4)})</span>
+          </div>
+        )}
+        {error && (
+          <div className="mt-2 text-xs text-red-500">
+            ⚠️ {error}
+            <button 
+              onClick={() => window.location.reload()} 
+              className="ml-2 text-blue-500 hover:underline"
+            >
+              Tekrar Dene
+            </button>
+          </div>
+        )}
       </CardHeader>
       
       <CardContent className="p-0">
@@ -68,12 +98,18 @@ export default function ChatInterface() {
                   {message.actionItems && message.actionItems.length > 0 && (
                     <div className="mt-2 flex flex-wrap gap-1">
                       {message.actionItems.map((item, index) => (
-                        <Badge key={index} variant="secondary" className="text-xs">
+                        <Badge 
+                          key={index} 
+                          variant="secondary" 
+                          className="text-xs cursor-pointer hover:bg-gray-200 transition-colors"
+                          onClick={() => handleActionItemClick(item)}
+                        >
                           {item.title}
                         </Badge>
                       ))}
                     </div>
                   )}
+                  
 
                   {/* Suggestions */}
                   {message.suggestions && message.suggestions.length > 0 && (
@@ -84,7 +120,7 @@ export default function ChatInterface() {
                           variant="outline"
                           size="sm"
                           className="text-xs h-6 mr-1"
-                          onClick={() => setInputMessage(suggestion)}
+                          onClick={() => handleSendMessage(suggestion)}
                         >
                           {suggestion}
                         </Button>
@@ -126,7 +162,7 @@ export default function ChatInterface() {
               disabled={isPending}
             />
             <Button 
-              onClick={handleSendMessage} 
+              onClick={() => handleSendMessage()} 
               disabled={!inputMessage.trim() || isPending}
               className="bg-trust hover:bg-blue-700"
             >

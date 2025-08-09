@@ -169,7 +169,7 @@ function getOfflineFallback(pathname, request) {
         botMessage: { message: response },
         aiResponse: { 
           message: response,
-          suggestions: ['112\'yi ara', 'Güvenli alanları göster'],
+          suggestions: ['112\'yi nasıl ararım?', 'Güvenli alanlara nasıl giderim?', 'Acil çantamı hazırlayayım mı?'],
           actionItems: []
         }
       }), {

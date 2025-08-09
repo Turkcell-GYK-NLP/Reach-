@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
+import { api } from "@/lib/api";
 
 interface LocationData {
   latitude: number;
   longitude: number;
   city?: string;
   district?: string;
+  country?: string;
+  address?: string;
+  coordinates?: string;
 }
 
 export function useLocation() {
@@ -13,74 +17,114 @@ export function useLocation() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    if (!navigator.geolocation) {
-      setError("Geolocation is not supported by this browser");
-      setIsLoading(false);
-      return;
-    }
-
-    const success = async (position: GeolocationPosition) => {
-      const { latitude, longitude } = position.coords;
-      
+    const getLocation = async () => {
       try {
-        // Reverse geocoding to get city/district info
-        // In a production app, you'd use a real geocoding service
-        const mockLocation: LocationData = {
-          latitude,
-          longitude,
-          city: "İstanbul",
-          district: "Kadıköy", // Mock data based on coordinates
-        };
+        setIsLoading(true);
+        setError(null);
+
+        // Önce tarayıcıdan GPS konumunu al
+        if (navigator.geolocation) {
+          console.log("Geolocation destekleniyor, konum isteniyor...");
+          
+          const position = await new Promise<GeolocationPosition>((resolve, reject) => {
+            navigator.geolocation.getCurrentPosition(
+              (pos) => {
+                console.log("GPS konumu alındı:", pos.coords);
+                resolve(pos);
+              },
+              (error) => {
+                console.error("GPS konum hatası:", error);
+                reject(error);
+              },
+              {
+                enableHighAccuracy: true,
+                timeout: 15000, // 15 saniye
+                maximumAge: 300000, // 5 dakika
+              }
+            );
+          });
+
+          const { latitude, longitude } = position.coords;
+          console.log("GPS koordinatları:", latitude, longitude);
+          
+          // GPS koordinatlarını server'a gönder ve detaylı bilgi al
+          try {
+            console.log("Server'a koordinatlar gönderiliyor...");
+            const locationData = await api.getLocationByCoordinates(latitude, longitude);
+            console.log("Server'dan gelen konum:", locationData);
+            setLocation(locationData);
+          } catch (serverError) {
+            console.error("Server location error:", serverError);
+            // Server hatası durumunda GPS koordinatlarını kullan
+            setLocation({
+              latitude,
+              longitude,
+              city: "İstanbul",
+              district: "GPS Konumu",
+              country: "Türkiye",
+              address: "GPS Konumu"
+            });
+          }
+        } else {
+          throw new Error("Geolocation desteklenmiyor");
+        }
         
-        setLocation(mockLocation);
       } catch (err) {
-        console.error("Reverse geocoding failed:", err);
-        setLocation({ latitude, longitude });
+        console.error("Location fetch failed:", err);
+        
+        let errorMessage = "Konum alınamadı";
+        
+        if (err instanceof GeolocationPositionError) {
+          switch (err.code) {
+            case err.PERMISSION_DENIED:
+              errorMessage = "Konum izni reddedildi. Tarayıcı ayarlarından konum iznini verin.";
+              break;
+            case err.POSITION_UNAVAILABLE:
+              errorMessage = "Konum bilgisi mevcut değil. GPS'i kontrol edin.";
+              break;
+            case err.TIMEOUT:
+              errorMessage = "Konum alma zaman aşımına uğradı. Tekrar deneyin.";
+              break;
+            default:
+              errorMessage = "Konum alınamadı: " + err.message;
+          }
+        } else if (err instanceof Error) {
+          errorMessage = err.message;
+        }
+        
+        setError(errorMessage);
+        
+        // Fallback to default location
+        setLocation({
+          latitude: 40.9839,
+          longitude: 29.0365,
+          city: "İstanbul",
+          district: "Kadıköy",
+          country: "Türkiye",
+          address: "İstanbul, Türkiye"
+        });
       } finally {
         setIsLoading(false);
       }
     };
 
-    const error = (err: GeolocationPositionError) => {
-      setError(`Location error: ${err.message}`);
-      setIsLoading(false);
-      
-      // Fallback to default location
-      setLocation({
-        latitude: 40.9839,
-        longitude: 29.0365,
-        city: "İstanbul",
-        district: "Kadıköy"
-      });
-    };
-
-    navigator.geolocation.getCurrentPosition(success, error, {
-      enableHighAccuracy: true,
-      timeout: 10000,
-      maximumAge: 300000, // 5 minutes
-    });
+    getLocation();
   }, []);
 
-  const refreshLocation = () => {
-    setIsLoading(true);
-    setError(null);
-    
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        const { latitude, longitude } = position.coords;
-        setLocation({ 
-          latitude, 
-          longitude,
-          city: "İstanbul",
-          district: "Kadıköy"
-        });
-        setIsLoading(false);
-      },
-      (err) => {
-        setError(`Location error: ${err.message}`);
-        setIsLoading(false);
-      }
-    );
+  const refreshLocation = async () => {
+    try {
+      setIsLoading(true);
+      setError(null);
+      
+      const locationData = await api.getCurrentLocation();
+      setLocation(locationData);
+      
+    } catch (err) {
+      console.error("Location refresh failed:", err);
+      setError("Konum bilgisi yenilenemedi");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return {

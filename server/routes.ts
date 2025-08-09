@@ -5,6 +5,7 @@ import { insertUserSchema, insertChatMessageSchema } from "@shared/schema";
 import { processNaturalLanguageQuery } from "./services/openai";
 import { socialMediaAnalyzer } from "./services/socialMediaAnalyzer";
 import { networkMonitor } from "./services/networkMonitor";
+import { locationService } from "./services/locationService";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Start background services
@@ -149,6 +150,48 @@ export async function registerRoutes(app: Express): Promise<Server> {
   });
 
   // Location-based services
+  app.get("/api/location/current", async (req, res) => {
+    try {
+      const location = await locationService.getCurrentLocation();
+      res.json(location);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to get current location", details: error });
+    }
+  });
+
+  app.get("/api/location/by-coordinates", async (req, res) => {
+    try {
+      console.log("Location by coordinates isteği:", req.query);
+      
+      const lat = parseFloat(req.query.lat as string);
+      const lng = parseFloat(req.query.lng as string);
+      
+      console.log("Parsed coordinates:", lat, lng);
+      
+      if (isNaN(lat) || isNaN(lng)) {
+        console.error("Invalid coordinates:", req.query);
+        return res.status(400).json({ error: "Invalid coordinates" });
+      }
+      
+      const location = await locationService.getLocationByCoordinates(lat, lng);
+      console.log("Location service response:", location);
+      
+      res.json(location);
+    } catch (error) {
+      console.error("Location by coordinates error:", error);
+      res.status(500).json({ error: "Failed to get location by coordinates", details: error });
+    }
+  });
+
+  app.get("/api/location/nearest-safe-area", async (req, res) => {
+    try {
+      const nearestArea = await locationService.getNearestSafeArea();
+      res.json(nearestArea);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to get nearest safe area", details: error });
+    }
+  });
+
   app.get("/api/safe-areas/:location", async (req, res) => {
     try {
       const location = req.params.location;
