@@ -1,18 +1,26 @@
 import { sql } from "drizzle-orm";
-import { pgTable, text, varchar, timestamp, jsonb, boolean, integer } from "drizzle-orm/pg-core";
+import { pgTable, text, varchar, timestamp, jsonb, boolean, integer, uniqueIndex } from "drizzle-orm/pg-core";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
-export const users = pgTable("users", {
-  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
-  name: text("name").notNull(),
-  age: integer("age"),
-  location: text("location"),
-  operator: text("operator"),
-  preferences: jsonb("preferences").default({}),
-  notificationsEnabled: boolean("notifications_enabled").default(true),
-  createdAt: timestamp("created_at").defaultNow(),
-});
+export const users = pgTable(
+  "users",
+  {
+    id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+    name: text("name").notNull(),
+    email: text("email").notNull(),
+    passwordHash: text("password_hash").notNull(),
+    age: integer("age"),
+    location: text("location"),
+    operator: text("operator"),
+    preferences: jsonb("preferences").default({}),
+    notificationsEnabled: boolean("notifications_enabled").default(true),
+    createdAt: timestamp("created_at").defaultNow(),
+  },
+  (table) => ({
+    usersEmailUnique: uniqueIndex("users_email_unique").on(table.email),
+  })
+);
 
 export const chatMessages = pgTable("chat_messages", {
   id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),

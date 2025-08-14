@@ -1,16 +1,30 @@
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Switch } from "@/components/ui/switch";
+import { Button } from "@/components/ui/button";
+import { LogOut } from "lucide-react";
 
 export default function UserProfile() {
   const [notificationsEnabled, setNotificationsEnabled] = useState(true);
-  
-  // This would come from user context/authentication in a real app
-  const user = {
-    name: "Ahmet Kaya",
-    age: 22,
-    initials: "AK",
-    operator: "Turkcell",
+  let user = { name: "Misafir", age: 0, initials: "M", operator: "-" } as any;
+  let isLoggedIn = false;
+  try {
+    const auth = JSON.parse(localStorage.getItem("auth") || "null");
+    if (auth?.user) {
+      isLoggedIn = true;
+      const name: string = auth.user.name || auth.user.email;
+      user = {
+        name,
+        age: auth.user.age || 0,
+        initials: (name || "M").split(" ").map((s: string) => s[0]).join("").slice(0,2).toUpperCase(),
+        operator: auth.user.operator || "-",
+      };
+    }
+  } catch {}
+
+  const handleLogout = () => {
+    localStorage.removeItem("auth");
+    window.location.href = "/auth";
   };
 
   return (
@@ -44,6 +58,19 @@ export default function UserProfile() {
               />
             </div>
           </div>
+
+          {isLoggedIn && (
+            <div className="border-t pt-3">
+              <Button 
+                variant="outline" 
+                className="w-full text-red-600 hover:text-red-700 hover:bg-red-50"
+                onClick={handleLogout}
+              >
+                <LogOut size={16} className="mr-2" />
+                Çıkış Yap
+              </Button>
+            </div>
+          )}
         </div>
       </CardContent>
     </Card>

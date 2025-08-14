@@ -10,12 +10,17 @@ import QuickActions from "@/components/QuickActions";
 import EmergencyContacts from "@/components/EmergencyContacts";
 import LocationStatus from "@/components/LocationStatus";
 import UserProfile from "@/components/UserProfile";
-import { Heart, Bell, User } from "lucide-react";
+import { Heart, Bell, User, LogOut } from "lucide-react";
 
 export default function Dashboard() {
   const { location } = useLocation();
   const [connectionStatus, setConnectionStatus] = useState<"online" | "offline" | "emergency">("online");
   const [notifications] = useState(3);
+
+  const handleLogout = () => {
+    localStorage.removeItem("auth");
+    window.location.href = "/auth";
+  };
 
   // Get emergency alerts
   const { data: emergencyAlerts = [] } = useQuery({
@@ -85,9 +90,18 @@ export default function Dashboard() {
                   </span>
                 )}
               </button>
-              <button className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
-                <User className="text-gray-600" size={16} />
-              </button>
+              <div className="flex items-center space-x-2">
+                <button className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
+                  <User className="text-gray-600" size={16} />
+                </button>
+                <button 
+                  onClick={handleLogout}
+                  className="p-2 text-gray-600 hover:text-red-600 transition-colors"
+                  title="Çıkış Yap"
+                >
+                  <LogOut size={16} />
+                </button>
+              </div>
             </div>
           </div>
         </div>

@@ -8,6 +8,7 @@ interface LocationStatusProps {
     longitude: number;  
     city?: string;
     district?: string;
+    address?: string;
   } | null;
 }
 
@@ -32,7 +33,7 @@ export default function LocationStatus({ location }: LocationStatusProps) {
           <div className="flex items-center justify-between">
             <span className="text-sm text-gray-600">Mevcut Konum</span>
             <span className="text-sm font-medium text-dark">
-              {location ? `${location.district || "Bilinmiyor"}, ${location.city || "Türkiye"}` : "Konum alınıyor..."}
+              {location ? (location.address || `${location.district || "Bilinmiyor"}, ${location.city || "Türkiye"}`) : "Konum alınıyor..."}
             </span>
           </div>
           

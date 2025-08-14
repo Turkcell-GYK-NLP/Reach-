@@ -21,6 +21,31 @@ export interface ChatResponse {
 }
 
 export const api = {
+  // Auth
+  register: async (data: { name: string; email: string; password: string; age?: number; location?: string; operator?: string; }) => {
+    const response = await fetch("/api/auth/register", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+    if (!response.ok) {
+      const err = await response.json().catch(() => ({}));
+      throw new Error(err?.error || "Failed to register");
+    }
+    return response.json();
+  },
+  login: async (data: { email: string; password: string }) => {
+    const response = await fetch("/api/auth/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+    if (!response.ok) {
+      const err = await response.json().catch(() => ({}));
+      throw new Error(err?.error || "Failed to login");
+    }
+    return response.json();
+  },
   // Chat
   sendMessage: async (data: ChatRequest): Promise<ChatResponse> => {
     const response = await fetch("/api/chat", {

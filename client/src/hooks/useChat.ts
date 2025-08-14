@@ -4,6 +4,13 @@ import { api } from "@/lib/api";
 import type { ChatMessage, ChatRequest } from "@/lib/types";
 
 export function useChat(userId: string = "default") {
+  // Prefer logged-in userId if exists in localStorage
+  try {
+    const auth = JSON.parse(localStorage.getItem("auth") || "null");
+    if (auth?.user?.id) {
+      userId = auth.user.id;
+    }
+  } catch {}
   const [isTyping, setIsTyping] = useState(false);
   const queryClient = useQueryClient();
 

@@ -1,4 +1,9 @@
 import { 
+  users as usersTable,
+  chatMessages as chatMessagesTable,
+  networkStatus as networkStatusTable,
+  socialMediaInsights as socialMediaInsightsTable,
+  emergencyAlerts as emergencyAlertsTable,
   type User, 
   type InsertUser,
   type ChatMessage,
@@ -11,12 +16,33 @@ import {
   type InsertEmergencyAlert
 } from "@shared/schema";
 import { randomUUID } from "crypto";
+import { and, desc, eq } from "drizzle-orm";
+
+// Try to import database synchronously
+let db: any = null;
+
+if (process.env.DATABASE_URL) {
+  try {
+    // Use dynamic import with top-level await equivalent
+    import("./db.js").then(({ db: database }) => {
+      db = database;
+      console.log("✅ PostgreSQL bağlantısı başarılı");
+    }).catch((e) => {
+      console.error("❌ Database import hatası:", e);
+      db = null;
+    });
+  } catch (e) {
+    console.error("❌ Database import hatası:", e);
+    db = null;
+  }
+}
 
 export interface IStorage {
   // Users
   getUser(id: string): Promise<User | undefined>;
   createUser(user: InsertUser): Promise<User>;
   updateUser(id: string, user: Partial<InsertUser>): Promise<User | undefined>;
+  getUserByEmail(email: string): Promise<User | undefined>;
   
   // Chat Messages
   getChatMessages(userId: string): Promise<ChatMessage[]>;
@@ -39,6 +65,7 @@ export interface IStorage {
 
 export class MemStorage implements IStorage {
   private users: Map<string, User> = new Map();
+  private emailToUserId: Map<string, string> = new Map();
   private chatMessages: Map<string, ChatMessage[]> = new Map();
   private networkStatuses: NetworkStatus[] = [];
   private socialMediaInsights: SocialMediaInsight[] = [];
@@ -87,7 +114,19 @@ export class MemStorage implements IStorage {
     return this.users.get(id);
   }
 
+  async getUserByEmail(email: string): Promise<User | undefined> {
+    const id = this.emailToUserId.get(email.toLowerCase());
+    if (!id) return undefined;
+    return this.users.get(id);
+  }
+
   async createUser(insertUser: InsertUser): Promise<User> {
+    if ((insertUser as any).email) {
+      const existing = await this.getUserByEmail(((insertUser as any).email as string).toLowerCase());
+      if (existing) {
+        throw new Error("EMAIL_ALREADY_EXISTS");
+      }
+    }
     const id = randomUUID();
     const user: User = { 
       ...insertUser,
@@ -100,6 +139,11 @@ export class MemStorage implements IStorage {
       createdAt: new Date(),
     };
     this.users.set(id, user);
+    if ((user as any).email) {
+      this.emailToUserId.set(((user as any).email as string).toLowerCase(), id);
+    }
+    console.log("🔐 Kullanıcı kaydedildi (MemStorage):", { id: user.id, name: user.name, email: (user as any).email });
+    console.log("📊 Toplam kullanıcı sayısı:", this.users.size);
     return user;
   }
 
@@ -233,4 +277,140 @@ export class MemStorage implements IStorage {
   }
 }
 
-export const storage = new MemStorage();
+class DrizzleStorage implements IStorage {
+  async getUser(id: string): Promise<User | undefined> {
+    const rows = await db.select().from(usersTable).where(eq(usersTable.id, id)).limit(1);
+    return rows[0];
+  }
+
+  async getUserByEmail(email: string): Promise<User | undefined> {
+    const rows = await db.select().from(usersTable).where(eq(usersTable.email, email.toLowerCase())).limit(1);
+    return rows[0];
+  }
+
+  async createUser(insertUser: InsertUser): Promise<User> {
+    const [row] = await db.insert(usersTable).values(insertUser).returning();
+    console.log("🔐 Kullanıcı kaydedildi (DrizzleStorage):", { id: row.id, name: row.name, email: (row as any).email });
+    return row;
+  }
+
+  async updateUser(id: string, updates: Partial<InsertUser>): Promise<User | undefined> {
+    const [row] = await db.update(usersTable).set(updates).where(eq(usersTable.id, id)).returning();
+    return row;
+  }
+
+  async getChatMessages(userId: string): Promise<ChatMessage[]> {
+    return await db
+      .select()
+      .from(chatMessagesTable)
+      .where(eq(chatMessagesTable.userId, userId))
+      .orderBy(desc(chatMessagesTable.timestamp));
+  }
+
+  async createChatMessage(message: InsertChatMessage): Promise<ChatMessage> {
+    const [row] = await db.insert(chatMessagesTable).values(message).returning();
+    return row;
+  }
+
+  async getNetworkStatus(location?: string): Promise<NetworkStatus[]> {
+    if (!location) {
+      return await db.select().from(networkStatusTable);
+    }
+    // basic contains: use ilike when available; neon-http supports sql template, but keep simple
+    const all = await db.select().from(networkStatusTable);
+    return all.filter((s: NetworkStatus) => s.location.toLowerCase().includes(location.toLowerCase()));
+  }
+
+  async createNetworkStatus(status: InsertNetworkStatus): Promise<NetworkStatus> {
+    const [row] = await db.insert(networkStatusTable).values(status).returning();
+    return row;
+  }
+
+  async updateNetworkStatus(operator: string, location: string, updates: Partial<InsertNetworkStatus>): Promise<NetworkStatus | undefined> {
+    const [row] = await db
+      .update(networkStatusTable)
+      .set(updates)
+      .where(and(eq(networkStatusTable.operator, operator), eq(networkStatusTable.location, location)))
+      .returning();
+    return row;
+  }
+
+  async getSocialMediaInsights(location?: string, limit = 10): Promise<SocialMediaInsight[]> {
+    let query = db.select().from(socialMediaInsightsTable).orderBy(desc(socialMediaInsightsTable.timestamp)).limit(limit);
+    const rows = await query;
+    if (!location) return rows;
+    return rows.filter((r: SocialMediaInsight) => !r.location || r.location.toLowerCase().includes(location.toLowerCase()));
+  }
+
+  async createSocialMediaInsight(insight: InsertSocialMediaInsight): Promise<SocialMediaInsight> {
+    const [row] = await db.insert(socialMediaInsightsTable).values(insight).returning();
+    return row;
+  }
+
+  async getActiveEmergencyAlerts(location?: string): Promise<EmergencyAlert[]> {
+    const rows: EmergencyAlert[] = await db
+      .select()
+      .from(emergencyAlertsTable)
+      .where(eq(emergencyAlertsTable.isActive, true))
+      .orderBy(desc(emergencyAlertsTable.createdAt));
+    if (!location) return rows;
+    return rows.filter((a: EmergencyAlert) => a.location.toLowerCase().includes(location.toLowerCase()));
+  }
+
+  async createEmergencyAlert(alert: InsertEmergencyAlert): Promise<EmergencyAlert> {
+    const [row] = await db.insert(emergencyAlertsTable).values(alert).returning();
+    return row;
+  }
+
+  async deactivateEmergencyAlert(id: string): Promise<boolean> {
+    const [row] = await db
+      .update(emergencyAlertsTable)
+      .set({ isActive: false })
+      .where(eq(emergencyAlertsTable.id, id))
+      .returning();
+    return !!row;
+  }
+}
+
+// Dynamic storage selection
+function getStorage(): IStorage {
+  if (db) {
+    console.log("🔧 Storage seçimi: DrizzleStorage (PostgreSQL)");
+    return new DrizzleStorage();
+  } else {
+    console.log("🔧 Storage seçimi: MemStorage (Bellek)");
+    return new MemStorage();
+  }
+}
+
+// Create a storage factory that checks db availability
+function createStorage(): IStorage {
+  if (db) {
+    console.log("🔧 Storage seçimi: DrizzleStorage (PostgreSQL)");
+    return new DrizzleStorage();
+  } else {
+    console.log("🔧 Storage seçimi: MemStorage (Bellek)");
+    return new MemStorage();
+  }
+}
+
+// Create storage instance
+export const storage: IStorage = createStorage();
+
+// Update storage when db becomes available
+if (process.env.DATABASE_URL) {
+  import("./db.js").then(({ db: database }) => {
+    db = database;
+    console.log("✅ PostgreSQL bağlantısı başarılı");
+    // Update storage to use DrizzleStorage
+    const newStorage = new DrizzleStorage();
+    Object.setPrototypeOf(storage, newStorage);
+    Object.assign(storage, newStorage);
+    console.log("🔄 Storage DrizzleStorage'a güncellendi");
+  }).catch((e) => {
+    console.error("❌ Database import hatası:", e);
+  });
+}
+
+// Debug: DATABASE_URL durumu
+console.log("🔧 DATABASE_URL:", process.env.DATABASE_URL ? "Tanımlı" : "Tanımlı değil");

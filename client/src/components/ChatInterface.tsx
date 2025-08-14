@@ -11,6 +11,11 @@ export default function ChatInterface() {
   const [inputMessage, setInputMessage] = useState("");
   const { location, error } = useLocation();
   const { messages, sendMessage, isTyping, isPending } = useChat();
+  let isLoggedIn = false;
+  try {
+    const auth = JSON.parse(localStorage.getItem("auth") || "null");
+    isLoggedIn = !!auth?.user?.id;
+  } catch {}
 
   const handleSendMessage = (message?: string) => {
     const messageToSend = message || inputMessage;
@@ -57,9 +62,15 @@ export default function ChatInterface() {
       <CardHeader className="border-b border-gray-100">
         <CardTitle>Soru Sor</CardTitle>
         <p className="text-sm text-gray-600">Doğal dilde sorularınızı yazabilirsiniz</p>
+        {!isLoggedIn && (
+          <div className="mt-2 text-xs text-red-600">
+            Devam etmeden önce lütfen giriş yapın veya kayıt olun.
+            <button className="ml-2 text-blue-600 underline" onClick={() => (window.location.href = "/auth")}>Giriş/Kayıt</button>
+          </div>
+        )}
         {location && (
           <div className="mt-2 text-xs text-gray-500">
-            📍 Konum: {location.district || location.city}, {location.country}
+            📍 Konum: {location.address || `${location.district || location.city}${location.country ? `, ${location.country}` : ""}`}
             <span className="ml-2">({location.latitude.toFixed(4)}, {location.longitude.toFixed(4)})</span>
           </div>
         )}
