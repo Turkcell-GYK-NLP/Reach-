@@ -13,6 +13,8 @@ export class LocationService {
   private cachedLocation: LocationInfo | null = null;
   private lastUpdate: number = 0;
   private readonly CACHE_DURATION = 5 * 60 * 1000; // 5 dakika
+  private lastGeocodingRequest: number = 0;
+  private readonly RATE_LIMIT_DELAY = 1000; // 1 saniye
   private geocoder: any;
 
   constructor() {
@@ -40,23 +42,12 @@ export class LocationService {
 
   async getLocationByCoordinates(lat: number, lng: number): Promise<LocationInfo> {
     try {
-      console.log(`Reverse geocoding isteniyor: ${lat}, ${lng}`);
+      console.log(`Koordinat tabanlı konum belirleme: ${lat}, ${lng}`);
       
-      const reverseResults = await this.geocoder.reverse({ lat, lon: lng });
-      console.log("Reverse geocoding sonucu:", reverseResults);
+      // İstanbul bölgelerini koordinat bazında belirle
+      const locationInfo = this.getLocationByCoordinatesManual(lat, lng);
       
-      const reverseLocation = reverseResults[0];
-      
-      const locationInfo = {
-        latitude: lat,
-        longitude: lng,
-        city: reverseLocation?.city || "İstanbul",
-        district: reverseLocation?.administrativeLevels?.level2long || "Kadıköy",
-        country: reverseLocation?.country || "Türkiye",
-        address: reverseLocation?.formattedAddress || "İstanbul, Türkiye"
-      };
-      
-      console.log("Döndürülen konum bilgisi:", locationInfo);
+      console.log("Belirlenen konum bilgisi:", locationInfo);
       return locationInfo;
       
     } catch (error) {
@@ -75,6 +66,65 @@ export class LocationService {
       console.log("Fallback konum döndürülüyor:", fallbackLocation);
       return fallbackLocation;
     }
+  }
+
+  // Manuel koordinat tabanlı konum belirleme
+  private getLocationByCoordinatesManual(lat: number, lng: number): LocationInfo {
+    // İstanbul'un ana bölgeleri ve koordinatları
+    const istanbulDistricts = [
+      { name: "Kadıköy", bounds: { minLat: 40.95, maxLat: 41.05, minLng: 29.0, maxLng: 29.1 } },
+      { name: "Beşiktaş", bounds: { minLat: 41.0, maxLat: 41.1, minLng: 28.9, maxLng: 29.0 } },
+      { name: "Şişli", bounds: { minLat: 41.05, maxLat: 41.15, minLng: 28.9, maxLng: 29.0 } },
+      { name: "Beyoğlu", bounds: { minLat: 41.0, maxLat: 41.1, minLng: 28.9, maxLng: 29.0 } },
+      { name: "Esenler", bounds: { minLat: 41.0, maxLat: 41.1, minLng: 28.8, maxLng: 28.9 } },
+      { name: "Bağcılar", bounds: { minLat: 41.0, maxLat: 41.1, minLng: 28.8, maxLng: 28.9 } },
+      { name: "Ümraniye", bounds: { minLat: 41.0, maxLat: 41.1, minLng: 29.1, maxLng: 29.2 } },
+      { name: "Maltepe", bounds: { minLat: 40.9, maxLat: 41.0, minLng: 29.1, maxLng: 29.2 } },
+      { name: "Pendik", bounds: { minLat: 40.85, maxLat: 40.95, minLng: 29.2, maxLng: 29.3 } },
+      { name: "Kartal", bounds: { minLat: 40.9, maxLat: 41.0, minLng: 29.2, maxLng: 29.3 } }
+    ];
+
+    // Koordinatları kontrol et ve uygun bölgeyi bul
+    for (const district of istanbulDistricts) {
+      if (lat >= district.bounds.minLat && lat <= district.bounds.maxLat &&
+          lng >= district.bounds.minLng && lng <= district.bounds.maxLng) {
+        return {
+          latitude: lat,
+          longitude: lng,
+          city: "İstanbul",
+          district: district.name,
+          country: "Türkiye",
+          address: `${district.name}, İstanbul, Türkiye`
+        };
+      }
+    }
+
+    // Eğer hiçbir bölgeye uymuyorsa, en yakın bölgeyi bul
+    let nearestDistrict = istanbulDistricts[0];
+    let minDistance = this.calculateDistance(lat, lng, 
+      (nearestDistrict.bounds.minLat + nearestDistrict.bounds.maxLat) / 2,
+      (nearestDistrict.bounds.minLng + nearestDistrict.bounds.maxLng) / 2
+    );
+
+    for (const district of istanbulDistricts.slice(1)) {
+      const districtCenterLat = (district.bounds.minLat + district.bounds.maxLat) / 2;
+      const districtCenterLng = (district.bounds.minLng + district.bounds.maxLng) / 2;
+      const distance = this.calculateDistance(lat, lng, districtCenterLat, districtCenterLng);
+      
+      if (distance < minDistance) {
+        minDistance = distance;
+        nearestDistrict = district;
+      }
+    }
+
+    return {
+      latitude: lat,
+      longitude: lng,
+      city: "İstanbul",
+      district: nearestDistrict.name,
+      country: "Türkiye",
+      address: `${nearestDistrict.name}, İstanbul, Türkiye`
+    };
   }
 
   // En yakın güvenli alanı bul
