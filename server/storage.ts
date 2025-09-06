@@ -385,19 +385,17 @@ function getStorage(): IStorage {
 
 // Create a storage factory that checks db availability
 function createStorage(): IStorage {
-  if (db) {
-    console.log("🔧 Storage seçimi: DrizzleStorage (PostgreSQL)");
-    return new DrizzleStorage();
-  } else {
-    console.log("🔧 Storage seçimi: MemStorage (Bellek)");
-    return new MemStorage();
-  }
+  // Geçici olarak sadece MemStorage kullan
+  console.log("🔧 Storage seçimi: MemStorage (Bellek)");
+  return new MemStorage();
 }
 
 // Create storage instance
 export const storage: IStorage = createStorage();
 
 // Update storage when db becomes available
+// Geçici olarak devre dışı
+/*
 if (process.env.DATABASE_URL) {
   import("./db.js").then(({ db: database }) => {
     db = database;
@@ -411,6 +409,7 @@ if (process.env.DATABASE_URL) {
     console.error("❌ Database import hatası:", e);
   });
 }
+*/
 
 // Debug: DATABASE_URL durumu
 console.log("🔧 DATABASE_URL:", process.env.DATABASE_URL ? "Tanımlı" : "Tanımlı değil");

@@ -7,11 +7,15 @@ import { processNaturalLanguageQuery } from "./services/openai";
 import { socialMediaAnalyzer } from "./services/socialMediaAnalyzer";
 import { networkMonitor } from "./services/networkMonitor";
 import { locationService } from "./services/locationService";
+import { CoreAgent } from "./agents/coreAgent.js";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Start background services
   socialMediaAnalyzer.start();
   networkMonitor.start();
+
+  // Initialize Core Agent
+  const coreAgent = new CoreAgent();
 
   // User routes
   app.post("/api/users", async (req, res) => {
@@ -114,8 +118,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const { userId, message, userContext } = req.body;
       
-      // Process with OpenAI
-      const aiResponse = await processNaturalLanguageQuery(message, userContext || {});
+      // Process with Core Agent (new agentic system)
+      const agentResponse = await coreAgent.processQuery(message, {
+        userId,
+        location: userContext?.location,
+        operator: userContext?.operator,
+        age: userContext?.age,
+        preferences: userContext?.preferences
+      });
       
       // Save user message
       const userMessage = await storage.createChatMessage({
@@ -128,19 +138,21 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Save AI response
       const botMessage = await storage.createChatMessage({
         userId,
-        message: aiResponse.message,
+        message: agentResponse.message,
         response: null,
         metadata: { 
           type: "bot", 
-          suggestions: aiResponse.suggestions,
-          actionItems: aiResponse.actionItems
+          suggestions: agentResponse.suggestions,
+          actionItems: agentResponse.actionItems,
+          confidence: agentResponse.confidence,
+          toolResults: agentResponse.toolResults
         }
       });
 
       res.json({
         userMessage,
         botMessage,
-        aiResponse
+        agentResponse
       });
     } catch (error) {
       console.error("Chat error:", error);
@@ -279,6 +291,46 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Agent-specific routes
+  app.post("/api/agent/query", async (req, res) => {
+    try {
+      const { userId, message, userContext } = req.body;
+      
+      const agentResponse = await coreAgent.processQuery(message, {
+        userId,
+        location: userContext?.location,
+        operator: userContext?.operator,
+        age: userContext?.age,
+        preferences: userContext?.preferences
+      });
+
+      res.json(agentResponse);
+    } catch (error) {
+      console.error("Agent query error:", error);
+      res.status(500).json({ error: "Failed to process agent query", details: error });
+    }
+  });
+
+  app.get("/api/agent/memory/:userId", async (req, res) => {
+    try {
+      const memory = await coreAgent.getUserMemory(req.params.userId);
+      res.json(memory);
+    } catch (error) {
+      console.error("Memory retrieval error:", error);
+      res.status(500).json({ error: "Failed to get user memory", details: error });
+    }
+  });
+
+  app.delete("/api/agent/memory/:userId", async (req, res) => {
+    try {
+      await coreAgent.clearUserMemory(req.params.userId);
+      res.json({ message: "User memory cleared successfully" });
+    } catch (error) {
+      console.error("Memory clear error:", error);
+      res.status(500).json({ error: "Failed to clear user memory", details: error });
+    }
+  });
+
   // Health check
   app.get("/api/health", (req, res) => {
     res.json({ 
@@ -286,7 +338,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
       timestamp: new Date().toISOString(),
       services: {
         socialMediaAnalyzer: socialMediaAnalyzer ? "running" : "stopped",
-        networkMonitor: networkMonitor ? "running" : "stopped"
+        networkMonitor: networkMonitor ? "running" : "stopped",
+        coreAgent: coreAgent ? "running" : "stopped"
       }
     });
   });
