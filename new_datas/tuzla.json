@@ -1,0 +1,3485 @@
+{
+  "ilce": "tuzla",
+  "toplanma_alanlari": [
+    {
+      "id": "tuzla_12",
+      "ad": "Filiz Parkı.",
+      "mahalle": "Cami Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_18",
+      "ad": "Çınar Sitesi Parkı",
+      "mahalle": "Cami Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_9",
+      "ad": "Ova Parkı",
+      "mahalle": "Cami Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_20",
+      "ad": "Aydınlı Merkez Parkı",
+      "mahalle": "Aydınlı Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_13",
+      "ad": "Aydınlı Parkı",
+      "mahalle": "Aydınlı Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_19",
+      "ad": "Aydınlı Pazar Alanı",
+      "mahalle": "Aydınlı Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_22",
+      "ad": "Gürpınar Caddesi Parkı",
+      "mahalle": "Aydınlı Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_21",
+      "ad": "Kardeşler Sokak Parkı",
+      "mahalle": "Aydınlı Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_13",
+      "ad": "Konaşlı Parkı",
+      "mahalle": "Aydınlı Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_28",
+      "ad": "Necip Fazıl Kısakürek Parkı.",
+      "mahalle": "Aydınlı Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_16",
+      "ad": "Okan Sokak Parkı",
+      "mahalle": "Aydınlı Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_11",
+      "ad": "Sedef Parkı",
+      "mahalle": "Aydınlı Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_29",
+      "ad": "Şehit J. Er Bekir Demir Parkı",
+      "mahalle": "Aydınlı Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_25",
+      "ad": "Hacet Deresi Mesire Alanı",
+      "mahalle": "Aydınlı Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_34",
+      "ad": "Oruç Reis İlköğretim Okulu Bahçesi",
+      "mahalle": "Aydınlı Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_34",
+      "ad": "Osmangazi İlköğretim Okulu Bahçesi",
+      "mahalle": "Aydınlı Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_9",
+      "ad": "Anıt Park",
+      "mahalle": "Orhanlı Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_12",
+      "ad": "Kültür Parkı",
+      "mahalle": "Orhanlı Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_50",
+      "ad": "Muhtarlık Parkı ( Aynı Zamanda TRANSFER ALANIDIR.)",
+      "mahalle": "Orhanlı Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_15",
+      "ad": "İshakpaşa Parkı",
+      "mahalle": "Orta Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_26",
+      "ad": "Orta Mahalle Orman Arazisi",
+      "mahalle": "Orta Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_24",
+      "ad": "Orta Mahalle Pazar Alanı",
+      "mahalle": "Orta Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_13",
+      "ad": "Anadolu Parkı",
+      "mahalle": "Yayla Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_19",
+      "ad": "Hüseyin Çakır Parkı",
+      "mahalle": "Yayla Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_21",
+      "ad": "İBB-Torosevleri Parkı",
+      "mahalle": "Yayla Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_16",
+      "ad": "Mavi Evler Parkı",
+      "mahalle": "Yayla Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_23",
+      "ad": "Mehmet Akif Ersoy Parkı",
+      "mahalle": "Yayla Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_31",
+      "ad": "Şehit J.Er Necmi Yıldırım Parkı",
+      "mahalle": "Yayla Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_32",
+      "ad": "Yaşam Sitesi Parkı (7969) Parsel",
+      "mahalle": "Yayla Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_17",
+      "ad": "Yavuz Selim Parkı",
+      "mahalle": "Yayla Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_17",
+      "ad": "Yayla Çocuk Parkı",
+      "mahalle": "Yayla Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_26",
+      "ad": "Zeytinlik Parkı ve Çevresi",
+      "mahalle": "Yayla Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_31",
+      "ad": "19 Mayıs Caddesi Dinlenme Alanı",
+      "mahalle": "Şifa Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_28",
+      "ad": "Şehit Bahadırhan Solak Parkı",
+      "mahalle": "Şifa Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_14",
+      "ad": "Mecidiye Parkı",
+      "mahalle": "Şifa Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_13",
+      "ad": "Mevlana Parkı",
+      "mahalle": "Şifa Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_27",
+      "ad": "Şehit Er Sezgin Zorba Parkı",
+      "mahalle": "Şifa Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_48",
+      "ad": "Fatih Sultan Mehmet İmam Hatip Ortaokulu Bahçesi",
+      "mahalle": "Şifa Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_62",
+      "ad": "Şehit Ertan Bayraktar Parkı ( Aynı Zamanda TRANSFER ALANIDIR.)",
+      "mahalle": "Şifa Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_28",
+      "ad": "Taptuk Emre İlkokulu Bahçesi",
+      "mahalle": "Şifa Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_30",
+      "ad": "Yunus Emre Ortaokulu Bahçesi..",
+      "mahalle": "Şifa Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_16",
+      "ad": "Cumhuriyet Parkı",
+      "mahalle": "İçmeler Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_17",
+      "ad": "Hasan Coşar Parkı",
+      "mahalle": "İçmeler Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_15",
+      "ad": "İçmeler Meydanı",
+      "mahalle": "İçmeler Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_23",
+      "ad": "Şehit Ferdi Bolat Parkı",
+      "mahalle": "İçmeler Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_11",
+      "ad": "Tuzla Stadı",
+      "mahalle": "İçmeler Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_14",
+      "ad": "6. Cadde Parkı",
+      "mahalle": "Akfırat Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_11",
+      "ad": "Fırat Parkı",
+      "mahalle": "Akfırat Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_21",
+      "ad": "Sosyal Tesisler Parkı",
+      "mahalle": "Akfırat Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_28",
+      "ad": "Şehit J. Er Murat Aşçı Parkı",
+      "mahalle": "Akfırat Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_56",
+      "ad": "Şelale Park Otoparkı ( Aynı Zamanda TRANSFER ALANIDIR. )",
+      "mahalle": "Aydıntepe Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_13",
+      "ad": "Gençlik Parkı",
+      "mahalle": "Anadolu Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_48",
+      "ad": "Belediye Parkı (Aynı Zamanda TRANSFER ALANIDIR.)",
+      "mahalle": "Evliya Çelebi Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_37",
+      "ad": "Dere Kenarı Dinlenme Alanı Ve Çevresi",
+      "mahalle": "Evliya Çelebi Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_13",
+      "ad": "Duravit Parkı",
+      "mahalle": "Evliya Çelebi Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_20",
+      "ad": "Veysel Karani Parkı.",
+      "mahalle": "Evliya Çelebi Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_19",
+      "ad": "Evliya Çelebi Parkı",
+      "mahalle": "Evliya Çelebi Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_11",
+      "ad": "Huzur Parkı",
+      "mahalle": "Evliya Çelebi Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_14",
+      "ad": "Merdekan Parkı",
+      "mahalle": "Evliya Çelebi Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_10",
+      "ad": "Onur Parkı",
+      "mahalle": "Evliya Çelebi Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_23",
+      "ad": "Aydıntepe (Evora) Parkı",
+      "mahalle": "Aydıntepe Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_25",
+      "ad": "Fatih Sultan Mehmet Parkı",
+      "mahalle": "Aydıntepe Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_29",
+      "ad": "Şehit J.Er Kamber Kütük Parkı",
+      "mahalle": "Aydıntepe Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_32",
+      "ad": "Aydıntepe Mahallesi Piknik Alanı",
+      "mahalle": "Aydıntepe Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_32",
+      "ad": "Tezer Taşkıran Ortaokulu Bahçesi",
+      "mahalle": "Aydıntepe Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_33",
+      "ad": "Eski Ankara Asfaltı Caddesi Parkı",
+      "mahalle": "Tepeören Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_12",
+      "ad": "Kudret Parkı",
+      "mahalle": "Tepeören Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_23",
+      "ad": "Medeniyet Bulvarı Parkı",
+      "mahalle": "Tepeören Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_18",
+      "ad": "Ulubey Sokak Parkı",
+      "mahalle": "Tepeören Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_36",
+      "ad": "Vehbi Koç Üniversitesi Futbol Sahası",
+      "mahalle": "Tepeören Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_17",
+      "ad": "Akşemseddin Parkı",
+      "mahalle": "İstasyon Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_15",
+      "ad": "Batakçalı Parkı",
+      "mahalle": "İstasyon Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_16",
+      "ad": "Borsa Kent Parkı",
+      "mahalle": "İstasyon Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_19",
+      "ad": "Çınarlı Bahçe Parkı",
+      "mahalle": "İstasyon Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_11",
+      "ad": "Eksen Parkı",
+      "mahalle": "İstasyon Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_22",
+      "ad": "Galatasaraylılar Parkı",
+      "mahalle": "İstasyon Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_11",
+      "ad": "Hayat Parkı",
+      "mahalle": "İstasyon Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_20",
+      "ad": "İBB-Çiçekçiler Parkı",
+      "mahalle": "İstasyon Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_26",
+      "ad": "Mareşal Fevzi Çakmak Parkı",
+      "mahalle": "İstasyon Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_14",
+      "ad": "Tıp Kent Parkı",
+      "mahalle": "İstasyon Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_14",
+      "ad": "Uğurkent Parkı",
+      "mahalle": "İstasyon Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_16",
+      "ad": "Yunus Emre Parkı",
+      "mahalle": "İstasyon Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_21",
+      "ad": "Okul Parkı Ve Bahçesi",
+      "mahalle": "Fatih Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_58",
+      "ad": "15 Temmuz Şehitler Parkı (Aynı Zamanda TRANSFER ALANIDIR.)",
+      "mahalle": "Mimar Sinan Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_17",
+      "ad": "Barış Manço Parkı",
+      "mahalle": "Mimar Sinan Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_19",
+      "ad": "Çiftlik Sokak Parkı",
+      "mahalle": "Mimar Sinan Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_15",
+      "ad": "Güngörmüş Parkı",
+      "mahalle": "Mimar Sinan Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_17",
+      "ad": "Mimar Sinan Parkı",
+      "mahalle": "Mimar Sinan Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_18",
+      "ad": "Sağlık Ocağı Parkı",
+      "mahalle": "Mimar Sinan Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_27",
+      "ad": "Şehit İbrahim Doğan Parkı 1",
+      "mahalle": "Mimar Sinan Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_32",
+      "ad": "Şehit J. Er Bahtiyar Maden Parkı",
+      "mahalle": "Mimar Sinan Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_18",
+      "ad": "Şeyh Edebali Parkı",
+      "mahalle": "Mimar Sinan Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_12",
+      "ad": "Cevher Parkı",
+      "mahalle": "Postane Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_11",
+      "ad": "Derya Parkı",
+      "mahalle": "Postane Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_11",
+      "ad": "Doğan Parkı",
+      "mahalle": "Postane Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_19",
+      "ad": "Ertuğrul Gazi Parkı",
+      "mahalle": "Postane Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_17",
+      "ad": "Gonca Sokak Parkı",
+      "mahalle": "Postane Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_13",
+      "ad": "Gölboyu Parkı",
+      "mahalle": "Postane Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_14",
+      "ad": "Kardelen Parkı",
+      "mahalle": "Postane Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_23",
+      "ad": "Org. Eşref Bitlis Parkı",
+      "mahalle": "Postane Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_16",
+      "ad": "Orhan Gazi Parkı",
+      "mahalle": "Postane Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_16",
+      "ad": "Osman Gazi Parkı",
+      "mahalle": "Postane Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_11",
+      "ad": "Sumru Parkı",
+      "mahalle": "Postane Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_11",
+      "ad": "Sümer Parkı",
+      "mahalle": "Postane Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_23",
+      "ad": "Şehit Murat Matuz Parkı",
+      "mahalle": "Postane Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_16",
+      "ad": "Yayla Yolu Parkı",
+      "mahalle": "Postane Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_22",
+      "ad": "Yıldırım Beyazıd Parkı",
+      "mahalle": "Postane Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_12",
+      "ad": "Zabıta Parkı",
+      "mahalle": "Postane Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_40",
+      "ad": "Behiye Dr. Nevhir Anadolu Lisesi Bahçesi",
+      "mahalle": "Postane Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_14",
+      "ad": "Esentepe Parkı",
+      "mahalle": "Postane Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_11",
+      "ad": "Ceren Parkı",
+      "mahalle": "Mescit Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_20",
+      "ad": "Okul Dinlenme Alanı.",
+      "mahalle": "Cami Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_68",
+      "ad": "Tepeören Mahallesi Kültür Merkezi ( Aynı Zamanda TRANSFER ALANIDIR.)",
+      "mahalle": "Tepeören Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_30",
+      "ad": "Cemil Türker Ortaokulu Bahçesi",
+      "mahalle": "Tepeören Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_17",
+      "ad": "Krizantem Parkı..",
+      "mahalle": "Postane Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "tuzla_27",
+      "ad": "Şehit İbrahim Doğan Parkı 2",
+      "mahalle": "Mimar Sinan Mh.",
+      "koordinat": {
+        "lat": 40.829056917503046,
+        "lng": 29.36536816687541
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Park",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    }
+  ]
+}

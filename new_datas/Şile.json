@@ -1,0 +1,1865 @@
+{
+  "ilce": "Şile",
+  "toplanma_alanlari": [
+    {
+      "id": "Şile_rtf_1",
+      "ad": "I PARK",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_2",
+      "ad": "Y PARKI",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_3",
+      "ad": "U PARK",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_4",
+      "ad": "K PARKI",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_5",
+      "ad": "K PARKI",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_6",
+      "ad": "K PARK",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_7",
+      "ad": "E PARKI",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_8",
+      "ad": "K PARKI",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_9",
+      "ad": "M PARKI",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_10",
+      "ad": "U PARKI",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_11",
+      "ad": "A PARKI",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_12",
+      "ad": "N PARKI",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_13",
+      "ad": "R PARKI",
+      "mahalle": "Z MH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_14",
+      "ad": "A PARKI",
+      "mahalle": "Z MH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_15",
+      "ad": "E PARK",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_16",
+      "ad": "S ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_17",
+      "ad": "K ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_18",
+      "ad": "S ALAN",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_19",
+      "ad": "E PARK",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_20",
+      "ad": "E MEYDAN",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_21",
+      "ad": "L ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_22",
+      "ad": "S ALAN",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_23",
+      "ad": "S ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_24",
+      "ad": "M   ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_25",
+      "ad": "K ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_26",
+      "ad": "K ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_27",
+      "ad": "S ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_28",
+      "ad": "E MEYDAN",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_29",
+      "ad": "E MEYDAN",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_30",
+      "ad": "E ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_31",
+      "ad": "S ALAN",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_32",
+      "ad": "L ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_33",
+      "ad": "Y MEYDANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_34",
+      "ad": "S ALAN",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_35",
+      "ad": "C  ALAN",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_36",
+      "ad": "E MEYDAN",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_37",
+      "ad": "A ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_38",
+      "ad": "E MEYDAN",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_39",
+      "ad": "K ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_40",
+      "ad": "M   ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_41",
+      "ad": "S ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_42",
+      "ad": "S ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_43",
+      "ad": "L ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_44",
+      "ad": "E MEYDAN",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_45",
+      "ad": "E MEYDAN",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_46",
+      "ad": "E MEYDAN",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_47",
+      "ad": "S ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_48",
+      "ad": "K ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_49",
+      "ad": "S ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_50",
+      "ad": "E MEYDAN",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_51",
+      "ad": "E PARK",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_52",
+      "ad": "S ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_53",
+      "ad": "T ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_54",
+      "ad": "K ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_55",
+      "ad": "T ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_56",
+      "ad": "C  ALAN",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_57",
+      "ad": "I ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_58",
+      "ad": "L ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_59",
+      "ad": "I ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_60",
+      "ad": "K ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_61",
+      "ad": "E MEYDAN",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "Şile_rtf_62",
+      "ad": "L ALANI",
+      "mahalle": "L  MAH.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,965 @@
+{
+  "ilce": "esenler",
+  "toplanma_alanlari": [
+    {
+      "id": "esenler_pdf_1",
+      "ad": "Yanı Parkı",
+      "mahalle": "Birlik Mah.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_2",
+      "ad": "Sokak Parkı",
+      "mahalle": "Birlik Mah.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_3",
+      "ad": "Önü Meydan",
+      "mahalle": "Birlik Mah.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_4",
+      "ad": "Deprem Parkı",
+      "mahalle": "Birlik Mah.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_5",
+      "ad": "Yolu Parkı",
+      "mahalle": "Birlik Mah.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_6",
+      "ad": "Havuzlar Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_7",
+      "ad": "Tekin Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_8",
+      "ad": "Caddesi Parkı",
+      "mahalle": "Fatih Mah.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_9",
+      "ad": "Dörtyol Meydanı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_10",
+      "ad": "Çakmak Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_11",
+      "ad": "Bahçesi Park",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_12",
+      "ad": "N Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_13",
+      "ad": "Bölge Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_14",
+      "ad": "Sok Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_15",
+      "ad": "Giriş Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_16",
+      "ad": "Bahçesi Park",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_17",
+      "ad": "Kemer Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_18",
+      "ad": "Önü Park",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_19",
+      "ad": "Bölge Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_20",
+      "ad": "Polat Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_21",
+      "ad": "Terazidere Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_22",
+      "ad": "Şengör Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_23",
+      "ad": "Caddesi Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_24",
+      "ad": "Yıl Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_25",
+      "ad": "Caddesi Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_26",
+      "ad": "Çevresi Park",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_27",
+      "ad": "Şelale Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_28",
+      "ad": "Çinçinderesi Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_29",
+      "ad": "Demir Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_30",
+      "ad": "Reis Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_31",
+      "ad": "Turan Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "esenler_pdf_32",
+      "ad": "Selim Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    }
+  ]
+}

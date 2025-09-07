@@ -88,7 +88,7 @@ export class InfoAgent {
     if (data.operators) {
       for (const [operator, status] of Object.entries(data.operators)) {
         if (status) {
-          info += `• ${operator}: ${status.status || 'Bilinmiyor'}\n`;
+          info += `• ${operator}: ${(status as any).status || 'Bilinmiyor'}\n`;
         }
       }
     }
@@ -130,17 +130,36 @@ export class InfoAgent {
     let info = `🔍 Web Araştırması (${data.location}):\n`;
     
     if (data.results && data.results.length > 0) {
-      data.results.forEach((result: any, index: number) => {
-        info += `\n${index + 1}. ${result.title}\n`;
-        info += `   ${result.snippet}\n`;
-        if (result.content) {
-          // İlk 200 karakteri göster
-          const shortContent = result.content.length > 200 
-            ? result.content.substring(0, 200) + '...' 
-            : result.content;
-          info += `   ${shortContent}\n`;
-        }
-      });
+      // Toplanma alanları için özel formatlama
+      const isToplanmaAlani = data.results.some((result: any) => 
+        result.title.includes('toplanma') || 
+        result.title.includes('alan') ||
+        result.url.includes('toplanma-alanlari')
+      );
+
+      if (isToplanmaAlani) {
+        info = `🏢 Toplanma Alanları (${data.location}):\n\n`;
+        data.results.forEach((result: any, index: number) => {
+          info += `${index + 1}. ${result.title}\n`;
+          if (result.content) {
+            info += `   ${result.content}\n`;
+          }
+          info += `\n`;
+        });
+      } else {
+        // Genel web araması formatı
+        data.results.forEach((result: any, index: number) => {
+          info += `\n${index + 1}. ${result.title}\n`;
+          info += `   ${result.snippet}\n`;
+          if (result.content) {
+            // İlk 200 karakteri göster
+            const shortContent = result.content.length > 200 
+              ? result.content.substring(0, 200) + '...' 
+              : result.content;
+            info += `   ${shortContent}\n`;
+          }
+        });
+      }
     } else {
       info += `Arama sonucu bulunamadı.`;
     }
@@ -150,16 +169,23 @@ export class InfoAgent {
 
   private generateResponse(query: string, infoSummary: string, userContext: UserContext): string {
     const location = userContext.location?.district || 'İstanbul';
+    const lowerQuery = query.toLowerCase();
     
-    if (query.toLowerCase().includes('durum') || query.toLowerCase().includes('ne oluyor')) {
+    // Toplanma alanları sorgusu için özel yanıt
+    if (lowerQuery.includes('toplanma alanı') || lowerQuery.includes('toplanma') || 
+        lowerQuery.includes('güvenli alan') || lowerQuery.includes('acil toplanma')) {
+      return `🏢 ${location} bölgesindeki toplanma alanları:\n\n${infoSummary}\n\nBu alanlar acil durumlarda güvenli toplanma noktalarıdır. Koordinat bilgileri ile konumlarına ulaşabilirsiniz.`;
+    }
+    
+    if (lowerQuery.includes('durum') || lowerQuery.includes('ne oluyor')) {
       return `📊 ${location} için güncel durum:\n\n${infoSummary}\n\nBu bilgiler gerçek zamanlı olarak güncellenmektedir.`;
     }
     
-    if (query.toLowerCase().includes('konum') || query.toLowerCase().includes('nerede')) {
+    if (lowerQuery.includes('konum') || lowerQuery.includes('nerede')) {
       return `📍 Konum bilgileriniz:\n\n${infoSummary}\n\nGüvenli alanlara ulaşım için yol tarifi alabilirsiniz.`;
     }
     
-    if (query.toLowerCase().includes('şebeke') || query.toLowerCase().includes('internet')) {
+    if (lowerQuery.includes('şebeke') || lowerQuery.includes('internet')) {
       return `📡 Şebeke durumu:\n\n${infoSummary}\n\nEn iyi bağlantı için önerilen operatörü kullanabilirsiniz.`;
     }
     

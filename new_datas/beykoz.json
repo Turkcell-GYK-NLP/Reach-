@@ -1,0 +1,3005 @@
+{
+  "ilce": "beykoz",
+  "toplanma_alanlari": [
+    {
+      "id": "beykoz_pdf_1",
+      "ad": "Uğur Park",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_2",
+      "ad": "Halı Saha",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_3",
+      "ad": "Köy Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_4",
+      "ad": "Çocuk Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_5",
+      "ad": "Mesire Alanı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_6",
+      "ad": "Mesire Alanı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_7",
+      "ad": "Mahalle Meydanı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_8",
+      "ad": "Derneği Sahası",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_9",
+      "ad": "Önü Meydan",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_10",
+      "ad": "Arkası Park",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_11",
+      "ad": "Baklacı Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_12",
+      "ad": "Futbol Sahası",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_13",
+      "ad": "Futbol Sahası",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_14",
+      "ad": "Köy Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_15",
+      "ad": "Çamlıbahçe Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_16",
+      "ad": "Güler Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_17",
+      "ad": "Ortaçeşme Meydan",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_18",
+      "ad": "Boş Alan",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_19",
+      "ad": "Anadolu Lisesi",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_20",
+      "ad": "Önü ve Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_21",
+      "ad": "Satış Alanı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_22",
+      "ad": "Yılmaz Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_23",
+      "ad": "Öndin Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_24",
+      "ad": "Taş Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_25",
+      "ad": "Teyze Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_26",
+      "ad": "Hüseyin Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_27",
+      "ad": "Kulübü Sahası",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_28",
+      "ad": "Dedeoğlu Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_29",
+      "ad": "Futbol Sahası",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_30",
+      "ad": "Kısakürek İlköğretim",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_31",
+      "ad": "Göztepe Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_32",
+      "ad": "Mahalle Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_33",
+      "ad": "Tabiat Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_34",
+      "ad": "Çayırı Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_35",
+      "ad": "Mesire Alanı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_36",
+      "ad": "Sokak Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_37",
+      "ad": "Göztepe Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_38",
+      "ad": "Çakır Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_39",
+      "ad": "Göksu Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_40",
+      "ad": "Boyu Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_41",
+      "ad": "Emre Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_42",
+      "ad": "Meslek Okulu",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_43",
+      "ad": "Kerem Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_44",
+      "ad": "Karlıtepe Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_45",
+      "ad": "Paşa Meslek",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_46",
+      "ad": "Anadolu Lisesi",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_47",
+      "ad": "Kocabıyık Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_48",
+      "ad": "Halı Saha",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_49",
+      "ad": "Yanı Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_50",
+      "ad": "Mesire Alanı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_51",
+      "ad": "Boş Alan",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_52",
+      "ad": "Sokak Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_53",
+      "ad": "İnal Lisesi",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_54",
+      "ad": "Şişman Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_55",
+      "ad": "Köyü Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_56",
+      "ad": "Sitesi Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_57",
+      "ad": "Doğan Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_58",
+      "ad": "Tekke Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_59",
+      "ad": "Otopark Alanı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_60",
+      "ad": "Kanık Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_61",
+      "ad": "Aydın Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_62",
+      "ad": "Ersayın Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_63",
+      "ad": "Güner Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_64",
+      "ad": "Bulunan Park",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_65",
+      "ad": "Köy Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_66",
+      "ad": "Paşa Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_67",
+      "ad": "Sedef Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_68",
+      "ad": "Genç Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_69",
+      "ad": "Eroğlu Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_70",
+      "ad": "Ayazma Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_71",
+      "ad": "Halisdemir Meslek",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_72",
+      "ad": "Caddesi Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_73",
+      "ad": "Cevizlibahçe Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_74",
+      "ad": "Çeşmesi Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_75",
+      "ad": "Futbol Sahası",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_76",
+      "ad": "İlköğretim Okulu",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_77",
+      "ad": "Atatürk Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_78",
+      "ad": "Polonezköy Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_79",
+      "ad": "Halı Saha",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_80",
+      "ad": "Boş Alan",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_81",
+      "ad": "Futbol Sahası",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_82",
+      "ad": "Orta Okulu",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_83",
+      "ad": "İlköğretim Okulu",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_84",
+      "ad": "Baba Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_85",
+      "ad": "Belediye Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_86",
+      "ad": "Anadolu Lisesi",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_87",
+      "ad": "Erguvan Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_88",
+      "ad": "Al Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_89",
+      "ad": "Cumhuriyet Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_90",
+      "ad": "Sezerler Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_91",
+      "ad": "Top Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_92",
+      "ad": "Karademir Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_93",
+      "ad": "İlköğretim Okulu",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_94",
+      "ad": "Pazar Alanı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_95",
+      "ad": "Halı Saha",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_96",
+      "ad": "Yıl Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_97",
+      "ad": "Aktaş Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_98",
+      "ad": "Mahalle Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_99",
+      "ad": "Zeren Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "beykoz_pdf_100",
+      "ad": "Bulunan Meydan",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    }
+  ]
+}

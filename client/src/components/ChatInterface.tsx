@@ -22,10 +22,17 @@ export default function ChatInterface() {
     if (!messageToSend.trim() || isPending) return;
 
     const userContext = {
-      location: location?.district || location?.city,
+      location: {
+        district: location?.district || (location?.city === "Esenler" ? "Esenler" : "Esenler"),
+        city: location?.city || "İstanbul",
+        neighborhood: location?.neighborhood || "Menderes",
+        coordinates: location ? {
+          lat: location.latitude,
+          lng: location.longitude
+        } : undefined
+      },
       operator: "Turkcell", // This would come from user profile
       age: 22, // This would come from user profile
-      coordinates: location ? `${location.latitude},${location.longitude}` : undefined,
     };
 
     sendMessage(messageToSend, userContext);

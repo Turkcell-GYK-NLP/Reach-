@@ -1,0 +1,8045 @@
+{
+  "ilce": "ümraniye",
+  "toplanma_alanlari": [
+    {
+      "id": "ümraniye_pdf_1",
+      "ad": "Şanlı Parkı",
+      "mahalle": "Yavuz Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_2",
+      "ad": "Akasya Parkı",
+      "mahalle": "Yavuz Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_3",
+      "ad": "Anadolu Lisesi",
+      "mahalle": "Yavuz Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_4",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Yavuz Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_5",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Yavuz Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_6",
+      "ad": "Asya Parkı",
+      "mahalle": "Yavuz Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_7",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Yavuz Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_8",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Yavuz Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_9",
+      "ad": "Kumru Parkı",
+      "mahalle": "Altınşehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_10",
+      "ad": "Lale Parkı",
+      "mahalle": "Altınşehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_11",
+      "ad": "Çocuk Parkı",
+      "mahalle": "Altınşehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_12",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Altınşehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_13",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Altınşehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_14",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Altınşehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_15",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Altınşehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_16",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Altınşehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_17",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Altınşehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_18",
+      "ad": "Demir Parkı",
+      "mahalle": "Altınşehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_19",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Altınşehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_20",
+      "ad": "Cesur Parkı",
+      "mahalle": "Altınşehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_21",
+      "ad": "Selvi Parkı",
+      "mahalle": "Armağanevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_22",
+      "ad": "Begoviç  Parkı",
+      "mahalle": "Armağanevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_23",
+      "ad": "Ömerbeyoğlu Parkı",
+      "mahalle": "Armağanevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_24",
+      "ad": "Armağanevler Parkı",
+      "mahalle": "Armağanevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_25",
+      "ad": "Nisan Parkı",
+      "mahalle": "Armağanevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_26",
+      "ad": "Çavuş Parkı",
+      "mahalle": "Armağanevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_27",
+      "ad": "Büyükyıldırım Parkı",
+      "mahalle": "Armağanevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_28",
+      "ad": "Eyüboğlu Parkı",
+      "mahalle": "Armağanevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_29",
+      "ad": "Saraybosna Parkı",
+      "mahalle": "Dudullu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_30",
+      "ad": "Hayrettin Parkı",
+      "mahalle": "Dudullu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_31",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Dudullu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_32",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Dudullu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_33",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Dudullu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_34",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Dudullu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_35",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Dudullu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_36",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Dudullu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_37",
+      "ad": "Duru Parkı",
+      "mahalle": "Atakent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_38",
+      "ad": "Milli Parkı",
+      "mahalle": "Atakent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_39",
+      "ad": "Akşemsettin Parkı",
+      "mahalle": "Atakent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_40",
+      "ad": "Sinan Parkı",
+      "mahalle": "Atakent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_41",
+      "ad": "Dadaloğlu Parkı",
+      "mahalle": "Atakent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_42",
+      "ad": "Asya Parkı",
+      "mahalle": "Atakent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_43",
+      "ad": "Buhara Parkı",
+      "mahalle": "Atakent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_44",
+      "ad": "Endülüs Parkı",
+      "mahalle": "Atakent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_45",
+      "ad": "Zigana Parkı",
+      "mahalle": "Atakent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_46",
+      "ad": "Özkonak Parkı",
+      "mahalle": "Atakent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_47",
+      "ad": "Foynisa Parkı",
+      "mahalle": "Atakent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_48",
+      "ad": "Pazarcık Parkı",
+      "mahalle": "Atakent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_49",
+      "ad": "Kayı Parkı",
+      "mahalle": "Atakent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_50",
+      "ad": "Şehitlik Parkı",
+      "mahalle": "Atakent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_51",
+      "ad": "Sedir Parkı",
+      "mahalle": "Atakent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_52",
+      "ad": "Öztürk Parkı",
+      "mahalle": "Atakent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_53",
+      "ad": "Gazi Parkı",
+      "mahalle": "Atakent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_54",
+      "ad": "Razgrad Parkı",
+      "mahalle": "Atakent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_55",
+      "ad": "Semiz Parkı",
+      "mahalle": "Atakent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_56",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Atatürk Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_57",
+      "ad": "Mevlana Parkı",
+      "mahalle": "Atatürk Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_58",
+      "ad": "Goncagül Parkı",
+      "mahalle": "Atatürk Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_59",
+      "ad": "Mevlana Parkı",
+      "mahalle": "Atatürk Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_60",
+      "ad": "Şehitler Meydanı",
+      "mahalle": "Atatürk Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_61",
+      "ad": "Belen Parkı",
+      "mahalle": "Atatürk Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_62",
+      "ad": "Aslanağzı Parkı",
+      "mahalle": "Atatürk Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_63",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Atatürk Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_64",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Meriç Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_65",
+      "ad": "Üvenç Parkı",
+      "mahalle": "Meriç Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_66",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Meriç Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_67",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Meriç Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_68",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Çakmak Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_69",
+      "ad": "Ayna Parkı",
+      "mahalle": "Çakmak Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_70",
+      "ad": "Ağaç Parkı",
+      "mahalle": "Çakmak Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_71",
+      "ad": "Gül Parkı",
+      "mahalle": "Çakmak Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_72",
+      "ad": "Defne Parkı",
+      "mahalle": "Çakmak Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_73",
+      "ad": "Bülbül Parkı",
+      "mahalle": "Çakmak Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_74",
+      "ad": "Hanedan Parkı",
+      "mahalle": "Çakmak Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_75",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Çakmak Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_76",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Çakmak Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_77",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Çakmak Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_78",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Çakmak Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_79",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Çakmak Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_80",
+      "ad": "Kahraman Parkı",
+      "mahalle": "Çamlık Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_81",
+      "ad": "Zihni Parkı",
+      "mahalle": "Çamlık Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_82",
+      "ad": "Gümüş Parkı",
+      "mahalle": "Çamlık Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_83",
+      "ad": "İkbal Parkı",
+      "mahalle": "Çamlık Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_84",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Çamlık Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_85",
+      "ad": "Zengin Parkı",
+      "mahalle": "Çamlık Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_86",
+      "ad": "Bakla Parkı",
+      "mahalle": "Çamlık Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_87",
+      "ad": "Filik Parkı",
+      "mahalle": "Çamlık Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_88",
+      "ad": "Dumlupınar Parkı",
+      "mahalle": "Dumlupınar Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_89",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Dumlupınar Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_90",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Dumlupınar Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_91",
+      "ad": "Seyrantepe Parkı",
+      "mahalle": "Dumlupınar Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_92",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Dumlupınar Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_93",
+      "ad": "Bosna Parkı",
+      "mahalle": "Elmalıkent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_94",
+      "ad": "Şehitler Parkı",
+      "mahalle": "Elmalıkent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_95",
+      "ad": "Osman Parkı",
+      "mahalle": "Elmalıkent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_96",
+      "ad": "Manolya Parkı",
+      "mahalle": "Elmalıkent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_97",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Elmalıkent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_98",
+      "ad": "Sitesi Parkı",
+      "mahalle": "Elmalıkent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_99",
+      "ad": "Hatip Lisesi",
+      "mahalle": "Elmalıkent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_100",
+      "ad": "Anadolu Lisesi",
+      "mahalle": "Elmalıkent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_101",
+      "ad": "İlköğretim Okulu",
+      "mahalle": "Elmalıkent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_102",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Elmalıkent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_103",
+      "ad": "Hekim Parkı",
+      "mahalle": "Esenevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_104",
+      "ad": "Akçasoy Parkı",
+      "mahalle": "Esenevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_105",
+      "ad": "Ayvacık Parkı",
+      "mahalle": "Esenevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_106",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Esenevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_107",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Esenevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_108",
+      "ad": "Eryuvam Parkı",
+      "mahalle": "Esenevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_109",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Esenevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_110",
+      "ad": "Hatip Lisesi",
+      "mahalle": "Esenevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_111",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Esenevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_112",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Esenevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_113",
+      "ad": "Şerif Parkı",
+      "mahalle": "Esenkent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_114",
+      "ad": "Erzincanlılar Parkı",
+      "mahalle": "Esenkent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_115",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Esenkent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_116",
+      "ad": "Sancar Parkı",
+      "mahalle": "Esenkent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_117",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Esenkent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_118",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Esenkent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_119",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Esenkent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_120",
+      "ad": "Sokak Parkı",
+      "mahalle": "Esenkent Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_121",
+      "ad": "Yakamoz Parkı",
+      "mahalle": "Esenşehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_122",
+      "ad": "Çakmak Parkı",
+      "mahalle": "Esenşehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_123",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Esenşehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_124",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Esenşehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_125",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Esenşehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_126",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Esenşehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_127",
+      "ad": "Muradiye Parkı",
+      "mahalle": "Esenşehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_128",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Esenşehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_129",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Esenşehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_130",
+      "ad": "Edebali Parkı",
+      "mahalle": "Mehmet Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_131",
+      "ad": "Başak Parkı",
+      "mahalle": "Mehmet Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_132",
+      "ad": "Poligon Parkı",
+      "mahalle": "Mehmet Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_133",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Mehmet Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_134",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Mehmet Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_135",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Mehmet Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_136",
+      "ad": "Açık Alan",
+      "mahalle": "Mehmet Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_137",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Mehmet Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_138",
+      "ad": "Hekimbaşı Parkı",
+      "mahalle": "Hekimbaşı Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_139",
+      "ad": "Yanı Parkı",
+      "mahalle": "Hekimbaşı Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_140",
+      "ad": "Reis Parkı",
+      "mahalle": "Huzur Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_141",
+      "ad": "Pınar Parkı",
+      "mahalle": "Huzur Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_142",
+      "ad": "Selviler Parkı",
+      "mahalle": "Huzur Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_143",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Huzur Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_144",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Huzur Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_145",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Ihlamurkuyu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_146",
+      "ad": "Trabzon Park",
+      "mahalle": "Ihlamurkuyu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_147",
+      "ad": "Kaplan Parkı",
+      "mahalle": "İnkılap Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_148",
+      "ad": "Dere Parkı",
+      "mahalle": "İnkılap Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_149",
+      "ad": "Evler Parkı",
+      "mahalle": "İnkılap Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_150",
+      "ad": "Kocatepe Parkı",
+      "mahalle": "İnkılap Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_151",
+      "ad": "Toplanma Alanı",
+      "mahalle": "İnkılap Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_152",
+      "ad": "Toplanma Alanı",
+      "mahalle": "İnkılap Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_153",
+      "ad": "Şimşek Parkı",
+      "mahalle": "İstiklal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_154",
+      "ad": "Veysel Parkı",
+      "mahalle": "İstiklal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_155",
+      "ad": "Sevgi Parkı",
+      "mahalle": "İstiklal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_156",
+      "ad": "Avcı Lisesi",
+      "mahalle": "İstiklal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_157",
+      "ad": "Hamidiye Parkı",
+      "mahalle": "İstiklal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_158",
+      "ad": "Toplanma Alanı",
+      "mahalle": "İstiklal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_159",
+      "ad": "Toplanma Alanı",
+      "mahalle": "İstiklal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_160",
+      "ad": "Toplanma Alanı",
+      "mahalle": "İstiklal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_161",
+      "ad": "Toplanma Alanı",
+      "mahalle": "İstiklal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_162",
+      "ad": "Çimen Parkı",
+      "mahalle": "İstiklal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_163",
+      "ad": "Toplanma Alanı",
+      "mahalle": "İstiklal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_164",
+      "ad": "Cumhurıyet Lisesi",
+      "mahalle": "İstiklal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_165",
+      "ad": "Toplanma Alanı",
+      "mahalle": "İstiklal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_166",
+      "ad": "Karacaoğlan Parkı",
+      "mahalle": "Karabekir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_167",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Karabekir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_168",
+      "ad": "Çiğdem Parkı",
+      "mahalle": "Madenler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_169",
+      "ad": "Gölet Parkı",
+      "mahalle": "Madenler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_170",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Madenler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_171",
+      "ad": "Can Parkı",
+      "mahalle": "Akif Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_172",
+      "ad": "Site Parkı",
+      "mahalle": "Akif Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_173",
+      "ad": "Anadolu Lisesi",
+      "mahalle": "Akif Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_174",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Akif Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_175",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Akif Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_176",
+      "ad": "Reis Parkı",
+      "mahalle": "Akif Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_177",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Akif Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_178",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Akif Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_179",
+      "ad": "Ersoy Parkı",
+      "mahalle": "Akif Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_180",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Akif Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_181",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Akif Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_182",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Akif Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_183",
+      "ad": "Ahmet Parkı",
+      "mahalle": "Kemal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_184",
+      "ad": "Barış Parkı",
+      "mahalle": "Kemal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_185",
+      "ad": "Kalafat Parkı",
+      "mahalle": "Kemal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_186",
+      "ad": "Rumeli Parkı",
+      "mahalle": "Kemal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_187",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Kemal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_188",
+      "ad": "İklim Parkı",
+      "mahalle": "Kemal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_189",
+      "ad": "Yıldıray Parkı",
+      "mahalle": "Kemal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_190",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Kemal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_191",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Kemal Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_192",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Fazıl Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_193",
+      "ad": "Asude Parkı",
+      "mahalle": "Fazıl Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_194",
+      "ad": "Amca Parkı",
+      "mahalle": "Fazıl Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_195",
+      "ad": "Eğitim Parkı",
+      "mahalle": "Fazıl Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_196",
+      "ad": "Köseoğlu Parkı",
+      "mahalle": "Fazıl Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_197",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Fazıl Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_198",
+      "ad": "Spor Alanı",
+      "mahalle": "Fazıl Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_199",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Fazıl Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_200",
+      "ad": "Selçuklu Parkı",
+      "mahalle": "Fazıl Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_201",
+      "ad": "Bayındır Parkı",
+      "mahalle": "Fazıl Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_202",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Fazıl Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_203",
+      "ad": "Anadolu Lisesi",
+      "mahalle": "Fazıl Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_204",
+      "ad": "Nida Parkı",
+      "mahalle": "Parseller Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_205",
+      "ad": "Orkide Parkı",
+      "mahalle": "Parseller Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_206",
+      "ad": "İpek Parkı",
+      "mahalle": "Parseller Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_207",
+      "ad": "Çocuk Parkı",
+      "mahalle": "Parseller Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_208",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Parseller Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_209",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Parseller Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_210",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Parseller Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_211",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Saray Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_212",
+      "ad": "Şelale Parkı",
+      "mahalle": "Site Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_213",
+      "ad": "Şah Parkı",
+      "mahalle": "Site Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_214",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Site Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_215",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Site Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_216",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Site Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_217",
+      "ad": "Sancaktepe Parkı",
+      "mahalle": "Site Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_218",
+      "ad": "Sancaktepe Parkı",
+      "mahalle": "Site Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_219",
+      "ad": "Mehmet Parkı",
+      "mahalle": "Şerifali Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_220",
+      "ad": "Sardunya Parkı",
+      "mahalle": "Şerifali Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_221",
+      "ad": "Hatboyu Parkı",
+      "mahalle": "Şerifali Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_222",
+      "ad": "Açelya Parkı",
+      "mahalle": "Şerifali Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_223",
+      "ad": "Atabek Parkı",
+      "mahalle": "Şerifali Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_224",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Şerifali Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_225",
+      "ad": "Denizciler Parkı",
+      "mahalle": "Tantavi Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_226",
+      "ad": "İlkel Parkı",
+      "mahalle": "Tantavi Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_227",
+      "ad": "Mavera Parkı",
+      "mahalle": "Tantavi Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_228",
+      "ad": "Muhammet Parkı",
+      "mahalle": "Tantavi Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_229",
+      "ad": "Topaloğlu Parkı",
+      "mahalle": "Tantavi Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_230",
+      "ad": "Geyve Parkı",
+      "mahalle": "Tantavi Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_231",
+      "ad": "Beyazıt Parkı",
+      "mahalle": "Tantavi Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_232",
+      "ad": "Kalkavan Parkı",
+      "mahalle": "Tatlısu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_233",
+      "ad": "Berrak Parkı",
+      "mahalle": "Tatlısu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_234",
+      "ad": "Selim Parkı",
+      "mahalle": "Tatlısu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_235",
+      "ad": "Gezi Parkı",
+      "mahalle": "Tatlısu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_236",
+      "ad": "Şahinbey Parkı",
+      "mahalle": "Tatlısu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_237",
+      "ad": "Tatlısu Parkı",
+      "mahalle": "Tatlısu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_238",
+      "ad": "Şahin Parkı",
+      "mahalle": "Tatlısu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_239",
+      "ad": "Ümran Parkı",
+      "mahalle": "Tatlısu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_240",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Tatlısu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_241",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Tepeüstü Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_242",
+      "ad": "Tepeüstü Parkı",
+      "mahalle": "Tepeüstü Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_243",
+      "ad": "Anadolu Lisesi",
+      "mahalle": "Tepeüstü Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_244",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Tepeüstü Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_245",
+      "ad": "Karabekir Parkı",
+      "mahalle": "Topağacı Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_246",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Topağacı Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_247",
+      "ad": "Zafer Parkı",
+      "mahalle": "Topağacı Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_248",
+      "ad": "Orhangazi Parkı",
+      "mahalle": "Yamanevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_249",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Yamanevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_250",
+      "ad": "Anadolu Lisesi",
+      "mahalle": "Yamanevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_251",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Yamanevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_252",
+      "ad": "Anadolu Lisesi",
+      "mahalle": "Yamanevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_253",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Yamanevler Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_254",
+      "ad": "Anadolu Lisesi",
+      "mahalle": "Yenişehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_255",
+      "ad": "Küçük Parkı",
+      "mahalle": "Yenişehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_256",
+      "ad": "Bektaş Parkı",
+      "mahalle": "Yenişehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_257",
+      "ad": "Ağustos Lisesi",
+      "mahalle": "Yenişehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_258",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Yenişehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_259",
+      "ad": "Ağustos Parkı",
+      "mahalle": "Yenişehir Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_260",
+      "ad": "Isı Parkı",
+      "mahalle": "Dudullu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_261",
+      "ad": "Bingöl Parkı",
+      "mahalle": "Dudullu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_262",
+      "ad": "Cebaliye Parkı",
+      "mahalle": "Dudullu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_263",
+      "ad": "Çağı Okul",
+      "mahalle": "Dudullu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_264",
+      "ad": "Güvercin Parkı",
+      "mahalle": "Dudullu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_265",
+      "ad": "Alper Parkı",
+      "mahalle": "Dudullu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_266",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Dudullu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_267",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Dudullu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "ümraniye_pdf_268",
+      "ad": "Koruluk Parkı",
+      "mahalle": "Dudullu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    }
+  ]
+}

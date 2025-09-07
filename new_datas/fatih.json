@@ -1,0 +1,185 @@
+{
+  "ilce": "fatih",
+  "toplanma_alanlari": [
+    {
+      "id": "fatih_pdf_1",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Binbirdirek Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "fatih_pdf_2",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Balat Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "fatih_pdf_3",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Kuşçu Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "fatih_pdf_4",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Kalenderhane Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "fatih_pdf_5",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Zeyrek Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "fatih_pdf_6",
+      "ad": "Toplanma Alanı",
+      "mahalle": "Silivrikapı Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 13866.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    }
+  ]
+}

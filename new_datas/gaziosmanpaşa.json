@@ -1,0 +1,2765 @@
+{
+  "ilce": "gaziosmanpaşa",
+  "toplanma_alanlari": [
+    {
+      "id": "gaziosmanpaşa_pdf_1",
+      "ad": "Sokak Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_2",
+      "ad": "Yeşil Alan",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_3",
+      "ad": "Paşa Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_4",
+      "ad": "Selvi Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_5",
+      "ad": "Mesire Alanı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_6",
+      "ad": "Akgün Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_7",
+      "ad": "Papatya Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_8",
+      "ad": "Arlon Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_9",
+      "ad": "Sokak Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_10",
+      "ad": "Sokak Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_11",
+      "ad": "Yeşil Alan",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_12",
+      "ad": "Barbaros Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_13",
+      "ad": "Anadolu Lisesi",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_14",
+      "ad": "Akal Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_15",
+      "ad": "Sokak Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_16",
+      "ad": "Sokak Parkı",
+      "mahalle": "Çakmak Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_17",
+      "ad": "Sokak Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_18",
+      "ad": "Çakmak Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_19",
+      "ad": "Demir Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_20",
+      "ad": "Yürüyüş Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_21",
+      "ad": "Spor Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_22",
+      "ad": "Seyrantepe Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_23",
+      "ad": "Anadolu Lisesi",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_24",
+      "ad": "Şelale Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_25",
+      "ad": "Şelale Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_26",
+      "ad": "Sultan Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_27",
+      "ad": "Gazi Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_28",
+      "ad": "Spor Alanı",
+      "mahalle": "Hayrettinpaşa Mh.",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_29",
+      "ad": "Hatip Lisesi",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_30",
+      "ad": "Anadolu Lisesi",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_31",
+      "ad": "Hürriyet Parkı",
+      "mahalle": "Hürriyet Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_32",
+      "ad": "Erguvan Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_33",
+      "ad": "Kahramanları Parkı",
+      "mahalle": "Karadeniz Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_34",
+      "ad": "Sokak Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_35",
+      "ad": "Topçu Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_36",
+      "ad": "Otopark Alanı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_37",
+      "ad": "Sokak Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_38",
+      "ad": "Sokak Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_39",
+      "ad": "Şehitler Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_40",
+      "ad": "Bülbül Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_41",
+      "ad": "Caddesi Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_42",
+      "ad": "Paşa Okulu",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_43",
+      "ad": "Cadde Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_44",
+      "ad": "Caddesi Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_45",
+      "ad": "Özdemir Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_46",
+      "ad": "Menekşe Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_47",
+      "ad": "Caddesi Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_48",
+      "ad": "Spor Parkı",
+      "mahalle": "Karayolları Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_49",
+      "ad": "Sokak Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_50",
+      "ad": "Sokak Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_51",
+      "ad": "Konutları Okul",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_52",
+      "ad": "Cadde Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_53",
+      "ad": "Caddesi Parkı",
+      "mahalle": "Karayolları Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_54",
+      "ad": "Kudüs Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_55",
+      "ad": "Kiraz Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_56",
+      "ad": "Göçmenler Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_57",
+      "ad": "Gümüşsuyu Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_58",
+      "ad": "Çınar Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_59",
+      "ad": "Hatun Parkı",
+      "mahalle": "Karabekir Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_60",
+      "ad": "Nisan Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_61",
+      "ad": "Sokak Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_62",
+      "ad": "Gençlik Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_63",
+      "ad": "Yağlıdere Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_64",
+      "ad": "Üstün Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_65",
+      "ad": "Zafer Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_66",
+      "ad": "Cumhuriyet Meydanı",
+      "mahalle": "Merkez Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_67",
+      "ad": "Havuzbaşı Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_68",
+      "ad": "Anadolu Lisesi",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_69",
+      "ad": "Güreşen Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_70",
+      "ad": "Sokak Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_71",
+      "ad": "Fetih Parkı",
+      "mahalle": "Mevlana Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_72",
+      "ad": "Gençlik Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_73",
+      "ad": "Anadolu Lisesi",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_74",
+      "ad": "Mevlana Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_75",
+      "ad": "Mevlana Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_76",
+      "ad": "Caddesi Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_77",
+      "ad": "Hatip Lisesi",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_78",
+      "ad": "Hatip Lisesi",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_79",
+      "ad": "Yazıcıoğlu Parkı",
+      "mahalle": "Mevlana Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_80",
+      "ad": "Bodur Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_81",
+      "ad": "Yükel Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_82",
+      "ad": "Vardar Parkı",
+      "mahalle": "Pazariçi Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_83",
+      "ad": "Sokak Parkı",
+      "mahalle": "Şemsipaşa Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_84",
+      "ad": "Dumlupınar Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_85",
+      "ad": "Ortak Alanı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_86",
+      "ad": "Küçükköy Meydan",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_87",
+      "ad": "Kültufan Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_88",
+      "ad": "Gümüş Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_89",
+      "ad": "Çamlık Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_90",
+      "ad": "Gündoğdu Parkı",
+      "mahalle": "Yıldıztabya Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_91",
+      "ad": "Sokak Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "gaziosmanpaşa_pdf_92",
+      "ad": "Danyıldız Parkı",
+      "mahalle": "",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    }
+  ]
+}

@@ -9,7 +9,12 @@ export class WebSearchTool extends BaseTool {
     'araştır', 'internet', 'web', 'güncel', 'son veriler', 'istatistik',
     'nüfus', 'yoğunluk', 'operatör', 'karşılaştır', 'hangi', 'en iyi',
     'türk telekom', 'vodafone', 'turkcell', 'kapsama', 'hız', 'fiyat',
-    'genç nüfus', 'demografi', 'yaş dağılımı', 'nüfus yoğunluğu'
+    'genç nüfus', 'demografi', 'yaş dağılımı', 'nüfus yoğunluğu',
+    'toplanma alanı', 'toplanma', 'güvenli alan', 'park', 'meydan',
+    'mahalle', 'ilçe', 'bölge', 'konum', 'nerede', 'yakın',
+    'koordinat', 'alan', 'elektrik', 'su', 'wc', 'kanalizasyon', 
+    'altyapı', 'ulaşım', 'esenler', 'menderes', 'bağcılar', 'kadıköy',
+    'beşiktaş', 'şişli', 'fatih', 'beyoğlu', 'üsküdar', 'sarıyer', 'ataşehir'
   ];
 
   async execute(input: ToolInput): Promise<ToolResult | null> {
@@ -20,12 +25,13 @@ export class WebSearchTool extends BaseTool {
     }
 
     try {
+      console.log(`🔍 WebSearchTool: Searching for "${query}" in location: ${userContext.location?.district || 'Esenler'}`);
       const searchResults = await this.performWebSearch(query, userContext);
       
       return this.createResult('websearch', {
         query,
         results: searchResults,
-        location: userContext.location?.district || 'İstanbul',
+        location: userContext.location?.district || 'Esenler',
         timestamp: new Date()
       }, 0.85);
     } catch (error) {
@@ -40,11 +46,13 @@ export class WebSearchTool extends BaseTool {
   }
 
   private async performWebSearch(query: string, userContext: any): Promise<SearchResult[]> {
-    // Gerçek web search implementasyonu için bir API kullanılabilir
-    // Şimdilik mock data ile çalışıyoruz
-    
-    const location = userContext.location?.district || 'İstanbul';
+    const location = userContext.location?.district || 'Esenler';
     const lowerQuery = query.toLowerCase();
+
+    // Toplanma alanları sorgusu
+    if (this.isToplanmaAlaniQuery(lowerQuery)) {
+      return await this.searchToplanmaAlanlari(query, location);
+    }
 
     // Operatör karşılaştırması
     if (this.isOperatorComparisonQuery(lowerQuery)) {
@@ -58,6 +66,30 @@ export class WebSearchTool extends BaseTool {
 
     // Genel web araması
     return this.getGeneralSearchResults(query, location);
+  }
+
+  private isToplanmaAlaniQuery(query: string): boolean {
+    const toplanmaKeywords = [
+      'toplanma alanı', 'toplanma', 'güvenli alan', 'park', 'meydan',
+      'mahalle', 'ilçe', 'bölge', 'konum', 'nerede', 'yakın',
+      'koordinat', 'alan', 'elektrik', 'su', 'wc', 'kanalizasyon', 
+      'altyapı', 'ulaşım', 'acil durum', 'afet', 'acil toplanma',
+      'esenler', 'menderes', 'bağcılar', 'kadıköy', 'beşiktaş', 
+      'şişli', 'fatih', 'beyoğlu', 'üsküdar', 'sarıyer', 'ataşehir',
+      'beykoz', 'bakırköy', 'bayrampaşa', 'eyüpsultan', 'gaziosmanpaşa',
+      'küçükçekmece', 'pendik', 'sultanbeyli', 'sultangazi', 'tuzla',
+      'ümraniye', 'şile'
+    ];
+    
+    const isToplanma = toplanmaKeywords.some(keyword => query.includes(keyword));
+    console.log(`🔍 isToplanmaAlaniQuery - Query: "${query}", Sonuç: ${isToplanma}`);
+    
+    if (isToplanma) {
+      const matchedKeywords = toplanmaKeywords.filter(keyword => query.includes(keyword));
+      console.log(`✅ Eşleşen anahtar kelimeler: ${matchedKeywords.join(', ')}`);
+    }
+    
+    return isToplanma;
   }
 
   private isOperatorComparisonQuery(query: string): boolean {
@@ -238,6 +270,374 @@ export class WebSearchTool extends BaseTool {
 
   private getRandomCount(min: number, max: number): number {
     return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  private async searchToplanmaAlanlari(query: string, location: string): Promise<SearchResult[]> {
+    console.log(`🔍 searchToplanmaAlanlari çağrıldı - Query: "${query}", Location: "${location}"`);
+    
+    try {
+      // Önce FAISS search'i dene
+      console.log('🚀 FAISS search deneniyor...');
+      const faissResults = await this.performFaissSearch(query);
+      console.log(`📊 FAISS sonuçları: ${faissResults.length} adet`);
+      
+      // Eğer FAISS sonuç vermezse veya sonuçlar yetersizse, fallback kullan
+      if (faissResults.length === 0 || faissResults.every(r => r.relevanceScore < 0.1)) {
+        console.log('⚠️ FAISS search sonuç vermedi veya yetersiz, fallback kullanılıyor...');
+        const fallbackResults = await this.performFallbackSearch(query, location);
+        console.log(`📊 Fallback sonuçları: ${fallbackResults.length} adet`);
+        return fallbackResults;
+      }
+      
+      console.log('✅ FAISS search başarılı, sonuçlar döndürülüyor');
+      return faissResults;
+    } catch (error) {
+      console.error('❌ FAISS arama hatası, fallback kullanılıyor:', error);
+      const fallbackResults = await this.performFallbackSearch(query, location);
+      console.log(`📊 Fallback sonuçları: ${fallbackResults.length} adet`);
+      return fallbackResults;
+    }
+  }
+
+  private async performFaissSearch(query: string): Promise<SearchResult[]> {
+    const { spawn } = await import('child_process');
+    const path = await import('path');
+    
+    const pythonScript = path.join(process.cwd(), 'faiss_search.py');
+    const pythonProcess = spawn('python3', [pythonScript, query], {
+      cwd: process.cwd(),
+      env: { ...process.env, PATH: process.env.PATH }
+    });
+
+    return new Promise((resolve, reject) => {
+      let output = '';
+      let errorOutput = '';
+
+      pythonProcess.stdout.on('data', (data) => {
+        output += data.toString();
+      });
+
+      pythonProcess.stderr.on('data', (data) => {
+        errorOutput += data.toString();
+      });
+
+      pythonProcess.on('close', (code) => {
+        if (code === 0) {
+          try {
+            const results = JSON.parse(output);
+            const searchResults = results.map((result: any) => ({
+              title: `${result.metadata.alan_adi} - ${result.metadata.ilce}`,
+              url: `local://toplanma-alanlari/${result.metadata.ilce}/${result.metadata.alan_id}`,
+              snippet: `${result.metadata.mahalle} mahallesinde bulunan ${result.metadata.alan_adi}`,
+              content: this.formatToplanmaAlaniResult(result),
+              relevanceScore: result.similarity,
+              publishDate: new Date().toISOString()
+            }));
+            resolve(searchResults);
+          } catch (parseError) {
+            reject(new Error(`JSON parse hatası: ${parseError}`));
+          }
+        } else {
+          reject(new Error(`Python script hatası: ${errorOutput}`));
+        }
+      });
+
+      pythonProcess.on('error', (error) => {
+        reject(new Error(`Python process hatası: ${error}`));
+      });
+    });
+  }
+
+  private async performFallbackSearch(query: string, location: string): Promise<SearchResult[]> {
+    console.log(`🔄 performFallbackSearch çağrıldı - Query: "${query}", Location: "${location}"`);
+    
+    try {
+      const fs = await import('fs');
+      const path = await import('path');
+      
+      const dataDir = path.join(process.cwd(), 'new_datas');
+      const files = fs.readdirSync(dataDir).filter(f => f.endsWith('.json') && f !== '00_ozet.json');
+      console.log(`📁 Bulunan JSON dosyaları: ${files.length} adet`);
+      
+      const results: SearchResult[] = [];
+      const lowerQuery = query.toLowerCase();
+      console.log(`🔍 Arama sorgusu (küçük harf): "${lowerQuery}"`);
+      
+      // Query'den anahtar kelimeleri çıkar (bir kez)
+      const queryKeywords = this.extractKeywords(lowerQuery);
+      console.log(`🔑 Çıkarılan anahtar kelimeler: ${queryKeywords.join(', ')}`);
+      
+      for (const file of files) {
+        try {
+          const filePath = path.join(dataDir, file);
+          const fileContent = fs.readFileSync(filePath, 'utf-8');
+          const data = JSON.parse(fileContent);
+          
+          const ilce = data.ilce?.toLowerCase() || '';
+          const toplanmaAlanlari = data.toplanma_alanlari || [];
+          console.log(`📄 ${file} - İlçe: ${ilce}, Alan sayısı: ${toplanmaAlanlari.length}`);
+          
+          // İlçe eşleşme skoru hesapla
+          const ilceScore = this.calculateSimilarity(lowerQuery, ilce);
+          console.log(`📊 ${ilce} ilçe skoru: ${ilceScore}`);
+          
+          // Eğer ilçe skoru yeterliyse veya genel arama ise
+          if (ilceScore > 0.3 || lowerQuery.includes('toplanma') || lowerQuery.includes('alan')) {
+            console.log(`✅ ${file} eşleşti (skor: ${ilceScore}), alanlar aranıyor...`);
+            
+            for (const alan of toplanmaAlanlari) {
+              const mahalle = alan.mahalle?.toLowerCase() || '';
+              const alanAdi = alan.ad?.toLowerCase() || '';
+              
+              // Mahalle ve alan adı skorlarını hesapla
+              const mahalleScore = this.calculateSimilarity(lowerQuery, mahalle);
+              const alanScore = this.calculateSimilarity(lowerQuery, alanAdi);
+              
+              // Anahtar kelime eşleşmelerini kontrol et
+              const keywordMatches = this.checkKeywordMatches(queryKeywords, [mahalle, alanAdi, ilce]);
+              
+              // Toplam skor hesapla
+              const totalScore = Math.max(ilceScore, mahalleScore, alanScore) + (keywordMatches * 0.2);
+              
+              console.log(`🎯 ${alan.ad} (${alan.mahalle}) - Mahalle skoru: ${mahalleScore}, Alan skoru: ${alanScore}, Anahtar kelime: ${keywordMatches}, Toplam: ${totalScore}`);
+              
+              // Eşik değeri (threshold) 0.4
+              if (totalScore > 0.4) {
+                console.log(`✅ Eşleşen alan bulundu: ${alan.ad} (${alan.mahalle}) - Skor: ${totalScore}`);
+                
+                const result: SearchResult = {
+                  title: `${alan.ad} - ${data.ilce}`,
+                  url: `local://toplanma-alanlari/${data.ilce}/${alan.id}`,
+                  snippet: `${alan.mahalle} mahallesinde bulunan ${alan.ad}`,
+                  content: this.formatToplanmaAlaniFromData(alan, data.ilce),
+                  relevanceScore: Math.min(totalScore, 0.95), // Maksimum 0.95
+                  publishDate: new Date().toISOString()
+                };
+                
+                results.push(result);
+              }
+            }
+          }
+        } catch (fileError) {
+          console.error(`❌ Dosya okuma hatası ${file}:`, fileError);
+        }
+      }
+      
+      console.log(`📊 Toplam bulunan sonuç: ${results.length} adet`);
+      
+      // Sonuçları skorlarına göre sırala ve ilk 5'ini döndür
+      const finalResults = results
+        .sort((a, b) => b.relevanceScore - a.relevanceScore)
+        .slice(0, 5);
+      
+      console.log(`📋 Döndürülen sonuç sayısı: ${finalResults.length} adet`);
+      return finalResults;
+        
+    } catch (error) {
+      console.error('❌ Fallback search hatası:', error);
+      return [{
+        title: 'Toplanma Alanları Arama Hatası',
+        url: 'https://example.com/error',
+        snippet: 'Arama sırasında bir hata oluştu',
+        content: 'Toplanma alanları veritabanında arama yapılamadı. Lütfen daha sonra tekrar deneyin.',
+        relevanceScore: 0.1,
+        publishDate: new Date().toISOString()
+      }];
+    }
+  }
+
+  private extractKeywords(query: string): string[] {
+    // Türkçe stop words
+    const stopWords = ['ve', 'ile', 'için', 'olan', 'neler', 'nerede', 'hangi', 'nasıl', 'ne', 'bir', 'bu', 'şu', 'o'];
+    
+    return query
+      .toLowerCase()
+      .replace(/[^\w\sğüşıöçĞÜŞİÖÇ]/g, ' ') // Özel karakterleri kaldır
+      .split(/\s+/)
+      .filter(word => word.length > 2 && !stopWords.includes(word))
+      .map(word => word.replace(/\.$/, '')); // Nokta kaldır
+  }
+
+  private calculateSimilarity(str1: string, str2: string): number {
+    if (!str1 || !str2) return 0;
+    
+    // Türkçe karakterleri normalize et
+    const normalize = (str: string) => str
+      .toLowerCase()
+      .replace(/ğ/g, 'g')
+      .replace(/ü/g, 'u')
+      .replace(/ş/g, 's')
+      .replace(/ı/g, 'i')
+      .replace(/ö/g, 'o')
+      .replace(/ç/g, 'c')
+      .replace(/\./g, '') // Nokta kaldır
+      .replace(/\s+/g, ' ') // Çoklu boşlukları tek boşluk yap
+      .trim();
+    
+    const normStr1 = normalize(str1);
+    const normStr2 = normalize(str2);
+    
+    // Önce basit eşleşme kontrolü
+    if (normStr1.includes(normStr2) || normStr2.includes(normStr1)) {
+      return 0.9;
+    }
+    
+    // Levenshtein distance tabanlı benzerlik
+    const distance = this.levenshteinDistance(normStr1, normStr2);
+    const maxLength = Math.max(normStr1.length, normStr2.length);
+    
+    if (maxLength === 0) return 1;
+    
+    const similarity = 1 - (distance / maxLength);
+    
+    // Eğer benzerlik yüksekse (0.7'den büyük) kabul et
+    return similarity > 0.7 ? similarity : 0;
+  }
+
+  private levenshteinDistance(str1: string, str2: string): number {
+    const matrix = [];
+    
+    for (let i = 0; i <= str2.length; i++) {
+      matrix[i] = [i];
+    }
+    
+    for (let j = 0; j <= str1.length; j++) {
+      matrix[0][j] = j;
+    }
+    
+    for (let i = 1; i <= str2.length; i++) {
+      for (let j = 1; j <= str1.length; j++) {
+        if (str2.charAt(i - 1) === str1.charAt(j - 1)) {
+          matrix[i][j] = matrix[i - 1][j - 1];
+        } else {
+          matrix[i][j] = Math.min(
+            matrix[i - 1][j - 1] + 1, // substitution
+            matrix[i][j - 1] + 1,     // insertion
+            matrix[i - 1][j] + 1      // deletion
+          );
+        }
+      }
+    }
+    
+    return matrix[str2.length][str1.length];
+  }
+
+  private checkKeywordMatches(queryKeywords: string[], targetStrings: string[]): number {
+    let matches = 0;
+    
+    for (const keyword of queryKeywords) {
+      for (const target of targetStrings) {
+        // Normalize both strings for comparison
+        const normalize = (str: string) => str
+          .toLowerCase()
+          .replace(/ğ/g, 'g')
+          .replace(/ü/g, 'u')
+          .replace(/ş/g, 's')
+          .replace(/ı/g, 'i')
+          .replace(/ö/g, 'o')
+          .replace(/ç/g, 'c')
+          .replace(/\./g, '')
+          .replace(/\s+/g, ' ')
+          .trim();
+        
+        const normKeyword = normalize(keyword);
+        const normTarget = normalize(target);
+        
+        if (normTarget.includes(normKeyword) || normKeyword.includes(normTarget)) {
+          matches++;
+          break; // Her anahtar kelime için sadece bir eşleşme say
+        }
+      }
+    }
+    
+    return matches;
+  }
+
+  private formatToplanmaAlaniFromData(alan: any, ilce: string): string {
+    let content = `🏢 ${alan.ad}\n`;
+    content += `📍 İlçe: ${ilce}\n`;
+    content += `🏘️ Mahalle: ${alan.mahalle || 'Bilinmiyor'}\n`;
+    
+    if (alan.koordinat?.lat !== 0 && alan.koordinat?.lng !== 0) {
+      content += `🗺️ Koordinat: ${alan.koordinat.lat}, ${alan.koordinat.lng}\n`;
+    }
+    
+    if (alan.alan_bilgileri?.toplam_alan > 0) {
+      content += `📏 Alan: ${alan.alan_bilgileri.toplam_alan} m²\n`;
+    }
+    
+    // Altyapı bilgileri
+    const altyapi = alan.altyapi || {};
+    const altyapiList = [];
+    if (altyapi.elektrik) altyapiList.push('⚡ Elektrik');
+    if (altyapi.su) altyapiList.push('💧 Su');
+    if (altyapi.wc) altyapiList.push('🚻 WC');
+    if (altyapi.kanalizasyon) altyapiList.push('🚰 Kanalizasyon');
+    
+    if (altyapiList.length > 0) {
+      content += `🔧 Altyapı: ${altyapiList.join(', ')}\n`;
+    }
+    
+    // Ulaşım bilgileri
+    if (alan.ulasim?.yol_durumu) {
+      content += `🛣️ Yol Durumu: ${alan.ulasim.yol_durumu}\n`;
+    }
+    
+    // Özellikler
+    if (alan.ozellikler?.tur) {
+      content += `🏷️ Tür: ${alan.ozellikler.tur}\n`;
+    }
+    
+    if (alan.ozellikler?.durum) {
+      content += `✅ Durum: ${alan.ozellikler.durum}\n`;
+    }
+    
+    return content;
+  }
+
+  private formatToplanmaAlaniResult(result: any): string {
+    const meta = result.metadata;
+    let content = `🏢 ${meta.alan_adi}\n`;
+    content += `📍 İlçe: ${meta.ilce}\n`;
+    content += `🏘️ Mahalle: ${meta.mahalle}\n`;
+    
+    if (meta.koordinat.lat !== 0 && meta.koordinat.lng !== 0) {
+      content += `🗺️ Koordinat: ${meta.koordinat.lat}, ${meta.koordinat.lng}\n`;
+    }
+    
+    if (meta.alan_bilgileri.toplam_alan > 0) {
+      content += `📏 Alan: ${meta.alan_bilgileri.toplam_alan} m²\n`;
+    }
+    
+    // Altyapı bilgileri
+    const altyapi = meta.altyapi;
+    const altyapiList = [];
+    if (altyapi.elektrik) altyapiList.push('⚡ Elektrik');
+    if (altyapi.su) altyapiList.push('💧 Su');
+    if (altyapi.wc) altyapiList.push('🚻 WC');
+    if (altyapi.kanalizasyon) altyapiList.push('🚰 Kanalizasyon');
+    
+    if (altyapiList.length > 0) {
+      content += `🔧 Altyapı: ${altyapiList.join(', ')}\n`;
+    }
+    
+    // Ulaşım bilgileri
+    if (meta.ulasim.yol_durumu) {
+      content += `🛣️ Yol Durumu: ${meta.ulasim.yol_durumu}\n`;
+    }
+    
+    // Özellikler
+    if (meta.ozellikler.tur) {
+      content += `🏷️ Tür: ${meta.ozellikler.tur}\n`;
+    }
+    
+    if (meta.ozellikler.durum) {
+      content += `✅ Durum: ${meta.ozellikler.durum}\n`;
+    }
+    
+    content += `\n📊 Benzerlik Skoru: ${(result.similarity * 100).toFixed(1)}%`;
+    
+    return content;
   }
 }
 

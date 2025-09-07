@@ -16,25 +16,9 @@ const emergencyData = {
     { number: '110', title: 'İtfaiye' },
     { number: '155', title: 'Polis' },
   ],
-  safeAreas: [
-    {
-      name: 'Fenerbahçe Parkı',
-      distance: '400m',
-      coordinates: { lat: 40.9839, lng: 29.0365 }
-    },
-    {
-      name: 'Göztepe 60.Yıl Parkı',
-      distance: '800m', 
-      coordinates: { lat: 40.9751, lng: 29.0515 }
-    },
-    {
-      name: 'Kadıköy Meydanı',
-      distance: '1.2km',
-      coordinates: { lat: 40.9903, lng: 29.0264 }
-    }
-  ],
+  safeAreas: [], // Gerçek veriler API'den gelecek
   offlineResponses: {
-    'nereye gitmeliyim': 'En yakın güvenli toplanma alanları: Fenerbahçe Parkı (400m), Göztepe 60.Yıl Parkı (800m). Acil durumda bu alanlara yönelin.',
+    'nereye gitmeliyim': 'En yakın güvenli toplanma alanları için konumunuzu paylaşın. Gerçek zamanlı verilerle size yardımcı olabilirim.',
     'operatör': 'Bölgenizde Turkcell genellikle en iyi kapsama alanına sahiptir. Acil durumda WiFi noktalarını arayın.',
     'acil': 'Acil durumlarda 112\'yi arayın. İnternet bağlantısı olmasa da cep telefonu şebekesi çalışıyorsa arama yapabilirsiniz.',
   }

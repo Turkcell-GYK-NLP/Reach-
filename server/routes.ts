@@ -260,36 +260,69 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const location = req.params.location;
       
-      // Mock safe areas data - in real implementation this would come from a GIS database
-      const safeAreas = [
-        {
-          name: "Fenerbahçe Parkı",
-          distance: "400m",
-          coordinates: { lat: 40.9839, lng: 29.0365 },
-          capacity: 5000,
-          facilities: ["Su", "Elektrik", "Tıbbi Yardım"]
-        },
-        {
-          name: "Göztepe 60.Yıl Parkı", 
-          distance: "800m",
-          coordinates: { lat: 40.9751, lng: 29.0515 },
-          capacity: 8000,
-          facilities: ["Su", "WC", "Oyun Alanı"]
-        },
-        {
-          name: "Kadıköy Meydanı",
-          distance: "1.2km", 
-          coordinates: { lat: 40.9903, lng: 29.0264 },
-          capacity: 10000,
-          facilities: ["Su", "Elektrik", "Ulaşım", "Mağazalar"]
-        }
-      ];
+      // FAISS'den gerçek toplanma alanları ara
+      const { spawn } = require('child_process');
+      const path = require('path');
+      
+      const pythonScript = path.join(process.cwd(), 'faiss_search.py');
+      const pythonProcess = spawn('python3', [pythonScript, location], {
+        cwd: process.cwd(),
+        env: { ...process.env, PATH: process.env.PATH }
+      });
 
-      res.json(safeAreas);
+      let output = '';
+      let errorOutput = '';
+
+      pythonProcess.stdout.on('data', (data) => {
+        output += data.toString();
+      });
+
+      pythonProcess.stderr.on('data', (data) => {
+        errorOutput += data.toString();
+      });
+
+      pythonProcess.on('close', (code) => {
+        if (code === 0) {
+          try {
+            const results = JSON.parse(output);
+            const safeAreas = results.map((result: any) => ({
+              name: result.metadata.alan_adi,
+              district: result.metadata.ilce,
+              neighborhood: result.metadata.mahalle,
+              coordinates: {
+                lat: result.metadata.koordinat.lat,
+                lng: result.metadata.koordinat.lng
+              },
+              area: result.metadata.alan_bilgileri.toplam_alan,
+              facilities: extractFacilities(result.metadata.altyapi),
+              similarity: result.similarity
+            }));
+            res.json(safeAreas);
+          } catch (parseError) {
+            res.status(500).json({ error: "JSON parse hatası", details: parseError });
+          }
+        } else {
+          res.status(500).json({ error: "Python script hatası", details: errorOutput });
+        }
+      });
+
+      pythonProcess.on('error', (error) => {
+        res.status(500).json({ error: "Python process hatası", details: error });
+      });
+
     } catch (error) {
       res.status(500).json({ error: "Failed to get safe areas", details: error });
     }
   });
+
+  function extractFacilities(altyapi: any): string[] {
+    const facilities = [];
+    if (altyapi.elektrik) facilities.push('Elektrik');
+    if (altyapi.su) facilities.push('Su');
+    if (altyapi.wc) facilities.push('WC');
+    if (altyapi.kanalizasyon) facilities.push('Kanalizasyon');
+    return facilities;
+  }
 
   // Agent-specific routes
   app.post("/api/agent/query", async (req, res) => {

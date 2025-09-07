@@ -57,7 +57,7 @@ SUGGESTION KURALLARI:
 - Suggestion'lar kullanıcının bir sonraki soracağı soru gibi olmalı
 - "Nasıl", "Nerede", "Ne zaman", "Hangi" gibi soru kelimeleri kullan
 - Kullanıcının verdiğin bilgiyi nasıl kullanacağını düşün
-- Örnek: "Fenerbahçe Parkı güvenli alan" cevabından sonra "Oraya nasıl giderim?" suggestion'ı ver
+- Örnek: "Güvenli alan" cevabından sonra "Oraya nasıl giderim?" suggestion'ı ver
 
 ÖRNEK İYİ YANITLAR:
 - "${currentLocation.district}'de Türk Telekom kapsama %95, sinyal gücü 85/100. Şu anda çalışıyor."
@@ -154,7 +154,7 @@ async function getFallbackResponse(query: string, userContext: any): Promise<Cha
       const kadikoyCoords = "40.9903,29.0264";
       
       return {
-        message: `${currentLocation.district}de en yakın güvenli alanlar: 1) ${nearestSafeArea.name} (${nearestSafeArea.distance}m) 2) Göztepe 60.Yıl Parkı (800m) 3) Kadıköy Meydanı (1.2km). Şimdi ${nearestSafeArea.name}'na git.`,
+        message: `${currentLocation.district}de en yakın güvenli alan: ${nearestSafeArea.name} (${nearestSafeArea.distance}m). Şimdi ${nearestSafeArea.name}'na git.`,
         suggestions: ["Oraya nasıl giderim?", "Acil çantamı alayım mı?", "Ailemle nasıl iletişime geçerim?"],
         actionItems: [
           {
@@ -164,24 +164,6 @@ async function getFallbackResponse(query: string, userContext: any): Promise<Cha
               location: nearestSafeArea.name, 
               distance: `${nearestSafeArea.distance}m`,
               coordinates: `${nearestSafeArea.coordinates.lat},${nearestSafeArea.coordinates.lng}`
-            }
-          },
-          {
-            type: "location",
-            title: "Göztepe Parkı'na Yön Al",
-            data: { 
-              location: "Göztepe 60.Yıl Parkı", 
-              distance: "800m",
-              coordinates: goztepeCoords
-            }
-          },
-          {
-            type: "location",
-            title: "Kadıköy Meydanı'na Yön Al",
-            data: { 
-              location: "Kadıköy Meydanı", 
-              distance: "1.2km",
-              coordinates: kadikoyCoords
             }
           }
         ]
@@ -193,37 +175,9 @@ async function getFallbackResponse(query: string, userContext: any): Promise<Cha
       const kadikoyCoords = "40.9903,29.0264";
       
       return {
-        message: `${userContext.location || "Kadıköy"}de en yakın güvenli alanlar: 1) Fenerbahçe Parkı (400m) 2) Göztepe 60.Yıl Parkı (800m) 3) Kadıköy Meydanı (1.2km). Şimdi Fenerbahçe Parkı'na git.`,
+        message: `${userContext.location || "Bölgeniz"}de güvenli alanlar için konumunuzu paylaşın. Gerçek zamanlı verilerle size yardımcı olabilirim.`,
         suggestions: ["Oraya nasıl giderim?", "Acil çantamı alayım mı?", "Ailemle nasıl iletişime geçerim?"],
-        actionItems: [
-          {
-            type: "location",
-            title: "Fenerbahçe Parkı'na Yön Al",
-            data: { 
-              location: "Fenerbahçe Parkı", 
-              distance: "400m",
-              coordinates: fenerbahceCoords
-            }
-          },
-          {
-            type: "location",
-            title: "Göztepe Parkı'na Yön Al",
-            data: { 
-              location: "Göztepe 60.Yıl Parkı", 
-              distance: "800m",
-              coordinates: goztepeCoords
-            }
-          },
-          {
-            type: "location",
-            title: "Kadıköy Meydanı'na Yön Al",
-            data: { 
-              location: "Kadıköy Meydanı", 
-              distance: "1.2km",
-              coordinates: kadikoyCoords
-            }
-          }
-        ]
+        actionItems: []
       };
     }
   }
@@ -243,23 +197,10 @@ async function getFallbackResponse(query: string, userContext: any): Promise<Cha
   }
   
   if (lowerQuery.includes("nasıl giderim") || lowerQuery.includes("yol tarifi")) {
-    const fenerbahceCoords = "40.9839,29.0365";
-    const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${fenerbahceCoords}&travelmode=walking`;
-    
     return {
-      message: `Fenerbahçe Parkı'na gitmek için: Kadıköy merkezden Fenerbahçe yönüne giden otobüslere binin. Veya yürüyerek 15-20 dakikada ulaşabilirsiniz. Acil durumda taksi de kullanabilirsiniz.\n\n🗺️ **Google Maps'te açmak için tıklayın:** ${googleMapsUrl}`,
-      suggestions: ["Hangi otobüsler gidiyor?", "Yürüyerek ne kadar sürer?", "Taksi ücreti ne kadar?"],
-      actionItems: [
-        {
-          type: "transport",
-          title: "Google Maps'te Aç",
-          data: { 
-            destination: "Fenerbahçe Parkı",
-            coordinates: fenerbahceCoords,
-            mapsUrl: googleMapsUrl
-          }
-        }
-      ]
+      message: `Yol tarifi için önce gideceğiniz güvenli alanı belirtin. Konumunuzu paylaştığınızda size en uygun rotayı gösterebilirim.`,
+      suggestions: ["Güvenli alanları göster", "En yakın alan nerede?", "Hangi ulaşım araçları var?"],
+      actionItems: []
     };
   }
   

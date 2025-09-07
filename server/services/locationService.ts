@@ -307,24 +307,8 @@ export class LocationService {
   }> {
     const currentLocation = await this.getCurrentLocation();
     
-    // Daha kapsamlı güvenli alan listesi
-    const safeAreas = [
-      // Parklar
-      { name: "Fenerbahçe Parkı", coordinates: { lat: 40.9839, lng: 29.0365 }, category: "park" },
-      { name: "Göztepe 60.Yıl Parkı", coordinates: { lat: 40.9751, lng: 29.0515 }, category: "park" },
-      { name: "Moda Parkı", coordinates: { lat: 40.9878, lng: 29.0269 }, category: "park" },
-      
-      // Meydanlar
-      { name: "Kadıköy Meydanı", coordinates: { lat: 40.9903, lng: 29.0264 }, category: "meydan" },
-      { name: "Taksim Meydanı", coordinates: { lat: 41.0369, lng: 28.9850 }, category: "meydan" },
-      
-      // Hastaneler
-      { name: "Acıbadem Kadıköy Hastanesi", coordinates: { lat: 40.9903, lng: 29.0350 }, category: "hastane" },
-      { name: "Dr. Sadi Konuk Hastanesi", coordinates: { lat: 40.9744, lng: 28.8737 }, category: "hastane" },
-      
-      // Karakollar
-      { name: "Kadıköy Karakolu", coordinates: { lat: 40.9903, lng: 29.0264 }, category: "karakol" }
-    ];
+    // FAISS'den gerçek toplanma alanları al
+    const safeAreas = await this.getToplanmaAlanlariFromFAISS();
 
     let nearestArea = safeAreas[0];
     let minDistance = this.calculateDistance(
@@ -354,6 +338,67 @@ export class LocationService {
       coordinates: nearestArea.coordinates,
       category: nearestArea.category
     };
+  }
+
+  private async getToplanmaAlanlariFromFAISS(): Promise<Array<{
+    name: string;
+    coordinates: { lat: number; lng: number };
+    category: string;
+  }>> {
+    try {
+      const { spawn } = require('child_process');
+      const path = require('path');
+      
+      const pythonScript = path.join(process.cwd(), 'faiss_search.py');
+      const pythonProcess = spawn('python3', [pythonScript, 'toplanma alanı'], {
+        cwd: process.cwd(),
+        env: { ...process.env, PATH: process.env.PATH }
+      });
+
+      return new Promise((resolve, reject) => {
+        let output = '';
+        let errorOutput = '';
+
+        pythonProcess.stdout.on('data', (data) => {
+          output += data.toString();
+        });
+
+        pythonProcess.stderr.on('data', (data) => {
+          errorOutput += data.toString();
+        });
+
+        pythonProcess.on('close', (code) => {
+          if (code === 0) {
+            try {
+              const results = JSON.parse(output);
+              const safeAreas = results.map((result: any) => ({
+                name: result.metadata.alan_adi,
+                coordinates: {
+                  lat: result.metadata.koordinat.lat || 0,
+                  lng: result.metadata.koordinat.lng || 0
+                },
+                category: 'toplanma_alanı'
+              }));
+              resolve(safeAreas);
+            } catch (parseError) {
+              console.error('JSON parse hatası:', parseError);
+              resolve([]);
+            }
+          } else {
+            console.error('Python script hatası:', errorOutput);
+            resolve([]);
+          }
+        });
+
+        pythonProcess.on('error', (error) => {
+          console.error('Python process hatası:', error);
+          resolve([]);
+        });
+      });
+    } catch (error) {
+      console.error('FAISS arama hatası:', error);
+      return [];
+    }
   }
 }
 

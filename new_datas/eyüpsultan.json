@@ -1,0 +1,3275 @@
+{
+  "ilce": "eyüpsultan",
+  "toplanma_alanlari": [
+    {
+      "id": "eyüpsultan_17",
+      "ad": "Emniyettepe Parkı",
+      "mahalle": "Emniyettepe",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_59",
+      "ad": "Emniyettepe Bölge Parkı  \n(Aynı Zamanda TRANSFER alanıdır.)",
+      "mahalle": "Emniyettepe",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_28",
+      "ad": "Fidan Parkı ve Yanı Boş Alan",
+      "mahalle": "Emniyettepe",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_13",
+      "ad": "Araphan Parkı",
+      "mahalle": "Emniyettepe",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_21",
+      "ad": "İBB Barış Manço Parkı",
+      "mahalle": "Akşemsettin",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_17",
+      "ad": "Akşemsettin Parkı",
+      "mahalle": "Akşemsettin",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_17",
+      "ad": "Şafak Sokak Parkı",
+      "mahalle": "Akşemsettin",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_12",
+      "ad": "Güneş  Parkı",
+      "mahalle": "Akşemsettin",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_46",
+      "ad": "Veysel Karani Parkı ve Parseller Futbol Sahası",
+      "mahalle": "Akşemsettin",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_27",
+      "ad": "Necip Fazıl Kısakürek Parkı",
+      "mahalle": "Akşemsettin",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_16",
+      "ad": "Erdemliler Parkı",
+      "mahalle": "Akşemsettin",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_11",
+      "ad": "Fetih Parkı",
+      "mahalle": "Akşemsettin",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_10",
+      "ad": "Lale Parkı",
+      "mahalle": "Akşemsettin",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_11",
+      "ad": "Leylak Pakı",
+      "mahalle": "Akşemsettin",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_19",
+      "ad": "Şehit Kubilay Parkı",
+      "mahalle": "Topçular",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_16",
+      "ad": "Dedekorkut Parkı",
+      "mahalle": "Topçular",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_12",
+      "ad": "Hicret Parkı",
+      "mahalle": "Topçular",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_40",
+      "ad": "Şehit Cemal Demir Parkı (Muhtarlık Yanı)",
+      "mahalle": "Topçular",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_20",
+      "ad": "İBB Şeyh Raşit Parkı",
+      "mahalle": "Topçular",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_44",
+      "ad": "Edirnekapı Park (Fatih İlçesi'ne ait olacak)",
+      "mahalle": "Topçular",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_22",
+      "ad": "İBB Abdulyavedut Parkı",
+      "mahalle": "Defterdar",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_25",
+      "ad": "İBB Milli Egemenlik Parkı",
+      "mahalle": "Defterdar",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_49",
+      "ad": "Otakçılar Anadolu İmam Hatip Lisesi Yanı Boş Arsa",
+      "mahalle": "Defterdar",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_18",
+      "ad": "Fethi Çelebi Parkı",
+      "mahalle": "Defterdar",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_19",
+      "ad": "Dinarsu Halı Sahası",
+      "mahalle": "Defterdar",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_15",
+      "ad": "İBB İgdaş Parkı",
+      "mahalle": "Sakarya",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_24",
+      "ad": "Şehit Kemal Özarar Parkı",
+      "mahalle": "Sakarya",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_14",
+      "ad": "Aşçıbaşı Parkı",
+      "mahalle": "Nişancı",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_22",
+      "ad": "Amcazade Vakfı Arazisi",
+      "mahalle": "Nişancı",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_15",
+      "ad": "Bir Nefes Parkı",
+      "mahalle": "Rami Yeni",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_21",
+      "ad": "İBB Kutlu Doğum Parkı",
+      "mahalle": "Çırçır",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_57",
+      "ad": "Akşesettin Şehit Hacı Ahmet Bahçesi Polis Merkezi Çevresi",
+      "mahalle": "Çırçır",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_28",
+      "ad": "Şehit İbrahim Candemir Parkı",
+      "mahalle": "Çırçır",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_12",
+      "ad": "Uludağ Parkı",
+      "mahalle": "Çırçır",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_19",
+      "ad": "Ertuğrul Gazi Parkı",
+      "mahalle": "Çırçır",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_24",
+      "ad": "Şehit Ali Bekdemir Parkı",
+      "mahalle": "Çırçır",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_21",
+      "ad": "İBB Asım Yıldız Parkı",
+      "mahalle": "Çırçır",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_22",
+      "ad": "Hüseyin Çatalkaş Parkı",
+      "mahalle": "Çırçır",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_21",
+      "ad": "Şehit Adil Hışt Parkı",
+      "mahalle": "Çırçır",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_16",
+      "ad": "Gaye Sokak Parkı",
+      "mahalle": "Çırçır",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_16",
+      "ad": "Düğmeciler Parkı",
+      "mahalle": "Düğmeciler",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_20",
+      "ad": "İBB Şeyh Raşit Parkı",
+      "mahalle": "Düğmeciler",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_14",
+      "ad": "Esentepe Parkı",
+      "mahalle": "Esentepe",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_16",
+      "ad": "Yunus Emre Parkı",
+      "mahalle": "Esentepe",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_20",
+      "ad": "Alibeyköy Pazar Yeri",
+      "mahalle": "Alibeyköy",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_30",
+      "ad": "Osmanlı Parkı ve Spor Alanları",
+      "mahalle": "Alibeyköy",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_18",
+      "ad": "Şelale Çay Bahcesi",
+      "mahalle": "Alibeyköy",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_23",
+      "ad": "Şehit Halit Aydın Parkı",
+      "mahalle": "Alibeyköy",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_12",
+      "ad": "Mostar Parkı",
+      "mahalle": "Alibeyköy",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_16",
+      "ad": "Alibeyköy Korusu",
+      "mahalle": "Alibeyköy",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_48",
+      "ad": "Güzeltepe Parkı ve İBB Gecekondu Mesken Parkları",
+      "mahalle": "Güzeltepe",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_22",
+      "ad": "İBB Nurtepe Gezi Parkı",
+      "mahalle": "Güzeltepe",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_20",
+      "ad": "İBB Çobançeşme Parkı",
+      "mahalle": "Güzeltepe",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_36",
+      "ad": "Alibeyköy Fidanlığı Park ve Otoparkı",
+      "mahalle": "5.Levent",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_19",
+      "ad": "Hüseyin Aksoy Parkı",
+      "mahalle": "Güzeltepe",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_21",
+      "ad": "İBB Çobançeşme Korusu",
+      "mahalle": "5.Levent",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_19",
+      "ad": "Özge Gündoğan Parkı",
+      "mahalle": "Mithatpaşa",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_34",
+      "ad": "Fırat Sokak Parkı ve Yanı Boş Alan",
+      "mahalle": "Mithatpaşa",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_17",
+      "ad": "Dikili Ağaç Parkı",
+      "mahalle": "Rami Cuma",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_33",
+      "ad": "Karadolap Parkı Ve Spor Kompleksi",
+      "mahalle": "Karadolap",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_24",
+      "ad": "Şehit Soner Baykuş Parkı",
+      "mahalle": "Karadolap",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_18",
+      "ad": "Vahap Balçın Parkı",
+      "mahalle": "Karadolap",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_20",
+      "ad": "Küheylan Sokak Parkı",
+      "mahalle": "Karadolap",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_23",
+      "ad": "Şehit Adem Yaşari Parkı",
+      "mahalle": "Karadolap",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_50",
+      "ad": "Alibeyköy Mesleki ve Teknik Anadolu Lisesi Bahçesi",
+      "mahalle": "Karadolap",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_39",
+      "ad": "Kılıçaslan İmam Hatip Ortaokulu Bahçesi",
+      "mahalle": "Karadolap",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_51",
+      "ad": "Kemerburgaz Ağaçlı Çocuk Ve Gençlik Merkezi Bahçesi",
+      "mahalle": "Ağaçlı",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_59",
+      "ad": "Ağaçlı Köyü Karaağaç Sokak ile Kavak Sokak Arası Yeşil Alan",
+      "mahalle": "Ağaçlı",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_14",
+      "ad": "İBB Teke Parkı",
+      "mahalle": "Merkez",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_19",
+      "ad": "İdris Bitlisi Parkı",
+      "mahalle": "Merkez",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_26",
+      "ad": "Pirinçci Köyü Futbol Alanı",
+      "mahalle": "Pirinççi",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_52",
+      "ad": "Pirinççi Köyü Ağaçkakan Sokak No:7 Kurban Kesim Yeri",
+      "mahalle": "Pirinççi",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_62",
+      "ad": "Osman Yumuk Spor Tesisleri  ( Aynı Zamanda TRANSFER ALANIDIR.)",
+      "mahalle": "Mimar Sinan",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_32",
+      "ad": "Orman İşletme Müdürlüğü Bahçesi.",
+      "mahalle": "Mimar Sinan",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_17",
+      "ad": "Halk Pazarı Parkı",
+      "mahalle": "Göktürk Merkez",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_28",
+      "ad": "Özgecan Sağlıklı Yaşam Alanı",
+      "mahalle": "Göktürk Merkez",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_42",
+      "ad": "Kaynak Sokak İle Kale Sokak Arası Boş Alan",
+      "mahalle": "Göktürk Merkez",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_33",
+      "ad": "Göktürk Ensar Camii Yanı Boş Alan",
+      "mahalle": "Göktürk Merkez",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_24",
+      "ad": "Mehmet Akif Ersoy Parkı.",
+      "mahalle": "Göktürk Merkez",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_14",
+      "ad": "Çamlık 1 Parkı",
+      "mahalle": "Göktürk Merkez",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_14",
+      "ad": "Çamlık 2 Parkı",
+      "mahalle": "Göktürk Merkez",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_70",
+      "ad": "İstanbul Caddesi Kumlu Geçit Sokak Fen İşleri Şantiyesi Yanı Boş Arazi",
+      "mahalle": "Göktürk Merkez",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_33",
+      "ad": "Kemer Country Site İçi Yeşil Alan",
+      "mahalle": "Göktürk Merkez",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_21",
+      "ad": "Göktürk Futbol Sahası",
+      "mahalle": "Göktürk Merkez",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_13",
+      "ad": "Gençlik Parkı",
+      "mahalle": "Yeşilpınar",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_32",
+      "ad": "Mustafa Parlakkılıç Mesire Alanı",
+      "mahalle": "Yeşilpınar",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_12",
+      "ad": "Çamlık Parkı",
+      "mahalle": "Yeşilpınar",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_22",
+      "ad": "Yeşilpınar Bölge Parkı",
+      "mahalle": "Yeşilpınar",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_22",
+      "ad": "Şehit Metin Kaya Parkı",
+      "mahalle": "Yeşilpınar",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_19",
+      "ad": "Pınar Camii Bahçesi",
+      "mahalle": "Yeşilpınar",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_23",
+      "ad": "Şehit Şerife Bacı Parkı",
+      "mahalle": "Yeşilpınar",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_25",
+      "ad": "Odayeri Nalan Sokak Parkı",
+      "mahalle": "Odayeri",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_15",
+      "ad": "Arif Paşa Parkı",
+      "mahalle": "İslambey",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_15",
+      "ad": "Hz. Halid Parkı",
+      "mahalle": "İslambey",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_10",
+      "ad": "Eyüp Stadı",
+      "mahalle": "İslambey",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_35",
+      "ad": "İslambey Bostancı Sk Toplanma Alanı",
+      "mahalle": "İslambey",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_17",
+      "ad": "Argaç Sokak Parkı",
+      "mahalle": "İslambey",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_14",
+      "ad": "Akpınar Parkı.",
+      "mahalle": "Akpınar",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_64",
+      "ad": "Akpınar Köyü Kızılırmak Sokak ile Eğridir Sokak Arası Yeşil Alan",
+      "mahalle": "Akpınar",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_37",
+      "ad": "İhsaniye Köyü Futbol Sahası Ve Etrafı",
+      "mahalle": "İhsaniye",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_60",
+      "ad": "Işıklar Köyü Hazar Sokak ile Rüya Sokak Sokak Arası Boş Alan",
+      "mahalle": "Işıklar",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_33",
+      "ad": "Eyüp Kültür Sanat Merkezi Bahçesi",
+      "mahalle": "Merkez",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_32",
+      "ad": "İBB (Derne) Gabdulla Tukay Parkı",
+      "mahalle": "Merkez",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_19",
+      "ad": "İski Yanı Boş Alanı",
+      "mahalle": "Güzeltepe",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_30",
+      "ad": "Sevinç Köprüsü Yanı Yeşil Alan",
+      "mahalle": "Güzeltepe",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_16",
+      "ad": "Dikiliağaç Parkı",
+      "mahalle": "İslambey",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_11",
+      "ad": "Haliç Parkı",
+      "mahalle": "Defterdar",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_16",
+      "ad": "Rami Pazar Alanı",
+      "mahalle": "Rami Yeni",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "eyüpsultan_36",
+      "ad": "Çiftalan Köyü Muhtarlık Önü Boş Alan",
+      "mahalle": "Çiftalan",
+      "koordinat": {
+        "lat": 41.25505931569136,
+        "lng": 28.910568892320455
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 400.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": true,
+        "su": true,
+        "wc": true,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "Var",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Boş Alan",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    }
+  ]
+}

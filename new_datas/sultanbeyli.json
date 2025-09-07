@@ -1,0 +1,515 @@
+{
+  "ilce": "sultanbeyli",
+  "toplanma_alanlari": [
+    {
+      "id": "sultanbeyli_pdf_1",
+      "ad": "Şehitler Parkı",
+      "mahalle": "Adil Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "sultanbeyli_pdf_2",
+      "ad": "Filistin Parkı",
+      "mahalle": "Adil Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "sultanbeyli_pdf_3",
+      "ad": "Adil Parkı",
+      "mahalle": "Adil Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "sultanbeyli_pdf_4",
+      "ad": "Gazi Parkı",
+      "mahalle": "Adil Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "sultanbeyli_pdf_5",
+      "ad": "Yesevi Parkı",
+      "mahalle": "Yesevi Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "sultanbeyli_pdf_6",
+      "ad": "Karanfil Parkı",
+      "mahalle": "Akşemsettin Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "sultanbeyli_pdf_7",
+      "ad": "Gürani Parkı",
+      "mahalle": "Akşemsettin Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "sultanbeyli_pdf_8",
+      "ad": "Bosna Parkı",
+      "mahalle": "Battalgazi Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "sultanbeyli_pdf_9",
+      "ad": "Sokak Parkı",
+      "mahalle": "Battalgazi Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "sultanbeyli_pdf_10",
+      "ad": "Yazıcıo ğ lu Parkı",
+      "mahalle": "Battalgazi Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "sultanbeyli_pdf_11",
+      "ad": "Selçuklu Parkı",
+      "mahalle": "Battalgazi Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "sultanbeyli_pdf_12",
+      "ad": "Sütmen Parkı",
+      "mahalle": "Battalgazi Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "sultanbeyli_pdf_13",
+      "ad": "Mehmet Parkı",
+      "mahalle": "Fatih Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "sultanbeyli_pdf_14",
+      "ad": "Hamidiye Parkı",
+      "mahalle": "Hamidiye Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "sultanbeyli_pdf_15",
+      "ad": "Bitlis Parkı",
+      "mahalle": "Hamidiye Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "sultanbeyli_pdf_16",
+      "ad": "Dede Parkı",
+      "mahalle": "Hamidiye Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    },
+    {
+      "id": "sultanbeyli_pdf_17",
+      "ad": "Dudayev Parkı",
+      "mahalle": "Hasanpa ş a Mahallesi",
+      "koordinat": {
+        "lat": 0.0,
+        "lng": 0.0
+      },
+      "alan_bilgileri": {
+        "toplam_alan": 4052.0,
+        "kullanilabilir_alan": 0,
+        "kapasite": 0
+      },
+      "altyapi": {
+        "elektrik": false,
+        "su": false,
+        "wc": false,
+        "kanalizasyon": false
+      },
+      "ulasim": {
+        "yol_durumu": "",
+        "ulasim_tipi": []
+      },
+      "ozellikler": {
+        "tur": "Toplanma Alanı",
+        "durum": "Aktif",
+        "tabela_kodu": "",
+        "aciklama": ""
+      }
+    }
+  ]
+}
