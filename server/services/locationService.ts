@@ -25,6 +25,7 @@ export class LocationService {
   private lastGeocodingRequest: number = 0;
   private readonly RATE_LIMIT_DELAY = 1000; // 1 saniye
   private geocoder: any;
+  private lastKnownCoordinates: { lat: number; lng: number } | null = null;
 
   // GERÇEK İstanbul ilçe merkezleri ve yarıçapları
   private readonly ISTANBUL_DISTRICTS: DistrictBounds[] = [
@@ -73,8 +74,6 @@ export class LocationService {
     this.geocoder = NodeGeocoder({
       provider: 'openstreetmap',
       formatter: null,
-      httpAdapter: 'https',
-      apiKey: undefined, // OSM için gerekli değil
     });
   }
 
@@ -98,6 +97,9 @@ export class LocationService {
       if (useOnlineGeocoding && this.canMakeGeocodingRequest()) {
         locationInfo = await this.getLocationFromGeocoding(lat, lng);
         if (locationInfo.accuracy === 'high') {
+          this.cachedLocation = locationInfo;
+          this.lastKnownCoordinates = { lat, lng };
+          this.lastUpdate = Date.now();
           return locationInfo;
         }
       }
@@ -112,10 +114,13 @@ export class LocationService {
         country: "Türkiye",
         address: `${district.name}, İstanbul, Türkiye`,
         accuracy: 'medium',
-        source: 'offline_mapping'
+        source: 'fallback'
       };
 
       console.log("✅ Konum belirlendi:", locationInfo);
+      this.cachedLocation = locationInfo;
+      this.lastKnownCoordinates = { lat, lng };
+      this.lastUpdate = Date.now();
       return locationInfo;
 
     } catch (error) {
@@ -170,7 +175,7 @@ export class LocationService {
       country: "Türkiye",
       address: `${district.name}, İstanbul, Türkiye`,
       accuracy: 'medium',
-      source: 'offline_mapping'
+      source: 'fallback'
     };
   }
 
@@ -278,6 +283,14 @@ export class LocationService {
       return this.cachedLocation;
     }
 
+    // Eğer daha önce GPS ile koordinatlar alındıysa onları kullan
+    if (this.lastKnownCoordinates) {
+      const { lat, lng } = this.lastKnownCoordinates;
+      console.log("📡 Son bilinen GPS koordinatları mevcut, detaylı konum alınıyor...");
+      const resolved = await this.getLocationByCoordinates(lat, lng, true);
+      return resolved;
+    }
+
     // Fallback İstanbul koordinatları
     const fallbackLocation: LocationInfo = {
       latitude: 40.9839,
@@ -308,7 +321,8 @@ export class LocationService {
     const currentLocation = await this.getCurrentLocation();
     
     // FAISS'den gerçek toplanma alanları al
-    const safeAreas = await this.getToplanmaAlanlariFromFAISS();
+    const preferredDistrict = currentLocation.district || undefined;
+    const safeAreas = await this.getToplanmaAlanlariFromFAISS(preferredDistrict);
 
     let nearestArea = safeAreas[0];
     let minDistance = this.calculateDistance(
@@ -340,7 +354,7 @@ export class LocationService {
     };
   }
 
-  private async getToplanmaAlanlariFromFAISS(): Promise<Array<{
+  private async getToplanmaAlanlariFromFAISS(preferredDistrict?: string): Promise<Array<{
     name: string;
     coordinates: { lat: number; lng: number };
     category: string;
@@ -348,9 +362,12 @@ export class LocationService {
     try {
       const { spawn } = require('child_process');
       const path = require('path');
+      const os = require('os');
       
       const pythonScript = path.join(process.cwd(), 'faiss_search.py');
-      const pythonProcess = spawn('python3', [pythonScript, 'toplanma alanı'], {
+      const pythonCmd = process.env.PYTHON || (process.platform === 'win32' ? 'python' : 'python3');
+      const query = preferredDistrict ? `${preferredDistrict} toplanma alanı` : 'toplanma alanı';
+      const pythonProcess = spawn(pythonCmd, [pythonScript, query], {
         cwd: process.cwd(),
         env: { ...process.env, PATH: process.env.PATH }
       });
@@ -359,26 +376,34 @@ export class LocationService {
         let output = '';
         let errorOutput = '';
 
-        pythonProcess.stdout.on('data', (data) => {
+        pythonProcess.stdout.on('data', (data: Buffer) => {
           output += data.toString();
         });
 
-        pythonProcess.stderr.on('data', (data) => {
+        pythonProcess.stderr.on('data', (data: Buffer) => {
           errorOutput += data.toString();
         });
 
-        pythonProcess.on('close', (code) => {
+        pythonProcess.on('close', (code: number) => {
           if (code === 0) {
             try {
               const results = JSON.parse(output);
-              const safeAreas = results.map((result: any) => ({
+              let safeAreas = results.map((result: any) => ({
                 name: result.metadata.alan_adi,
+                district: result.metadata.ilce,
                 coordinates: {
                   lat: result.metadata.koordinat.lat || 0,
                   lng: result.metadata.koordinat.lng || 0
                 },
                 category: 'toplanma_alanı'
               }));
+              if (preferredDistrict) {
+                const lowerPref = preferredDistrict.toLowerCase();
+                const districtFiltered = safeAreas.filter((a: any) => (a.district || '').toLowerCase().includes(lowerPref));
+                if (districtFiltered.length > 0) {
+                  safeAreas = districtFiltered;
+                }
+              }
               resolve(safeAreas);
             } catch (parseError) {
               console.error('JSON parse hatası:', parseError);
@@ -390,7 +415,7 @@ export class LocationService {
           }
         });
 
-        pythonProcess.on('error', (error) => {
+        pythonProcess.on('error', (error: Error) => {
           console.error('Python process hatası:', error);
           resolve([]);
         });

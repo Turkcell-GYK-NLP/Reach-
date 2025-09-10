@@ -24,8 +24,13 @@ class ToplanmaAlanlariIndexer:
         self.index_dir = Path(index_dir)
         self.index_dir.mkdir(exist_ok=True)
         
-        # Sentence transformer modeli
-        self.model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
+        # Sentence transformer modeli - offline mode
+        try:
+            self.model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
+        except Exception as e:
+            print(f"Model yükleme hatası, basit embedding kullanılıyor: {e}")
+            # Basit TF-IDF benzeri embedding
+            self.model = None
         
         # FAISS index
         self.index = None
@@ -145,10 +150,47 @@ class ToplanmaAlanlariIndexer:
         """Dokümanlardan embedding'ler oluşturur"""
         logger.info("Embedding'ler oluşturuluyor...")
         
-        embeddings = self.model.encode(documents, show_progress_bar=True)
-        logger.info(f"Embedding boyutu: {embeddings.shape}")
+        if self.model is not None:
+            embeddings = self.model.encode(documents, show_progress_bar=True)
+        else:
+            # Basit TF-IDF benzeri embedding
+            embeddings = self.create_simple_embeddings(documents)
         
+        logger.info(f"Embedding boyutu: {embeddings.shape}")
         return embeddings
+    
+    def create_simple_embeddings(self, documents: List[str]) -> np.ndarray:
+        """Basit TF-IDF benzeri embedding oluşturur"""
+        from collections import Counter
+        import re
+        
+        # Tüm kelimeleri topla
+        all_words = set()
+        doc_words = []
+        
+        for doc in documents:
+            # Türkçe karakterleri normalize et ve kelimeleri çıkar
+            words = re.findall(r'\b\w+\b', doc.lower())
+            doc_words.append(words)
+            all_words.update(words)
+        
+        all_words = list(all_words)
+        word_to_idx = {word: i for i, word in enumerate(all_words)}
+        
+        # TF-IDF benzeri vektörler oluştur
+        embeddings = []
+        for words in doc_words:
+            word_counts = Counter(words)
+            vector = np.zeros(len(all_words))
+            
+            for word, count in word_counts.items():
+                if word in word_to_idx:
+                    # Basit TF (term frequency)
+                    vector[word_to_idx[word]] = count / len(words)
+            
+            embeddings.append(vector)
+        
+        return np.array(embeddings)
 
     def build_index(self, embeddings: np.ndarray):
         """FAISS index oluşturur"""
@@ -215,7 +257,10 @@ class ToplanmaAlanlariIndexer:
             return []
         
         # Query embedding'i oluştur
-        query_embedding = self.model.encode([query])
+        if self.model is not None:
+            query_embedding = self.model.encode([query])
+        else:
+            query_embedding = self.create_simple_embeddings([query])
         
         # Arama yap
         distances, indices = self.index.search(query_embedding.astype('float32'), k)

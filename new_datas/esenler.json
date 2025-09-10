@@ -6,8 +6,8 @@
       "ad": "Yanı Parkı",
       "mahalle": "Birlik Mah.",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.060669,
+        "lng": 28.894121
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -36,8 +36,8 @@
       "ad": "Sokak Parkı",
       "mahalle": "Birlik Mah.",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.045957,
+        "lng": 28.885359
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -66,8 +66,8 @@
       "ad": "Önü Meydan",
       "mahalle": "Birlik Mah.",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.053785,
+        "lng": 28.883483
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -96,8 +96,8 @@
       "ad": "Deprem Parkı",
       "mahalle": "Birlik Mah.",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.061809,
+        "lng": 28.873097
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -126,8 +126,8 @@
       "ad": "Yolu Parkı",
       "mahalle": "Birlik Mah.",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.027185,
+        "lng": 28.862
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -156,8 +156,8 @@
       "ad": "Havuzlar Parkı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.033499,
+        "lng": 28.876899
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -186,8 +186,8 @@
       "ad": "Tekin Parkı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.03315,
+        "lng": 28.858467
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -216,8 +216,8 @@
       "ad": "Caddesi Parkı",
       "mahalle": "Fatih Mah.",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.038409,
+        "lng": 28.870087
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -246,8 +246,8 @@
       "ad": "Dörtyol Meydanı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.056201,
+        "lng": 28.859276
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -276,8 +276,8 @@
       "ad": "Çakmak Parkı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.025349,
+        "lng": 28.85915
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -306,8 +306,8 @@
       "ad": "Bahçesi Park",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.028434,
+        "lng": 28.867539
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -336,8 +336,8 @@
       "ad": "N Parkı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.029148,
+        "lng": 28.896214
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -366,8 +366,8 @@
       "ad": "Bölge Parkı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.037474,
+        "lng": 28.893528
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -396,8 +396,8 @@
       "ad": "Sok Parkı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.038989,
+        "lng": 28.882387
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -426,8 +426,8 @@
       "ad": "Giriş Parkı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.047822,
+        "lng": 28.895398
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -456,8 +456,8 @@
       "ad": "Bahçesi Park",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.055807,
+        "lng": 28.874446
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -486,8 +486,8 @@
       "ad": "Kemer Parkı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.059263,
+        "lng": 28.856603
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -516,8 +516,8 @@
       "ad": "Önü Park",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.05652,
+        "lng": 28.859616
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -546,8 +546,8 @@
       "ad": "Bölge Parkı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.036162,
+        "lng": 28.873814
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -576,8 +576,8 @@
       "ad": "Polat Parkı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.04604,
+        "lng": 28.892749
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -606,8 +606,8 @@
       "ad": "Terazidere Parkı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.037467,
+        "lng": 28.869276
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -636,8 +636,8 @@
       "ad": "Şengör Parkı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.058746,
+        "lng": 28.894644
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -666,8 +666,8 @@
       "ad": "Caddesi Parkı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.040032,
+        "lng": 28.865937
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -696,8 +696,8 @@
       "ad": "Yıl Parkı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.06249,
+        "lng": 28.870131
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -726,8 +726,8 @@
       "ad": "Caddesi Parkı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.033452,
+        "lng": 28.891921
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -756,8 +756,8 @@
       "ad": "Çevresi Park",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.026503,
+        "lng": 28.865674
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -786,8 +786,8 @@
       "ad": "Şelale Parkı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.05244,
+        "lng": 28.86168
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -816,8 +816,8 @@
       "ad": "Çinçinderesi Parkı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.055586,
+        "lng": 28.862566
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -846,8 +846,8 @@
       "ad": "Demir Parkı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.057737,
+        "lng": 28.87632
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -876,8 +876,8 @@
       "ad": "Reis Parkı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.047852,
+        "lng": 28.859258
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -906,8 +906,8 @@
       "ad": "Turan Parkı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.061065,
+        "lng": 28.863198
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,
@@ -936,8 +936,8 @@
       "ad": "Selim Parkı",
       "mahalle": "",
       "koordinat": {
-        "lat": 0.0,
-        "lng": 0.0
+        "lat": 41.056777,
+        "lng": 28.890561
       },
       "alan_bilgileri": {
         "toplam_alan": 13866.0,

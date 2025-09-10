@@ -60,71 +60,145 @@ export class LocationTool extends BaseTool {
 
   private async searchToplanmaAlanlariByLocation(district: string, neighborhood: string, query: string, userContext?: any): Promise<any[]> {
     try {
-      // Konum bazlı arama sorgusu oluştur
-      let searchQuery = query;
-      if (district && district !== 'İstanbul') {
-        searchQuery = `${district} ${query}`;
-      }
-      if (neighborhood) {
-        searchQuery = `${neighborhood} ${searchQuery}`;
-      }
-
-      const { spawn } = await import('child_process');
-      const path = await import('path');
-      
-      const pythonScript = path.join(process.cwd(), 'faiss_search.py');
-      const pythonProcess = spawn('python3', [pythonScript, searchQuery], {
-        cwd: process.cwd(),
-        env: { ...process.env, PATH: process.env.PATH }
-      });
-
-      return new Promise((resolve, reject) => {
-        let output = '';
-        let errorOutput = '';
-
-        pythonProcess.stdout.on('data', (data) => {
-          output += data.toString();
+      // Önce Python FAISS aramasını dene
+      try {
+        const { spawn } = await import('child_process');
+        const path = await import('path');
+        
+        const pythonScript = path.join(process.cwd(), 'faiss_search.py');
+        const pythonCmd = process.env.PYTHON || (process.platform === 'win32' ? 'python' : 'python3');
+        
+        // İlçe adını öncelikle ekle
+        const searchQuery = query.toLowerCase().includes(district.toLowerCase()) ? query : `${district} ${query}`;
+        const pythonProcess = spawn(pythonCmd, [pythonScript, searchQuery], {
+          cwd: process.cwd(),
+          env: { ...process.env, PATH: process.env.PATH }
         });
 
-        pythonProcess.stderr.on('data', (data) => {
-          errorOutput += data.toString();
-        });
+        const result = await new Promise<any[]>((resolve, reject) => {
+          let output = '';
+          let errorOutput = '';
 
-        pythonProcess.on('close', (code) => {
-          if (code === 0) {
-            try {
-              const results = JSON.parse(output);
-              const safeAreas = results.map((result: any) => ({
-                name: result.metadata.alan_adi,
-                district: result.metadata.ilce,
-                neighborhood: result.metadata.mahalle,
-                coordinates: {
-                  lat: result.metadata.koordinat.lat,
-                  lng: result.metadata.koordinat.lng
-                },
-                area: result.metadata.alan_bilgileri.toplam_alan,
-                facilities: this.extractFacilities(result.metadata.altyapi),
-                distance: this.calculateDistance(userContext.location, result.metadata.koordinat),
-                similarity: result.similarity,
-                fullData: result.metadata
-              }));
-              resolve(safeAreas);
-            } catch (parseError) {
-              reject(new Error(`JSON parse hatası: ${parseError}`));
+          pythonProcess.stdout.on('data', (data) => {
+            output += data.toString();
+          });
+
+          pythonProcess.stderr.on('data', (data) => {
+            errorOutput += data.toString();
+          });
+
+          pythonProcess.on('close', (code) => {
+            if (code === 0) {
+              try {
+                const results = JSON.parse(output);
+                const safeAreas = results.map((result: any) => ({
+                  name: result.metadata.alan_adi,
+                  district: result.metadata.ilce,
+                  neighborhood: result.metadata.mahalle,
+                  coordinates: {
+                    lat: result.metadata.koordinat.lat,
+                    lng: result.metadata.koordinat.lng
+                  },
+                  area: result.metadata.alan_bilgileri.toplam_alan,
+                  facilities: this.extractFacilities(result.metadata.altyapi),
+                  distance: this.calculateDistance(userContext.location, result.metadata.koordinat),
+                  similarity: result.similarity,
+                  fullData: result.metadata
+                }));
+                resolve(safeAreas);
+              } catch (parseError) {
+                reject(new Error(`JSON parse hatası: ${parseError}`));
+              }
+            } else {
+              reject(new Error(`Python script hatası: ${errorOutput}`));
             }
-          } else {
-            reject(new Error(`Python script hatası: ${errorOutput}`));
-          }
+          });
+
+          pythonProcess.on('error', (error) => {
+            reject(new Error(`Python process hatası: ${error}`));
+          });
         });
 
-        pythonProcess.on('error', (error) => {
-          reject(new Error(`Python process hatası: ${error}`));
-        });
-      });
+        if (result && result.length > 0) {
+          return result;
+        }
+      } catch (pythonError) {
+        console.log('Python FAISS araması başarısız, fallback kullanılıyor:', pythonError.message);
+      }
+
+      // Fallback: Direkt JSON dosyalarından arama
+      return this.fallbackSearch(district, neighborhood, query, userContext);
+
     } catch (error) {
-      console.error('FAISS arama hatası:', error);
-      return [];
+      console.error('LocationTool arama hatası:', error);
+      return this.fallbackSearch(district, neighborhood, query, userContext);
     }
+  }
+
+  private async fallbackSearch(district: string, neighborhood: string, query: string, userContext?: any): Promise<any[]> {
+    const fs = await import('fs');
+    const path = await import('path');
+    
+    const results: any[] = [];
+    const dataDir = path.join(process.cwd(), 'new_datas');
+    
+    try {
+      const files = fs.readdirSync(dataDir).filter(file => file.endsWith('.json') && file !== '00_ozet.json');
+      
+      for (const file of files) {
+        try {
+          const filePath = path.join(dataDir, file);
+          const fileContent = fs.readFileSync(filePath, 'utf-8');
+          const data = JSON.parse(fileContent);
+          
+          const ilce = data.ilce?.toLowerCase() || '';
+          const toplanmaAlanlari = data.toplanma_alanlari || [];
+          
+          // İlçe eşleşmesi kontrol et
+          if (district && ilce.includes(district.toLowerCase())) {
+            for (const alan of toplanmaAlanlari) {
+              const alan_adi = alan.ad || '';
+              const mahalle = alan.mahalle || '';
+              const ozellikler = alan.ozellikler || {};
+              
+              // Sadece gerçek toplanma alanlarını filtrele
+              const isToplanmaAlani = ozellikler.tur === 'Toplanma Alanı' || 
+                                    ozellikler.durum === 'Aktif' ||
+                                    alan_adi.toLowerCase().includes('toplanma') ||
+                                    alan_adi.toLowerCase().includes('alan');
+              
+              if (isToplanmaAlani) {
+                const result = {
+                  name: alan_adi,
+                  district: data.ilce,
+                  neighborhood: mahalle,
+                  coordinates: {
+                    lat: alan.koordinat?.lat || 0,
+                    lng: alan.koordinat?.lng || 0
+                  },
+                  area: alan.alan_bilgileri?.toplam_alan || 0,
+                  facilities: this.extractFacilities(alan.altyapi),
+                  distance: this.calculateDistance(userContext?.location, alan.koordinat),
+                  similarity: 1.0,
+                  fullData: alan
+                };
+                results.push(result);
+                
+                if (results.length >= 5) { // Maksimum 5 sonuç
+                  break;
+                }
+              }
+            }
+          }
+        } catch (fileError) {
+          console.error(`Dosya okuma hatası ${file}:`, fileError);
+        }
+      }
+    } catch (error) {
+      console.error('Fallback arama hatası:', error);
+    }
+    
+    return results;
   }
 
   private extractFacilities(altyapi: any): string[] {
