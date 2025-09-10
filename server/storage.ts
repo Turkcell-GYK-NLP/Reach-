@@ -21,22 +21,6 @@ import { and, desc, eq } from "drizzle-orm";
 // Try to import database synchronously
 let db: any = null;
 
-if (process.env.DATABASE_URL) {
-  try {
-    // Use dynamic import with top-level await equivalent
-    import("./db.js").then(({ db: database }) => {
-      db = database;
-      console.log("✅ PostgreSQL bağlantısı başarılı");
-    }).catch((e) => {
-      console.error("❌ Database import hatası:", e);
-      db = null;
-    });
-  } catch (e) {
-    console.error("❌ Database import hatası:", e);
-    db = null;
-  }
-}
-
 export interface IStorage {
   // Users
   getUser(id: string): Promise<User | undefined>;
@@ -385,31 +369,25 @@ function getStorage(): IStorage {
 
 // Create a storage factory that checks db availability
 function createStorage(): IStorage {
-  // Geçici olarak sadece MemStorage kullan
-  console.log("🔧 Storage seçimi: MemStorage (Bellek)");
-  return new MemStorage();
+  return getStorage();
 }
 
 // Create storage instance
-export const storage: IStorage = createStorage();
+export let storage: IStorage = createStorage();
 
 // Update storage when db becomes available
-// Geçici olarak devre dışı
-/*
 if (process.env.DATABASE_URL) {
   import("./db.js").then(({ db: database }) => {
     db = database;
     console.log("✅ PostgreSQL bağlantısı başarılı");
     // Update storage to use DrizzleStorage
-    const newStorage = new DrizzleStorage();
-    Object.setPrototypeOf(storage, newStorage);
-    Object.assign(storage, newStorage);
+    storage = new DrizzleStorage();
     console.log("🔄 Storage DrizzleStorage'a güncellendi");
   }).catch((e) => {
     console.error("❌ Database import hatası:", e);
   });
 }
-*/
+
 
 // Debug: DATABASE_URL durumu
 console.log("🔧 DATABASE_URL:", process.env.DATABASE_URL ? "Tanımlı" : "Tanımlı değil");

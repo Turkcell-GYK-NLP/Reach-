@@ -22,7 +22,7 @@ def get_connection():
 
     host = os.getenv("PGHOST", "localhost")
     port = int(os.getenv("PGPORT", "5432"))
-    user = os.getenv("PGUSER", "postgres")
+    user = os.getenv("PGUSER", "esrakaya")
     password = os.getenv("PGPASSWORD", "admin")
     dbname = os.getenv("PGDATABASE", "reachplus")
     return (

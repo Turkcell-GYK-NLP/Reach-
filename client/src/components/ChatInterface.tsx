@@ -301,7 +301,14 @@ export default function ChatInterface() {
               messageType: msg.messageType || 'text'
             }));
 
-            if (displayMessages.length === 0) {
+            // Mesajları tarih sırasına göre sırala (en eski üstte, en yeni altta)
+            const sortedMessages = displayMessages.sort((a, b) => {
+              const timeA = new Date(a.timestamp).getTime();
+              const timeB = new Date(b.timestamp).getTime();
+              return timeA - timeB;
+            });
+
+            if (sortedMessages.length === 0) {
               return (
                 <div className="text-center text-gray-500 py-8">
                   <p>Merhaba! Size nasıl yardımcı olabilirim?</p>
@@ -315,7 +322,7 @@ export default function ChatInterface() {
               );
             }
 
-            return displayMessages.map((message) => (
+            return sortedMessages.map((message) => (
               <div key={message.id} className={`flex ${message.type === "user" ? "justify-end" : "justify-start"}`}>
                 <div className={`max-w-md rounded-lg px-4 py-2 ${
                   message.type === "user" 
