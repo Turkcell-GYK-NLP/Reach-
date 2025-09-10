@@ -8,6 +8,7 @@ import { SocialMediaTool } from './tools/socialMediaTool.js';
 import { EmergencyTool } from './tools/emergencyTool.js';
 import { NotificationTool } from './tools/notificationTool.js';
 import { WebSearchTool } from './tools/webSearchTool.js';
+import { RecommendationTool } from './tools/recommendationTool.js';
 
 export class CoreAgent {
   private llm: OpenAI;
@@ -31,43 +32,54 @@ export class CoreAgent {
     this.tools.set('emergency', new EmergencyTool());
     this.tools.set('notification', new NotificationTool());
     this.tools.set('websearch', new WebSearchTool());
+    this.tools.set('recommendation', new RecommendationTool());
   }
 
   async processQuery(query: string, userContext: UserContext): Promise<AgentResponse> {
     try {
       console.log(`🤖 CoreAgent processing query: "${query}" for user: ${userContext.userId}`);
 
-      // 1. Memory'den context'i al
+      // 1. Emergency level'ı query'den tespit et
+      const emergencyLevel = this.detectEmergencyLevel(query);
+      const enhancedUserContext = {
+        ...userContext,
+        preferences: {
+          ...userContext.preferences,
+          emergencyLevel
+        }
+      };
+
+      // 2. Memory'den context'i al
       const memoryContext = await this.memory.getContext(userContext.userId);
       const relevantContext = await this.memory.getRelevantContext(userContext.userId, query);
 
-      // 2. Tool'ları çalıştır
-      const toolResults = await this.executeTools(query, userContext);
+      // 3. Tool'ları çalıştır (enhanced context ile)
+      const toolResults = await this.executeTools(query, enhancedUserContext);
       console.log(`🔧 Tool results: ${toolResults.length} results`);
 
-      // 3. Supervisor ile koordinasyon
-      const supervisorDecision = await this.supervisor.coordinate(query, userContext, toolResults);
+      // 4. Supervisor ile koordinasyon
+      const supervisorDecision = await this.supervisor.coordinate(query, enhancedUserContext, toolResults);
       console.log(`🎯 Supervisor decision: ${supervisorDecision.selectedAgents.join(', ')}`);
 
-      // 4. Seçilen agent'ları çalıştır
+      // 5. Seçilen agent'ları çalıştır
       const agentResponses = await this.executeAgents(
         supervisorDecision.selectedAgents,
         query,
-        userContext,
+        enhancedUserContext,
         toolResults
       );
 
-      // 5. Agent yanıtlarını birleştir
+      // 6. Agent yanıtlarını birleştir
       const combinedResponse = await this.combineResponses(
         query,
-        userContext,
+        enhancedUserContext,
         toolResults,
         agentResponses,
         relevantContext
       );
 
-      // 6. Memory'yi güncelle
-      await this.memory.updateContext(userContext.userId, query, combinedResponse.message, userContext);
+      // 7. Memory'yi güncelle
+      await this.memory.updateContext(userContext.userId, query, combinedResponse.message, enhancedUserContext);
 
       console.log(`✅ CoreAgent completed processing`);
       return combinedResponse;
@@ -141,14 +153,21 @@ export class CoreAgent {
     const combinedSuggestions = this.combineSuggestions(agentResponses);
     const combinedActionItems = this.combineActionItems(agentResponses);
 
+    // RL öneri motorundan kişiselleştirilmiş öneriler al
+    const recommendationResult = toolResults.find(result => result.type === 'recommendation');
+    const personalizedSuggestions = recommendationResult ? 
+      this.enhanceSuggestionsWithRL(combinedSuggestions, recommendationResult.data) : 
+      combinedSuggestions;
+
     // LLM ile final yanıt oluştur
     const finalResponse = await this.generateFinalResponse(
       query,
       userContext,
       combinedMessage,
-      combinedSuggestions,
+      personalizedSuggestions,
       combinedActionItems,
-      relevantContext
+      relevantContext,
+      recommendationResult?.data
     );
 
     return {
@@ -191,15 +210,52 @@ export class CoreAgent {
     );
   }
 
+  private enhanceSuggestionsWithRL(originalSuggestions: string[], recommendationData: any): string[] {
+    if (!recommendationData) return originalSuggestions;
+
+    const rlSuggestions: string[] = [];
+    
+    // RL önerisini en üste ekle
+    if (recommendationData.title) {
+      rlSuggestions.push(`🎯 ${recommendationData.title}`);
+    }
+    
+    // Alternatif önerileri ekle
+    if (recommendationData.alternatives) {
+      recommendationData.alternatives.forEach((alt: any) => {
+        rlSuggestions.push(`💡 ${alt.title}`);
+      });
+    }
+    
+    // Orijinal önerileri ekle (çakışmaları önle)
+    const uniqueOriginal = originalSuggestions.filter(suggestion => 
+      !rlSuggestions.some(rlSuggestion => 
+        rlSuggestion.toLowerCase().includes(suggestion.toLowerCase())
+      )
+    );
+    
+    return [...rlSuggestions, ...uniqueOriginal].slice(0, 6); // Maksimum 6 öneri
+  }
+
   private async generateFinalResponse(
     query: string,
     userContext: UserContext,
     combinedMessage: string,
     suggestions: string[],
     actionItems: any[],
-    relevantContext: string[]
+    relevantContext: string[],
+    recommendationData?: any
   ): Promise<{ message: string; suggestions: string[]; actionItems: any[] }> {
     try {
+      const rlContext = recommendationData ? `
+🤖 Kişiselleştirilmiş Öneri (RL Motoru):
+- Ana Öneri: ${recommendationData.title}
+- Açıklama: ${recommendationData.description}
+- Güven Skoru: ${recommendationData.confidence}
+- Gerekçe: ${recommendationData.reasoning}
+- Alternatifler: ${recommendationData.alternatives?.map((alt: any) => alt.title).join(', ') || 'Yok'}
+` : '';
+
       const systemPrompt = `Sen REACH+ afet destek sisteminin ana AI asistanısın. 
 Kullanıcıya net, pratik ve güvenilir bilgiler veriyorsun.
 
@@ -211,6 +267,7 @@ Kullanıcı Bağlamı:
 
 Mevcut Bilgiler:
 ${combinedMessage}
+${rlContext}
 
 İlgili Geçmiş:
 ${relevantContext.join('\n')}
@@ -221,6 +278,8 @@ Kurallar:
 - Somut bilgi ve rakam ver
 - Kullanıcıya nazik ol
 - Belirsiz ifadeler kullanma
+- RL önerilerini öncelikle kullan
+- Kişiselleştirilmiş önerileri vurgula
 
 Yanıt formatı (JSON):
 {
@@ -298,5 +357,53 @@ Lütfen yanıtınızı JSON formatında verin.`;
 
   async getUserMemory(userId: string): Promise<any> {
     return this.memory.getContext(userId);
+  }
+
+  // RL Recommendation Tool erişimi
+  getRecommendationTool(): any {
+    return this.tools.get('recommendation');
+  }
+
+  // Emergency level detection
+  private detectEmergencyLevel(query: string): 'low' | 'medium' | 'high' | 'critical' {
+    const lowerQuery = query.toLowerCase();
+    
+    // Critical keywords
+    const criticalKeywords = [
+      'acil yardım', 'ambulans', 'itfaiye', '112', 'kritik', 'tehlikede',
+      'kurtarma', 'yardım et', 'ölüyor', 'bayıldı', 'kanama', 'yangın'
+    ];
+    
+    // High keywords
+    const highKeywords = [
+      'acil', 'emergency', 'deprem', 'sel', 'yangın', 'tehlike', 'panik',
+      'korkuyorum', 'korku', 'endişe', 'stres', 'kötü', 'iyi değil'
+    ];
+    
+    // Medium keywords
+    const mediumKeywords = [
+      'sorun', 'problem', 'yardım', 'destek', 'bilgi', 'nasıl', 'ne yapmalı'
+    ];
+    
+    // Check for critical
+    if (criticalKeywords.some(keyword => lowerQuery.includes(keyword))) {
+      console.log(`🚨 Critical emergency detected: "${query}"`);
+      return 'critical';
+    }
+    
+    // Check for high
+    if (highKeywords.some(keyword => lowerQuery.includes(keyword))) {
+      console.log(`⚠️ High emergency detected: "${query}"`);
+      return 'high';
+    }
+    
+    // Check for medium
+    if (mediumKeywords.some(keyword => lowerQuery.includes(keyword))) {
+      console.log(`🔶 Medium emergency detected: "${query}"`);
+      return 'medium';
+    }
+    
+    // Default to low
+    return 'low';
   }
 }

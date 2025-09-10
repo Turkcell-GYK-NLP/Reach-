@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Send, Mic } from "lucide-react";
+import { RecommendationEngine } from "./RecommendationEngine";
 
 export default function ChatInterface() {
   const [inputMessage, setInputMessage] = useState("");
@@ -128,6 +129,27 @@ export default function ChatInterface() {
                     </div>
                   )}
                   
+
+                  {/* RL Recommendation Engine */}
+                  {message.toolResults && message.toolResults.find((result: any) => result.type === 'recommendation') && (
+                    <div className="mt-3">
+                      <RecommendationEngine
+                        recommendationData={message.toolResults.find((result: any) => result.type === 'recommendation')?.data}
+                        userId={isLoggedIn ? JSON.parse(localStorage.getItem("auth") || "{}").user?.id : "anonymous"}
+                        userContext={{
+                          location: {
+                            district: location?.district || "Esenler",
+                            city: location?.city || "İstanbul"
+                          },
+                          operator: "Turkcell",
+                          age: 22
+                        }}
+                        onFeedback={(actionId, reward) => {
+                          console.log(`RL Feedback: ${actionId} -> ${reward}`);
+                        }}
+                      />
+                    </div>
+                  )}
 
                   {/* Suggestions */}
                   {message.suggestions && message.suggestions.length > 0 && (

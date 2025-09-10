@@ -364,6 +364,52 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // RL Recommendation Feedback
+  app.post("/api/recommendation/feedback", async (req, res) => {
+    try {
+      const { userId, actionId, reward, userContext } = req.body;
+      
+      if (!userId || !actionId || reward === undefined) {
+        return res.status(400).json({ error: "userId, actionId, and reward are required" });
+      }
+
+      // Get recommendation tool from core agent
+      const recommendationTool = coreAgent.getRecommendationTool();
+      if (!recommendationTool) {
+        return res.status(500).json({ error: "Recommendation tool not available" });
+      }
+
+      // Record the feedback
+      recommendationTool.recordInteraction(userId, actionId, reward, userContext);
+      
+      res.json({ 
+        message: "Feedback recorded successfully",
+        actionId,
+        reward,
+        timestamp: new Date()
+      });
+    } catch (error) {
+      console.error("RL feedback error:", error);
+      res.status(500).json({ error: "Failed to record feedback", details: error });
+    }
+  });
+
+  // RL Model Performance
+  app.get("/api/recommendation/performance", async (req, res) => {
+    try {
+      const recommendationTool = coreAgent.getRecommendationTool();
+      if (!recommendationTool) {
+        return res.status(500).json({ error: "Recommendation tool not available" });
+      }
+
+      const performance = recommendationTool.getModelPerformance();
+      res.json(performance);
+    } catch (error) {
+      console.error("RL performance error:", error);
+      res.status(500).json({ error: "Failed to get performance metrics", details: error });
+    }
+  });
+
   // Health check
   app.get("/api/health", (req, res) => {
     res.json({ 
