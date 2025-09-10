@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Dashboard from "@/pages/dashboard";
 import AuthPage from "@/pages/auth";
+import BluetoothTest from "@/pages/bluetooth-test";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -12,6 +13,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Dashboard} />
       <Route path="/auth" component={AuthPage} />
+      <Route path="/bluetooth-test" component={BluetoothTest} />
       <Route component={NotFound} />
     </Switch>
   );
