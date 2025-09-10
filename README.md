@@ -28,6 +28,8 @@ REACH+, deprem ve afet sonrası gençlere **Agentic AI** destekli rehberlik sağ
 
 - **Node.js** v18+ 
 - **npm** veya **yarn**
+- **Python** 3.8+ (FAISS ve veri işleme için)
+- **PostgreSQL** 12+ (veritabanı için)
 - **Git**
 
 ## 🔧 Yerel Kurulum
@@ -35,23 +37,60 @@ REACH+, deprem ve afet sonrası gençlere **Agentic AI** destekli rehberlik sağ
 ### 1. Projeyi İndirin
 ```bash
 # ZIP dosyasını indirin ve çıkarın, sonra:
-cd reach-plus
+cd GYKProje
 ```
-### Sanal ortam oluşturup aktif et
-```
+
+### 2. Python Sanal Ortamını Kurun
+```bash
+# Python sanal ortamı oluşturun
 python -m venv venv
+
+# Sanal ortamı aktif edin
+# Windows:
+venv\Scripts\activate
+# Mac/Linux:
 source venv/bin/activate
+
+# Python bağımlılıklarını yükleyin
+pip install -r requirements.txt
 ```
-### 2. Bağımlılıkları Yükleyin
+
+### 3. Node.js Bağımlılıklarını Yükleyin
 ```bash
 npm install
 ```
 
-### 3. Ortam Değişkenlerini Ayarlayın
+### 4. PostgreSQL Veritabanını Kurun
+```bash
+# PostgreSQL kurulumu (Ubuntu/Debian)
+sudo apt-get install postgresql postgresql-contrib
+
+# PostgreSQL kurulumu (macOS)
+brew install postgresql
+
+# PostgreSQL kurulumu (Windows)
+# https://www.postgresql.org/download/windows/ adresinden indirin
+
+# Veritabanını oluşturun
+sudo -u postgres createdb reachplus
+# veya
+createdb reachplus
+```
+
+### 5. Ortam Değişkenlerini Ayarlayın
 `.env` dosyası oluşturun:
 ```bash
 # OpenAI API Key (zorunlu)
 OPENAI_API_KEY=sk-your-openai-api-key-here
+
+# Veritabanı Bağlantısı
+DATABASE_URL=postgresql://username:password@localhost:5432/reachplus
+# veya ayrı ayrı:
+PGHOST=localhost
+PGPORT=5432
+PGUSER=your_username
+PGPASSWORD=your_password
+PGDATABASE=reachplus
 
 # Twitter API Keys (opsiyonel - gerçek sosyal medya verisi için)
 TWITTER_BEARER_TOKEN=your-bearer-token
@@ -65,7 +104,16 @@ NODE_ENV=development
 PORT=5000
 ```
 
-### 4. Projeyi Başlatın
+### 6. Veritabanını Hazırlayın
+```bash
+# Veritabanı şemasını oluşturun
+python database.py
+
+# FAISS index'ini oluşturun (toplanma alanları araması için)
+python faiss_indexer.py
+```
+
+### 7. Projeyi Başlatın
 ```bash
 npm run dev
 ```
@@ -125,6 +173,33 @@ Kullanıcı context'i, konuşma geçmişi ve tercihleri saklar.
 > **Not**: Twitter API anahtarları olmadan sistem mock verilerle çalışır.
 
 ## 🏃‍♂️ Hızlı Başlangıç
+
+### Hızlı Kurulum (5 Dakika)
+```bash
+# 1. Projeyi indirin ve klasöre gidin
+cd GYKProje
+
+# 2. Python sanal ortamını kurun
+python -m venv venv
+source venv/bin/activate  # Mac/Linux
+# veya venv\Scripts\activate  # Windows
+
+# 3. Bağımlılıkları yükleyin
+pip install -r requirements.txt
+npm install
+
+# 4. .env dosyasını oluşturun (OpenAI API key gerekli)
+echo "OPENAI_API_KEY=sk-your-key-here" > .env
+echo "DATABASE_URL=postgresql://username:password@localhost:5432/reachplus" >> .env
+
+# 5. Veritabanını kurun
+createdb reachplus
+python database.py
+python faiss_indexer.py
+
+# 6. Projeyi başlatın
+npm run dev
+```
 
 ### Agentic AI Testi
 1. **Temel Sohbet**: "Kadıköy'de Türk Telekom çekiyor mu?" - LocationTool + NetworkTool
@@ -221,6 +296,20 @@ reach-plus/
 ## 🔧 Geliştirme Komutları
 
 ```bash
+# Python sanal ortamını aktif edin
+source venv/bin/activate  # Mac/Linux
+# veya
+venv\Scripts\activate     # Windows
+
+# Veritabanını kur ve şemayı oluştur
+python database.py
+
+# FAISS index'ini oluştur (toplanma alanları araması için)
+python faiss_indexer.py
+
+# FAISS arama testi
+python faiss_search.py "Kadıköy toplanma alanları"
+
 # Geliştirme modunda çalıştır (Agentic AI ile)
 npm run dev
 
@@ -233,7 +322,7 @@ npm start
 # Type checking
 npm run check
 
-# Database push
+# Database push (Drizzle ORM)
 npm run db:push
 ```
 
@@ -279,6 +368,28 @@ Kullanıcı Sorusu → Core Agent → Tool Selection → Supervisor Decision →
 ## 🐛 Sorun Giderme
 
 ### Sıkça Karşılaşılan Sorunlar
+
+**Python Sanal Ortam Hatası**
+```
+Error: python: command not found
+```
+- Python 3.8+ kurulu olduğundan emin olun
+- Sanal ortamı aktif ettiğinizden emin olun: `source venv/bin/activate`
+
+**PostgreSQL Bağlantı Hatası**
+```
+Error: connection refused
+```
+- PostgreSQL servisinin çalıştığından emin olun
+- `.env` dosyasındaki veritabanı bilgilerini kontrol edin
+- Veritabanının oluşturulduğundan emin olun: `createdb reachplus`
+
+**FAISS Index Hatası**
+```
+Error: No module named 'faiss'
+```
+- Python bağımlılıklarını yükleyin: `pip install -r requirements.txt`
+- Sanal ortamın aktif olduğundan emin olun
 
 **OpenAI API Hatası**
 ```
