@@ -83,8 +83,13 @@ createdb reachplus
 # OpenAI API Key (zorunlu)
 OPENAI_API_KEY=sk-your-openai-api-key-here
 
-# Veritabanı Bağlantısı
+# Veritabanı Bağlantısı için .env dosyasını güncelle
 DATABASE_URL=postgresql://username:password@localhost:5432/reachplus
+
+#database.py dosyasında şu satırları kendi username ve passwordunuz ile güncelleyin;
+user = os.getenv("PGUSER", "esrakaya")
+password = os.getenv("PGPASSWORD", "admin")
+
 # veya ayrı ayrı:
 PGHOST=localhost
 PGPORT=5432
