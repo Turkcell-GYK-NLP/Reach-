@@ -69,6 +69,16 @@ export const api = {
     return response.json();
   },
 
+  clearChat: async (userId: string) => {
+    const response = await fetch(`/api/chat/${userId}`, {
+      method: "DELETE",
+    });
+    if (!response.ok) {
+      throw new Error("Failed to clear chat");
+    }
+    return response.json();
+  },
+
   // User
   createUser: async (userData: any) => {
     const response = await fetch("/api/users", {
@@ -183,6 +193,21 @@ export const api = {
     
     if (!response.ok) {
       throw new Error("Failed to get safe areas");
+    }
+    
+    return response.json();
+  },
+
+  // Emergency Location Send
+  sendEmergencyLocation: async (locationData: { latitude: number; longitude: number; address?: string; city?: string; district?: string }) => {
+    const response = await fetch("/api/emergency/send-location", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(locationData),
+    });
+    
+    if (!response.ok) {
+      throw new Error("Failed to send emergency location");
     }
     
     return response.json();

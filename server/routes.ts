@@ -160,6 +160,20 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  app.delete("/api/chat/:userId", async (req, res) => {
+    try {
+      const success = await storage.clearChatMessages(req.params.userId);
+      if (success) {
+        res.json({ message: "Chat messages cleared successfully" });
+      } else {
+        res.status(500).json({ error: "Failed to clear chat messages" });
+      }
+    } catch (error) {
+      console.error("Clear chat error:", error);
+      res.status(500).json({ error: "Failed to clear chat messages", details: error });
+    }
+  });
+
   // Network status routes
   app.get("/api/network-status", async (req, res) => {
     try {
@@ -210,6 +224,47 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json(alert);
     } catch (error) {
       res.status(400).json({ error: "Failed to create emergency alert", details: error });
+    }
+  });
+
+  // Emergency location send
+  app.post("/api/emergency/send-location", async (req, res) => {
+    try {
+      const { latitude, longitude, address, city, district } = req.body;
+      
+      if (!latitude || !longitude) {
+        return res.status(400).json({ error: "Latitude and longitude are required" });
+      }
+
+      // Log the emergency location send (in a real app, you'd send to emergency contacts)
+      console.log("Emergency location sent:", {
+        coordinates: { latitude, longitude },
+        address,
+        city,
+        district,
+        timestamp: new Date().toISOString()
+      });
+
+      // In a real implementation, you would:
+      // 1. Get emergency contacts from user profile
+      // 2. Send SMS/email with location to each contact
+      // 3. Log the emergency event
+      // 4. Possibly notify emergency services
+
+      res.json({ 
+        message: "Emergency location sent successfully",
+        location: {
+          latitude,
+          longitude,
+          address,
+          city,
+          district
+        },
+        timestamp: new Date().toISOString()
+      });
+    } catch (error) {
+      console.error("Emergency location send error:", error);
+      res.status(500).json({ error: "Failed to send emergency location", details: error });
     }
   });
 

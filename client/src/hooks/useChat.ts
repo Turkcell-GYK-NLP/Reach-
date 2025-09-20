@@ -37,6 +37,18 @@ export function useChat(userId: string = "default") {
     },
   });
 
+  // Clear chat mutation
+  const clearChatMutation = useMutation({
+    mutationFn: () => api.clearChat(userId),
+    onSuccess: () => {
+      // Invalidate chat history to refresh messages
+      queryClient.invalidateQueries({ queryKey: ["/api/chat", userId] });
+    },
+    onError: (error) => {
+      console.error("Failed to clear chat:", error);
+    },
+  });
+
   const sendMessage = (message: string, userContext?: any) => {
     return sendMessageMutation.mutate({
       userId,
@@ -66,12 +78,19 @@ export function useChat(userId: string = "default") {
     }));
   };
 
+  const clearChat = () => {
+    return clearChatMutation.mutate();
+  };
+
   return {
     messages: formatMessages(),
     isLoading,
     isTyping,
     sendMessage,
+    clearChat,
     isPending: sendMessageMutation.isPending,
+    isClearing: clearChatMutation.isPending,
     error: sendMessageMutation.error,
+    clearError: clearChatMutation.error,
   };
 }

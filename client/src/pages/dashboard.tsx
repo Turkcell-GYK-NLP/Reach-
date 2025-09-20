@@ -3,24 +3,16 @@ import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { useLocation } from "@/hooks/useLocation";
 import ChatInterface from "@/components/ChatInterface";
-import NetworkStatus from "@/components/NetworkStatus";
-import SocialMediaInsights from "@/components/SocialMediaInsights";
+import HamburgerMenu from "@/components/HamburgerMenu";
 import EmergencyAlert from "@/components/EmergencyAlert";
-import QuickActions from "@/components/QuickActions";
-import EmergencyContacts from "@/components/EmergencyContacts";
-import LocationStatus from "@/components/LocationStatus";
-import UserProfile from "@/components/UserProfile";
-import { Heart, Bell, User, LogOut } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Heart, Menu, Bell, Wifi, WifiOff, Bluetooth } from "lucide-react";
 
 export default function Dashboard() {
   const { location } = useLocation();
-  const [connectionStatus, setConnectionStatus] = useState<"online" | "offline" | "emergency">("online");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [connectionStatus, setConnectionStatus] = useState<"online" | "offline" | "bluetooth">("online");
   const [notifications] = useState(3);
-
-  const handleLogout = () => {
-    localStorage.removeItem("auth");
-    window.location.href = "/auth";
-  };
 
   // Get emergency alerts
   const { data: emergencyAlerts = [] } = useQuery({
@@ -43,12 +35,12 @@ export default function Dashboard() {
     };
   }, []);
 
-  const getConnectionStatusColor = () => {
+  const getConnectionStatusIcon = () => {
     switch (connectionStatus) {
-      case "online": return "bg-success";
-      case "offline": return "bg-gray-400";
-      case "emergency": return "bg-emergency";
-      default: return "bg-success";
+      case "online": return <Wifi className="w-4 h-4 text-green-600" />;
+      case "offline": return <WifiOff className="w-4 h-4 text-red-600" />;
+      case "bluetooth": return <Bluetooth className="w-4 h-4 text-blue-600" />;
+      default: return <Wifi className="w-4 h-4 text-green-600" />;
     }
   };
 
@@ -56,52 +48,61 @@ export default function Dashboard() {
     switch (connectionStatus) {
       case "online": return "Çevrimiçi";
       case "offline": return "Çevrimdışı";
-      case "emergency": return "Acil Durum";
+      case "bluetooth": return "Bluetooth";
       default: return "Çevrimiçi";
     }
   };
 
+  const handleNavigate = (path: string) => {
+    if (path === "/") {
+      // Ana sayfa zaten açık
+      return;
+    }
+    // Diğer sayfalar için navigation
+    window.location.href = path;
+  };
+
   return (
-    <div className="bg-light font-inter text-dark min-h-screen">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <header className="bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-200 sticky top-0 z-40">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-trust to-accent rounded-lg flex items-center justify-center">
-                <Heart className="text-white" size={20} />
-              </div>
-              <div>
-                <h1 className="text-xl font-bold text-dark">REACH+</h1>
-                <p className="text-xs text-gray-500">Akıllı Destek Servisi</p>
+            {/* Left side - Logo and Menu */}
+            <div className="flex items-center space-x-4">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setIsMenuOpen(true)}
+                className="p-2 hover:bg-gray-100 rounded-lg"
+              >
+                <Menu className="w-6 h-6 text-gray-600" />
+              </Button>
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-700 rounded-xl flex items-center justify-center">
+                  <Heart className="text-white" size={20} />
+                </div>
+                <div>
+                  <h1 className="text-xl font-bold text-gray-800">REACH+</h1>
+                  <p className="text-xs text-gray-500">AI Destek Asistanı</p>
+                </div>
               </div>
             </div>
             
+            {/* Right side - Status and Notifications */}
             <div className="flex items-center space-x-4">
-              <div className="flex items-center space-x-2">
-                <div className={`w-3 h-3 ${getConnectionStatusColor()} rounded-full animate-pulse`}></div>
+              <div className="flex items-center space-x-2 px-3 py-1.5 bg-gray-100 rounded-full">
+                {getConnectionStatusIcon()}
                 <span className="text-sm text-gray-600">{getConnectionStatusText()}</span>
               </div>
-              <button className="relative p-2 text-gray-600 hover:text-dark transition-colors">
-                <Bell size={18} />
+              <Button variant="ghost" size="sm" className="p-2 relative">
+                <Bell className="w-5 h-5 text-gray-600" />
                 {notifications > 0 && (
-                  <span className="absolute -top-1 -right-1 w-5 h-5 bg-emergency text-white text-xs rounded-full flex items-center justify-center">
+                  <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center">
                     {notifications}
                   </span>
                 )}
-              </button>
-              <div className="flex items-center space-x-2">
-                <button className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
-                  <User className="text-gray-600" size={16} />
-                </button>
-                <button 
-                  onClick={handleLogout}
-                  className="p-2 text-gray-600 hover:text-red-600 transition-colors"
-                  title="Çıkış Yap"
-                >
-                  <LogOut size={16} />
-                </button>
-              </div>
+              </Button>
             </div>
           </div>
         </div>
@@ -112,46 +113,37 @@ export default function Dashboard() {
         <EmergencyAlert alert={emergencyAlerts[0]} />
       )}
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {/* Main Content */}
-          <div className="lg:col-span-2 space-y-6">
-            <ChatInterface />
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <NetworkStatus location={location?.district} />
-              <SocialMediaInsights location={location?.district} />
-            </div>
-          </div>
-
-          {/* Sidebar */}
-          <div className="space-y-6">
-            <QuickActions />
-            <EmergencyContacts />
-            <LocationStatus location={location} />
-            <UserProfile />
-          </div>
+      {/* Main Content - Chat Interface */}
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="h-[calc(100vh-8rem)]">
+          <ChatInterface />
         </div>
-
-        {/* Offline Indicator */}
-        {connectionStatus === "offline" && (
-          <div className="fixed bottom-4 right-4">
-            <div className="bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg flex items-center space-x-2">
-              <div className="w-4 h-4 text-gray-300">⚠</div>
-              <span className="text-sm">Çevrimdışı Modda Çalışıyor</span>
-            </div>
-          </div>
-        )}
       </main>
-      
+
+      {/* Hamburger Menu */}
+      <HamburgerMenu 
+        isOpen={isMenuOpen} 
+        onClose={() => setIsMenuOpen(false)}
+        onNavigate={handleNavigate}
+      />
+
       {/* Floating Emergency Button */}
-      <button 
-        className="fixed bottom-6 left-6 w-14 h-14 bg-emergency hover:bg-red-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-105" 
-        title="Acil Durum"
+      <Button 
+        className="fixed bottom-6 right-6 w-14 h-14 bg-red-600 hover:bg-red-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-105 z-30" 
         onClick={() => window.open("tel:112")}
       >
-        <span className="text-xl">!</span>
-      </button>
+        <span className="text-xl font-bold">!</span>
+      </Button>
+
+      {/* Offline Indicator */}
+      {connectionStatus === "offline" && (
+        <div className="fixed bottom-6 left-6 z-30">
+          <div className="bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg flex items-center space-x-2">
+            <WifiOff className="w-4 h-4" />
+            <span className="text-sm">Çevrimdışı Modda Çalışıyor</span>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

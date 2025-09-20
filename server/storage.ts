@@ -31,6 +31,7 @@ export interface IStorage {
   // Chat Messages
   getChatMessages(userId: string): Promise<ChatMessage[]>;
   createChatMessage(message: InsertChatMessage): Promise<ChatMessage>;
+  clearChatMessages(userId: string): Promise<boolean>;
   
   // Network Status
   getNetworkStatus(location?: string): Promise<NetworkStatus[]>;
@@ -161,6 +162,11 @@ export class MemStorage implements IStorage {
     this.chatMessages.set(userId, userMessages);
 
     return message;
+  }
+
+  async clearChatMessages(userId: string): Promise<boolean> {
+    this.chatMessages.set(userId, []);
+    return true;
   }
 
   async getNetworkStatus(location?: string): Promise<NetworkStatus[]> {
@@ -294,6 +300,11 @@ class DrizzleStorage implements IStorage {
   async createChatMessage(message: InsertChatMessage): Promise<ChatMessage> {
     const [row] = await db.insert(chatMessagesTable).values(message).returning();
     return row;
+  }
+
+  async clearChatMessages(userId: string): Promise<boolean> {
+    await db.delete(chatMessagesTable).where(eq(chatMessagesTable.userId, userId));
+    return true;
   }
 
   async getNetworkStatus(location?: string): Promise<NetworkStatus[]> {
