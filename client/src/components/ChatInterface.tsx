@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useChat } from "@/hooks/useChat";
 import { useLocation } from "@/hooks/useLocation";
 import { useBluetooth } from "@/hooks/useBluetooth";
@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Switch } from "@/components/ui/switch";
-import { Send, Mic, Bluetooth, Wifi, WifiOff, AlertTriangle, MessageCircle, Trash2 } from "lucide-react";
+import { Send, Mic, MicOff, Bluetooth, Wifi, WifiOff, AlertTriangle, MessageCircle, Trash2 } from "lucide-react";
 import { RecommendationEngine } from "./RecommendationEngine";
 import EmergencyCallDialog from "./EmergencyCallDialog";
 import LocationSendDialog from "./LocationSendDialog";
@@ -22,6 +22,14 @@ export default function ChatInterface() {
   const [showEmergencyDialog, setShowEmergencyDialog] = useState(false);
   const [showLocationDialog, setShowLocationDialog] = useState(false);
   const [isSendingLocation, setIsSendingLocation] = useState(false);
+  
+  // Speech Recognition states
+  const [isListening, setIsListening] = useState(false);
+  const [speechSupported, setSpeechSupported] = useState(false);
+  const [speechError, setSpeechError] = useState<string | null>(null);
+  const [autoSendEnabled, setAutoSendEnabled] = useState(true);
+  const recognitionRef = useRef<SpeechRecognition | null>(null);
+  const silenceTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   
   const { location, error, refreshLocation } = useLocation();
   const { messages, sendMessage, clearChat, isTyping, isPending, isClearing } = useChat();
@@ -44,6 +52,73 @@ export default function ChatInterface() {
     const auth = JSON.parse(localStorage.getItem("auth") || "null");
     isLoggedIn = !!auth?.user?.id;
   } catch {}
+
+  // Speech Recognition setup
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (SpeechRecognition) {
+        setSpeechSupported(true);
+        const recognition = new SpeechRecognition();
+        recognition.continuous = false;
+        recognition.interimResults = false;
+        recognition.lang = 'tr-TR'; // Turkish language
+        
+        recognition.onstart = () => {
+          setIsListening(true);
+          setSpeechError(null);
+        };
+        
+        recognition.onresult = (event) => {
+          const transcript = event.results[0][0].transcript;
+          setInputMessage(transcript);
+          
+          // Sessizlik timeout'unu temizle ve yeniden başlat
+          if (silenceTimeoutRef.current) {
+            clearTimeout(silenceTimeoutRef.current);
+          }
+          
+          // 2 saniye sessizlik sonrası otomatik gönder
+          silenceTimeoutRef.current = setTimeout(() => {
+            if (transcript.trim() && autoSendEnabled) {
+              handleSendMessage(transcript);
+            }
+          }, 2000);
+        };
+        
+        recognition.onerror = (event) => {
+          console.error('Speech recognition error:', event.error);
+          setSpeechError(`Konuşma tanıma hatası: ${event.error}`);
+          setIsListening(false);
+          
+          // Hata durumunda timeout'u temizle
+          if (silenceTimeoutRef.current) {
+            clearTimeout(silenceTimeoutRef.current);
+          }
+        };
+        
+        recognition.onend = () => {
+          setIsListening(false);
+          
+          // Timeout'u temizle
+          if (silenceTimeoutRef.current) {
+            clearTimeout(silenceTimeoutRef.current);
+          }
+        };
+        
+        recognitionRef.current = recognition;
+      }
+    }
+  }, []);
+
+  // Cleanup timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (silenceTimeoutRef.current) {
+        clearTimeout(silenceTimeoutRef.current);
+      }
+    };
+  }, []);
 
   // Online/offline durumunu takip et
   useEffect(() => {
@@ -208,6 +283,26 @@ export default function ChatInterface() {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
       handleSendMessage();
+    }
+  };
+
+  // Speech Recognition handlers
+  const handleMicClick = () => {
+    if (!speechSupported) {
+      setSpeechError('Tarayıcınız konuşma tanımayı desteklemiyor');
+      return;
+    }
+
+    if (isListening) {
+      // Stop listening
+      if (recognitionRef.current) {
+        recognitionRef.current.stop();
+      }
+    } else {
+      // Start listening
+      if (recognitionRef.current) {
+        recognitionRef.current.start();
+      }
     }
   };
 
@@ -655,9 +750,18 @@ export default function ChatInterface() {
             <Button 
               variant="ghost"
               size="sm"
-              className="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 text-gray-400 hover:text-gray-600"
+              onClick={handleMicClick}
+              disabled={!speechSupported || isPending}
+              className={`absolute right-2 top-1/2 transform -translate-y-1/2 p-2 transition-all duration-200 ${
+                isListening 
+                  ? 'text-red-500 hover:text-red-600 animate-pulse' 
+                  : speechSupported 
+                    ? 'text-gray-400 hover:text-gray-600' 
+                    : 'text-gray-300 cursor-not-allowed'
+              }`}
+              title={isListening ? 'Konuşmayı durdur' : speechSupported ? 'Konuşmaya başla' : 'Konuşma tanıma desteklenmiyor'}
             >
-              <Mic size={16} />
+              {isListening ? <MicOff size={16} /> : <Mic size={16} />}
             </Button>
           </div>
           <Button 
@@ -669,6 +773,51 @@ export default function ChatInterface() {
           </Button>
         </div>
         
+        {/* Speech Recognition Status */}
+        {isListening && (
+          <div className="mt-3 text-xs text-red-600 flex items-center gap-1 animate-pulse">
+            <Mic className="w-3 h-3" />
+            Dinliyorum... Konuşun
+            {autoSendEnabled && (
+              <span className="ml-2 text-blue-600">
+
+              </span>
+            )}
+          </div>
+        )}
+        
+        {speechError && (
+          <div className="mt-3 text-xs text-red-600 flex items-center gap-1">
+            <AlertTriangle className="w-3 h-3" />
+            {speechError}
+            <button 
+              onClick={() => setSpeechError(null)}
+              className="ml-2 text-blue-500 hover:underline"
+            >
+              Kapat
+            </button>
+          </div>
+        )}
+        
+        {!speechSupported && (
+          <div className="mt-3 text-xs text-orange-600 flex items-center gap-1">
+            <AlertTriangle className="w-3 h-3" />
+            Konuşma tanıma bu tarayıcıda desteklenmiyor
+          </div>
+        )}
+
+        {/* Auto Send Toggle */}
+        {speechSupported && (
+          <div className="mt-3 flex items-center gap-2">
+            <Switch
+              id="auto-send"
+              checked={autoSendEnabled}
+              onCheckedChange={setAutoSendEnabled}
+              className="scale-75"
+            />
+          </div>
+        )}
+
         {/* Offline Mod Bilgilendirmesi */}
         {isOfflineMode && !isBluetoothConnected && !(isSimulationMode && isSimulatedBluetoothConnected) && (
           <div className="mt-3 text-xs text-orange-600 flex items-center gap-1">
