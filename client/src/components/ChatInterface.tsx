@@ -12,6 +12,8 @@ import { RecommendationEngine } from "./RecommendationEngine";
 import EmergencyCallDialog from "./EmergencyCallDialog";
 import LocationSendDialog from "./LocationSendDialog";
 import { api } from "@/lib/api";
+import Vapi from "@vapi-ai/web";
+const VAPI_PRIVATE_TOKEN = "7ddd1f3c-defa-404d-9e35-2fa6939a66ad";
 
 interface ChatInterfaceProps {
   onOpenHospitalModal?: () => void;
@@ -26,6 +28,10 @@ export default function ChatInterface({ onOpenHospitalModal }: ChatInterfaceProp
   const [showEmergencyDialog, setShowEmergencyDialog] = useState(false);
   const [showLocationDialog, setShowLocationDialog] = useState(false);
   const [isSendingLocation, setIsSendingLocation] = useState(false);
+  const [isInCall, setIsInCall] = useState(false);
+  const vapiRef = useRef<any>(null);
+  const [vapiCallId, setVapiCallId] = useState<string | null>(null);
+  const vapiCallRef = useRef<any>(null);
   
   // Speech Recognition states
   const [isListening, setIsListening] = useState(false);
@@ -119,6 +125,142 @@ export default function ChatInterface({ onOpenHospitalModal }: ChatInterfaceProp
       }
     }
   }, []);
+
+  // Vapi setup
+  useEffect(() => {
+    const PUBLIC_KEY = "9219f902-edc1-4263-8d8e-a5e3a43b5189";
+    try {
+      const v = new Vapi(PUBLIC_KEY);
+      v.on("call-start", () => setIsInCall(true));
+      v.on("call-end", () => setIsInCall(false));
+      v.on("error", (e: any) => console.error("Vapi error:", e));
+      vapiRef.current = v;
+    } catch (e) {
+      console.error("Failed to initialize Vapi:", e);
+    }
+
+    return () => {
+      try { vapiRef.current?.stop(); } catch {}
+      vapiRef.current = null;
+    };
+  }, []);
+
+  const fetchVapiCallDetails = async (callId: string) => {
+    try {
+      const resp = await fetch(`https://api.vapi.ai/call?id=${callId}`, {
+        headers: {
+          'Authorization': `Bearer ${VAPI_PRIVATE_TOKEN}`,
+          'Content-Type': 'application/json'
+        }
+      });
+      if (!resp.ok) {
+        console.error('Vapi call details fetch failed:', resp.status, resp.statusText);
+        return null;
+      }
+      const data = await resp.json();
+      const pretty = Array.isArray(data) ? (data[0] || data) : data;
+      console.log('Vapi call details:', pretty);
+      return data;
+    } catch (e) {
+      console.error('Failed to fetch Vapi call details:', e);
+      return null;
+    }
+  };
+
+  const startVapiCall = async () => {
+    try {
+      if (!vapiRef.current) return;
+      const ASSISTANT_ID = "01a219b3-e02e-492e-9025-b3d7d75f84a8";
+      const result = await vapiRef.current.start(ASSISTANT_ID);
+      vapiCallRef.current = result;
+      console.log("Vapi call started:", result);
+      if (result?.id) {
+        setVapiCallId(result.id);
+        // Optional: fetch initial call details for visibility
+        fetchVapiCallDetails(result.id);
+      }
+      // Optimistic UI in case the event is delayed
+      setIsInCall(true);
+    } catch (e) {
+      console.error("Failed to start Vapi call:", e);
+    }
+  };
+
+  const stopVapiCall = () => {
+    try {
+      if (vapiCallId) {
+        console.log("Stopping Vapi call with ID:", vapiCallId);
+      }
+      const stopResult = vapiRef.current?.stop();
+      // Optimistic UI update
+      setIsInCall(false);
+      setVapiCallId(null);
+      // If stop returns a promise, catch errors silently
+      if (stopResult && typeof stopResult.then === 'function') {
+        stopResult.catch((e: any) => console.error("Vapi stop error:", e));
+      }
+
+      // Optional: poll Vapi REST API to confirm call has ended
+      const callId = vapiCallId;
+      if (callId) {
+        (async () => {
+          const safetyTimeoutMs = 5 * 60 * 1000; // 5 minutes
+          const start = Date.now();
+          while (Date.now() - start < safetyTimeoutMs) {
+            try {
+              const resp = await fetch(`https://api.vapi.ai/call?id=${callId}`, {
+                headers: { 'Authorization': `Bearer ${VAPI_PRIVATE_TOKEN}`, 'Content-Type': 'application/json' }
+              });
+              if (!resp.ok) {
+                console.error('Polling response not ok:', resp.status, resp.statusText);
+              } else {
+                const data: any = await resp.json();
+                const status = Array.isArray(data) && data[0]?.status ? data[0].status : data?.status;
+                console.log(`Vapi call ${callId} status:`, status);
+                if (status === 'ended') {
+                  // Fetch final details after end and log the full response
+                  const finalDetails = await fetchVapiCallDetails(callId);
+                  const finalPretty = Array.isArray(finalDetails) ? (finalDetails[0] || finalDetails) : finalDetails;
+                  console.log('Final Vapi call details after end:', finalPretty);
+
+                  // Persist bot/user messages to backend
+                  try {
+                    const messages = Array.isArray(finalPretty?.messages) ? finalPretty.messages : [];
+                    const filtered = messages.filter((m: any) => m?.role === 'bot' || m?.role === 'user');
+                    await fetch('/api/call-conversations', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({
+                        userId,
+                        callId: finalPretty?.id || callId,
+                        assistantId: finalPretty?.assistantId || undefined,
+                        status: finalPretty?.status || 'ended',
+                        startedAt: finalPretty?.startedAt ? new Date(finalPretty.startedAt) : undefined,
+                        endedAt: finalPretty?.endedAt ? new Date(finalPretty.endedAt) : undefined,
+                        messages: filtered,
+                        summary: finalPretty?.summary || undefined,
+                        transcript: finalPretty?.transcript || undefined,
+                      })
+                    });
+                    console.log('Call conversation saved to backend.');
+                  } catch (persistErr) {
+                    console.error('Failed to persist call conversation:', persistErr);
+                  }
+
+                  break;
+                }
+              }
+            } catch (err) {
+              console.error('Polling error:', err);
+            }
+            await new Promise(r => setTimeout(r, 1000));
+          }
+        })();
+      }
+    } catch (e) {
+      console.error("Failed to stop Vapi call:", e);
+    }
+  };
 
   // Cleanup timeout on unmount
   useEffect(() => {
@@ -343,7 +485,7 @@ export default function ChatInterface({ onOpenHospitalModal }: ChatInterfaceProp
               <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
                 <MessageCircle className="w-5 h-5" />
               </div>
-              AI Destek Asistanı
+              Reach+
             </h2>
             <p className="text-blue-100 mt-1">
               {isOfflineMode 
@@ -440,6 +582,16 @@ export default function ChatInterface({ onOpenHospitalModal }: ChatInterfaceProp
               onClick={onOpenHospitalModal}
             >
               🏥 Hastaneler
+            </Button>
+            {/* Vapi Call Toggle placed with quick actions */}
+            <Button
+              size="sm"
+              variant="outline"
+              className={`bg-white/10 border-white/20 text-white hover:bg-white/20 ${!isOnline ? 'opacity-50 cursor-not-allowed' : ''}`}
+              onClick={isInCall ? stopVapiCall : startVapiCall}
+              disabled={!isOnline}
+            >
+              {isInCall ? '🔴 Aramayı Bitir' : '📞 Arama Başlat'}
             </Button>
           </div>
         </div>

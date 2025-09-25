@@ -1,7 +1,7 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import { insertUserSchema, insertChatMessageSchema } from "@shared/schema";
+import { insertUserSchema, insertChatMessageSchema, insertCallConversationSchema } from "@shared/schema";
 import { hashPassword, verifyPassword, signToken } from "./utils/auth";
 import { processNaturalLanguageQuery } from "./services/openai";
 import { socialMediaAnalyzer } from "./services/socialMediaAnalyzer";
@@ -417,6 +417,17 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error("Memory clear error:", error);
       res.status(500).json({ error: "Failed to clear user memory", details: error });
+    }
+  });
+
+  // Save Vapi call conversation
+  app.post("/api/call-conversations", async (req, res) => {
+    try {
+      const payload = insertCallConversationSchema.parse(req.body);
+      const saved = await storage.createCallConversation(payload as any);
+      res.json({ success: true, conversation: saved });
+    } catch (error) {
+      res.status(400).json({ error: "Failed to save call conversation", details: String(error) });
     }
   });
 

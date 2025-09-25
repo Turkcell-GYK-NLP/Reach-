@@ -4,6 +4,7 @@ import {
   networkStatus as networkStatusTable,
   socialMediaInsights as socialMediaInsightsTable,
   emergencyAlerts as emergencyAlertsTable,
+  callConversations as callConversationsTable,
   type User, 
   type InsertUser,
   type ChatMessage,
@@ -13,7 +14,9 @@ import {
   type SocialMediaInsight,
   type InsertSocialMediaInsight,
   type EmergencyAlert,
-  type InsertEmergencyAlert
+  type InsertEmergencyAlert,
+  type CallConversation,
+  type InsertCallConversation
 } from "@shared/schema";
 import { randomUUID } from "crypto";
 import { and, desc, eq } from "drizzle-orm";
@@ -46,6 +49,9 @@ export interface IStorage {
   getActiveEmergencyAlerts(location?: string): Promise<EmergencyAlert[]>;
   createEmergencyAlert(alert: InsertEmergencyAlert): Promise<EmergencyAlert>;
   deactivateEmergencyAlert(id: string): Promise<boolean>;
+
+  // Call Conversations
+  createCallConversation(data: InsertCallConversation): Promise<CallConversation>;
 }
 
 export class MemStorage implements IStorage {
@@ -55,6 +61,7 @@ export class MemStorage implements IStorage {
   private networkStatuses: NetworkStatus[] = [];
   private socialMediaInsights: SocialMediaInsight[] = [];
   private emergencyAlerts: EmergencyAlert[] = [];
+  private callConversations: CallConversation[] = [];
 
   constructor() {
     // Initialize with sample data
@@ -265,6 +272,17 @@ export class MemStorage implements IStorage {
     }
     return false;
   }
+
+  async createCallConversation(data: InsertCallConversation): Promise<CallConversation> {
+    const id = randomUUID();
+    const row: CallConversation = {
+      id,
+      createdAt: new Date(),
+      ...data,
+    } as any;
+    this.callConversations.push(row);
+    return row;
+  }
 }
 
 class DrizzleStorage implements IStorage {
@@ -364,6 +382,11 @@ class DrizzleStorage implements IStorage {
       .where(eq(emergencyAlertsTable.id, id))
       .returning();
     return !!row;
+  }
+
+  async createCallConversation(data: InsertCallConversation): Promise<CallConversation> {
+    const [row] = await db.insert(callConversationsTable).values(data).returning();
+    return row;
   }
 }
 

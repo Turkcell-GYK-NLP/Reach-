@@ -120,6 +120,21 @@ export const emotionalAnalysisSchema = pgTable("emotional_analysis", {
   analysisDate: timestamp("analysis_date").defaultNow(),
 });
 
+// Vapi call conversations
+export const callConversations = pgTable("call_conversations", {
+  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+  userId: varchar("user_id").references(() => users.id),
+  callId: varchar("call_id").notNull(),
+  assistantId: varchar("assistant_id"),
+  status: text("status"),
+  startedAt: timestamp("started_at"),
+  endedAt: timestamp("ended_at"),
+  messages: jsonb("messages").notNull().default([]),
+  summary: text("summary"),
+  transcript: text("transcript"),
+  createdAt: timestamp("created_at").defaultNow(),
+});
+
 export const insertUserSchema = createInsertSchema(users).omit({
   id: true,
   createdAt: true,
@@ -161,6 +176,11 @@ export const insertEmotionalAnalysisSchema = createInsertSchema(emotionalAnalysi
   analysisDate: true,
 });
 
+export const insertCallConversationSchema = createInsertSchema(callConversations).omit({
+  id: true,
+  createdAt: true,
+});
+
 export type User = typeof users.$inferSelect;
 export type InsertUser = z.infer<typeof insertUserSchema>;
 export type ChatMessage = typeof chatMessages.$inferSelect;
@@ -177,3 +197,5 @@ export type UserProfile = typeof userProfileSchema.$inferSelect;
 export type InsertUserProfile = z.infer<typeof insertUserProfileSchema>;
 export type EmotionalAnalysis = typeof emotionalAnalysisSchema.$inferSelect;
 export type InsertEmotionalAnalysis = z.infer<typeof insertEmotionalAnalysisSchema>;
+export type CallConversation = typeof callConversations.$inferSelect;
+export type InsertCallConversation = z.infer<typeof insertCallConversationSchema>;
