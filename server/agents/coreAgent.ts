@@ -9,6 +9,7 @@ import { EmergencyTool } from './tools/emergencyTool.js';
 import { NotificationTool } from './tools/notificationTool.js';
 import { WebSearchTool } from './tools/webSearchTool.js';
 import { RecommendationTool } from './tools/recommendationTool.js';
+import { IlkyardimTool } from './tools/ilkyardimTool.js';
 
 export class CoreAgent {
   private llm: OpenAI;
@@ -33,11 +34,18 @@ export class CoreAgent {
     this.tools.set('notification', new NotificationTool());
     this.tools.set('websearch', new WebSearchTool());
     this.tools.set('recommendation', new RecommendationTool());
+    this.tools.set('ilkyardim', new IlkyardimTool());
   }
 
   async processQuery(query: string, userContext: UserContext): Promise<AgentResponse> {
     try {
       console.log(`🤖 CoreAgent processing query: "${query}" for user: ${userContext.userId}`);
+
+      // 0. Selamlaşma mesajı kontrolü
+      if (this.isGreetingMessage(query)) {
+        console.log(`👋 Greeting message detected: "${query}"`);
+        return this.getGreetingResponse();
+      }
 
       // 1. Emergency level'ı query'den tespit et
       const emergencyLevel = this.detectEmergencyLevel(query);
@@ -393,6 +401,49 @@ Lütfen yanıtınızı JSON formatında verin.`;
   // RL Recommendation Tool erişimi
   getRecommendationTool(): any {
     return this.tools.get('recommendation');
+  }
+
+  // Selamlaşma mesajı tespit et
+  private isGreetingMessage(query: string): boolean {
+    const greetingPatterns = [
+      /^merhaba$/i,
+      /^selam$/i,
+      /^selamlar$/i,
+      /^hey$/i,
+      /^hi$/i,
+      /^hello$/i,
+      /^günaydın$/i,
+      /^iyi günler$/i,
+      /^iyi akşamlar$/i,
+      /^iyi geceler$/i,
+      /^nasılsın$/i,
+      /^naber$/i,
+      /^ne haber$/i,
+      /^merhaba!$/i,
+      /^selam!$/i,
+      /^hey!$/i,
+      /^hi!$/i,
+      /^hello!$/i
+    ];
+    
+    return greetingPatterns.some(pattern => pattern.test(query.trim()));
+  }
+
+  // Sabit selamlaşma yanıtı
+  private getGreetingResponse(): AgentResponse {
+    return {
+      message: "Merhaba! Ben Reach+ AI Destek Asistanı. Size nasıl yardımcı olabilirim? Eğer acil bir durumdaysanız veya herhangi bir konuda destek ihtiyacınız varsa, lütfen bana söyleyin. Buradayım ve sizinle birlikteyim! 🤖",
+      suggestions: [
+        "Acil durum bildir",
+        "Güvenli alanları öğren", 
+        "Konumumu paylaş",
+        "Yardım talep et"
+      ],
+      actionItems: [],
+      toolResults: [],
+      confidence: 1.0,
+      timestamp: new Date()
+    };
   }
 
   // Emergency level detection

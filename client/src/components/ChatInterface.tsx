@@ -13,7 +13,11 @@ import EmergencyCallDialog from "./EmergencyCallDialog";
 import LocationSendDialog from "./LocationSendDialog";
 import { api } from "@/lib/api";
 
-export default function ChatInterface() {
+interface ChatInterfaceProps {
+  onOpenHospitalModal?: () => void;
+}
+
+export default function ChatInterface({ onOpenHospitalModal }: ChatInterfaceProps) {
   const [inputMessage, setInputMessage] = useState("");
   const [isOfflineMode, setIsOfflineMode] = useState(false);
   const [isOnline, setIsOnline] = useState(navigator.onLine);
@@ -48,10 +52,15 @@ export default function ChatInterface() {
   } = useBluetooth();
 
   let isLoggedIn = false;
+  let userId = "default";
   try {
     const auth = JSON.parse(localStorage.getItem("auth") || "null");
     isLoggedIn = !!auth?.user?.id;
+    if (auth?.user?.id) {
+      userId = auth.user.id;
+    }
   } catch {}
+
 
   // Speech Recognition setup
   useEffect(() => {
@@ -424,6 +433,14 @@ export default function ChatInterface() {
             >
               🛡️ Güvenli Alanlar
             </Button>
+            <Button
+              size="sm"
+              variant="outline"
+              className="bg-white/10 border-white/20 text-white hover:bg-white/20"
+              onClick={onOpenHospitalModal}
+            >
+              🏥 Hastaneler
+            </Button>
           </div>
         </div>
       </div>
@@ -588,7 +605,27 @@ export default function ChatInterface() {
                   ? "bg-gradient-to-r from-blue-600 to-purple-700 text-white" 
                   : "bg-gray-100 text-gray-800"
               }`}>
-                <p className="text-sm leading-relaxed">{message.content}</p>
+                <div className="text-sm leading-relaxed">
+                  <p>{message.content}</p>
+                  
+                  {/* Suggestions integrated as bullet points */}
+                  {message.suggestions && message.suggestions.length > 0 && (
+                    <div className="mt-3">
+                      <ul className="space-y-1">
+                        {message.suggestions.map((suggestion: any, index: number) => (
+                          <li 
+                            key={index}
+                            className="flex items-start gap-2 cursor-pointer hover:opacity-80 transition-opacity"
+                            onClick={() => handleSendMessage(suggestion)}
+                          >
+                            <span className="text-xs mt-1">•</span>
+                            <span className="text-xs">{suggestion}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
                 
                 {/* Action Items */}
                 {message.actionItems && message.actionItems.length > 0 && (
@@ -628,27 +665,6 @@ export default function ChatInterface() {
                         console.log(`RL Feedback: ${actionId} -> ${reward}`);
                       }}
                     />
-                  </div>
-                )}
-
-                {/* Suggestions */}
-                {message.suggestions && message.suggestions.length > 0 && (
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    {message.suggestions.map((suggestion: any, index: number) => (
-                      <Button
-                        key={index}
-                        variant="outline"
-                        size="sm"
-                        className={`text-xs h-7 ${
-                          message.type === "user" 
-                            ? "bg-white/10 border-white/20 text-white hover:bg-white/20" 
-                            : "bg-white border-gray-200 hover:bg-gray-50"
-                        }`}
-                        onClick={() => handleSendMessage(suggestion)}
-                      >
-                        {suggestion}
-                      </Button>
-                    ))}
                   </div>
                 )}
 
@@ -842,6 +858,7 @@ export default function ChatInterface() {
         location={location ? `${location.city}, ${location.district}` : "Konum bilgisi alınıyor..."}
         isLoading={isSendingLocation}
       />
+
     </div>
   );
 }

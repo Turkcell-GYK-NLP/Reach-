@@ -212,4 +212,27 @@ export const api = {
     
     return response.json();
   },
+
+  // Hospitals
+  getHospitals: async (district?: string) => {
+    const url = district ? `/api/hospitals?district=${encodeURIComponent(district)}` : "/api/hospitals";
+    const response = await fetch(url);
+    
+    if (!response.ok) {
+      throw new Error("Failed to get hospitals");
+    }
+    
+    return response.json();
+  },
+
+
+  getDistricts: async () => {
+    const response = await fetch("/api/hospitals/districts");
+    
+    if (!response.ok) {
+      throw new Error("Failed to get districts");
+    }
+    
+    return response.json();
+  },
 };

@@ -5,14 +5,28 @@ import { useLocation } from "@/hooks/useLocation";
 import ChatInterface from "@/components/ChatInterface";
 import HamburgerMenu from "@/components/HamburgerMenu";
 import EmergencyAlert from "@/components/EmergencyAlert";
+import NotificationPanel from "@/components/NotificationPanel";
+import HospitalModal from "@/components/HospitalModal";
 import { Button } from "@/components/ui/button";
 import { Heart, Menu, Bell, Wifi, WifiOff, Bluetooth } from "lucide-react";
 
 export default function Dashboard() {
   const { location } = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showNotifications, setShowNotifications] = useState(false);
+  const [showHospitalModal, setShowHospitalModal] = useState(false);
+  
   const [connectionStatus, setConnectionStatus] = useState<"online" | "offline" | "bluetooth">("online");
   const [notifications] = useState(3);
+
+  // User ID - auth'dan al
+  let userId = "default";
+  try {
+    const auth = JSON.parse(localStorage.getItem("auth") || "null");
+    if (auth?.user?.id) {
+      userId = auth.user.id;
+    }
+  } catch {}
 
   // Get emergency alerts
   const { data: emergencyAlerts = [] } = useQuery({
@@ -95,7 +109,12 @@ export default function Dashboard() {
                 {getConnectionStatusIcon()}
                 <span className="text-sm text-gray-600">{getConnectionStatusText()}</span>
               </div>
-              <Button variant="ghost" size="sm" className="p-2 relative">
+              <Button 
+                variant="ghost" 
+                size="sm" 
+                className="p-2 relative"
+                onClick={() => setShowNotifications(prev => !prev)}
+              >
                 <Bell className="w-5 h-5 text-gray-600" />
                 {notifications > 0 && (
                   <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center">
@@ -116,7 +135,7 @@ export default function Dashboard() {
       {/* Main Content - Chat Interface */}
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="h-[calc(100vh-8rem)]">
-          <ChatInterface />
+          <ChatInterface onOpenHospitalModal={() => setShowHospitalModal(true)} />
         </div>
       </main>
 
@@ -125,6 +144,19 @@ export default function Dashboard() {
         isOpen={isMenuOpen} 
         onClose={() => setIsMenuOpen(false)}
         onNavigate={handleNavigate}
+      />
+
+      {/* Notification Panel */}
+      <NotificationPanel
+        isOpen={showNotifications}
+        onClose={() => setShowNotifications(false)}
+        userId={userId}
+      />
+
+      {/* Hospital Modal */}
+      <HospitalModal
+        isOpen={showHospitalModal}
+        onClose={() => setShowHospitalModal(false)}
       />
 
       {/* Floating Emergency Button */}

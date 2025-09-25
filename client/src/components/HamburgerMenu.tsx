@@ -27,8 +27,6 @@ interface HamburgerMenuProps {
 }
 
 export default function HamburgerMenu({ isOpen, onClose, onNavigate }: HamburgerMenuProps) {
-  const [connectionStatus, setConnectionStatus] = useState<"online" | "offline" | "bluetooth">("online");
-  const [notifications] = useState(3);
 
   const menuItems = [
     {
@@ -136,29 +134,6 @@ export default function HamburgerMenu({ isOpen, onClose, onNavigate }: Hamburger
               </Button>
             </div>
 
-            {/* Connection Status */}
-            <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-2">
-                <div className={`w-3 h-3 rounded-full ${
-                  connectionStatus === "online" ? "bg-green-500" : 
-                  connectionStatus === "offline" ? "bg-gray-400" : "bg-blue-500"
-                } animate-pulse`}></div>
-                <span className="text-sm text-gray-600">
-                  {connectionStatus === "online" ? "Çevrimiçi" : 
-                   connectionStatus === "offline" ? "Çevrimdışı" : "Bluetooth"}
-                </span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Button variant="ghost" size="sm" className="p-2 relative">
-                  <Bell className="w-4 h-4" />
-                  {notifications > 0 && (
-                    <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 text-white text-xs rounded-full flex items-center justify-center">
-                      {notifications}
-                    </span>
-                  )}
-                </Button>
-              </div>
-            </div>
           </div>
 
           {/* Navigation Menu */}
@@ -242,6 +217,7 @@ export default function HamburgerMenu({ isOpen, onClose, onNavigate }: Hamburger
           </div>
         </div>
       </div>
+
     </div>
   );
 }

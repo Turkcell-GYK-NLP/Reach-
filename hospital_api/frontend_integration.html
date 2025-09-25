@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hastane Bulucu - API Entegrasyonu</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .search-box {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 12px 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+        .hospital-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px 0;
+            background: #fafafa;
+        }
+        .hospital-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .hospital-info {
+            color: #7f8c8d;
+            margin: 5px 0;
+        }
+        .coordinates {
+            font-family: monospace;
+            background: #ecf0f1;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        .loading {
+            text-align: center;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        .emergency {
+            background: #e74c3c;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏥 İstanbul Hastane Bulucu</h1>
+        
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Hastane adı arayın..." />
+            <button onclick="searchHospitals()">🔍 Ara</button>
+            <button onclick="loadAllHospitals()">📋 Tümünü Listele</button>
+            <button onclick="loadEmergencyHospitals()">🚨 Acil Servis</button>
+        </div>
+        
+        <div id="results"></div>
+    </div>
+
+    <script>
+        // API Base URL - Flask API'nizi çalıştırdığınızda
+        const API_BASE = 'http://localhost:5000/api';
+        
+        // Hastane arama
+        async function searchHospitals() {
+            const query = document.getElementById('searchInput').value;
+            if (!query.trim()) {
+                alert('Lütfen arama terimi girin');
+                return;
+            }
+            
+            showLoading();
+            
+            try {
+                const response = await fetch(`${API_BASE}/hospitals/search?q=${encodeURIComponent(query)}`);
+                const data = await response.json();
+                
+                if (data.success) {
+                    displayHospitals(data.data, `"${query}" için ${data.count} sonuç`);
+                } else {
+                    showError(data.error);
+                }
+            } catch (error) {
+                showError('API bağlantı hatası: ' + error.message);
+            }
+        }
+        
+        // Tüm hastaneleri yükle
+        async function loadAllHospitals() {
+            showLoading();
+            
+            try {
+                const response = await fetch(`${API_BASE}/hospitals`);
+                const data = await response.json();
+                
+                if (data.success) {
+                    displayHospitals(data.data, `Toplam ${data.count} hastane`);
+                } else {
+                    showError(data.error);
+                }
+            } catch (error) {
+                showError('API bağlantı hatası: ' + error.message);
+            }
+        }
+        
+        // Acil servisi olan hastaneler
+        async function loadEmergencyHospitals() {
+            showLoading();
+            
+            try {
+                const response = await fetch(`${API_BASE}/hospitals/emergency`);
+                const data = await response.json();
+                
+                if (data.success) {
+                    displayHospitals(data.data, `${data.count} acil servis hastanesi`);
+                } else {
+                    showError(data.error);
+                }
+            } catch (error) {
+                showError('API bağlantı hatası: ' + error.message);
+            }
+        }
+        
+        // Çevredeki hastaneler (konum izni ile)
+        async function findNearbyHospitals() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(async (position) => {
+                    const lat = position.coords.latitude;
+                    const lon = position.coords.longitude;
+                    
+                    showLoading();
+                    
+                    try {
+                        const response = await fetch(`${API_BASE}/hospitals/nearby?lat=${lat}&lon=${lon}&radius=5`);
+                        const data = await response.json();
+                        
+                        if (data.success) {
+                            displayHospitals(data.data, `Çevrenizde ${data.count} hastane (5km)`);
+                        } else {
+                            showError(data.error);
+                        }
+                    } catch (error) {
+                        showError('API bağlantı hatası: ' + error.message);
+                    }
+                });
+            } else {
+                alert('Konum servisi desteklenmiyor');
+            }
+        }
+        
+        // Hastaneleri görüntüle
+        function displayHospitals(hospitals, title) {
+            const resultsDiv = document.getElementById('results');
+            
+            let html = `<h2>${title}</h2>`;
+            
+            if (hospitals.length === 0) {
+                html += '<p>Hastane bulunamadı.</p>';
+            } else {
+                hospitals.forEach(hospital => {
+                    html += `
+                        <div class="hospital-card">
+                            <div class="hospital-name">
+                                🏥 ${hospital.name}
+                                ${hospital.emergency && hospital.emergency.toLowerCase() === 'yes' ? 
+                                    '<span class="emergency">ACİL SERVİS</span>' : ''}
+                            </div>
+                            ${hospital.phone ? `<div class="hospital-info">📞 ${hospital.phone}</div>` : ''}
+                            ${hospital.address ? `<div class="hospital-info">🏠 ${hospital.address}</div>` : ''}
+                            ${hospital.website ? `<div class="hospital-info">🌐 <a href="${hospital.website}" target="_blank">${hospital.website}</a></div>` : ''}
+                            ${hospital.operator ? `<div class="hospital-info">🏢 ${hospital.operator}</div>` : ''}
+                            <div class="hospital-info">
+                                📍 <span class="coordinates">${hospital.coordinates.latitude.toFixed(6)}, ${hospital.coordinates.longitude.toFixed(6)}</span>
+                                <button onclick="openInMaps(${hospital.coordinates.latitude}, ${hospital.coordinates.longitude}, '${hospital.name}')" style="margin-left: 10px; padding: 2px 8px; font-size: 12px;">📍 Haritada Aç</button>
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+            
+            resultsDiv.innerHTML = html;
+        }
+        
+        // Haritada aç
+        function openInMaps(lat, lon, name) {
+            const url = `https://www.google.com/maps?q=${lat},${lon}&hl=tr`;
+            window.open(url, '_blank');
+        }
+        
+        // Loading göster
+        function showLoading() {
+            document.getElementById('results').innerHTML = '<div class="loading">Hastaneler yükleniyor...</div>';
+        }
+        
+        // Hata göster
+        function showError(message) {
+            document.getElementById('results').innerHTML = `<div style="color: red;">Hata: ${message}</div>`;
+        }
+        
+        // Enter tuşu ile arama
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchHospitals();
+            }
+        });
+        
+        // Sayfa yüklendiğinde telefon numarası olan hastaneleri göster
+        window.onload = async function() {
+            showLoading();
+            
+            try {
+                const response = await fetch(`${API_BASE}/hospitals/with-phone`);
+                const data = await response.json();
+                
+                if (data.success) {
+                    displayHospitals(data.data.slice(0, 10), `Telefon numarası olan hastaneler (ilk 10)`);
+                } else {
+                    showError(data.error);
+                }
+            } catch (error) {
+                showError('API bağlantısı kurulamadı. Flask API\'yi başlattığınızdan emin olun.');
+            }
+        };
+    </script>
+</body>
+</html>
