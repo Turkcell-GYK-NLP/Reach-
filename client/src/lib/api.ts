@@ -145,6 +145,59 @@ export const api = {
     return response.json();
   },
 
+  // Tweets (Excel-backed)
+  getTweets: async (params?: { limit?: number; timeframe?: "7d" | "1m" | "1y"; startDate?: string; endDate?: string; q?: string; il?: string; ilce?: string }) => {
+    const search = new URLSearchParams();
+    if (params?.limit) search.append("limit", String(params.limit));
+    if (params?.timeframe) search.append("timeframe", params.timeframe);
+    if (params?.startDate) search.append("startDate", params.startDate);
+    if (params?.endDate) search.append("endDate", params.endDate);
+    if (params?.q) search.append("q", params.q);
+    if (params?.il) search.append("il", params.il);
+    if (params?.ilce) search.append("ilce", params.ilce);
+    const response = await fetch(`/api/tweets?${search.toString()}`);
+    if (!response.ok) {
+      throw new Error("Failed to get tweets");
+    }
+    return response.json();
+  },
+
+  getTweetAnalytics: async (timeframe?: "7d" | "1m" | "1y", opts?: { startDate?: string; endDate?: string }) => {
+    const search = new URLSearchParams();
+    if (timeframe) search.append("timeframe", timeframe);
+    if (opts?.startDate) search.append("startDate", opts.startDate);
+    if (opts?.endDate) search.append("endDate", opts.endDate);
+    const response = await fetch(`/api/tweets/analytics?${search.toString()}`);
+    if (!response.ok) {
+      throw new Error("Failed to get tweet analytics");
+    }
+    return response.json();
+  },
+
+  getTweetDensity: async (timeframe?: "7d" | "1m" | "1y", opts?: { startDate?: string; endDate?: string }) => {
+    const search = new URLSearchParams();
+    if (timeframe) search.append("timeframe", timeframe);
+    if (opts?.startDate) search.append("startDate", opts.startDate);
+    if (opts?.endDate) search.append("endDate", opts.endDate);
+    const response = await fetch(`/api/tweets/density?${search.toString()}`);
+    if (!response.ok) {
+      throw new Error("Failed to get tweet density");
+    }
+    return response.json();
+  },
+
+  getTrendingTopics: async (timeframe?: "7d" | "1m" | "1y", opts?: { startDate?: string; endDate?: string }) => {
+    const search = new URLSearchParams();
+    if (timeframe) search.append("timeframe", timeframe);
+    if (opts?.startDate) search.append("startDate", opts.startDate);
+    if (opts?.endDate) search.append("endDate", opts.endDate);
+    const response = await fetch(`/api/tweets/trending-topics?${search.toString()}`);
+    if (!response.ok) {
+      throw new Error("Failed to get trending topics");
+    }
+    return response.json();
+  },
+
   // Emergency
   getEmergencyAlerts: async (location?: string) => {
     const url = location ? `/api/emergency-alerts?location=${encodeURIComponent(location)}` : "/api/emergency-alerts";
