@@ -1,0 +1,112 @@
+time="2025-10-05T20:13:15+03:00" level=warning msg="/Users/esrakaya/Downloads/GYKProje/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+Compose can now delegate builds to bake for better performance.
+ To do so, set COMPOSE_BAKE=true.
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [app internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.16kB 0.0s done
+#1 DONE 0.0s
+
+#2 [app internal] load metadata for docker.io/library/python:3.11-slim
+#2 ...
+
+#3 [app internal] load metadata for docker.io/library/node:20-alpine
+#3 DONE 1.1s
+
+#2 [app internal] load metadata for docker.io/library/python:3.11-slim
+#2 DONE 1.2s
+
+#4 [app internal] load .dockerignore
+#4 transferring context: 873B done
+#4 DONE 0.0s
+
+#5 [app python-builder 1/7] FROM docker.io/library/python:3.11-slim@sha256:9bffe4353b925a1656688797ebc68f9c525e79b1d377a764d232182a519eeec4
+#5 DONE 0.0s
+
+#6 [app builder 1/7] FROM docker.io/library/node:20-alpine@sha256:eabac870db94f7342d6c33560d6613f188bbcf4bbe1f4eb47d5e2a08e1a37722
+#6 CACHED
+
+#7 [app internal] load build context
+#7 transferring context: 522.15kB 0.0s done
+#7 DONE 0.1s
+
+#8 [app python-builder 5/7] COPY database.py faiss_indexer.py ilkyardim_indexer.py ./
+#8 CACHED
+
+#9 [app python-builder 4/7] RUN pip install --no-cache-dir -r requirements.txt
+#9 CACHED
+
+#10 [app python-builder 3/7] COPY requirements.txt ./
+#10 CACHED
+
+#11 [app python-builder 6/7] COPY Datas ./Datas
+#11 CACHED
+
+#12 [app python-builder 2/7] WORKDIR /python-app
+#12 CACHED
+
+#13 [app python-builder 7/7] COPY new_datas ./new_datas
+#13 CACHED
+
+#14 [app builder 2/7] RUN apk add --no-cache python3 py3-pip
+#14 CACHED
+
+#15 [app builder 3/7] WORKDIR /app
+#15 CACHED
+
+#16 [app builder 4/7] COPY package*.json ./
+#16 DONE 0.0s
+
+#17 [app runtime  2/21] RUN apk add --no-cache     python3     py3-pip     postgresql-client     curl
+#17 0.183 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/main/aarch64/APKINDEX.tar.gz
+#17 1.624 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/community/aarch64/APKINDEX.tar.gz
+#17 CANCELED
+
+#18 [app builder 5/7] RUN npm ci --only=production && npm cache clean --force
+#18 0.227 npm warn config only Use `--omit=dev` to omit dev dependencies from the install.
+#18 2.295 npm error code EUSAGE
+#18 2.295 npm error
+#18 2.295 npm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+#18 2.295 npm error
+#18 2.295 npm error Missing: @langchain/core@0.3.78 from lock file
+#18 2.295 npm error Missing: @cfworker/json-schema@4.1.1 from lock file
+#18 2.295 npm error Missing: ansi-styles@5.2.0 from lock file
+#18 2.295 npm error
+#18 2.295 npm error Clean install a project
+#18 2.295 npm error
+#18 2.295 npm error Usage:
+#18 2.295 npm error npm ci
+#18 2.295 npm error
+#18 2.295 npm error Options:
+#18 2.295 npm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+#18 2.295 npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+#18 2.295 npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+#18 2.295 npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+#18 2.295 npm error [--no-bin-links] [--no-fund] [--dry-run]
+#18 2.295 npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+#18 2.295 npm error [-ws|--workspaces] [--include-workspace-root] [--install-links]
+#18 2.295 npm error
+#18 2.295 npm error aliases: clean-install, ic, install-clean, isntall-clean
+#18 2.295 npm error
+#18 2.295 npm error Run "npm help ci" for more info
+#18 2.301 npm notice
+#18 2.301 npm notice New major version of npm available! 10.8.2 -> 11.6.1
+#18 2.301 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.1
+#18 2.301 npm notice To update run: npm install -g npm@11.6.1
+#18 2.301 npm notice
+#18 2.301 npm error A complete log of this run can be found in: /root/.npm/_logs/2025-10-05T17_13_17_715Z-debug-0.log
+#18 ERROR: process "/bin/sh -c npm ci --only=production && npm cache clean --force" did not complete successfully: exit code: 1
+------
+ > [app builder 5/7] RUN npm ci --only=production && npm cache clean --force:
+2.295 npm error
+2.295 npm error aliases: clean-install, ic, install-clean, isntall-clean
+2.295 npm error
+2.295 npm error Run "npm help ci" for more info
+2.301 npm notice
+2.301 npm notice New major version of npm available! 10.8.2 -> 11.6.1
+2.301 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.1
+2.301 npm notice To update run: npm install -g npm@11.6.1
+2.301 npm notice
+2.301 npm error A complete log of this run can be found in: /root/.npm/_logs/2025-10-05T17_13_17_715Z-debug-0.log
+------
+failed to solve: process "/bin/sh -c npm ci --only=production && npm cache clean --force" did not complete successfully: exit code: 1

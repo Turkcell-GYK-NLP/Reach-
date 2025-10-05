@@ -1,0 +1,223 @@
+time="2025-10-05T20:16:56+03:00" level=warning msg="/Users/esrakaya/Downloads/GYKProje/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+Compose can now delegate builds to bake for better performance.
+ To do so, set COMPOSE_BAKE=true.
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [app internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.25kB 0.0s done
+#1 DONE 0.0s
+
+#2 [app internal] load metadata for docker.io/library/python:3.11-slim
+#2 DONE 2.0s
+
+#3 [app internal] load metadata for docker.io/library/node:20-alpine
+#3 DONE 2.2s
+
+#4 [app internal] load .dockerignore
+#4 transferring context: 873B done
+#4 DONE 0.0s
+
+#5 [app builder 1/8] FROM docker.io/library/node:20-alpine@sha256:eabac870db94f7342d6c33560d6613f188bbcf4bbe1f4eb47d5e2a08e1a37722
+#5 DONE 0.0s
+
+#6 [app python-builder 1/7] FROM docker.io/library/python:3.11-slim@sha256:9bffe4353b925a1656688797ebc68f9c525e79b1d377a764d232182a519eeec4
+#6 DONE 0.0s
+
+#7 [app runtime  2/21] RUN apk add --no-cache     python3     py3-pip     postgresql-client     curl
+#7 CACHED
+
+#8 [app runtime  3/21] WORKDIR /app
+#8 CACHED
+
+#9 [app internal] load build context
+#9 transferring context: 27.04kB 0.0s done
+#9 DONE 0.0s
+
+#10 [app builder 3/8] WORKDIR /app
+#10 CACHED
+
+#11 [app builder 2/8] RUN apk add --no-cache python3 py3-pip
+#11 CACHED
+
+#12 [app builder 4/8] COPY package*.json ./
+#12 CACHED
+
+#13 [app python-builder 6/7] COPY Datas ./Datas
+#13 CACHED
+
+#14 [app python-builder 5/7] COPY database.py faiss_indexer.py ilkyardim_indexer.py ./
+#14 CACHED
+
+#15 [app python-builder 3/7] COPY requirements.txt ./
+#15 CACHED
+
+#16 [app python-builder 4/7] RUN pip install --no-cache-dir -r requirements.txt
+#16 CACHED
+
+#17 [app python-builder 2/7] WORKDIR /python-app
+#17 CACHED
+
+#18 [app python-builder 7/7] COPY new_datas ./new_datas
+#18 CACHED
+
+#19 [app builder 5/8] RUN npm install && npm cache clean --force
+#19 11.10 npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+#19 17.26 npm warn deprecated npmlog@5.0.1: This package is no longer supported.
+#19 18.78 npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+#19 36.26 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+#19 41.41 npm warn deprecated gauge@3.0.2: This package is no longer supported.
+#19 41.63 npm warn deprecated domexception@4.0.0: Use your platform's native DOMException instead
+#19 45.70 npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
+#19 46.01 npm warn deprecated abab@2.0.6: Use your platform's native atob() and btoa() methods instead
+#19 49.18 npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+#19 50.26 npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+#19 50.43 npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+#19 51.83 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+#19 53.19 npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+#19 53.27 npm warn deprecated gauge@4.0.4: This package is no longer supported.
+#19 53.33 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+#19 53.45 npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+#19 57.30 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+#19 84.90 
+#19 84.90 added 833 packages, and audited 834 packages in 1m
+#19 84.90 
+#19 84.90 90 packages are looking for funding
+#19 84.90   run `npm fund` for details
+#19 84.98 
+#19 84.98 18 vulnerabilities (3 low, 8 moderate, 7 high)
+#19 84.98 
+#19 84.98 To address issues that do not require attention, run:
+#19 84.98   npm audit fix
+#19 84.98 
+#19 84.98 To address all issues possible (including breaking changes), run:
+#19 84.98   npm audit fix --force
+#19 84.98 
+#19 84.98 Some issues need review, and may require choosing
+#19 84.98 a different dependency.
+#19 84.98 
+#19 84.98 Run `npm audit` for details.
+#19 84.98 npm notice
+#19 84.98 npm notice New major version of npm available! 10.8.2 -> 11.6.1
+#19 84.98 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.1
+#19 84.98 npm notice To update run: npm install -g npm@11.6.1
+#19 84.98 npm notice
+#19 85.15 npm warn using --force Recommended protections disabled.
+#19 DONE 86.3s
+
+#20 [app builder 6/8] COPY . .
+#20 DONE 0.6s
+
+#21 [app builder 7/8] RUN npm run build
+#21 0.510 
+#21 0.510 > rest-express@1.0.0 build
+#21 0.510 > vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+#21 0.510 
+#21 0.787 vite v5.4.19 building for production...
+#21 0.914 transforming...
+#21 1.301 Browserslist: browsers data (caniuse-lite) is 12 months old. Please run:
+#21 1.301   npx update-browserslist-db@latest
+#21 1.301   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+#21 9.566 ✓ 1801 modules transformed.
+#21 10.23 rendering chunks...
+#21 10.30 computing gzip size...
+#21 10.38 ../dist/public/index.html                   0.63 kB │ gzip:   0.38 kB
+#21 10.38 ../dist/public/assets/index-lBbFkmr6.css   91.64 kB │ gzip:  19.55 kB
+#21 10.38 ../dist/public/assets/index-C_Z6g3P2.js   921.90 kB │ gzip: 265.04 kB
+#21 10.38 
+#21 10.38 (!) Some chunks are larger than 500 kB after minification. Consider:
+#21 10.38 - Using dynamic import() to code-split the application
+#21 10.38 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+#21 10.38 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+#21 10.38 ✓ built in 9.54s
+#21 10.79 
+#21 10.79   dist/index.js  232.2kb
+#21 10.79 
+#21 10.79 ⚡ Done in 45ms
+#21 DONE 11.0s
+
+#22 [app builder 8/8] RUN npm prune --production
+#22 0.926 npm warn config production Use `--omit=dev` instead.
+#22 4.054 npm warn deprecated npmlog@5.0.1: This package is no longer supported.
+#22 4.319 npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
+#22 4.345 npm warn deprecated gauge@3.0.2: This package is no longer supported.
+#22 7.955 
+#22 7.955 up to date, audited 728 packages in 7s
+#22 7.955 
+#22 7.955 78 packages are looking for funding
+#22 7.955   run `npm fund` for details
+#22 7.982 
+#22 7.982 11 vulnerabilities (3 low, 1 moderate, 7 high)
+#22 7.982 
+#22 7.982 To address issues that do not require attention, run:
+#22 7.982   npm audit fix
+#22 7.982 
+#22 7.982 Some issues need review, and may require choosing
+#22 7.982 a different dependency.
+#22 7.982 
+#22 7.982 Run `npm audit` for details.
+#22 DONE 8.2s
+
+#23 [app runtime  4/21] COPY --from=builder /app/node_modules ./node_modules
+#23 DONE 11.2s
+
+#24 [app runtime  5/21] COPY --from=builder /app/dist ./dist
+#24 DONE 0.0s
+
+#25 [app runtime  6/21] COPY --from=builder /app/package*.json ./
+#25 DONE 0.7s
+
+#26 [app runtime  7/21] COPY --from=python-builder /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
+#26 DONE 0.3s
+
+#27 [app runtime  8/21] COPY --from=python-builder /python-app /python-app
+#27 DONE 0.1s
+
+#28 [app runtime  9/21] COPY migrations ./migrations
+#28 DONE 0.0s
+
+#29 [app runtime 10/21] COPY shared ./shared
+#29 DONE 0.0s
+
+#30 [app runtime 11/21] COPY Datas ./Datas
+#30 DONE 0.1s
+
+#31 [app runtime 12/21] COPY new_datas ./new_datas
+#31 DONE 0.0s
+
+#32 [app runtime 13/21] COPY faiss_index ./faiss_index
+#32 DONE 0.0s
+
+#33 [app runtime 14/21] COPY database.py ./
+#33 DONE 0.0s
+
+#34 [app runtime 15/21] COPY faiss_indexer.py ./
+#34 DONE 0.0s
+
+#35 [app runtime 16/21] COPY ilkyardim_indexer.py ./
+#35 DONE 0.0s
+
+#36 [app runtime 17/21] COPY faiss_search.py ./
+#36 DONE 0.0s
+
+#37 [app runtime 18/21] COPY ilkyardim_search.py ./
+#37 DONE 0.0s
+
+#38 [app runtime 19/21] COPY docker-entrypoint.sh ./
+#38 DONE 0.0s
+
+#39 [app runtime 20/21] RUN chmod +x docker-entrypoint.sh
+#39 DONE 0.2s
+
+#40 [app runtime 21/21] RUN mkdir -p faiss_index logs
+#40 DONE 0.2s
+
+#41 [app] exporting to image
+#41 exporting layers
+#41 exporting layers 5.6s done
+#41 writing image sha256:8813c179d051f0e1917ce84c1a52edf4ecbde6c5d2e56d118bc281cde4c44ada done
+#41 naming to docker.io/library/gykproje-app done
+#41 DONE 5.7s
+
+#42 [app] resolving provenance for metadata file
+#42 DONE 0.0s
+ app  Built

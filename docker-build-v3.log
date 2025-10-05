@@ -1,0 +1,199 @@
+time="2025-10-05T20:14:01+03:00" level=warning msg="/Users/esrakaya/Downloads/GYKProje/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+Compose can now delegate builds to bake for better performance.
+ To do so, set COMPOSE_BAKE=true.
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [app internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.16kB 0.0s done
+#1 DONE 0.0s
+
+#2 [app internal] load metadata for docker.io/library/python:3.11-slim
+#2 DONE 0.9s
+
+#3 [app internal] load metadata for docker.io/library/node:20-alpine
+#3 DONE 0.9s
+
+#4 [app internal] load .dockerignore
+#4 transferring context: 873B done
+#4 DONE 0.0s
+
+#5 [app python-builder 1/7] FROM docker.io/library/python:3.11-slim@sha256:9bffe4353b925a1656688797ebc68f9c525e79b1d377a764d232182a519eeec4
+#5 DONE 0.0s
+
+#6 [app builder 1/7] FROM docker.io/library/node:20-alpine@sha256:eabac870db94f7342d6c33560d6613f188bbcf4bbe1f4eb47d5e2a08e1a37722
+#6 CACHED
+
+#7 [app internal] load build context
+#7 transferring context: 26.95kB 0.0s done
+#7 DONE 0.0s
+
+#8 [app builder 3/7] WORKDIR /app
+#8 CACHED
+
+#9 [app builder 2/7] RUN apk add --no-cache python3 py3-pip
+#9 CACHED
+
+#10 [app builder 4/7] COPY package*.json ./
+#10 CACHED
+
+#11 [app python-builder 2/7] WORKDIR /python-app
+#11 CACHED
+
+#12 [app python-builder 4/7] RUN pip install --no-cache-dir -r requirements.txt
+#12 CACHED
+
+#13 [app python-builder 3/7] COPY requirements.txt ./
+#13 CACHED
+
+#14 [app python-builder 5/7] COPY database.py faiss_indexer.py ilkyardim_indexer.py ./
+#14 CACHED
+
+#15 [app python-builder 6/7] COPY Datas ./Datas
+#15 CACHED
+
+#16 [app python-builder 7/7] COPY new_datas ./new_datas
+#16 CACHED
+
+#17 [app builder 5/7] RUN npm install --production && npm cache clean --force
+#17 0.292 npm warn config production Use `--omit=dev` instead.
+#17 ...
+
+#18 [app runtime  2/21] RUN apk add --no-cache     python3     py3-pip     postgresql-client     curl
+#18 0.217 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/main/aarch64/APKINDEX.tar.gz
+#18 1.227 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/community/aarch64/APKINDEX.tar.gz
+#18 2.354 (1/36) Installing brotli-libs (1.1.0-r2)
+#18 2.624 (2/36) Installing c-ares (1.34.5-r0)
+#18 2.799 (3/36) Installing libunistring (1.3-r0)
+#18 3.210 (4/36) Installing libidn2 (2.3.7-r0)
+#18 3.371 (5/36) Installing nghttp2-libs (1.65.0-r0)
+#18 3.595 (6/36) Installing libpsl (0.21.5-r3)
+#18 3.728 (7/36) Installing zstd-libs (1.5.7-r0)
+#18 3.969 (8/36) Installing libcurl (8.14.1-r2)
+#18 4.252 (9/36) Installing curl (8.14.1-r2)
+#18 4.573 (10/36) Installing postgresql-common (1.2-r1)
+#18 4.738 Executing postgresql-common-1.2-r1.pre-install
+#18 4.769 (11/36) Installing lz4-libs (1.10.0-r0)
+#18 4.934 (12/36) Installing libpq (17.6-r0)
+#18 5.458 (13/36) Installing ncurses-terminfo-base (6.5_p20250503-r0)
+#18 6.205 (14/36) Installing libncursesw (6.5_p20250503-r0)
+#18 6.794 (15/36) Installing readline (8.2.13-r1)
+#18 ...
+
+#17 [app builder 5/7] RUN npm install --production && npm cache clean --force
+#17 6.903 npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+#17 11.71 npm warn deprecated npmlog@5.0.1: This package is no longer supported.
+#17 ...
+
+#18 [app runtime  2/21] RUN apk add --no-cache     python3     py3-pip     postgresql-client     curl
+#18 7.194 (16/36) Installing postgresql17-client (17.6-r0)
+#18 9.698 (17/36) Installing libbz2 (1.0.8-r6)
+#18 9.908 (18/36) Installing libexpat (2.7.3-r0)
+#18 10.20 (19/36) Installing libffi (3.4.8-r0)
+#18 11.02 (20/36) Installing gdbm (1.24-r0)
+#18 13.27 (21/36) Installing xz-libs (5.8.1-r0)
+#18 ...
+
+#17 [app builder 5/7] RUN npm install --production && npm cache clean --force
+#17 13.64 npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+#17 17.47 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+#17 18.35 npm warn deprecated gauge@3.0.2: This package is no longer supported.
+#17 ...
+
+#18 [app runtime  2/21] RUN apk add --no-cache     python3     py3-pip     postgresql-client     curl
+#18 14.05 (22/36) Installing mpdecimal (4.0.1-r0)
+#18 14.40 (23/36) Installing libpanelw (6.5_p20250503-r0)
+#18 14.48 (24/36) Installing sqlite-libs (3.49.2-r1)
+#18 16.69 (25/36) Installing python3 (3.12.11-r0)
+#18 ...
+
+#17 [app builder 5/7] RUN npm install --production && npm cache clean --force
+#17 22.58 npm warn deprecated domexception@4.0.0: Use your platform's native DOMException instead
+#17 ...
+
+#18 [app runtime  2/21] RUN apk add --no-cache     python3     py3-pip     postgresql-client     curl
+#18 31.09 (26/36) Installing python3-pycache-pyc0 (3.12.11-r0)
+#18 ...
+
+#17 [app builder 5/7] RUN npm install --production && npm cache clean --force
+#17 38.73 npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
+#17 43.24 npm warn deprecated abab@2.0.6: Use your platform's native atob() and btoa() methods instead
+#17 ...
+
+#18 [app runtime  2/21] RUN apk add --no-cache     python3     py3-pip     postgresql-client     curl
+#18 43.26 (27/36) Installing pyc (3.12.11-r0)
+#18 43.26 (28/36) Installing py3-setuptools-pyc (80.9.0-r0)
+#18 45.59 (29/36) Installing py3-pip-pyc (25.1.1-r0)
+#18 48.14 (30/36) Installing py3-parsing (3.2.3-r0)
+#18 48.66 (31/36) Installing py3-parsing-pyc (3.2.3-r0)
+#18 49.24 (32/36) Installing py3-packaging-pyc (25.0-r0)
+#18 50.07 (33/36) Installing python3-pyc (3.12.11-r0)
+#18 50.07 (34/36) Installing py3-packaging (25.0-r0)
+#18 ...
+
+#17 [app builder 5/7] RUN npm install --production && npm cache clean --force
+#17 50.31 npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+#17 52.55 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+#17 ...
+
+#18 [app runtime  2/21] RUN apk add --no-cache     python3     py3-pip     postgresql-client     curl
+#18 50.46 (35/36) Installing py3-setuptools (80.9.0-r0)
+#18 51.17 (36/36) Installing py3-pip (25.1.1-r0)
+#18 52.03 Executing busybox-1.37.0-r18.trigger
+#18 52.04 Executing postgresql-common-1.2-r1.trigger
+#18 52.05 * Setting postgresql17 as the default version
+#18 52.12 WARNING: opening from cache https://dl-cdn.alpinelinux.org/alpine/v3.22/main: No such file or directory
+#18 52.12 WARNING: opening from cache https://dl-cdn.alpinelinux.org/alpine/v3.22/community: No such file or directory
+#18 52.24 OK: 78 MiB in 54 packages
+#18 DONE 52.6s
+
+#19 [app runtime  3/21] WORKDIR /app
+#19 DONE 0.0s
+
+#17 [app builder 5/7] RUN npm install --production && npm cache clean --force
+#17 52.96 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+#17 52.96 npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+#17 52.96 npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+#17 52.97 npm warn deprecated gauge@4.0.4: This package is no longer supported.
+#17 57.11 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+#17 84.33 
+#17 84.33 added 727 packages, and audited 728 packages in 1m
+#17 84.33 
+#17 84.33 78 packages are looking for funding
+#17 84.33   run `npm fund` for details
+#17 84.37 
+#17 84.37 11 vulnerabilities (3 low, 1 moderate, 7 high)
+#17 84.37 
+#17 84.37 To address issues that do not require attention, run:
+#17 84.37   npm audit fix
+#17 84.37 
+#17 84.37 Some issues need review, and may require choosing
+#17 84.37 a different dependency.
+#17 84.37 
+#17 84.37 Run `npm audit` for details.
+#17 84.38 npm notice
+#17 84.38 npm notice New major version of npm available! 10.8.2 -> 11.6.1
+#17 84.38 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.1
+#17 84.38 npm notice To update run: npm install -g npm@11.6.1
+#17 84.38 npm notice
+#17 84.72 npm warn using --force Recommended protections disabled.
+#17 DONE 86.3s
+
+#20 [app builder 6/7] COPY . .
+#20 DONE 1.2s
+
+#21 [app builder 7/7] RUN npm run build
+#21 0.558 
+#21 0.558 > rest-express@1.0.0 build
+#21 0.558 > vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+#21 0.558 
+#21 0.562 sh: vite: not found
+#21 ERROR: process "/bin/sh -c npm run build" did not complete successfully: exit code: 127
+------
+ > [app builder 7/7] RUN npm run build:
+0.558 
+0.558 > rest-express@1.0.0 build
+0.558 > vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+0.558 
+0.562 sh: vite: not found
+------
+failed to solve: process "/bin/sh -c npm run build" did not complete successfully: exit code: 127

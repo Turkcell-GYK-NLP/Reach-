@@ -1,0 +1,294 @@
+time="2025-10-05T20:11:21+03:00" level=warning msg="/Users/esrakaya/Downloads/GYKProje/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+Compose can now delegate builds to bake for better performance.
+ To do so, set COMPOSE_BAKE=true.
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [app internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.16kB done
+#1 DONE 0.0s
+
+#2 [app internal] load metadata for docker.io/library/node:20-alpine
+#2 ...
+
+#3 [app internal] load metadata for docker.io/library/python:3.11-slim
+#3 DONE 3.8s
+
+#2 [app internal] load metadata for docker.io/library/node:20-alpine
+#2 DONE 3.9s
+
+#4 [app internal] load .dockerignore
+#4 transferring context: 850B done
+#4 DONE 0.0s
+
+#5 [app builder 1/7] FROM docker.io/library/node:20-alpine@sha256:eabac870db94f7342d6c33560d6613f188bbcf4bbe1f4eb47d5e2a08e1a37722
+#5 resolve docker.io/library/node:20-alpine@sha256:eabac870db94f7342d6c33560d6613f188bbcf4bbe1f4eb47d5e2a08e1a37722 0.0s done
+#5 sha256:eabac870db94f7342d6c33560d6613f188bbcf4bbe1f4eb47d5e2a08e1a37722 7.67kB / 7.67kB done
+#5 sha256:76194b803ea265cd3e41a3c23220344e58bf4820cba8e72f81ce4f0ec95572e3 1.72kB / 1.72kB done
+#5 sha256:dc51168f088b66e2048a9c64d8069ced46324ea6d4026a6a094511bd04ff625c 6.44kB / 6.44kB done
+#5 ...
+
+#6 [app internal] load build context
+#6 transferring context: 32.93MB 1.3s done
+#6 DONE 1.3s
+
+#7 [app python-builder 1/7] FROM docker.io/library/python:3.11-slim@sha256:9bffe4353b925a1656688797ebc68f9c525e79b1d377a764d232182a519eeec4
+#7 resolve docker.io/library/python:3.11-slim@sha256:9bffe4353b925a1656688797ebc68f9c525e79b1d377a764d232182a519eeec4 0.0s done
+#7 sha256:8dbbd075dad34ebb4ac2ac46b2f014e2d935b85ef3f91237b55bb1cbe8ef0711 0B / 1.27MB 1.7s
+#7 sha256:3e42af531f4cca9f96efc73fcc1b53b40b66f54e23d8963bde8452e043f0e7b1 0B / 14.59MB 1.7s
+#7 sha256:9bffe4353b925a1656688797ebc68f9c525e79b1d377a764d232182a519eeec4 10.37kB / 10.37kB done
+#7 sha256:d2846df60b9fbab3a297d6f1ba67b761b4dd2c7c8005df7f929d65c7b035a208 1.75kB / 1.75kB done
+#7 sha256:1e4c6e8dc37c7315af83e17dafd46a7e533c4a30b882cfb57909250d82714789 5.39kB / 5.39kB done
+#7 sha256:e363695fcb930d5f18449254c0052117582c3de4263c91575b0a9040c986e412 2.10MB / 30.14MB 1.7s
+#7 sha256:e363695fcb930d5f18449254c0052117582c3de4263c91575b0a9040c986e412 4.19MB / 30.14MB 2.7s
+#7 sha256:e363695fcb930d5f18449254c0052117582c3de4263c91575b0a9040c986e412 6.29MB / 30.14MB 4.5s
+#7 sha256:e363695fcb930d5f18449254c0052117582c3de4263c91575b0a9040c986e412 8.39MB / 30.14MB 5.9s
+#7 sha256:8dbbd075dad34ebb4ac2ac46b2f014e2d935b85ef3f91237b55bb1cbe8ef0711 1.05MB / 1.27MB 6.2s
+#7 sha256:8dbbd075dad34ebb4ac2ac46b2f014e2d935b85ef3f91237b55bb1cbe8ef0711 1.27MB / 1.27MB 6.3s done
+#7 sha256:6515746754d05875906947bfb154129a82be62be38485f296945c9d4d4457154 0B / 249B 6.4s
+#7 sha256:3e42af531f4cca9f96efc73fcc1b53b40b66f54e23d8963bde8452e043f0e7b1 0B / 14.59MB 6.9s
+#7 sha256:e363695fcb930d5f18449254c0052117582c3de4263c91575b0a9040c986e412 10.49MB / 30.14MB 7.3s
+#7 sha256:3e42af531f4cca9f96efc73fcc1b53b40b66f54e23d8963bde8452e043f0e7b1 1.05MB / 14.59MB 7.7s
+#7 ...
+
+#5 [app builder 1/7] FROM docker.io/library/node:20-alpine@sha256:eabac870db94f7342d6c33560d6613f188bbcf4bbe1f4eb47d5e2a08e1a37722
+#5 sha256:5a8e8228254a218fbf68fbf8d7093ea99dfce63dd0a72ad0cc8be65e6da3f7c8 0B / 42.43MB 7.9s
+#5 sha256:5a8e8228254a218fbf68fbf8d7093ea99dfce63dd0a72ad0cc8be65e6da3f7c8 0B / 42.43MB 13.0s
+#5 ...
+
+#7 [app python-builder 1/7] FROM docker.io/library/python:3.11-slim@sha256:9bffe4353b925a1656688797ebc68f9c525e79b1d377a764d232182a519eeec4
+#7 sha256:3e42af531f4cca9f96efc73fcc1b53b40b66f54e23d8963bde8452e043f0e7b1 5.24MB / 14.59MB 15.4s
+#7 sha256:e363695fcb930d5f18449254c0052117582c3de4263c91575b0a9040c986e412 15.73MB / 30.14MB 15.4s
+#7 sha256:6515746754d05875906947bfb154129a82be62be38485f296945c9d4d4457154 249B / 249B 7.8s done
+#7 ...
+
+#5 [app builder 1/7] FROM docker.io/library/node:20-alpine@sha256:eabac870db94f7342d6c33560d6613f188bbcf4bbe1f4eb47d5e2a08e1a37722
+#5 sha256:5a8e8228254a218fbf68fbf8d7093ea99dfce63dd0a72ad0cc8be65e6da3f7c8 0B / 42.43MB 18.1s
+#5 sha256:5a8e8228254a218fbf68fbf8d7093ea99dfce63dd0a72ad0cc8be65e6da3f7c8 1.05MB / 42.43MB 23.1s
+#5 ...
+
+#7 [app python-builder 1/7] FROM docker.io/library/python:3.11-slim@sha256:9bffe4353b925a1656688797ebc68f9c525e79b1d377a764d232182a519eeec4
+#7 sha256:3e42af531f4cca9f96efc73fcc1b53b40b66f54e23d8963bde8452e043f0e7b1 8.39MB / 14.59MB 23.0s
+#7 sha256:e363695fcb930d5f18449254c0052117582c3de4263c91575b0a9040c986e412 16.78MB / 30.14MB 23.0s
+#7 sha256:3e42af531f4cca9f96efc73fcc1b53b40b66f54e23d8963bde8452e043f0e7b1 9.44MB / 14.59MB 23.7s
+#7 sha256:3e42af531f4cca9f96efc73fcc1b53b40b66f54e23d8963bde8452e043f0e7b1 10.49MB / 14.59MB 25.0s
+#7 sha256:e363695fcb930d5f18449254c0052117582c3de4263c91575b0a9040c986e412 18.87MB / 30.14MB 25.0s
+#7 sha256:3e42af531f4cca9f96efc73fcc1b53b40b66f54e23d8963bde8452e043f0e7b1 11.53MB / 14.59MB 25.5s
+#7 sha256:3e42af531f4cca9f96efc73fcc1b53b40b66f54e23d8963bde8452e043f0e7b1 12.58MB / 14.59MB 26.1s
+#7 sha256:e363695fcb930d5f18449254c0052117582c3de4263c91575b0a9040c986e412 20.97MB / 30.14MB 27.1s
+#7 sha256:3e42af531f4cca9f96efc73fcc1b53b40b66f54e23d8963bde8452e043f0e7b1 13.63MB / 14.59MB 27.3s
+#7 sha256:3e42af531f4cca9f96efc73fcc1b53b40b66f54e23d8963bde8452e043f0e7b1 14.59MB / 14.59MB 28.3s
+#7 sha256:3e42af531f4cca9f96efc73fcc1b53b40b66f54e23d8963bde8452e043f0e7b1 14.59MB / 14.59MB 28.3s done
+#7 sha256:e363695fcb930d5f18449254c0052117582c3de4263c91575b0a9040c986e412 23.07MB / 30.14MB 29.4s
+#7 sha256:e363695fcb930d5f18449254c0052117582c3de4263c91575b0a9040c986e412 25.17MB / 30.14MB 32.0s
+#7 ...
+
+#5 [app builder 1/7] FROM docker.io/library/node:20-alpine@sha256:eabac870db94f7342d6c33560d6613f188bbcf4bbe1f4eb47d5e2a08e1a37722
+#5 sha256:5a8e8228254a218fbf68fbf8d7093ea99dfce63dd0a72ad0cc8be65e6da3f7c8 3.15MB / 42.43MB 33.2s
+#5 sha256:c149c7c96aa9b49de8c5de3415d3692e81ced50773077ea0be1a0f3f36032234 1.26MB / 1.26MB 30.8s done
+#5 sha256:127c05f5df6b075d5c314444a05d3de523268e2de5e9b235e7ba72aa60ed3c61 446B / 446B 31.5s done
+#5 ...
+
+#7 [app python-builder 1/7] FROM docker.io/library/python:3.11-slim@sha256:9bffe4353b925a1656688797ebc68f9c525e79b1d377a764d232182a519eeec4
+#7 sha256:e363695fcb930d5f18449254c0052117582c3de4263c91575b0a9040c986e412 27.26MB / 30.14MB 33.8s
+#7 sha256:e363695fcb930d5f18449254c0052117582c3de4263c91575b0a9040c986e412 29.36MB / 30.14MB 35.4s
+#7 sha256:e363695fcb930d5f18449254c0052117582c3de4263c91575b0a9040c986e412 30.14MB / 30.14MB 36.0s done
+#7 extracting sha256:e363695fcb930d5f18449254c0052117582c3de4263c91575b0a9040c986e412
+#7 extracting sha256:e363695fcb930d5f18449254c0052117582c3de4263c91575b0a9040c986e412 1.3s done
+#7 extracting sha256:8dbbd075dad34ebb4ac2ac46b2f014e2d935b85ef3f91237b55bb1cbe8ef0711 0.1s
+#7 extracting sha256:8dbbd075dad34ebb4ac2ac46b2f014e2d935b85ef3f91237b55bb1cbe8ef0711 0.1s done
+#7 extracting sha256:3e42af531f4cca9f96efc73fcc1b53b40b66f54e23d8963bde8452e043f0e7b1
+#7 extracting sha256:3e42af531f4cca9f96efc73fcc1b53b40b66f54e23d8963bde8452e043f0e7b1 0.8s done
+#7 extracting sha256:6515746754d05875906947bfb154129a82be62be38485f296945c9d4d4457154
+#7 extracting sha256:6515746754d05875906947bfb154129a82be62be38485f296945c9d4d4457154 done
+#7 DONE 38.5s
+
+#8 [app python-builder 2/7] WORKDIR /python-app
+#8 DONE 0.5s
+
+#5 [app builder 1/7] FROM docker.io/library/node:20-alpine@sha256:eabac870db94f7342d6c33560d6613f188bbcf4bbe1f4eb47d5e2a08e1a37722
+#5 sha256:5a8e8228254a218fbf68fbf8d7093ea99dfce63dd0a72ad0cc8be65e6da3f7c8 6.29MB / 42.43MB 38.9s
+#5 ...
+
+#9 [app python-builder 3/7] COPY requirements.txt ./
+#9 DONE 0.0s
+
+#5 [app builder 1/7] FROM docker.io/library/node:20-alpine@sha256:eabac870db94f7342d6c33560d6613f188bbcf4bbe1f4eb47d5e2a08e1a37722
+#5 ...
+
+#10 [app python-builder 4/7] RUN pip install --no-cache-dir -r requirements.txt
+#10 2.829 Collecting psycopg==3.2.* (from psycopg[binary]==3.2.*->-r requirements.txt (line 1))
+#10 3.530   Downloading psycopg-3.2.10-py3-none-any.whl.metadata (4.6 kB)
+#10 3.838 Collecting typing-extensions>=4.6 (from psycopg==3.2.*->psycopg[binary]==3.2.*->-r requirements.txt (line 1))
+#10 4.005   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+#10 4.950 Collecting psycopg-binary==3.2.10 (from psycopg[binary]==3.2.*->-r requirements.txt (line 1))
+#10 5.299   Downloading psycopg_binary-3.2.10-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.whl.metadata (3.0 kB)
+#10 5.491 Downloading psycopg-3.2.10-py3-none-any.whl (206 kB)
+#10 ...
+
+#5 [app builder 1/7] FROM docker.io/library/node:20-alpine@sha256:eabac870db94f7342d6c33560d6613f188bbcf4bbe1f4eb47d5e2a08e1a37722
+#5 sha256:5a8e8228254a218fbf68fbf8d7093ea99dfce63dd0a72ad0cc8be65e6da3f7c8 11.53MB / 42.43MB 44.8s
+#5 sha256:5a8e8228254a218fbf68fbf8d7093ea99dfce63dd0a72ad0cc8be65e6da3f7c8 12.58MB / 42.43MB 50.0s
+#5 sha256:5a8e8228254a218fbf68fbf8d7093ea99dfce63dd0a72ad0cc8be65e6da3f7c8 15.73MB / 42.43MB 52.4s
+#5 ...
+
+#10 [app python-builder 4/7] RUN pip install --no-cache-dir -r requirements.txt
+#10 5.913    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 206.6/206.6 kB 491.1 kB/s eta 0:00:00
+#10 6.103 Downloading psycopg_binary-3.2.10-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (4.6 MB)
+#10 11.87    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.6/4.6 MB 801.9 kB/s eta 0:00:00
+#10 11.99 Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+#10 12.02    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.6/44.6 kB 1.4 MB/s eta 0:00:00
+#10 12.12 Installing collected packages: typing-extensions, psycopg-binary, psycopg
+#10 12.44 Successfully installed psycopg-3.2.10 psycopg-binary-3.2.10 typing-extensions-4.15.0
+#10 12.44 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#10 13.24 
+#10 13.24 [notice] A new release of pip is available: 24.0 -> 25.2
+#10 13.24 [notice] To update, run: pip install --upgrade pip
+#10 DONE 13.6s
+
+#11 [app python-builder 5/7] COPY database.py faiss_indexer.py ilkyardim_indexer.py ./
+#11 DONE 0.0s
+
+#5 [app builder 1/7] FROM docker.io/library/node:20-alpine@sha256:eabac870db94f7342d6c33560d6613f188bbcf4bbe1f4eb47d5e2a08e1a37722
+#5 ...
+
+#12 [app python-builder 6/7] COPY Datas ./Datas
+#12 DONE 0.1s
+
+#13 [app python-builder 7/7] COPY new_datas ./new_datas
+#13 DONE 0.0s
+
+#5 [app builder 1/7] FROM docker.io/library/node:20-alpine@sha256:eabac870db94f7342d6c33560d6613f188bbcf4bbe1f4eb47d5e2a08e1a37722
+#5 sha256:5a8e8228254a218fbf68fbf8d7093ea99dfce63dd0a72ad0cc8be65e6da3f7c8 18.87MB / 42.43MB 54.4s
+#5 sha256:5a8e8228254a218fbf68fbf8d7093ea99dfce63dd0a72ad0cc8be65e6da3f7c8 22.02MB / 42.43MB 55.9s
+#5 sha256:5a8e8228254a218fbf68fbf8d7093ea99dfce63dd0a72ad0cc8be65e6da3f7c8 25.17MB / 42.43MB 57.2s
+#5 sha256:5a8e8228254a218fbf68fbf8d7093ea99dfce63dd0a72ad0cc8be65e6da3f7c8 28.31MB / 42.43MB 59.3s
+#5 sha256:5a8e8228254a218fbf68fbf8d7093ea99dfce63dd0a72ad0cc8be65e6da3f7c8 31.46MB / 42.43MB 61.0s
+#5 sha256:5a8e8228254a218fbf68fbf8d7093ea99dfce63dd0a72ad0cc8be65e6da3f7c8 34.60MB / 42.43MB 62.1s
+#5 sha256:5a8e8228254a218fbf68fbf8d7093ea99dfce63dd0a72ad0cc8be65e6da3f7c8 37.75MB / 42.43MB 64.4s
+#5 sha256:5a8e8228254a218fbf68fbf8d7093ea99dfce63dd0a72ad0cc8be65e6da3f7c8 40.89MB / 42.43MB 66.3s
+#5 sha256:5a8e8228254a218fbf68fbf8d7093ea99dfce63dd0a72ad0cc8be65e6da3f7c8 42.43MB / 42.43MB 69.0s done
+#5 extracting sha256:5a8e8228254a218fbf68fbf8d7093ea99dfce63dd0a72ad0cc8be65e6da3f7c8 0.1s
+#5 extracting sha256:5a8e8228254a218fbf68fbf8d7093ea99dfce63dd0a72ad0cc8be65e6da3f7c8 1.9s done
+#5 extracting sha256:c149c7c96aa9b49de8c5de3415d3692e81ced50773077ea0be1a0f3f36032234
+#5 extracting sha256:c149c7c96aa9b49de8c5de3415d3692e81ced50773077ea0be1a0f3f36032234 0.0s done
+#5 extracting sha256:127c05f5df6b075d5c314444a05d3de523268e2de5e9b235e7ba72aa60ed3c61 done
+#5 DONE 71.1s
+
+#14 [app runtime  2/21] RUN apk add --no-cache     python3     py3-pip     postgresql-client     curl
+#14 0.218 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/main/aarch64/APKINDEX.tar.gz
+#14 1.510 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/community/aarch64/APKINDEX.tar.gz
+#14 3.982 (1/36) Installing brotli-libs (1.1.0-r2)
+#14 4.531 (2/36) Installing c-ares (1.34.5-r0)
+#14 4.860 (3/36) Installing libunistring (1.3-r0)
+#14 5.591 (4/36) Installing libidn2 (2.3.7-r0)
+#14 5.871 (5/36) Installing nghttp2-libs (1.65.0-r0)
+#14 6.024 (6/36) Installing libpsl (0.21.5-r3)
+#14 6.250 (7/36) Installing zstd-libs (1.5.7-r0)
+#14 6.743 (8/36) Installing libcurl (8.14.1-r2)
+#14 7.093 (9/36) Installing curl (8.14.1-r2)
+#14 7.511 (10/36) Installing postgresql-common (1.2-r1)
+#14 7.714 Executing postgresql-common-1.2-r1.pre-install
+#14 7.732 (11/36) Installing lz4-libs (1.10.0-r0)
+#14 7.986 (12/36) Installing libpq (17.6-r0)
+#14 8.215 (13/36) Installing ncurses-terminfo-base (6.5_p20250503-r0)
+#14 8.400 (14/36) Installing libncursesw (6.5_p20250503-r0)
+#14 8.882 (15/36) Installing readline (8.2.13-r1)
+#14 9.201 (16/36) Installing postgresql17-client (17.6-r0)
+#14 ...
+
+#15 [app builder 2/7] RUN apk add --no-cache python3 py3-pip
+#15 0.219 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/main/aarch64/APKINDEX.tar.gz
+#15 1.403 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/community/aarch64/APKINDEX.tar.gz
+#15 3.413 (1/23) Installing libbz2 (1.0.8-r6)
+#15 3.544 (2/23) Installing libexpat (2.7.3-r0)
+#15 3.835 (3/23) Installing libffi (3.4.8-r0)
+#15 3.943 (4/23) Installing gdbm (1.24-r0)
+#15 4.059 (5/23) Installing xz-libs (5.8.1-r0)
+#15 4.302 (6/23) Installing mpdecimal (4.0.1-r0)
+#15 4.549 (7/23) Installing ncurses-terminfo-base (6.5_p20250503-r0)
+#15 4.776 (8/23) Installing libncursesw (6.5_p20250503-r0)
+#15 5.061 (9/23) Installing libpanelw (6.5_p20250503-r0)
+#15 5.383 (10/23) Installing readline (8.2.13-r1)
+#15 5.586 (11/23) Installing sqlite-libs (3.49.2-r1)
+#15 6.205 (12/23) Installing python3 (3.12.11-r0)
+#15 10.62 (13/23) Installing python3-pycache-pyc0 (3.12.11-r0)
+#15 ...
+
+#14 [app runtime  2/21] RUN apk add --no-cache     python3     py3-pip     postgresql-client     curl
+#14 10.77 (17/36) Installing libbz2 (1.0.8-r6)
+#14 10.88 (18/36) Installing libexpat (2.7.3-r0)
+#14 11.38 (19/36) Installing libffi (3.4.8-r0)
+#14 11.52 (20/36) Installing gdbm (1.24-r0)
+#14 11.77 (21/36) Installing xz-libs (5.8.1-r0)
+#14 12.24 (22/36) Installing mpdecimal (4.0.1-r0)
+#14 12.41 (23/36) Installing libpanelw (6.5_p20250503-r0)
+#14 12.60 (24/36) Installing sqlite-libs (3.49.2-r1)
+#14 14.46 (25/36) Installing python3 (3.12.11-r0)
+#14 ...
+
+#15 [app builder 2/7] RUN apk add --no-cache python3 py3-pip
+#15 12.26 (14/23) Installing pyc (3.12.11-r0)
+#15 12.26 (15/23) Installing py3-setuptools-pyc (80.9.0-r0)
+#15 13.35 (16/23) Installing py3-pip-pyc (25.1.1-r0)
+#15 15.00 (17/23) Installing py3-parsing (3.2.3-r0)
+#15 15.19 (18/23) Installing py3-parsing-pyc (3.2.3-r0)
+#15 15.42 (19/23) Installing py3-packaging-pyc (25.0-r0)
+#15 15.68 (20/23) Installing python3-pyc (3.12.11-r0)
+#15 15.68 (21/23) Installing py3-packaging (25.0-r0)
+#15 15.91 (22/23) Installing py3-setuptools (80.9.0-r0)
+#15 16.54 (23/23) Installing py3-pip (25.1.1-r0)
+#15 18.08 Executing busybox-1.37.0-r18.trigger
+#15 18.12 OK: 69 MiB in 41 packages
+#15 DONE 18.6s
+
+#16 [app builder 3/7] WORKDIR /app
+#16 DONE 0.0s
+
+#17 [app builder 4/7] COPY package*.json ./
+#17 DONE 0.0s
+
+#18 [app builder 5/7] RUN npm ci --only=production && npm cache clean --force
+#18 0.288 npm warn config only Use `--omit=dev` to omit dev dependencies from the install.
+#18 0.604 npm error code EUSAGE
+#18 0.604 npm error
+#18 0.604 npm error The `npm ci` command can only install with an existing package-lock.json or
+#18 0.604 npm error npm-shrinkwrap.json with lockfileVersion >= 1. Run an install with npm@5 or
+#18 0.604 npm error later to generate a package-lock.json file, then try again.
+#18 0.604 npm error
+#18 0.604 npm error Clean install a project
+#18 0.604 npm error
+#18 0.604 npm error Usage:
+#18 0.604 npm error npm ci
+#18 0.604 npm error
+#18 0.604 npm error Options:
+#18 0.604 npm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+#18 0.604 npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+#18 0.604 npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+#18 0.604 npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+#18 0.604 npm error [--no-bin-links] [--no-fund] [--dry-run]
+#18 0.604 npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+#18 0.604 npm error [-ws|--workspaces] [--include-workspace-root] [--install-links]
+#18 0.604 npm error
+#18 0.604 npm error aliases: clean-install, ic, install-clean, isntall-clean
+#18 0.604 npm error
+#18 0.604 npm error Run "npm help ci" for more info
+#18 0.605 npm error A complete log of this run can be found in: /root/.npm/_logs/2025-10-05T17_12_55_416Z-debug-0.log
+#18 ERROR: process "/bin/sh -c npm ci --only=production && npm cache clean --force" did not complete successfully: exit code: 1
+
+#14 [app runtime  2/21] RUN apk add --no-cache     python3     py3-pip     postgresql-client     curl
+#14 19.31 (26/36) Installing python3-pycache-pyc0 (3.12.11-r0)
+#14 CANCELED
+------
+ > [app builder 5/7] RUN npm ci --only=production && npm cache clean --force:
+0.604 npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+0.604 npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+0.604 npm error [--no-bin-links] [--no-fund] [--dry-run]
+0.604 npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+0.604 npm error [-ws|--workspaces] [--include-workspace-root] [--install-links]
+0.604 npm error
+0.604 npm error aliases: clean-install, ic, install-clean, isntall-clean
+0.604 npm error
+0.604 npm error Run "npm help ci" for more info
+0.605 npm error A complete log of this run can be found in: /root/.npm/_logs/2025-10-05T17_12_55_416Z-debug-0.log
+------
+failed to solve: process "/bin/sh -c npm ci --only=production && npm cache clean --force" did not complete successfully: exit code: 1
