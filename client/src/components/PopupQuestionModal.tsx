@@ -129,7 +129,7 @@ export const PopupQuestionModal: React.FC<PopupQuestionModalProps> = ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[100] p-4">
       <Card className="w-full max-w-md bg-white dark:bg-gray-800 animate-in fade-in-0 zoom-in-95">
         <CardHeader className="pb-3">
           <div className="flex items-center justify-between">

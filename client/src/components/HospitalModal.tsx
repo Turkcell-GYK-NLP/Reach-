@@ -76,8 +76,8 @@ const HospitalModal: React.FC<HospitalModalProps> = ({ isOpen, onClose }) => {
 
   return (
     <>
-      {isOpen && <div className="fixed inset-0 bg-black/50 z-50" onClick={onClose} />}
-      <div className="fixed inset-4 md:inset-8 bg-white rounded-lg shadow-2xl z-[60] flex flex-col max-h-[90vh]">
+      {isOpen && <div className="fixed inset-0 bg-black/50 z-[100]" onClick={onClose} />}
+      <div className="fixed inset-4 md:inset-8 bg-white rounded-lg shadow-2xl z-[110] flex flex-col max-h-[90vh]">
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-gray-200">
           <div className="flex items-center gap-3">

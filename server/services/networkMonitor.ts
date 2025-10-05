@@ -1,32 +1,22 @@
 import { storage } from "../storage";
-import { type InsertNetworkStatus } from "@shared/schema";
-import { TelecomApiService } from "./telecomApiService";
-
-interface NetworkData {
-  operator: string;
-  location: string;
-  baseeCoverage: number;
-  baseSignal: number;
-}
+import { NetworkDataGenerator } from "./network/NetworkDataGenerator.js";
+import { NetworkRecommendationEngine } from "./network/NetworkRecommendationEngine.js";
 
 export class NetworkMonitor {
   private isRunning = false;
   private intervalId?: NodeJS.Timeout;
-  private telecomService: TelecomApiService;
-  
-  private readonly baseData: NetworkData[] = [
-    { operator: "Turkcell", location: "Kadıköy", baseeCoverage: 94, baseSignal: 85 },
-    { operator: "Vodafone", location: "Kadıköy", baseeCoverage: 87, baseSignal: 78 },
-    { operator: "Türk Telekom", location: "Kadıköy", baseeCoverage: 72, baseSignal: 65 },
-    { operator: "Turkcell", location: "Beşiktaş", baseeCoverage: 91, baseSignal: 82 },
-    { operator: "Vodafone", location: "Beşiktaş", baseeCoverage: 89, baseSignal: 80 },
-    { operator: "Türk Telekom", location: "Beşiktaş", baseeCoverage: 75, baseSignal: 68 },
-    { operator: "Turkcell", location: "Şişli", baseeCoverage: 93, baseSignal: 84 },
-    { operator: "Vodafone", location: "Şişli", baseeCoverage: 88, baseSignal: 79 },
-    { operator: "Türk Telekom", location: "Şişli", baseeCoverage: 74, baseSignal: 66 },
-  ];
+  private dataGenerator: NetworkDataGenerator;
+  private recommendationEngine: NetworkRecommendationEngine;
 
-  start() {
+  constructor() {
+    this.dataGenerator = new NetworkDataGenerator();
+    this.recommendationEngine = new NetworkRecommendationEngine();
+  }
+
+  /**
+   * Start network monitoring
+   */
+  start(): void {
     if (this.isRunning) return;
     
     this.isRunning = true;
@@ -38,7 +28,10 @@ export class NetworkMonitor {
     }, 30 * 1000);
   }
 
-  stop() {
+  /**
+   * Stop network monitoring
+   */
+  stop(): void {
     if (this.intervalId) {
       clearInterval(this.intervalId);
     }
@@ -46,23 +39,17 @@ export class NetworkMonitor {
     console.log("Stopped network monitoring");
   }
 
-  private async updateNetworkStatus() {
-    for (const data of this.baseData) {
-      try {
-        // Add some realistic variation to the base data
-        const coverageVariation = (Math.random() - 0.5) * 6; // ±3%
-        const signalVariation = (Math.random() - 0.5) * 10; // ±5
-        
-        const newCoverage = Math.max(0, Math.min(100, 
-          Math.round(data.baseeCoverage + coverageVariation)
-        ));
-        const newSignal = Math.max(0, Math.min(100, 
-          Math.round(data.baseSignal + signalVariation)
-        ));
+  /**
+   * Update network status for all locations
+   */
+  private async updateNetworkStatus(): Promise<void> {
+    const networkData = this.dataGenerator.generateNetworkData();
 
+    for (const data of networkData) {
+      try {
         await storage.updateNetworkStatus(data.operator, data.location, {
-          coverage: newCoverage,
-          signalStrength: newSignal,
+          coverage: data.coverage,
+          signalStrength: data.signalStrength,
         });
       } catch (error) {
         console.error(`Error updating network status for ${data.operator} in ${data.location}:`, error);
@@ -72,6 +59,9 @@ export class NetworkMonitor {
     console.log("Updated network status for all operators");
   }
 
+  /**
+   * Get network recommendation for location
+   */
   async getNetworkRecommendation(location: string): Promise<{
     bestOperator: string;
     coverage: number;
@@ -79,34 +69,7 @@ export class NetworkMonitor {
   }> {
     try {
       const networkStatuses = await storage.getNetworkStatus(location);
-      
-      if (networkStatuses.length === 0) {
-        return {
-          bestOperator: "Turkcell",
-          coverage: 90,
-          reason: "Genel olarak en iyi kapsama alanına sahip"
-        };
-      }
-
-      // Find the operator with best coverage
-      const bestStatus = networkStatuses.reduce((best, current) => 
-        current.coverage > best.coverage ? current : best
-      );
-
-      let reason = "";
-      if (bestStatus.coverage >= 90) {
-        reason = "Mükemmel kapsama alanı ve sinyal kalitesi";
-      } else if (bestStatus.coverage >= 80) {
-        reason = "İyi kapsama alanı, stabil bağlantı";
-      } else {
-        reason = "Mevcut şartlarda en iyi seçenek";
-      }
-
-      return {
-        bestOperator: bestStatus.operator,
-        coverage: bestStatus.coverage,
-        reason: reason
-      };
+      return this.recommendationEngine.getRecommendation(networkStatuses);
     } catch (error) {
       console.error("Error getting network recommendation:", error);
       return {
@@ -115,6 +78,58 @@ export class NetworkMonitor {
         reason: "Sistem hatası, genel öneri"
       };
     }
+  }
+
+  /**
+   * Compare operators for location
+   */
+  async compareOperators(location: string): Promise<any> {
+    try {
+      const networkStatuses = await storage.getNetworkStatus(location);
+      return this.recommendationEngine.compareOperators(networkStatuses);
+    } catch (error) {
+      console.error("Error comparing operators:", error);
+      return null;
+    }
+  }
+
+  /**
+   * Check if network is emergency ready
+   */
+  async checkEmergencyReadiness(location: string): Promise<any> {
+    try {
+      const networkStatuses = await storage.getNetworkStatus(location);
+      return this.recommendationEngine.isEmergencyReady(networkStatuses);
+    } catch (error) {
+      console.error("Error checking emergency readiness:", error);
+      return {
+        ready: false,
+        bestOperator: "Unknown",
+        minCoverage: 0,
+        recommendation: "Sinyal durumu kontrol edilemiyor"
+      };
+    }
+  }
+
+  /**
+   * Get available locations
+   */
+  getAvailableLocations(): string[] {
+    return this.dataGenerator.getAvailableLocations();
+  }
+
+  /**
+   * Get available operators
+   */
+  getOperators(): string[] {
+    return this.dataGenerator.getOperators();
+  }
+
+  /**
+   * Check if monitoring is running
+   */
+  isMonitoring(): boolean {
+    return this.isRunning;
   }
 }
 

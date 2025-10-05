@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { Badge } from "@/components/ui/badge";
 import { 
-  ArrowLeft, 
+  Menu, 
   User, 
   Mail, 
   Phone, 
@@ -18,15 +18,21 @@ import {
   Camera,
   Edit
 } from "lucide-react";
+import HamburgerMenu from "@/components/HamburgerMenu";
+import { api } from "@/lib/api";
+import { useMutation } from "@tanstack/react-query";
 
 export default function ProfilePage() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
   const [profile, setProfile] = useState({
-    name: "Yunus Çelik",
-    email: "yunus.celik@example.com",
-    phone: "+90 555 123 45 67",
-    address: "Esenler, İstanbul",
-    emergencyContact: "+90 555 987 65 43",
+    name: "",
+    email: "",
+    phone: "",
+    address: "",
+    age: "",
+    operator: "",
+    emergencyContact: "",
     notifications: {
       emergency: true,
       location: true,
@@ -34,11 +40,88 @@ export default function ProfilePage() {
       updates: true
     }
   });
+  const [userId, setUserId] = useState<string | null>(null);
+  const [createdAt, setCreatedAt] = useState<string | null>(null);
+
+  // Kullanıcı bilgilerini localStorage'dan al
+  useEffect(() => {
+    try {
+      const auth = JSON.parse(localStorage.getItem("auth") || "null");
+      if (auth?.user) {
+        const user = auth.user;
+        setUserId(user.id);
+        setCreatedAt(user.createdAt);
+        setProfile({
+          name: user.name || "",
+          email: user.email || "",
+          phone: user.phone || "",
+          address: user.location || "",
+          age: user.age?.toString() || "",
+          operator: user.operator || "",
+          emergencyContact: "",
+          notifications: {
+            emergency: user.notificationsEnabled ?? true,
+            location: user.preferences?.locationSharing ?? true,
+            social: user.preferences?.socialNotifications ?? false,
+            updates: user.preferences?.updates ?? true
+          }
+        });
+      }
+    } catch (error) {
+      console.error("Kullanıcı bilgileri yüklenemedi:", error);
+    }
+  }, []);
+
+  const updateMutation = useMutation({
+    mutationFn: (updates: any) => {
+      if (!userId) throw new Error("User ID not found");
+      return api.updateUser(userId, updates);
+    },
+    onSuccess: (data) => {
+      // localStorage'daki auth objesini güncelle
+      try {
+        const auth = JSON.parse(localStorage.getItem("auth") || "null");
+        if (auth?.user) {
+          auth.user = { ...auth.user, ...data.user };
+          localStorage.setItem("auth", JSON.stringify(auth));
+        }
+      } catch (error) {
+        console.error("localStorage güncellenemedi:", error);
+      }
+      setIsEditing(false);
+      alert("Profil başarıyla güncellendi!");
+    },
+    onError: (error: any) => {
+      alert(error?.message || "Profil güncellenemedi");
+    }
+  });
 
   const handleSave = () => {
-    // Save profile logic here
-    setIsEditing(false);
-    console.log("Profile saved:", profile);
+    // Kullanıcı bilgilerini güncelle
+    const updates: any = {
+      name: profile.name,
+      email: profile.email,
+      location: profile.address,
+      operator: profile.operator,
+      notificationsEnabled: profile.notifications.emergency,
+      preferences: {
+        locationSharing: profile.notifications.location,
+        socialNotifications: profile.notifications.social,
+        updates: profile.notifications.updates
+      }
+    };
+
+    // Age'i number olarak ekle
+    if (profile.age) {
+      updates.age = parseInt(profile.age);
+    }
+
+    // Phone varsa ekle (schema'da yok ama ekleyebiliriz)
+    if (profile.phone) {
+      updates.phone = profile.phone;
+    }
+
+    updateMutation.mutate(updates);
   };
 
   const handleInputChange = (field: string, value: any) => {
@@ -58,6 +141,31 @@ export default function ProfilePage() {
     }));
   };
 
+  const handleNavigate = (path: string) => {
+    window.location.href = path;
+  };
+
+  // Kullanıcı adının baş harflerini al
+  const getInitials = (name: string) => {
+    if (!name) return "?";
+    const parts = name.trim().split(" ");
+    if (parts.length >= 2) {
+      return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+    }
+    return name.substring(0, 2).toUpperCase();
+  };
+
+  // Tarihi formatla
+  const formatDate = (dateString: string | null) => {
+    if (!dateString) return "-";
+    const date = new Date(dateString);
+    return date.toLocaleDateString("tr-TR", { 
+      year: "numeric", 
+      month: "long", 
+      day: "numeric" 
+    });
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
       {/* Header */}
@@ -68,10 +176,10 @@ export default function ProfilePage() {
               <Button
                 variant="ghost"
                 size="sm"
-                onClick={() => window.history.back()}
+                onClick={() => setIsMenuOpen(true)}
                 className="p-2 hover:bg-gray-100 rounded-lg"
               >
-                <ArrowLeft className="w-5 h-5" />
+                <Menu className="w-5 h-5" />
               </Button>
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-700 rounded-xl flex items-center justify-center">
@@ -86,9 +194,22 @@ export default function ProfilePage() {
             
             <div className="flex items-center space-x-3">
               {isEditing ? (
-                <Button onClick={handleSave} className="bg-blue-600 hover:bg-blue-700">
-                  <Save className="w-4 h-4 mr-2" />
-                  Kaydet
+                <Button 
+                  onClick={handleSave} 
+                  className="bg-blue-600 hover:bg-blue-700"
+                  disabled={updateMutation.isPending}
+                >
+                  {updateMutation.isPending ? (
+                    <>
+                      <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></div>
+                      Kaydediliyor...
+                    </>
+                  ) : (
+                    <>
+                      <Save className="w-4 h-4 mr-2" />
+                      Kaydet
+                    </>
+                  )}
                 </Button>
               ) : (
                 <Button onClick={() => setIsEditing(true)} variant="outline">
@@ -118,7 +239,13 @@ export default function ProfilePage() {
                 <div className="flex items-center space-x-4">
                   <div className="relative">
                     <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-purple-700 rounded-full flex items-center justify-center">
-                      <User className="w-10 h-10 text-white" />
+                      {profile.name ? (
+                        <span className="text-2xl font-bold text-white">
+                          {getInitials(profile.name)}
+                        </span>
+                      ) : (
+                        <User className="w-10 h-10 text-white" />
+                      )}
                     </div>
                     {isEditing && (
                       <Button
@@ -130,7 +257,9 @@ export default function ProfilePage() {
                     )}
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900">{profile.name}</h3>
+                    <h3 className="text-lg font-semibold text-gray-900">
+                      {profile.name || "Yükleniyor..."}
+                    </h3>
                     <p className="text-sm text-gray-500">Aktif Kullanıcı</p>
                     <Badge className="bg-green-100 text-green-800">Çevrimiçi</Badge>
                   </div>
@@ -164,15 +293,38 @@ export default function ProfilePage() {
                       value={profile.phone}
                       onChange={(e) => handleInputChange("phone", e.target.value)}
                       disabled={!isEditing}
+                      placeholder="+90 555 123 45 67"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="address">Adres</Label>
+                    <Label htmlFor="address">Adres / Konum</Label>
                     <Input
                       id="address"
                       value={profile.address}
                       onChange={(e) => handleInputChange("address", e.target.value)}
                       disabled={!isEditing}
+                      placeholder="Şehir, İlçe"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="age">Yaş</Label>
+                    <Input
+                      id="age"
+                      type="number"
+                      value={profile.age}
+                      onChange={(e) => handleInputChange("age", e.target.value)}
+                      disabled={!isEditing}
+                      placeholder="25"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="operator">Operatör</Label>
+                    <Input
+                      id="operator"
+                      value={profile.operator}
+                      onChange={(e) => handleInputChange("operator", e.target.value)}
+                      disabled={!isEditing}
+                      placeholder="Turkcell, Vodafone, Türk Telekom"
                     />
                   </div>
                 </div>
@@ -276,19 +428,21 @@ export default function ProfilePage() {
               <CardContent className="space-y-3">
                 <div className="flex justify-between items-center">
                   <span className="text-sm text-gray-600">Üyelik Tarihi</span>
-                  <span className="text-sm font-medium">15 Mart 2024</span>
+                  <span className="text-sm font-medium">{formatDate(createdAt)}</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">Toplam Mesaj</span>
-                  <span className="text-sm font-medium">1,247</span>
+                  <span className="text-sm text-gray-600">Kullanıcı ID</span>
+                  <span className="text-xs font-mono text-gray-500 truncate max-w-[150px]" title={userId || ""}>
+                    {userId || "-"}
+                  </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">Acil Durum Bildirimi</span>
-                  <span className="text-sm font-medium">23</span>
+                  <span className="text-sm text-gray-600">E-posta</span>
+                  <span className="text-xs text-gray-500">{profile.email || "-"}</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">Son Giriş</span>
-                  <span className="text-sm font-medium">2 saat önce</span>
+                  <span className="text-sm text-gray-600">Konum</span>
+                  <span className="text-sm font-medium">{profile.address || "-"}</span>
                 </div>
               </CardContent>
             </Card>
@@ -310,6 +464,13 @@ export default function ProfilePage() {
           </div>
         </div>
       </main>
+
+      {/* Hamburger Menu */}
+      <HamburgerMenu 
+        isOpen={isMenuOpen} 
+        onClose={() => setIsMenuOpen(false)}
+        onNavigate={handleNavigate}
+      />
     </div>
   );
 }

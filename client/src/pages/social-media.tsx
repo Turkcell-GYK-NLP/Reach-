@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { 
-  ArrowLeft, 
+  Menu, 
   Search, 
   TrendingUp, 
   Users, 
@@ -22,6 +22,7 @@ import { DateRange } from "react-day-picker";
 import TweetDensityMap from "@/components/TweetDensityMap";
 import TrendingTopicsMap from "@/components/TrendingTopicsMap";
 import OperatorInsights from "@/components/OperatorInsights";
+import HamburgerMenu from "@/components/HamburgerMenu";
 
 export default function SocialMediaPage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -32,6 +33,7 @@ export default function SocialMediaPage() {
   const [analytics, setAnalytics] = useState<{ totalPosts: number; sentimentShare: { positive: number; neutral: number; negative: number }; trendingTopics: Array<{ topic: string; count: number; sentiment: number }>; } | null>(null);
   const [visibleCount, setVisibleCount] = useState<number>(5);
   const [dateRange, setDateRange] = useState<DateRange | undefined>(undefined);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -76,6 +78,10 @@ export default function SocialMediaPage() {
     }
   };
 
+  const handleNavigate = (path: string) => {
+    window.location.href = path;
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
       {/* Header */}
@@ -86,10 +92,10 @@ export default function SocialMediaPage() {
               <Button
                 variant="ghost"
                 size="sm"
-                onClick={() => window.history.back()}
+                onClick={() => setIsMenuOpen(true)}
                 className="p-2 hover:bg-gray-100 rounded-lg"
               >
-                <ArrowLeft className="w-5 h-5" />
+                <Menu className="w-5 h-5" />
               </Button>
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-700 rounded-xl flex items-center justify-center">
@@ -297,6 +303,13 @@ export default function SocialMediaPage() {
           </Card>
         </div>
       </main>
+
+      {/* Hamburger Menu */}
+      <HamburgerMenu 
+        isOpen={isMenuOpen} 
+        onClose={() => setIsMenuOpen(false)}
+        onNavigate={handleNavigate}
+      />
     </div>
   );
 }

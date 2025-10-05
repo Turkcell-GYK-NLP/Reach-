@@ -102,11 +102,11 @@ export default function TweetDensityMap({
   }
 
   return (
-    <div className={`relative ${className}`}>
+    <div className={`relative z-0 ${className}`}>
       <MapContainer
         center={[39.9334, 32.8597]} // Ankara center
         zoom={6}
-        className="h-96 w-full rounded-lg"
+        className="h-96 w-full rounded-lg z-0"
         scrollWheelZoom={true}
       >
         <TileLayer
@@ -173,7 +173,7 @@ export default function TweetDensityMap({
       </MapContainer>
       
       {/* Legend */}
-      <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg p-3 shadow-lg">
+      <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg p-3 shadow-lg z-10">
         <h4 className="font-semibold text-sm mb-2">Tweet Yoğunluğu</h4>
         <div className="space-y-1 text-xs">
           <div className="flex items-center gap-2">

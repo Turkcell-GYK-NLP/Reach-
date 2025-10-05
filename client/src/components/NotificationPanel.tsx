@@ -166,8 +166,8 @@ const NotificationPanel: React.FC<NotificationPanelProps> = ({
 
   return (
     <>
-      {isOpen && <div className="fixed inset-0 bg-black/50 z-40" onClick={onClose} />}
-      <div className="fixed top-16 right-24 w-80 h-96 bg-white rounded-lg shadow-2xl z-[60] flex flex-col border border-gray-200">
+      {isOpen && <div className="fixed inset-0 bg-black/50 z-[100]" onClick={onClose} />}
+      <div className="fixed top-16 right-24 w-80 h-96 bg-white rounded-lg shadow-2xl z-[110] flex flex-col border border-gray-200">
         {/* Arrow pointing to bell icon */}
         <div className="absolute -top-2 right-24 w-4 h-4 bg-white transform rotate-45 border-l border-t border-gray-200"></div>
         {/* Header */}

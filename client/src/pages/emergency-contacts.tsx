@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
 import { 
-  ArrowLeft, 
+  Menu, 
   Shield, 
   Plus, 
   Phone, 
@@ -16,8 +16,10 @@ import {
   Star,
   AlertTriangle
 } from "lucide-react";
+import HamburgerMenu from "@/components/HamburgerMenu";
 
 export default function EmergencyContactsPage() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAddingContact, setIsAddingContact] = useState(false);
   const [editingContact, setEditingContact] = useState<string | null>(null);
   const [newContact, setNewContact] = useState({
@@ -109,6 +111,10 @@ export default function EmergencyContactsPage() {
     window.open(`sms:${phone}`);
   };
 
+  const handleNavigate = (path: string) => {
+    window.location.href = path;
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
       {/* Header */}
@@ -119,10 +125,10 @@ export default function EmergencyContactsPage() {
               <Button
                 variant="ghost"
                 size="sm"
-                onClick={() => window.history.back()}
+                onClick={() => setIsMenuOpen(true)}
                 className="p-2 hover:bg-gray-100 rounded-lg"
               >
-                <ArrowLeft className="w-5 h-5" />
+                <Menu className="w-5 h-5" />
               </Button>
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-700 rounded-xl flex items-center justify-center">
@@ -344,6 +350,13 @@ export default function EmergencyContactsPage() {
           </Card>
         )}
       </main>
+
+      {/* Hamburger Menu */}
+      <HamburgerMenu 
+        isOpen={isMenuOpen} 
+        onClose={() => setIsMenuOpen(false)}
+        onNavigate={handleNavigate}
+      />
     </div>
   );
 }
