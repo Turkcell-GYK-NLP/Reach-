@@ -1,0 +1,90 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:16-alpine
+    container_name: reachplus-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${PGDATABASE:-reachplus}
+      POSTGRES_USER: ${PGUSER:-reachplus}
+      POSTGRES_PASSWORD: ${PGPASSWORD:-reachplus123}
+      POSTGRES_INITDB_ARGS: "-E UTF8 --locale=C"
+    # External port removed for security (only accessible from app container)
+    # Uncomment if you need external access: 
+    # ports:
+    #   - "${POSTGRES_PORT:-5434}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./migrations:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${PGUSER:-reachplus}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - reachplus-network
+
+  # Main Application (Backend + Frontend)
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: reachplus-app
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      # Node.js Environment
+      NODE_ENV: production
+      PORT: ${PORT:-5000}
+      
+      # Database Configuration
+      DATABASE_URL: postgresql://${PGUSER:-reachplus}:${PGPASSWORD:-reachplus123}@postgres:5432/${PGDATABASE:-reachplus}
+      PGHOST: postgres
+      PGPORT: 5432
+      PGUSER: ${PGUSER:-reachplus}
+      PGPASSWORD: ${PGPASSWORD:-reachplus123}
+      PGDATABASE: ${PGDATABASE:-reachplus}
+      
+      # OpenAI API Key (REQUIRED)
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      
+      # Twitter API Keys (Optional)
+      TWITTER_BEARER_TOKEN: ${TWITTER_BEARER_TOKEN:-}
+      TWITTER_API_KEY: ${TWITTER_API_KEY:-}
+      TWITTER_API_SECRET: ${TWITTER_API_SECRET:-}
+      TWITTER_ACCESS_TOKEN: ${TWITTER_ACCESS_TOKEN:-}
+      TWITTER_ACCESS_TOKEN_SECRET: ${TWITTER_ACCESS_TOKEN_SECRET:-}
+      
+      # Session Secret
+      SESSION_SECRET: ${SESSION_SECRET:-change-this-secret-in-production}
+      
+      # Additional Configuration
+      TZ: Europe/Istanbul
+    ports:
+      - "${APP_PORT:-5000}:5000"
+    volumes:
+      - ./faiss_index:/app/faiss_index
+      - ./logs:/app/logs
+      - ./Datas:/app/Datas:ro
+      - ./new_datas:/app/new_datas:ro
+    networks:
+      - reachplus-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+networks:
+  reachplus-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local
+

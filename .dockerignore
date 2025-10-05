@@ -1,0 +1,79 @@
+# Dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+# package-lock.json is needed for npm ci
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation
+*.md
+!DOCKER_DEPLOYMENT.md
+attached_assets/
+
+# Logs
+logs/
+*.log
+
+# Testing
+coverage/
+.nyc_output/
+test/
+*.test.js
+*.spec.js
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Build artifacts (will be built inside container)
+dist/
+
+# Local environment
+.env
+.env.local
+.env.*.local
+
+# Replit specific
+.replit
+replit.nix
+
+# Hospital API venv (Python virtual env)
+hospital_api/venv/
+
+# Documents
+~$*.docx
+*.docx
+*.pdf
+*.rtf
+*.xlsx
+
+# Keep only necessary data files
+# Datas/ and new_datas/ will be included
+
