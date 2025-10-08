@@ -111,7 +111,8 @@ CREATE TABLE IF NOT EXISTS user_sessions (
   expires_at         timestamptz,
   revoked            boolean NOT NULL DEFAULT false,
   CONSTRAINT chk_device_hash_len CHECK (char_length(device_id_hash) BETWEEN 32 AND 128),
-  PRIMARY KEY (id, login_at)
+  PRIMARY KEY (id, login_at),
+  UNIQUE (id)
 );
 
 -- No geometry columns, no sanitize triggers
