@@ -48,6 +48,10 @@ RUN apk add --no-cache \
     postgresql-client \
     curl
 
+# Install Python dependencies at runtime
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
 WORKDIR /app
 
 # Copy Node.js dependencies from builder
