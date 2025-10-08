@@ -30,6 +30,9 @@ WORKDIR /python-app
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Force rebuild cache - updated requirements.txt
+RUN echo "Build cache updated: $(date)" > /tmp/build_info.txt
+
 # Copy Python scripts
 COPY database.py faiss_indexer.py ilkyardim_indexer.py ./
 COPY Datas ./Datas
