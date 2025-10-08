@@ -98,7 +98,7 @@ CREATE TABLE IF NOT EXISTS user_consents (
 );
 
 CREATE TABLE IF NOT EXISTS user_sessions (
-  id                 uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  id                 uuid,
   user_id            uuid NOT NULL REFERENCES users(id) ON DELETE CASCADE,
   device_id_hash     text NOT NULL,
   user_agent         text,
@@ -110,7 +110,8 @@ CREATE TABLE IF NOT EXISTS user_sessions (
   logout_at          timestamptz,
   expires_at         timestamptz,
   revoked            boolean NOT NULL DEFAULT false,
-  CONSTRAINT chk_device_hash_len CHECK (char_length(device_id_hash) BETWEEN 32 AND 128)
+  CONSTRAINT chk_device_hash_len CHECK (char_length(device_id_hash) BETWEEN 32 AND 128),
+  PRIMARY KEY (id, login_at)
 );
 
 -- No geometry columns, no sanitize triggers
