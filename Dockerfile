@@ -46,6 +46,9 @@ RUN apk add --no-cache \
     python3 \
     py3-pip \
     postgresql-client \
+    postgresql-dev \
+    gcc \
+    musl-dev \
     curl
 
 # Install Python dependencies at runtime
