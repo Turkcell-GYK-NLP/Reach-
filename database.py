@@ -298,12 +298,13 @@ CREATE INDEX IF NOT EXISTS idx_public_ann_times
 -- Geometry index removed
 
 CREATE TABLE IF NOT EXISTS user_behavior_events (
-  id            uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  id            uuid,
   user_id       uuid NOT NULL REFERENCES users(id) ON DELETE CASCADE,
   session_id    uuid REFERENCES user_sessions(id) ON DELETE SET NULL,
   event_type    text NOT NULL,
   properties    jsonb NOT NULL DEFAULT '{}'::jsonb,
-  occurred_at   timestamptz NOT NULL
+  occurred_at   timestamptz NOT NULL,
+  PRIMARY KEY (id, occurred_at)
 );
 
 CREATE INDEX IF NOT EXISTS idx_user_behavior_user_time
@@ -323,7 +324,7 @@ EXCEPTION WHEN undefined_function THEN
 END$$;
 
 CREATE TABLE IF NOT EXISTS region_hourly_metrics (
-  id                            uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  id                            uuid,
   region_code                   text NOT NULL,
   operator_code                 text REFERENCES operators(code) ON DELETE SET NULL,
   population_movement_index     numeric(6,3),
@@ -332,7 +333,8 @@ CREATE TABLE IF NOT EXISTS region_hourly_metrics (
   samples_count                 integer NOT NULL DEFAULT 0,
   area_wkt                      text,
   bucket_start                  timestamptz NOT NULL,
-  UNIQUE (region_code, operator_code, bucket_start)
+  UNIQUE (region_code, operator_code, bucket_start),
+  PRIMARY KEY (id, bucket_start)
 );
 
 CREATE INDEX IF NOT EXISTS idx_region_metrics_time
