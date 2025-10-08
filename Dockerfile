@@ -51,8 +51,10 @@ RUN apk add --no-cache \
     musl-dev \
     curl
 
-# Install Python dependencies at runtime
+# Install Python dependencies at runtime using virtual environment
 COPY requirements.txt ./
+RUN python3 -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
 RUN pip install --no-cache-dir -r requirements.txt
 
 WORKDIR /app
