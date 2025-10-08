@@ -132,12 +132,13 @@ EXCEPTION WHEN undefined_function THEN
   RAISE NOTICE 'Timescale create_hypertable not available, skipped';
 END$$;
 
-DO $$
-BEGIN
-  PERFORM add_retention_policy('user_sessions', INTERVAL '180 days', if_not_exists => TRUE);
-EXCEPTION WHEN undefined_function THEN
-  RAISE NOTICE 'Timescale retention not available, skipped';
-END$$;
+-- Retention policy disabled for Apache license compatibility
+-- DO $$
+-- BEGIN
+--   PERFORM add_retention_policy('user_sessions', INTERVAL '180 days', if_not_exists => TRUE);
+-- EXCEPTION WHEN undefined_function THEN
+--   RAISE NOTICE 'Timescale retention not available, skipped';
+-- END$$;
 
 CREATE TABLE IF NOT EXISTS chat_messages (
   id           uuid PRIMARY KEY DEFAULT gen_random_uuid(),
