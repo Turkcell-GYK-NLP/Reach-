@@ -22,7 +22,7 @@ export interface ChatResponse {
 
 export const api = {
   // Auth
-  register: async (data: { name: string; email: string; password: string; age?: number; location?: string; operator?: string; }) => {
+  register: async (data: { email: string; password: string; ageYears: number; gender?: string; phone?: string; }) => {
     const response = await fetch("/api/auth/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
