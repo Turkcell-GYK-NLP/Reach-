@@ -30,16 +30,16 @@ export function registerChatRoutes(app: Express, coreAgent: CoreAgent): void {
       // Save user message
       const userMessage = await storage.createChatMessage({
         userId,
-        message,
-        response: null,
+        role: "user",
+        content: message,
         metadata: { type: "user" }
       });
 
       // Save AI response
       const botMessage = await storage.createChatMessage({
         userId,
-        message: agentResponse.message,
-        response: null,
+        role: "assistant",
+        content: agentResponse.message,
         metadata: { 
           type: "bot", 
           suggestions: agentResponse.suggestions,

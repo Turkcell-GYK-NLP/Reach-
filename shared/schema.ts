@@ -25,10 +25,11 @@ export const users = pgTable(
 export const chatMessages = pgTable("chat_messages", {
   id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
   userId: varchar("user_id").references(() => users.id),
-  message: text("message").notNull(),
-  response: text("response"),
-  timestamp: timestamp("timestamp").defaultNow(),
+  sessionId: varchar("session_id"),
+  role: text("role").notNull(),
+  content: text("content").notNull(),
   metadata: jsonb("metadata").default({}),
+  createdAt: timestamp("created_at").defaultNow(),
 });
 
 export const networkStatus = pgTable("network_status", {

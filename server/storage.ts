@@ -158,9 +158,11 @@ export class MemStorage implements IStorage {
       ...insertMessage,
       id,
       userId: insertMessage.userId || null,
-      response: insertMessage.response || null,
+      sessionId: insertMessage.sessionId || null,
+      role: insertMessage.role || "user",
+      content: insertMessage.content || "",
       metadata: insertMessage.metadata || {},
-      timestamp: new Date(),
+      createdAt: new Date(),
     };
 
     const userId = insertMessage.userId || "default";
@@ -312,7 +314,7 @@ class DrizzleStorage implements IStorage {
       .select()
       .from(chatMessagesTable)
       .where(eq(chatMessagesTable.userId, userId))
-      .orderBy(desc(chatMessagesTable.timestamp));
+      .orderBy(desc(chatMessagesTable.createdAt));
   }
 
   async createChatMessage(message: InsertChatMessage): Promise<ChatMessage> {
