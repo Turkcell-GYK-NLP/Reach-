@@ -111,8 +111,7 @@ CREATE TABLE IF NOT EXISTS user_sessions (
   expires_at         timestamptz,
   revoked            boolean NOT NULL DEFAULT false,
   CONSTRAINT chk_device_hash_len CHECK (char_length(device_id_hash) BETWEEN 32 AND 128),
-  PRIMARY KEY (id, login_at),
-  UNIQUE (id)
+  PRIMARY KEY (id, login_at)
 );
 
 -- No geometry columns, no sanitize triggers
@@ -144,7 +143,7 @@ END$$;
 CREATE TABLE IF NOT EXISTS chat_messages (
   id           uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   user_id      uuid NOT NULL REFERENCES users(id) ON DELETE CASCADE,
-  session_id   uuid REFERENCES user_sessions(id) ON DELETE SET NULL,
+  session_id   uuid,
   role         chat_role NOT NULL,
   content      text NOT NULL,
   metadata     jsonb NOT NULL DEFAULT '{}'::jsonb,
@@ -302,7 +301,7 @@ CREATE INDEX IF NOT EXISTS idx_public_ann_times
 CREATE TABLE IF NOT EXISTS user_behavior_events (
   id            uuid,
   user_id       uuid NOT NULL REFERENCES users(id) ON DELETE CASCADE,
-  session_id    uuid REFERENCES user_sessions(id) ON DELETE SET NULL,
+  session_id    uuid,
   event_type    text NOT NULL,
   properties    jsonb NOT NULL DEFAULT '{}'::jsonb,
   occurred_at   timestamptz NOT NULL,
