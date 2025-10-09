@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { useLocation } from "@/hooks/useLocation";
+import { useChat } from "@/hooks/useChat";
 import ChatInterface from "@/components/ChatInterface";
 import HamburgerMenu from "@/components/HamburgerMenu";
 import EmergencyAlert from "@/components/EmergencyAlert";
@@ -11,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Heart, Menu, Bell, Wifi, WifiOff, Bluetooth } from "lucide-react";
 
 export default function Dashboard() {
+  // Tüm hook'lar en üstte olmalı
   const { location } = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showNotifications, setShowNotifications] = useState(false);
@@ -23,24 +25,6 @@ export default function Dashboard() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    try {
-      const auth = JSON.parse(localStorage.getItem("auth") || "null");
-      if (auth?.user?.id) {
-        setIsAuthenticated(true);
-      } else {
-        // Giriş yapmamışsa auth sayfasına yönlendir
-        window.location.href = "/auth";
-        return;
-      }
-    } catch {
-      // Hatalı auth data varsa auth sayfasına yönlendir
-      window.location.href = "/auth";
-      return;
-    }
-    setIsLoading(false);
-  }, []);
-
   // User ID - auth'dan al
   let userId = "default";
   try {
@@ -49,6 +33,100 @@ export default function Dashboard() {
       userId = auth.user.id;
     }
   } catch {}
+
+  // Tüm API hook'ları
+  const { data: emergencyAlerts = [] } = useQuery({
+    queryKey: ["/api/emergency-alerts", location?.district],
+    queryFn: () => api.getEmergencyAlerts(location?.district),
+  });
+
+  const { data: networkStatus = [] } = useQuery({
+    queryKey: ["/api/network-status", location?.district],
+    queryFn: () => api.getNetworkStatus(location?.district),
+  });
+
+  const { data: socialInsights = [] } = useQuery({
+    queryKey: ["/api/insights", location?.district],
+    queryFn: () => api.getSocialMediaInsights(location?.district, 5),
+  });
+
+  const { data: tweets = [] } = useQuery({
+    queryKey: ["/api/tweets", location?.district],
+    queryFn: () => api.getTweets({ limit: 10, il: location?.city }),
+  });
+
+  const { data: hospitals = [] } = useQuery({
+    queryKey: ["/api/hospitals", location?.district],
+    queryFn: () => api.getHospitals(location?.district),
+  });
+
+  // Chat functionality
+  const { messages, sendMessage, clearChat, isTyping } = useChat(userId);
+
+  // Authentication useEffect
+  useEffect(() => {
+    try {
+      const auth = JSON.parse(localStorage.getItem("auth") || "null");
+      console.log("Auth data:", auth);
+      if (auth?.user?.id) {
+        setIsAuthenticated(true);
+      } else {
+        // Giriş yapmamışsa auth sayfasına yönlendir
+        console.log("No auth data, redirecting to /auth");
+        window.location.href = "/auth";
+        return;
+      }
+    } catch (error) {
+      // Hatalı auth data varsa auth sayfasına yönlendir
+      console.error("Auth error:", error);
+      window.location.href = "/auth";
+      return;
+    }
+    setIsLoading(false);
+  }, []);
+
+  // Monitor connection status
+  useEffect(() => {
+    const handleOnline = () => setConnectionStatus("online");
+    const handleOffline = () => setConnectionStatus("offline");
+
+    window.addEventListener("online", handleOnline);
+    window.addEventListener("offline", handleOffline);
+
+    return () => {
+      window.removeEventListener("online", handleOnline);
+      window.removeEventListener("offline", handleOffline);
+    };
+  }, []);
+
+  // Loading state
+  if (isLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+          <p className="text-gray-600">Yükleniyor...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Not authenticated
+  if (!isAuthenticated) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <p className="text-gray-600">Kimlik doğrulama gerekli</p>
+          <button 
+            onClick={() => window.location.href = "/auth"}
+            className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg"
+          >
+            Giriş Yap
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   // Loading durumunda hiçbir şey gösterme
   if (isLoading) {
@@ -66,27 +144,6 @@ export default function Dashboard() {
   if (!isAuthenticated) {
     return null;
   }
-
-  // Get emergency alerts
-  const { data: emergencyAlerts = [] } = useQuery({
-    queryKey: ["/api/emergency-alerts", location?.district],
-    queryFn: () => api.getEmergencyAlerts(location?.district),
-    refetchInterval: 30000, // Refresh every 30 seconds
-  });
-
-  // Monitor connection status
-  useEffect(() => {
-    const handleOnline = () => setConnectionStatus("online");
-    const handleOffline = () => setConnectionStatus("offline");
-
-    window.addEventListener("online", handleOnline);
-    window.addEventListener("offline", handleOffline);
-
-    return () => {
-      window.removeEventListener("online", handleOnline);
-      window.removeEventListener("offline", handleOffline);
-    };
-  }, []);
 
   const getConnectionStatusIcon = () => {
     switch (connectionStatus) {
