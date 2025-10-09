@@ -19,7 +19,7 @@ export default function AuthPage() {
     try {
       const auth = JSON.parse(localStorage.getItem("auth") || "null");
       if (auth?.user?.id) {
-        window.location.href = "/";
+        window.location.href = "/dashboard";
       }
     } catch {}
   }, []);
@@ -28,7 +28,7 @@ export default function AuthPage() {
     mutationFn: (data: { name: string; email: string; password: string }) => api.register(data),
     onSuccess: (res) => {
       localStorage.setItem("auth", JSON.stringify(res));
-      window.location.href = "/";
+      window.location.href = "/dashboard";
     },
     onError: (e: any) => setError(e?.message || "Kayıt başarısız"),
   });
@@ -37,7 +37,7 @@ export default function AuthPage() {
     mutationFn: (data: { email: string; password: string }) => api.login(data),
     onSuccess: (res) => {
       localStorage.setItem("auth", JSON.stringify(res));
-      window.location.href = "/";
+      window.location.href = "/dashboard";
     },
     onError: (e: any) => setError(e?.message || "Giriş başarısız"),
   });

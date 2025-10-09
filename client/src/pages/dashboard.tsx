@@ -19,6 +19,28 @@ export default function Dashboard() {
   const [connectionStatus, setConnectionStatus] = useState<"online" | "offline" | "bluetooth">("online");
   const [notifications] = useState(3);
 
+  // Authentication kontrolü
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    try {
+      const auth = JSON.parse(localStorage.getItem("auth") || "null");
+      if (auth?.user?.id) {
+        setIsAuthenticated(true);
+      } else {
+        // Giriş yapmamışsa auth sayfasına yönlendir
+        window.location.href = "/auth";
+        return;
+      }
+    } catch {
+      // Hatalı auth data varsa auth sayfasına yönlendir
+      window.location.href = "/auth";
+      return;
+    }
+    setIsLoading(false);
+  }, []);
+
   // User ID - auth'dan al
   let userId = "default";
   try {
@@ -27,6 +49,23 @@ export default function Dashboard() {
       userId = auth.user.id;
     }
   } catch {}
+
+  // Loading durumunda hiçbir şey gösterme
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <p className="text-gray-600">Yükleniyor...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Giriş yapmamışsa hiçbir şey gösterme (yönlendirme yapıldı)
+  if (!isAuthenticated) {
+    return null;
+  }
 
   // Get emergency alerts
   const { data: emergencyAlerts = [] } = useQuery({
