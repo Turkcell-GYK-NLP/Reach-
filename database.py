@@ -487,11 +487,11 @@ def seed_data(conn):
             cur.execute(
                 """
                 INSERT INTO user_sessions(
-                  user_id, device_id_hash, user_agent, ip_address,
+                  id, user_id, device_id_hash, user_agent, ip_address,
                   login_lat, login_lon, location_source, login_at, expires_at
                 )
                 VALUES (
-                  %s, %s, %s, %s,
+                  gen_random_uuid(), %s, %s, %s, %s,
                   %s, %s, %s, %s, %s
                 )
                 RETURNING id
