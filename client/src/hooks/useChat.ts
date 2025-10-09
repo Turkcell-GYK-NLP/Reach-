@@ -71,8 +71,8 @@ export function useChat(userId: string = "default") {
     return messages.map((msg: ChatMessage) => ({
       id: msg.id,
       type: msg.metadata?.type || "user",
-      content: msg.message,
-      timestamp: msg.timestamp ? new Date(msg.timestamp) : new Date(),
+      content: msg.content || msg.message || "",
+      timestamp: msg.createdAt ? new Date(msg.createdAt) : new Date(),
       suggestions: msg.metadata?.suggestions,
       actionItems: msg.metadata?.actionItems,
     }));
