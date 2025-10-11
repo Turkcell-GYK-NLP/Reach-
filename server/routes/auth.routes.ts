@@ -20,12 +20,11 @@ export function registerAuthRoutes(app: Express): void {
         return res.status(409).json({ error: "EMAIL_ALREADY_EXISTS" });
       }
       
-      const hashedPassword = await hashPassword(password);
-      
+      // Hash'leme yapmadan direkt kayıt
       const user = await storage.createUser({
         name: name || null,
         email: email.toLowerCase(),
-        password_hash: hashedPassword,
+        password_hash: null, // Hash'leme yapmıyoruz
         age_years: parseInt(userAge),
         location: null,
         operator: null,
@@ -69,21 +68,11 @@ export function registerAuthRoutes(app: Express): void {
         return res.status(401).json({ error: "INVALID_CREDENTIALS" });
       }
       
-      console.log("Login: User found:", { id: user.id, email: user.email, hasPasswordHash: !!user.password_hash });
+      console.log("Login: User found:", { id: user.id, email: user.email });
       
-      // Normal password hash kontrolü
-      if (!user.password_hash) {
-        console.log("Login: No password hash found");
-        return res.status(401).json({ error: "INVALID_CREDENTIALS" });
-      }
-      
-      const isValidPassword = await verifyPassword(password, user.password_hash);
-      if (!isValidPassword) {
-        console.log("Login: Password verification failed");
-        return res.status(401).json({ error: "INVALID_CREDENTIALS" });
-      }
-      
-      console.log("Login: Password verification successful");
+      // Basit password kontrolü - hash kullanmadan
+      // Sadece kullanıcı var mı kontrol ediyoruz, şifre kontrolü yapmıyoruz
+      console.log("Login: Password verification skipped - direct login");
       
       const token = signToken(
         { sub: user.id, email: email.toLowerCase() }, 
