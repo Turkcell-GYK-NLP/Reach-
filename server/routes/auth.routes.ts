@@ -21,12 +21,12 @@ export function registerAuthRoutes(app: Express): void {
       const user = await storage.createUser({
         name: name || null,
         email: email.toLowerCase(),
-        passwordHash: hashedPassword,
-        ageYears: parseInt(age),
+        password_hash: hashedPassword,
+        age_years: parseInt(age),
         location: null,
         operator: null,
         preferences: {},
-        notificationsEnabled: true
+        notifications_enabled: true
       } as any);
       
       const token = signToken(
