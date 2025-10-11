@@ -34,9 +34,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN echo "Build cache updated: $(date)" > /tmp/build_info.txt
 
 # Copy Python scripts
-COPY database.py faiss_indexer.py ilkyardim_indexer.py ./
+COPY database.py faiss_indexer.py ilkyardim_indexer.py tarife_onerisi_sistemi.py ./
 COPY Datas ./Datas
 COPY new_datas ./new_datas
+COPY guncel_tarifeler_2025*.json ./
 
 # Stage 3: Production runtime
 FROM node:20-alpine AS runtime
@@ -79,6 +80,8 @@ COPY faiss_indexer.py ./
 COPY ilkyardim_indexer.py ./
 COPY faiss_search.py ./
 COPY ilkyardim_search.py ./
+COPY tarife_onerisi_sistemi.py ./
+COPY guncel_tarifeler_2025*.json ./
 
 # Copy startup script
 COPY docker-entrypoint.sh ./

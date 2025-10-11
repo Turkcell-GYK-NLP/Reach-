@@ -21,7 +21,10 @@ router.post('/tarife-onerisi', async (req, res) => {
 
     // Python script'ini virtual environment'da çalıştır
     const pythonScript = path.join(__dirname, '../../tarife_onerisi_sistemi.py');
-    const venvPython = path.join(__dirname, '../../venv/bin/python');
+    // Docker container'da /opt/venv/bin/python, local'de ../../venv/bin/python
+    const venvPython = process.env.NODE_ENV === 'production' 
+      ? '/opt/venv/bin/python' 
+      : path.join(__dirname, '../../venv/bin/python');
     const pythonProcess = spawn(venvPython, [pythonScript, '--user-id', user_id.toString()]);
     
     let output = '';
@@ -95,7 +98,10 @@ router.get('/toplu-analiz', async (req, res) => {
     
     // Python script'ini virtual environment'da çalıştır
     const pythonScript = path.join(__dirname, '../../tarife_onerisi_sistemi.py');
-    const venvPython = path.join(__dirname, '../../venv/bin/python');
+    // Docker container'da /opt/venv/bin/python, local'de ../../venv/bin/python
+    const venvPython = process.env.NODE_ENV === 'production' 
+      ? '/opt/venv/bin/python' 
+      : path.join(__dirname, '../../venv/bin/python');
     const pythonProcess = spawn(venvPython, [pythonScript, '--bulk-analysis', sample_size.toString()]);
     
     let output = '';
@@ -149,7 +155,10 @@ router.get('/profil-analizi', async (req, res) => {
   try {
     // Python script'ini virtual environment'da çalıştır
     const pythonScript = path.join(__dirname, '../../tarife_onerisi_sistemi.py');
-    const venvPython = path.join(__dirname, '../../venv/bin/python');
+    // Docker container'da /opt/venv/bin/python, local'de ../../venv/bin/python
+    const venvPython = process.env.NODE_ENV === 'production' 
+      ? '/opt/venv/bin/python' 
+      : path.join(__dirname, '../../venv/bin/python');
     const pythonProcess = spawn(venvPython, [pythonScript, '--profile-analysis']);
     
     let output = '';
