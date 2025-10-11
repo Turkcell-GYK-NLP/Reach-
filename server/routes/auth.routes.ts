@@ -6,8 +6,8 @@ export function registerAuthRoutes(app: Express): void {
   // Register
   app.post("/api/auth/register", async (req, res) => {
     try {
-      const { name, email, password, ageYears, gender, phone } = req.body || {};
-      if (!email || !password || !ageYears) {
+      const { name, email, password, age, gender, phone } = req.body || {};
+      if (!email || !password || !age) {
         return res.status(400).json({ error: "EMAIL_PASSWORD_AGE_REQUIRED" });
       }
       
@@ -16,12 +16,17 @@ export function registerAuthRoutes(app: Express): void {
         return res.status(409).json({ error: "EMAIL_ALREADY_EXISTS" });
       }
       
+      const hashedPassword = await hashPassword(password);
+      
       const user = await storage.createUser({
         name: name || null,
         email: email.toLowerCase(),
-        ageYears: parseInt(ageYears),
-        gender: gender || null,
-        phone: phone || null,
+        password_hash: hashedPassword,
+        age: parseInt(age),
+        location: null,
+        operator: null,
+        preferences: {},
+        notifications_enabled: true
       } as any);
       
       const token = signToken(
@@ -59,8 +64,9 @@ export function registerAuthRoutes(app: Express): void {
         return res.status(401).json({ error: "INVALID_CREDENTIALS" });
       }
       
-      // Basit password kontrolü (şimdilik)
-      if (password !== "admin") {
+      // Password hash kontrolü
+      const isValidPassword = await verifyPassword(password, user.password_hash);
+      if (!isValidPassword) {
         return res.status(401).json({ error: "INVALID_CREDENTIALS" });
       }
       
