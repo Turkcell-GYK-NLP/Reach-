@@ -59,7 +59,7 @@ RUN apk add --no-cache \
 COPY requirements.txt ./
 RUN python3 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir --only-binary=all -r requirements.txt
 
 WORKDIR /app
 
