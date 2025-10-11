@@ -72,7 +72,7 @@ hospital_api/venv/
 *.docx
 *.pdf
 *.rtf
-*.xlsx
+# *.xlsx - Allow Excel files for tariff recommendation system
 
 # Keep only necessary data files
 # Datas/ and new_datas/ will be included
