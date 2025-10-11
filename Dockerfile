@@ -85,6 +85,7 @@ COPY faiss_search.py ./
 COPY ilkyardim_search.py ./
 COPY tarife_onerisi_sistemi.py ./
 COPY guncel_tarifeler_2025*.json ./
+COPY usage_with_recommendations.xlsx ./
 COPY hospital_api ./hospital_api
 
 # Copy startup script

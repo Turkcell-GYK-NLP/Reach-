@@ -8,7 +8,6 @@ from openpyxl import load_workbook
 from typing import Dict, List, Tuple, Optional
 import json
 import random
-import os
 
 class TarifeOnerisiSistemi:
     def __init__(self):
@@ -279,7 +278,7 @@ def main():
     sistem = TarifeOnerisiSistemi()
     
     # Excel dosyasını yükle
-    excel_path = '/app/usage_with_recommendations.xlsx' if os.path.exists('/app/usage_with_recommendations.xlsx') else 'usage_with_recommendations.xlsx'
+    excel_path = 'usage_with_recommendations.xlsx'
     if not sistem.load_kullanici_verileri(excel_path):
         print("Excel dosyası yüklenemedi, varsayılan verilerle devam ediliyor...")
     
