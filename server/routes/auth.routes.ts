@@ -6,9 +6,12 @@ export function registerAuthRoutes(app: Express): void {
   // Register
   app.post("/api/auth/register", async (req, res) => {
     try {
+      console.log("Register request body:", req.body);
       const { name, email, password, age, age_years, gender, phone } = req.body || {};
       const userAge = age || age_years;
+      console.log("Parsed values:", { name, email, password, age, age_years, userAge, gender, phone });
       if (!email || !password || !userAge) {
+        console.log("Missing required fields:", { email: !!email, password: !!password, userAge: !!userAge });
         return res.status(400).json({ error: "EMAIL_PASSWORD_AGE_REQUIRED" });
       }
       
