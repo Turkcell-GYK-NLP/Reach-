@@ -61,11 +61,16 @@ export function registerAuthRoutes(app: Express): void {
       
       const user = await storage.getUserByEmail(email.toLowerCase());
       if (!user) {
+        console.log("Login: User not found for email:", email);
         return res.status(401).json({ error: "INVALID_CREDENTIALS" });
       }
       
+      console.log("Login: User found:", { id: user.id, email: user.email, hasPasswordHash: !!user.password_hash });
+      
       // Password hash kontrolü
       const isValidPassword = await verifyPassword(password, user.password_hash);
+      console.log("Login: Password verification result:", isValidPassword);
+      
       if (!isValidPassword) {
         return res.status(401).json({ error: "INVALID_CREDENTIALS" });
       }
