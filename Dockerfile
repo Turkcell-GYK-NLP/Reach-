@@ -45,12 +45,15 @@ FROM node:20-alpine AS runtime
 # Install Python 3 for runtime Python scripts
 RUN apk add --no-cache \
     python3 \
+    python3-dev \
     py3-pip \
     postgresql-client \
     postgresql-dev \
     gcc \
     musl-dev \
-    curl
+    curl \
+    build-base \
+    linux-headers
 
 # Install Python dependencies at runtime using virtual environment
 COPY requirements.txt ./
