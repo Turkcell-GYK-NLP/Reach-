@@ -71,9 +71,15 @@ export function registerAuthRoutes(app: Express): void {
       
       console.log("Login: User found:", { id: user.id, email: user.email, hasPasswordHash: !!user.password_hash });
       
-      // Geçici basit password kontrolü
-      if (password !== "testpass123") {
-        console.log("Login: Password mismatch");
+      // Normal password hash kontrolü
+      if (!user.password_hash) {
+        console.log("Login: No password hash found");
+        return res.status(401).json({ error: "INVALID_CREDENTIALS" });
+      }
+      
+      const isValidPassword = await verifyPassword(password, user.password_hash);
+      if (!isValidPassword) {
+        console.log("Login: Password verification failed");
         return res.status(401).json({ error: "INVALID_CREDENTIALS" });
       }
       
