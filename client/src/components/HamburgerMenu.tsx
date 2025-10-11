@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
@@ -17,7 +17,9 @@ import {
   Wifi,
   Bluetooth,
   Heart,
-  ChevronRight
+  ChevronRight,
+  Smartphone,
+  TrendingUp
 } from "lucide-react";
 
 interface HamburgerMenuProps {
@@ -27,6 +29,25 @@ interface HamburgerMenuProps {
 }
 
 export default function HamburgerMenu({ isOpen, onClose, onNavigate }: HamburgerMenuProps) {
+  const [userInfo, setUserInfo] = useState<{ name?: string; email?: string } | null>(null);
+
+  // Get user info from localStorage when component mounts or when menu opens
+  useEffect(() => {
+    try {
+      const auth = JSON.parse(localStorage.getItem("auth") || "null");
+      if (auth?.user) {
+        setUserInfo({
+          name: auth.user.name || auth.user.email?.split('@')[0] || "Kullanıcı",
+          email: auth.user.email || "user@example.com"
+        });
+      } else {
+        setUserInfo(null);
+      }
+    } catch (error) {
+      console.error("Error parsing auth data:", error);
+      setUserInfo(null);
+    }
+  }, [isOpen]); // Re-check when menu opens
 
   const menuItems = [
     {
@@ -63,6 +84,13 @@ export default function HamburgerMenu({ isOpen, onClose, onNavigate }: Hamburger
       icon: Shield,
       path: "/emergency-contacts",
       description: "Acil durum iletişim listesi"
+    },
+    {
+      id: "tarife-onerisi",
+      title: "Tarife Önerisi",
+      icon: Smartphone,
+      path: "/tarife-onerisi",
+      description: "Size özel tarife önerileri"
     },
     {
       id: "community",
@@ -192,8 +220,12 @@ export default function HamburgerMenu({ isOpen, onClose, onNavigate }: Hamburger
                     <User className="w-5 h-5 text-gray-600" />
                   </div>
                   <div>
-                    <div className="font-medium text-gray-800">Kullanıcı</div>
-                    <div className="text-xs text-gray-500">user@example.com</div>
+                    <div className="font-medium text-gray-800">
+                      {userInfo?.name || "Kullanıcı"}
+                    </div>
+                    <div className="text-xs text-gray-500">
+                      {userInfo?.email || "user@example.com"}
+                    </div>
                   </div>
                 </div>
                 <Button

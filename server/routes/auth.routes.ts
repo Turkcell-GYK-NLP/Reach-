@@ -6,7 +6,7 @@ export function registerAuthRoutes(app: Express): void {
   // Register
   app.post("/api/auth/register", async (req, res) => {
     try {
-      const { email, password, ageYears, gender, phone } = req.body || {};
+      const { name, email, password, ageYears, gender, phone } = req.body || {};
       if (!email || !password || !ageYears) {
         return res.status(400).json({ error: "EMAIL_PASSWORD_AGE_REQUIRED" });
       }
@@ -17,6 +17,7 @@ export function registerAuthRoutes(app: Express): void {
       }
       
       const user = await storage.createUser({
+        name: name || null,
         email: email.toLowerCase(),
         ageYears: parseInt(ageYears),
         gender: gender || null,
@@ -32,6 +33,7 @@ export function registerAuthRoutes(app: Express): void {
       res.json({ 
         user: { 
           id: user.id, 
+          name: user.name,
           email: user.email 
         }, 
         token 
@@ -71,6 +73,7 @@ export function registerAuthRoutes(app: Express): void {
       res.json({ 
         user: { 
           id: user.id, 
+          name: user.name,
           email: user.email 
         }, 
         token 

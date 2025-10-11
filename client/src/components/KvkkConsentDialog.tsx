@@ -32,10 +32,10 @@ export default function KvkkConsentDialog({ isOpen, onAccept, onDecline }: KvkkC
           <AlertDialogTitle>KVKK Aydınlatma ve Açık Rıza</AlertDialogTitle>
           <AlertDialogDescription>
             Uygulamayı kullanmaya başlamadan önce, konum bilgileriniz, mikrofon verileriniz (ses),
-            sohbet geçmişiniz ve güvenlik için gerekli teknik günlük kayıtları işlenecektir. Bu veriler;
-            acil durumlarda yardım sağlamak, öneriler sunmak ve hizmet kalitesini artırmak amacıyla
-            işlenecek ve saklanacaktır. Devam ederek KVKK kapsamında aydınlatma metnini okuduğunuzu ve
-            açık rıza verdiğinizi beyan edersiniz.
+            sohbet geçmişiniz, kullanım bilgileriniz ve güvenlik için gerekli teknik günlük kayıtları işlenecektir. 
+            Bu veriler; acil durumlarda yardım sağlamak, öneriler sunmak, tarife önerileri oluşturmak ve 
+            hizmet kalitesini artırmak amacıyla işlenecek ve saklanacaktır. Devam ederek KVKK kapsamında 
+            aydınlatma metnini okuduğunuzu ve açık rıza verdiğinizi beyan edersiniz.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <div className="text-sm text-muted-foreground space-y-2">
@@ -47,6 +47,9 @@ export default function KvkkConsentDialog({ isOpen, onAccept, onDecline }: KvkkC
           </p>
           <p>
             - Sohbet Geçmişi: Deneyiminizi kişiselleştirmek ve güvenlik amaçlı tutulacaktır.
+          </p>
+          <p>
+            - Kullanım Bilgileri: Tarife önerileri oluşturmak için veri, dakika ve SMS kullanım verileriniz işlenecektir.
           </p>
           <p>
             Onay vermeden uygulamaya devam edilemez.

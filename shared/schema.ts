@@ -7,6 +7,7 @@ export const users = pgTable(
   "users",
   {
     id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+    name: text("name"),
     email: text("email").notNull(),
     phone: text("phone"),
     ageYears: integer("age_years").notNull(),
@@ -121,29 +122,30 @@ export const emotionalAnalysisSchema = pgTable("emotional_analysis", {
   analysisDate: timestamp("analysis_date").defaultNow(),
 });
 
-// Vapi call conversations
-export const callConversations = pgTable("call_conversations", {
+
+// Kullanıcı acil durum kişileri
+export const emergencyContacts = pgTable("emergency_contacts", {
   id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
-  userId: varchar("user_id").references(() => users.id),
-  callId: varchar("call_id").notNull(),
-  assistantId: varchar("assistant_id"),
-  status: text("status"),
-  startedAt: timestamp("started_at"),
-  endedAt: timestamp("ended_at"),
-  messages: jsonb("messages").notNull().default([]),
-  summary: text("summary"),
-  transcript: text("transcript"),
+  userId: varchar("user_id").references(() => users.id).notNull(),
+  name: text("name").notNull(),
+  phone: text("phone").notNull(),
+  email: text("email"),
+  relationship: text("relationship").notNull(), // Eş, Kardeş, Doktor, vs.
+  isPrimary: boolean("is_primary").default(false),
+  lastContact: timestamp("last_contact"),
   createdAt: timestamp("created_at").defaultNow(),
+  updatedAt: timestamp("updated_at").defaultNow(),
 });
 
 export const insertUserSchema = createInsertSchema(users).omit({
   id: true,
   createdAt: true,
+  updatedAt: true,
 });
 
 export const insertChatMessageSchema = createInsertSchema(chatMessages).omit({
   id: true,
-  timestamp: true,
+  createdAt: true,
 });
 
 export const insertNetworkStatusSchema = createInsertSchema(networkStatus).omit({
@@ -177,9 +179,11 @@ export const insertEmotionalAnalysisSchema = createInsertSchema(emotionalAnalysi
   analysisDate: true,
 });
 
-export const insertCallConversationSchema = createInsertSchema(callConversations).omit({
+
+export const insertEmergencyContactSchema = createInsertSchema(emergencyContacts).omit({
   id: true,
   createdAt: true,
+  updatedAt: true,
 });
 
 export type User = typeof users.$inferSelect;
@@ -198,5 +202,5 @@ export type UserProfile = typeof userProfileSchema.$inferSelect;
 export type InsertUserProfile = z.infer<typeof insertUserProfileSchema>;
 export type EmotionalAnalysis = typeof emotionalAnalysisSchema.$inferSelect;
 export type InsertEmotionalAnalysis = z.infer<typeof insertEmotionalAnalysisSchema>;
-export type CallConversation = typeof callConversations.$inferSelect;
-export type InsertCallConversation = z.infer<typeof insertCallConversationSchema>;
+export type EmergencyContact = typeof emergencyContacts.$inferSelect;
+export type InsertEmergencyContact = z.infer<typeof insertEmergencyContactSchema>;

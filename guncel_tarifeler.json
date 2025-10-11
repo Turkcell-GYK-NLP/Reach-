@@ -1,0 +1,104 @@
+{
+  "Turkcell": [
+    {
+      "ad": "Turkcell 5GB",
+      "data_gb": 5,
+      "dakika": 200,
+      "sms": 100,
+      "fiyat": 150.0,
+      "operator": "Turkcell"
+    },
+    {
+      "ad": "Turkcell 10GB",
+      "data_gb": 10,
+      "dakika": 500,
+      "sms": 200,
+      "fiyat": 200.0,
+      "operator": "Turkcell"
+    },
+    {
+      "ad": "Turkcell 20GB",
+      "data_gb": 20,
+      "dakika": 1000,
+      "sms": 500,
+      "fiyat": 280.0,
+      "operator": "Turkcell"
+    },
+    {
+      "ad": "Turkcell 50GB",
+      "data_gb": 50,
+      "dakika": 2000,
+      "sms": 1000,
+      "fiyat": 400.0,
+      "operator": "Turkcell"
+    }
+  ],
+  "Türk Telekom": [
+    {
+      "ad": "Türk Telekom 5GB",
+      "data_gb": 5,
+      "dakika": 200,
+      "sms": 100,
+      "fiyat": 160.0,
+      "operator": "Türk Telekom"
+    },
+    {
+      "ad": "Türk Telekom 10GB",
+      "data_gb": 10,
+      "dakika": 500,
+      "sms": 200,
+      "fiyat": 220.0,
+      "operator": "Türk Telekom"
+    },
+    {
+      "ad": "Türk Telekom 20GB",
+      "data_gb": 20,
+      "dakika": 1000,
+      "sms": 500,
+      "fiyat": 300.0,
+      "operator": "Türk Telekom"
+    },
+    {
+      "ad": "Türk Telekom 50GB",
+      "data_gb": 50,
+      "dakika": 2000,
+      "sms": 1000,
+      "fiyat": 450.0,
+      "operator": "Türk Telekom"
+    }
+  ],
+  "Vodafone": [
+    {
+      "ad": "Vodafone 5GB",
+      "data_gb": 5,
+      "dakika": 200,
+      "sms": 100,
+      "fiyat": 140.0,
+      "operator": "Vodafone"
+    },
+    {
+      "ad": "Vodafone 10GB",
+      "data_gb": 10,
+      "dakika": 500,
+      "sms": 200,
+      "fiyat": 190.0,
+      "operator": "Vodafone"
+    },
+    {
+      "ad": "Vodafone 20GB",
+      "data_gb": 20,
+      "dakika": 1000,
+      "sms": 500,
+      "fiyat": 260.0,
+      "operator": "Vodafone"
+    },
+    {
+      "ad": "Vodafone 50GB",
+      "data_gb": 50,
+      "dakika": 2000,
+      "sms": 1000,
+      "fiyat": 380.0,
+      "operator": "Vodafone"
+    }
+  ]
+}

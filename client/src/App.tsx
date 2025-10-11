@@ -12,6 +12,7 @@ import SocialMediaPage from "@/pages/social-media";
 import ProfilePage from "@/pages/profile";
 import SettingsPage from "@/pages/settings";
 import EmergencyContactsPage from "@/pages/emergency-contacts";
+import TarifeOnerisiPage from "@/pages/tarife-onerisi";
 import CommunityPage from "@/pages/community";
 import NotFound from "@/pages/not-found";
 
@@ -26,6 +27,7 @@ function Router() {
       <Route path="/profile" component={ProfilePage} />
       <Route path="/settings" component={SettingsPage} />
       <Route path="/emergency-contacts" component={EmergencyContactsPage} />
+      <Route path="/tarife-onerisi" component={TarifeOnerisiPage} />
       <Route path="/community" component={CommunityPage} />
       <Route component={NotFound} />
     </Switch>

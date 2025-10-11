@@ -4,7 +4,7 @@ import {
   networkStatus as networkStatusTable,
   socialMediaInsights as socialMediaInsightsTable,
   emergencyAlerts as emergencyAlertsTable,
-  callConversations as callConversationsTable,
+  emergencyContacts as emergencyContactsTable,
   type User, 
   type InsertUser,
   type ChatMessage,
@@ -15,8 +15,8 @@ import {
   type InsertSocialMediaInsight,
   type EmergencyAlert,
   type InsertEmergencyAlert,
-  type CallConversation,
-  type InsertCallConversation
+  type EmergencyContact,
+  type InsertEmergencyContact
 } from "@shared/schema";
 import { randomUUID } from "crypto";
 import { and, desc, eq } from "drizzle-orm";
@@ -50,8 +50,13 @@ export interface IStorage {
   createEmergencyAlert(alert: InsertEmergencyAlert): Promise<EmergencyAlert>;
   deactivateEmergencyAlert(id: string): Promise<boolean>;
 
-  // Call Conversations
-  createCallConversation(data: InsertCallConversation): Promise<CallConversation>;
+
+  // Emergency Contacts
+  getEmergencyContacts(userId: string): Promise<EmergencyContact[]>;
+  createEmergencyContact(contact: InsertEmergencyContact): Promise<EmergencyContact>;
+  updateEmergencyContact(id: string, updates: Partial<InsertEmergencyContact>): Promise<EmergencyContact | undefined>;
+  deleteEmergencyContact(id: string): Promise<boolean>;
+  setPrimaryEmergencyContact(id: string, userId: string): Promise<EmergencyContact | undefined>;
 }
 
 export class MemStorage implements IStorage {
@@ -61,7 +66,7 @@ export class MemStorage implements IStorage {
   private networkStatuses: NetworkStatus[] = [];
   private socialMediaInsights: SocialMediaInsight[] = [];
   private emergencyAlerts: EmergencyAlert[] = [];
-  private callConversations: CallConversation[] = [];
+  private emergencyContacts: Map<string, EmergencyContact[]> = new Map();
 
   constructor() {
     // Initialize with sample data
@@ -121,14 +126,17 @@ export class MemStorage implements IStorage {
     }
     const id = randomUUID();
     const user: User = { 
-      ...insertUser,
       id,
-      operator: insertUser.operator || null,
-      location: insertUser.location || null,
-      age: insertUser.age || null,
-      preferences: insertUser.preferences || {},
-      notificationsEnabled: insertUser.notificationsEnabled ?? true,
+      name: insertUser.name || null,
+      email: insertUser.email,
+      phone: insertUser.phone || null,
+      ageYears: insertUser.ageYears,
+      gender: insertUser.gender || null,
+      locale: insertUser.locale || "tr-TR",
+      isActive: insertUser.isActive ?? true,
+      deletedAt: null,
       createdAt: new Date(),
+      updatedAt: new Date(),
     };
     this.users.set(id, user);
     if ((user as any).email) {
@@ -275,15 +283,76 @@ export class MemStorage implements IStorage {
     return false;
   }
 
-  async createCallConversation(data: InsertCallConversation): Promise<CallConversation> {
+
+  // Emergency Contacts
+  async getEmergencyContacts(userId: string): Promise<EmergencyContact[]> {
+    return this.emergencyContacts.get(userId) || [];
+  }
+
+  async createEmergencyContact(contact: InsertEmergencyContact): Promise<EmergencyContact> {
     const id = randomUUID();
-    const row: CallConversation = {
+    const now = new Date();
+    const row: EmergencyContact = {
       id,
-      createdAt: new Date(),
-      ...data,
+      createdAt: now,
+      updatedAt: now,
+      ...contact,
     } as any;
-    this.callConversations.push(row);
+    
+    const userContacts = this.emergencyContacts.get(contact.userId) || [];
+    userContacts.push(row);
+    this.emergencyContacts.set(contact.userId, userContacts);
+    
     return row;
+  }
+
+  async updateEmergencyContact(id: string, updates: Partial<InsertEmergencyContact>): Promise<EmergencyContact | undefined> {
+    for (const [userId, contacts] of Array.from(this.emergencyContacts.entries())) {
+      const contactIndex = contacts.findIndex((c: EmergencyContact) => c.id === id);
+      if (contactIndex !== -1) {
+        const updatedContact = {
+          ...contacts[contactIndex],
+          ...updates,
+          updatedAt: new Date(),
+        };
+        contacts[contactIndex] = updatedContact;
+        this.emergencyContacts.set(userId, contacts);
+        return updatedContact;
+      }
+    }
+    return undefined;
+  }
+
+  async deleteEmergencyContact(id: string): Promise<boolean> {
+    for (const [userId, contacts] of Array.from(this.emergencyContacts.entries())) {
+      const contactIndex = contacts.findIndex((c: EmergencyContact) => c.id === id);
+      if (contactIndex !== -1) {
+        contacts.splice(contactIndex, 1);
+        this.emergencyContacts.set(userId, contacts);
+        return true;
+      }
+    }
+    return false;
+  }
+
+  async setPrimaryEmergencyContact(id: string, userId: string): Promise<EmergencyContact | undefined> {
+    const contacts = this.emergencyContacts.get(userId) || [];
+    
+    // First, set all contacts to non-primary
+    contacts.forEach(contact => {
+      contact.isPrimary = false;
+    });
+    
+    // Then set the specified contact as primary
+    const contact = contacts.find(c => c.id === id);
+    if (contact) {
+      contact.isPrimary = true;
+      contact.updatedAt = new Date();
+      this.emergencyContacts.set(userId, contacts);
+      return contact;
+    }
+    
+    return undefined;
   }
 }
 
@@ -386,8 +455,45 @@ class DrizzleStorage implements IStorage {
     return !!row;
   }
 
-  async createCallConversation(data: InsertCallConversation): Promise<CallConversation> {
-    const [row] = await db.insert(callConversationsTable).values(data).returning();
+
+  // Emergency Contacts
+  async getEmergencyContacts(userId: string): Promise<EmergencyContact[]> {
+    return await db.select().from(emergencyContactsTable).where(eq(emergencyContactsTable.userId, userId));
+  }
+
+  async createEmergencyContact(contact: InsertEmergencyContact): Promise<EmergencyContact> {
+    const [row] = await db.insert(emergencyContactsTable).values(contact).returning();
+    return row;
+  }
+
+  async updateEmergencyContact(id: string, updates: Partial<InsertEmergencyContact>): Promise<EmergencyContact | undefined> {
+    const [row] = await db.update(emergencyContactsTable)
+      .set({ ...updates, updatedAt: new Date() })
+      .where(eq(emergencyContactsTable.id, id))
+      .returning();
+    return row[0];
+  }
+
+  async deleteEmergencyContact(id: string): Promise<boolean> {
+    const result = await db.delete(emergencyContactsTable).where(eq(emergencyContactsTable.id, id));
+    return result.rowCount > 0;
+  }
+
+  async setPrimaryEmergencyContact(id: string, userId: string): Promise<EmergencyContact | undefined> {
+    // First, set all contacts for this user to non-primary
+    await db.update(emergencyContactsTable)
+      .set({ isPrimary: false, updatedAt: new Date() })
+      .where(eq(emergencyContactsTable.userId, userId));
+
+    // Then set the specified contact as primary
+    const [row] = await db.update(emergencyContactsTable)
+      .set({ isPrimary: true, updatedAt: new Date() })
+      .where(and(
+        eq(emergencyContactsTable.id, id),
+        eq(emergencyContactsTable.userId, userId)
+      ))
+      .returning();
+    
     return row;
   }
 }

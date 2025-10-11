@@ -1,0 +1,482 @@
+import React, { useState, useEffect } from "react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import HamburgerMenu from "@/components/HamburgerMenu";
+import { 
+  Smartphone, 
+  Wifi, 
+  Phone, 
+  MessageSquare, 
+  TrendingUp, 
+  Star,
+  CheckCircle,
+  AlertCircle,
+  RefreshCw,
+  Zap,
+  Shield,
+  Globe,
+  Menu
+} from "lucide-react";
+
+interface UserUsage {
+  data_gb: number;
+  dakika: number;
+  sms: number;
+}
+
+interface TarifeOnerisi {
+  kullanici_id: number;
+  en_uygun_tarife: {
+    ad: string;
+    data_gb: number;
+    dakika: number;
+    sms: number;
+    fiyat: number;
+    operator: string;
+    aciklama: string;
+    cekim_guclu?: number;
+    hiz?: number;
+    musteri_hizmetleri?: number;
+    guvenilirlik?: number;
+    kapsama_alanı?: number;
+    ek_avantajlar?: number;
+    genel_puan?: number;
+  };
+  skor: number;
+  aciklama: string;
+  kullanici_ihtiyaclari: UserUsage;
+  alternatif_tarifeler: Array<{
+    tarife: any;
+    skor: number;
+    aciklama: string;
+  }>;
+}
+
+export default function TarifeOnerisiPage() {
+  const [tarifeOnerisi, setTarifeOnerisi] = useState<TarifeOnerisi | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [userUsage, setUserUsage] = useState<UserUsage | null>(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleNavigate = (path: string) => {
+    setIsMenuOpen(false);
+    window.location.href = path;
+  };
+
+  // Kullanıcıya rastgele bir kullanım profili ata
+  useEffect(() => {
+    const assignRandomUsage = () => {
+      // Excel'deki kullanım verilerinden rastgele bir profil seç
+      const sampleUsages = [
+        { data_gb: 7.13, dakika: 226, sms: 14 },
+        { data_gb: 6.09, dakika: 238, sms: 23 },
+        { data_gb: 14.57, dakika: 224, sms: 22 },
+        { data_gb: 2.41, dakika: 215, sms: 22 },
+        { data_gb: 7.12, dakika: 228, sms: 25 },
+        { data_gb: 31.36, dakika: 215, sms: 18 },
+        { data_gb: 2.67, dakika: 249, sms: 19 },
+        { data_gb: 8.63, dakika: 262, sms: 21 },
+        { data_gb: 7.99, dakika: 227, sms: 24 },
+        { data_gb: 3.78, dakika: 212, sms: 26 }
+      ];
+      
+      const randomUsage = sampleUsages[Math.floor(Math.random() * sampleUsages.length)];
+      setUserUsage(randomUsage);
+      
+      // Rastgele bir kullanıcı ID'si seç (1-10000 arası)
+      const randomUserId = Math.floor(Math.random() * 10000) + 1;
+      fetchTarifeOnerisi(randomUserId);
+    };
+
+    assignRandomUsage();
+  }, []);
+
+  const fetchTarifeOnerisi = async (userId: number) => {
+    try {
+      setLoading(true);
+      setError(null);
+      
+      // Profil analizi endpoint'ini kullan (rastgele kullanıcı seçer)
+      const response = await fetch(`/api/tarife/profil-analizi`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error('Tarife önerisi alınamadı');
+      }
+
+      const data = await response.json();
+      
+      // Profil analizi sonucundan ilk kullanıcıyı al
+      if (data.status === 'success' && data.raw_output) {
+        try {
+          // raw_output'tan JSON kısmını çıkar (başındaki metni kaldır)
+          const jsonStart = data.raw_output.indexOf('{');
+          const jsonString = data.raw_output.substring(jsonStart);
+          const parsedData = JSON.parse(jsonString);
+          
+          const firstProfile = Object.values(parsedData)[0] as any;
+          if (firstProfile && firstProfile.ornek_sonuclar && firstProfile.ornek_sonuclar.length > 0) {
+            const firstUser = firstProfile.ornek_sonuclar[0];
+            setTarifeOnerisi({
+              kullanici_id: firstUser.kullanici_id,
+              en_uygun_tarife: firstUser.en_uygun_tarife,
+              skor: firstUser.skor,
+              aciklama: firstUser.aciklama,
+              kullanici_ihtiyaclari: firstUser.kullanici_ihtiyaclari,
+              alternatif_tarifeler: firstUser.alternatif_tarifeler
+            });
+          } else {
+            throw new Error('Profil verisi bulunamadı');
+          }
+        } catch (parseError) {
+          console.error('Parse hatası:', parseError);
+          throw new Error('Veri parse edilemedi: ' + (parseError instanceof Error ? parseError.message : String(parseError)));
+        }
+      } else {
+        throw new Error('API yanıtı beklenen formatta değil');
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Bir hata oluştu');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleRefresh = () => {
+    if (userUsage) {
+      const randomUserId = Math.floor(Math.random() * 10000) + 1;
+      fetchTarifeOnerisi(randomUserId);
+    }
+  };
+
+  const getOperatorColor = (operator: string) => {
+    switch (operator) {
+      case 'Turkcell':
+        return 'bg-red-100 text-red-800 border-red-200';
+      case 'Vodafone':
+        return 'bg-red-100 text-red-800 border-red-200';
+      case 'Türk Telekom':
+        return 'bg-blue-100 text-blue-800 border-blue-200';
+      default:
+        return 'bg-gray-100 text-gray-800 border-gray-200';
+    }
+  };
+
+  const getQualityColor = (score: number) => {
+    if (score >= 8.5) return 'text-green-600';
+    if (score >= 7.5) return 'text-yellow-600';
+    return 'text-red-600';
+  };
+
+  const getQualityText = (score: number) => {
+    if (score >= 8.5) return 'Mükemmel';
+    if (score >= 7.5) return 'İyi';
+    if (score >= 6.5) return 'Orta';
+    return 'Zayıf';
+  };
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+        {/* Header */}
+        <div className="bg-white shadow-sm border-b">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between items-center h-16">
+              <div className="flex items-center">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => setIsMenuOpen(true)}
+                  className="mr-4"
+                >
+                  <Menu className="h-6 w-6" />
+                </Button>
+                <div className="flex items-center">
+                  <Smartphone className="h-8 w-8 text-blue-600 mr-3" />
+                  <div>
+                    <h1 className="text-xl font-bold text-gray-900">Tarife Önerisi</h1>
+                    <p className="text-sm text-gray-500">Size özel kullanım analizi ve en uygun tarife önerisi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="p-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center justify-center h-64">
+              <div className="text-center">
+                <RefreshCw className="w-8 h-8 animate-spin mx-auto mb-4 text-blue-600" />
+                <p className="text-gray-600">Tarife önerisi hesaplanıyor...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <HamburgerMenu 
+          isOpen={isMenuOpen} 
+          onClose={() => setIsMenuOpen(false)} 
+          onNavigate={handleNavigate} 
+        />
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+        {/* Header */}
+        <div className="bg-white shadow-sm border-b">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between items-center h-16">
+              <div className="flex items-center">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => setIsMenuOpen(true)}
+                  className="mr-4"
+                >
+                  <Menu className="h-6 w-6" />
+                </Button>
+                <div className="flex items-center">
+                  <Smartphone className="h-8 w-8 text-blue-600 mr-3" />
+                  <div>
+                    <h1 className="text-xl font-bold text-gray-900">Tarife Önerisi</h1>
+                    <p className="text-sm text-gray-500">Size özel kullanım analizi ve en uygun tarife önerisi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="p-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center justify-center h-64">
+              <div className="text-center">
+                <AlertCircle className="w-8 h-8 mx-auto mb-4 text-red-600" />
+                <p className="text-red-600 mb-4">{error}</p>
+                <Button onClick={handleRefresh} variant="outline">
+                  <RefreshCw className="w-4 h-4 mr-2" />
+                  Tekrar Dene
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <HamburgerMenu 
+          isOpen={isMenuOpen} 
+          onClose={() => setIsMenuOpen(false)} 
+          onNavigate={handleNavigate} 
+        />
+      </div>
+    );
+  }
+
+  if (!tarifeOnerisi || !userUsage) {
+    return null;
+  }
+
+  const { en_uygun_tarife, alternatif_tarifeler } = tarifeOnerisi;
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+      {/* Header */}
+      <div className="bg-white shadow-sm border-b">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <div className="flex items-center">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setIsMenuOpen(true)}
+                className="mr-4"
+              >
+                <Menu className="h-6 w-6" />
+              </Button>
+              <div className="flex items-center">
+                <Smartphone className="h-8 w-8 text-blue-600 mr-3" />
+                <div>
+                  <h1 className="text-xl font-bold text-gray-900">Tarife Önerisi</h1>
+                  <p className="text-sm text-gray-500">Size özel kullanım analizi ve en uygun tarife önerisi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="p-4">
+        <div className="max-w-4xl mx-auto space-y-6">
+          {/* Kullanım Bilgileri */}
+        <Card className="mb-6">
+          <CardHeader>
+            <CardTitle className="flex items-center">
+              <TrendingUp className="w-5 h-5 mr-2 text-blue-600" />
+              Aktif Kullanımınız
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="text-center p-4 bg-blue-50 rounded-lg">
+                <Wifi className="w-8 h-8 text-blue-600 mx-auto mb-2" />
+                <div className="text-2xl font-bold text-blue-600">{userUsage.data_gb} GB</div>
+                <div className="text-sm text-gray-600">Aylık Veri</div>
+              </div>
+              <div className="text-center p-4 bg-green-50 rounded-lg">
+                <Phone className="w-8 h-8 text-green-600 mx-auto mb-2" />
+                <div className="text-2xl font-bold text-green-600">{userUsage.dakika} dk</div>
+                <div className="text-sm text-gray-600">Aylık Konuşma</div>
+              </div>
+              <div className="text-center p-4 bg-purple-50 rounded-lg">
+                <MessageSquare className="w-8 h-8 text-purple-600 mx-auto mb-2" />
+                <div className="text-2xl font-bold text-purple-600">{userUsage.sms}</div>
+                <div className="text-sm text-gray-600">Aylık SMS</div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* En Uygun Tarife */}
+        <Card className="mb-6 border-2 border-green-200 bg-green-50">
+          <CardHeader>
+            <div className="flex items-center justify-between">
+              <CardTitle className="flex items-center text-green-800">
+                <Star className="w-5 h-5 mr-2" />
+                Size En Uygun Tarife
+              </CardTitle>
+              <Badge className={getOperatorColor(en_uygun_tarife.operator)}>
+                {en_uygun_tarife.operator}
+              </Badge>
+            </div>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">{en_uygun_tarife.ad}</h3>
+                <p className="text-gray-600 mb-4">{en_uygun_tarife.aciklama}</p>
+                
+                <div className="space-y-2 mb-4">
+                  <div className="flex justify-between">
+                    <span className="text-gray-600">Veri:</span>
+                    <span className="font-semibold">{en_uygun_tarife.data_gb} GB</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-600">Konuşma:</span>
+                    <span className="font-semibold">{en_uygun_tarife.dakika} dakika</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-600">SMS:</span>
+                    <span className="font-semibold">{en_uygun_tarife.sms}</span>
+                  </div>
+                  <div className="flex justify-between text-lg font-bold">
+                    <span>Aylık Fiyat:</span>
+                    <span className="text-green-600">{en_uygun_tarife.fiyat} TL</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 className="font-semibold text-gray-800 mb-3">Kalite Değerlendirmesi</h4>
+                {en_uygun_tarife.genel_puan && (
+                  <div className="space-y-2">
+                    <div className="flex justify-between">
+                      <span className="text-gray-600">Genel Puan:</span>
+                      <span className={`font-semibold ${getQualityColor(en_uygun_tarife.genel_puan)}`}>
+                        {en_uygun_tarife.genel_puan}/10 - {getQualityText(en_uygun_tarife.genel_puan)}
+                      </span>
+                    </div>
+                    {en_uygun_tarife.cekim_guclu && (
+                      <div className="flex justify-between">
+                        <span className="text-gray-600">Çekim Gücü:</span>
+                        <span className="font-semibold">{en_uygun_tarife.cekim_guclu}/10</span>
+                      </div>
+                    )}
+                    {en_uygun_tarife.hiz && (
+                      <div className="flex justify-between">
+                        <span className="text-gray-600">Hız:</span>
+                        <span className="font-semibold">{en_uygun_tarife.hiz}/10</span>
+                      </div>
+                    )}
+                    {en_uygun_tarife.guvenilirlik && (
+                      <div className="flex justify-between">
+                        <span className="text-gray-600">Güvenilirlik:</span>
+                        <span className="font-semibold">{en_uygun_tarife.guvenilirlik}/10</span>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            </div>
+
+            <div className="mt-4 p-4 bg-white rounded-lg border">
+              <div className="flex items-center mb-2">
+                <CheckCircle className="w-5 h-5 text-green-600 mr-2" />
+                <span className="font-semibold text-gray-800">Neden Bu Tarife?</span>
+              </div>
+              <p className="text-gray-600 text-sm">{tarifeOnerisi.aciklama}</p>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Alternatif Tarifeler */}
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center">
+              <Zap className="w-5 h-5 mr-2 text-blue-600" />
+              Alternatif Seçenekler
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              {alternatif_tarifeler.map((alt, index) => (
+                <div key={index} className="p-4 border rounded-lg hover:bg-gray-50 transition-colors">
+                  <div className="flex items-center justify-between mb-2">
+                    <h4 className="font-semibold text-gray-800">{alt.tarife.ad}</h4>
+                    <div className="flex items-center space-x-2">
+                      <Badge className={getOperatorColor(alt.tarife.operator)}>
+                        {alt.tarife.operator}
+                      </Badge>
+                      <span className="text-lg font-bold text-gray-800">{alt.tarife.fiyat} TL</span>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-3 gap-4 text-sm text-gray-600 mb-2">
+                    <div>{alt.tarife.data_gb} GB</div>
+                    <div>{alt.tarife.dakika} dk</div>
+                    <div>{alt.tarife.sms} SMS</div>
+                  </div>
+                  <p className="text-xs text-gray-500">{alt.aciklama}</p>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Refresh Button */}
+        <div className="text-center">
+          <Button onClick={handleRefresh} variant="outline" className="mb-4">
+            <RefreshCw className="w-4 h-4 mr-2" />
+            Yeni Öneri Al
+          </Button>
+          <p className="text-xs text-gray-500">
+            Her yenileme ile farklı bir kullanım profili atanır
+          </p>
+        </div>
+      </div>
+
+      <HamburgerMenu 
+        isOpen={isMenuOpen} 
+        onClose={() => setIsMenuOpen(false)} 
+        onNavigate={handleNavigate} 
+      />
+    </div>
+  );
+}

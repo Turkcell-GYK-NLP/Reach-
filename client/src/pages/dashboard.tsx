@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { useLocation } from "@/hooks/useLocation";
+import { useLocationDisplay } from "@/hooks/useLocationDisplay";
 import { useChat } from "@/hooks/useChat";
 import ChatInterface from "@/components/ChatInterface";
 import HamburgerMenu from "@/components/HamburgerMenu";
@@ -194,7 +195,7 @@ export default function Dashboard() {
                 </div>
                 <div>
                   <h1 className="text-xl font-bold text-gray-800">REACH+</h1>
-                  <p className="text-xs text-gray-500">AI Destek Asistanı</p>
+                  <p className="text-xs text-gray-500">📍 {location?.city || "Konum alınıyor..."}</p>
                 </div>
               </div>
             </div>

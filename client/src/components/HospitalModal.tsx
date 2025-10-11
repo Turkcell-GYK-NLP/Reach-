@@ -110,7 +110,7 @@ const HospitalModal: React.FC<HospitalModalProps> = ({ isOpen, onClose }) => {
                     <SelectValue placeholder="İlçe seçin" />
                   </div>
                 </SelectTrigger>
-                <SelectContent>
+                <SelectContent className="z-[120]">
                   <SelectItem value="all">Tüm İlçeler</SelectItem>
                   {districts.map((district: string) => (
                     <SelectItem key={district} value={district}>

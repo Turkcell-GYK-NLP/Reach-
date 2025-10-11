@@ -10,6 +10,8 @@ import { registerLocationRoutes } from "./location.routes.js";
 import { registerHospitalRoutes } from "./hospital.routes.js";
 import { registerAgentRoutes } from "./agent.routes.js";
 import { registerHealthRoutes } from "./health.routes.js";
+import { registerEmergencyContactsRoutes } from "./emergency-contacts.routes.js";
+import tarifeOnerisiRoutes from "./tarife-onerisi.routes.js";
 import { socialMediaAnalyzer } from "../services/socialMediaAnalyzer";
 import { networkMonitor } from "../services/networkMonitor";
 import { tweetDataService } from "../services/tweetDataService";
@@ -35,10 +37,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
   registerNetworkRoutes(app);
   registerTweetRoutes(app);
   registerEmergencyRoutes(app);
+  registerEmergencyContactsRoutes(app);
   registerLocationRoutes(app);
   registerHospitalRoutes(app);
   registerAgentRoutes(app, coreAgent);
   registerHealthRoutes(app);
+  
+  // Tarife önerisi routes
+  app.use('/api/tarife', tarifeOnerisiRoutes);
 
   const httpServer = createServer(app);
   return httpServer;

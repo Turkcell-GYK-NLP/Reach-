@@ -8,6 +8,7 @@ import { Eye, EyeOff, Mail, Lock, User, Heart, Shield, Zap, Users } from "lucide
 
 export default function AuthPage() {
   const [mode, setMode] = useState<"login" | "register">("register");
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [ageYears, setAgeYears] = useState("");
@@ -27,7 +28,7 @@ export default function AuthPage() {
   }, []);
 
   const registerMutation = useMutation({
-    mutationFn: (data: { email: string; password: string; ageYears: number; gender?: string; phone?: string }) => api.register(data),
+    mutationFn: (data: { name?: string; email: string; password: string; ageYears: number; gender?: string; phone?: string }) => api.register(data),
     onSuccess: (res) => {
       localStorage.setItem("auth", JSON.stringify(res));
       window.location.href = "/dashboard";
@@ -48,6 +49,7 @@ export default function AuthPage() {
     setError(null);
     if (mode === "register") {
       registerMutation.mutate({ 
+        name: name || undefined,
         email, 
         password, 
         ageYears: parseInt(ageYears),
@@ -134,6 +136,19 @@ export default function AuthPage() {
             <CardContent className="space-y-6">
               {mode === "register" && (
                 <>
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-gray-700">Ad Soyad (Opsiyonel)</label>
+                    <div className="relative">
+                      <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
+                      <Input 
+                        placeholder="Adınız ve soyadınız" 
+                        value={name} 
+                        onChange={(e) => setName(e.target.value)}
+                        className="pl-10 h-12 border-gray-200 focus:border-blue-500 focus:ring-blue-500"
+                      />
+                    </div>
+                  </div>
+                  
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-700">Yaş</label>
                     <div className="relative">

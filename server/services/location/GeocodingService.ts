@@ -1,7 +1,6 @@
 import NodeGeocoder from 'node-geocoder';
 import { LocationInfo, DistrictBounds } from './types.js';
 import { DistanceCalculator } from './DistanceCalculator.js';
-import { ISTANBUL_BOUNDS } from './districtConstants.js';
 
 export class GeocodingService {
   private geocoder: any;
@@ -25,11 +24,8 @@ export class GeocodingService {
     try {
       console.log(`📍 Geocoding coordinates: ${lat.toFixed(6)}, ${lng.toFixed(6)}`);
 
-      // Check if within Istanbul bounds
-      if (!this.isInIstanbul(lat, lng)) {
-        console.warn("⚠️ Coordinates outside Istanbul bounds");
-        return this.createFallbackLocation(lat, lng, "İstanbul Dışı");
-      }
+      // Log coordinates for debugging
+      console.log(`📍 Processing coordinates: ${lat.toFixed(6)}, ${lng.toFixed(6)}`);
 
       // Try online geocoding if available
       if (useOnlineGeocoding && this.canMakeGeocodingRequest()) {
@@ -44,7 +40,7 @@ export class GeocodingService {
 
     } catch (error) {
       console.error("❌ Geocoding error:", error);
-      return this.createFallbackLocation(lat, lng, "Bilinmeyen Konum");
+      return this.createFallbackLocation(lat, lng, "Merkez");
     }
   }
 
@@ -61,10 +57,28 @@ export class GeocodingService {
       if (results && results.length > 0) {
         const result = results[0];
         
+        // Determine city based on coordinates if geocoding doesn't provide clear city info
+        let city = result.city || result.county;
+        if (!city || city === "İstanbul") {
+          if (lat < 40.8) {
+            if (lng < 29.0) {
+              city = "Uşak";
+            } else if (lng < 30.0) {
+              city = "Denizli";
+            } else {
+              city = "Antalya";
+            }
+          } else if (lat > 41.6) {
+            city = "Kocaeli";
+          } else {
+            city = "İstanbul";
+          }
+        }
+
         return {
           latitude: lat,
           longitude: lng,
-          city: result.city || result.county || "İstanbul",
+          city: city,
           district: result.administrativeLevels?.level2long || result.county || "Bilinmiyor",
           country: result.country || "Türkiye",
           address: result.formattedAddress || `${lat.toFixed(4)}, ${lng.toFixed(4)}`,
@@ -84,29 +98,41 @@ export class GeocodingService {
    * Offline location detection using district bounds
    */
   private getOfflineLocation(lat: number, lng: number): LocationInfo {
-    const district = this.distanceCalculator.findNearestDistrict(lat, lng);
+    // Determine city based on coordinates first
+    let city = "İstanbul";
+    if (lat < 40.8) {
+      if (lng < 29.0) {
+        city = "Uşak";
+      } else if (lng < 30.0) {
+        city = "Denizli";
+      } else {
+        city = "Antalya";
+      }
+    } else if (lat > 41.6) {
+      city = "Kocaeli";
+    } else {
+      city = "İstanbul";
+    }
+
+    // Only use Istanbul districts if we're actually in Istanbul
+    let district = "Merkez";
+    if (city === "İstanbul") {
+      const istanbulDistrict = this.distanceCalculator.findNearestDistrict(lat, lng);
+      district = istanbulDistrict.name;
+    }
     
     return {
       latitude: lat,
       longitude: lng,
-      city: "İstanbul",
-      district: district.name,
+      city: city,
+      district: district,
       country: "Türkiye",
-      address: `${district.name}, İstanbul, Türkiye`,
+      address: `${district}, ${city}, Türkiye`,
       accuracy: 'medium',
       source: 'fallback'
     };
   }
 
-  /**
-   * Check if coordinates are within Istanbul bounds
-   */
-  isInIstanbul(lat: number, lng: number): boolean {
-    return lat >= ISTANBUL_BOUNDS.minLat && 
-           lat <= ISTANBUL_BOUNDS.maxLat && 
-           lng >= ISTANBUL_BOUNDS.minLng && 
-           lng <= ISTANBUL_BOUNDS.maxLng;
-  }
 
   /**
    * Check if we can make a geocoding request (rate limiting)
@@ -120,11 +146,37 @@ export class GeocodingService {
    * Create fallback location when geocoding fails
    */
   private createFallbackLocation(lat: number, lng: number, district: string): LocationInfo {
+    // Determine city based on coordinates
+    let city = "İstanbul";
+    let actualDistrict = district;
+    
+    if (lat < 40.8) {
+      // South of Istanbul - likely Uşak, Denizli, etc.
+      if (lng < 29.0) {
+        city = "Uşak";
+        actualDistrict = "Merkez";
+      } else if (lng < 30.0) {
+        city = "Denizli";
+        actualDistrict = "Merkez";
+      } else {
+        city = "Antalya";
+        actualDistrict = "Merkez";
+      }
+    } else if (lat > 41.6) {
+      // North of Istanbul - likely Kocaeli, Sakarya, etc.
+      city = "Kocaeli";
+      actualDistrict = "Merkez";
+    } else {
+      // Within Istanbul bounds
+      city = "İstanbul";
+      actualDistrict = district;
+    }
+
     return {
       latitude: lat,
       longitude: lng,
-      city: "İstanbul",
-      district: district,
+      city: city,
+      district: actualDistrict,
       country: "Türkiye",
       address: `GPS: ${lat.toFixed(4)}, ${lng.toFixed(4)}`,
       accuracy: 'low',

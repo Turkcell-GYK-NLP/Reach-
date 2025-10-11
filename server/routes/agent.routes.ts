@@ -1,6 +1,5 @@
 import type { Express } from "express";
 import { storage } from "../storage";
-import { insertCallConversationSchema } from "@shared/schema";
 import { CoreAgent } from "../agents/coreAgent.js";
 
 export function registerAgentRoutes(app: Express, coreAgent: CoreAgent): void {
@@ -46,16 +45,6 @@ export function registerAgentRoutes(app: Express, coreAgent: CoreAgent): void {
     }
   });
 
-  // Save Vapi call conversation
-  app.post("/api/call-conversations", async (req, res) => {
-    try {
-      const payload = insertCallConversationSchema.parse(req.body);
-      const saved = await storage.createCallConversation(payload as any);
-      res.json({ success: true, conversation: saved });
-    } catch (error) {
-      res.status(400).json({ error: "Failed to save call conversation", details: String(error) });
-    }
-  });
 
   // RL Recommendation Feedback
   app.post("/api/recommendation/feedback", async (req, res) => {

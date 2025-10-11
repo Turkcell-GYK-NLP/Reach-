@@ -22,7 +22,7 @@ export interface ChatResponse {
 
 export const api = {
   // Auth
-  register: async (data: { email: string; password: string; ageYears: number; gender?: string; phone?: string; }) => {
+  register: async (data: { name?: string; email: string; password: string; ageYears: number; gender?: string; phone?: string; }) => {
     const response = await fetch("/api/auth/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -284,6 +284,88 @@ export const api = {
     
     if (!response.ok) {
       throw new Error("Failed to get districts");
+    }
+    
+    return response.json();
+  },
+
+  // Emergency Contacts
+  getEmergencyContacts: async (userId: string) => {
+    const response = await fetch(`/api/emergency-contacts/${userId}`);
+    
+    if (!response.ok) {
+      throw new Error("Failed to get emergency contacts");
+    }
+    
+    return response.json();
+  },
+
+  createEmergencyContact: async (contactData: {
+    userId: string;
+    name: string;
+    phone: string;
+    email?: string;
+    relationship: string;
+    isPrimary?: boolean;
+  }) => {
+    const response = await fetch("/api/emergency-contacts", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(contactData),
+    });
+    
+    if (!response.ok) {
+      const err = await response.json().catch(() => ({}));
+      throw new Error(err?.error || "Failed to create emergency contact");
+    }
+    
+    return response.json();
+  },
+
+  updateEmergencyContact: async (id: string, updates: {
+    name?: string;
+    phone?: string;
+    email?: string;
+    relationship?: string;
+    isPrimary?: boolean;
+  }) => {
+    const response = await fetch(`/api/emergency-contacts/${id}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(updates),
+    });
+    
+    if (!response.ok) {
+      const err = await response.json().catch(() => ({}));
+      throw new Error(err?.error || "Failed to update emergency contact");
+    }
+    
+    return response.json();
+  },
+
+  deleteEmergencyContact: async (id: string) => {
+    const response = await fetch(`/api/emergency-contacts/${id}`, {
+      method: "DELETE",
+    });
+    
+    if (!response.ok) {
+      const err = await response.json().catch(() => ({}));
+      throw new Error(err?.error || "Failed to delete emergency contact");
+    }
+    
+    return response.json();
+  },
+
+  setPrimaryEmergencyContact: async (id: string, userId: string) => {
+    const response = await fetch(`/api/emergency-contacts/${id}/set-primary`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ userId }),
+    });
+    
+    if (!response.ok) {
+      const err = await response.json().catch(() => ({}));
+      throw new Error(err?.error || "Failed to set primary emergency contact");
     }
     
     return response.json();

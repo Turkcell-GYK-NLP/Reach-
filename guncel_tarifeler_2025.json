@@ -1,0 +1,149 @@
+{
+  "Turkcell": [
+    {
+      "ad": "Turkcell 5GB",
+      "data_gb": 5,
+      "dakika": 200,
+      "sms": 100,
+      "fiyat": 185.0,
+      "operator": "Turkcell",
+      "aciklama": "Temel kullanım için uygun",
+      "cekim_guclu": 9.5,
+      "hiz": 8.5,
+      "musteri_hizmetleri": 8.0,
+      "guvenilirlik": 9.0,
+      "kapsama_alanı": 9.5,
+      "ek_avantajlar": 7.5
+    },
+    {
+      "ad": "Turkcell 10GB",
+      "data_gb": 10,
+      "dakika": 500,
+      "sms": 200,
+      "fiyat": 250.0,
+      "operator": "Turkcell",
+      "aciklama": "Orta düzey kullanım için ideal"
+    },
+    {
+      "ad": "Turkcell 20GB",
+      "data_gb": 20,
+      "dakika": 1000,
+      "sms": 500,
+      "fiyat": 350.0,
+      "operator": "Turkcell",
+      "aciklama": "Yoğun kullanım için uygun"
+    },
+    {
+      "ad": "Turkcell 50GB",
+      "data_gb": 50,
+      "dakika": 2000,
+      "sms": 1000,
+      "fiyat": 500.0,
+      "operator": "Turkcell",
+      "aciklama": "Çok yoğun kullanım için"
+    },
+    {
+      "ad": "Turkcell Sınırsız",
+      "data_gb": 999,
+      "dakika": 2000,
+      "sms": 1000,
+      "fiyat": 700.0,
+      "operator": "Turkcell",
+      "aciklama": "Sınırsız internet"
+    }
+  ],
+  "Türk Telekom": [
+    {
+      "ad": "Türk Telekom 5GB",
+      "data_gb": 5,
+      "dakika": 200,
+      "sms": 100,
+      "fiyat": 180.0,
+      "operator": "Türk Telekom",
+      "aciklama": "Temel kullanım için uygun"
+    },
+    {
+      "ad": "Türk Telekom 10GB",
+      "data_gb": 10,
+      "dakika": 500,
+      "sms": 200,
+      "fiyat": 240.0,
+      "operator": "Türk Telekom",
+      "aciklama": "Orta düzey kullanım için ideal"
+    },
+    {
+      "ad": "Türk Telekom 20GB",
+      "data_gb": 20,
+      "dakika": 1000,
+      "sms": 500,
+      "fiyat": 320.0,
+      "operator": "Türk Telekom",
+      "aciklama": "Yoğun kullanım için uygun"
+    },
+    {
+      "ad": "Türk Telekom 50GB",
+      "data_gb": 50,
+      "dakika": 2000,
+      "sms": 1000,
+      "fiyat": 450.0,
+      "operator": "Türk Telekom",
+      "aciklama": "Çok yoğun kullanım için"
+    },
+    {
+      "ad": "Türk Telekom Sınırsız",
+      "data_gb": 999,
+      "dakika": 2000,
+      "sms": 1000,
+      "fiyat": 650.0,
+      "operator": "Türk Telekom",
+      "aciklama": "Sınırsız internet"
+    }
+  ],
+  "Vodafone": [
+    {
+      "ad": "Vodafone 5GB",
+      "data_gb": 5,
+      "dakika": 200,
+      "sms": 100,
+      "fiyat": 175.0,
+      "operator": "Vodafone",
+      "aciklama": "Temel kullanım için uygun"
+    },
+    {
+      "ad": "Vodafone 10GB",
+      "data_gb": 10,
+      "dakika": 500,
+      "sms": 200,
+      "fiyat": 230.0,
+      "operator": "Vodafone",
+      "aciklama": "Orta düzey kullanım için ideal"
+    },
+    {
+      "ad": "Vodafone 20GB",
+      "data_gb": 20,
+      "dakika": 1000,
+      "sms": 500,
+      "fiyat": 300.0,
+      "operator": "Vodafone",
+      "aciklama": "Yoğun kullanım için uygun"
+    },
+    {
+      "ad": "Vodafone 50GB",
+      "data_gb": 50,
+      "dakika": 2000,
+      "sms": 1000,
+      "fiyat": 420.0,
+      "operator": "Vodafone",
+      "aciklama": "Çok yoğun kullanım için"
+    },
+    {
+      "ad": "Vodafone Sınırsız",
+      "data_gb": 999,
+      "dakika": 2000,
+      "sms": 1000,
+      "fiyat": 600.0,
+      "operator": "Vodafone",
+      "aciklama": "Sınırsız internet"
+    }
+  ]
+}
