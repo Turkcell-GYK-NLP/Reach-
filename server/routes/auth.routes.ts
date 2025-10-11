@@ -22,7 +22,7 @@ export function registerAuthRoutes(app: Express): void {
         name: name || null,
         email: email.toLowerCase(),
         password_hash: hashedPassword,
-        age: parseInt(age),
+        age_years: parseInt(age),
         location: null,
         operator: null,
         preferences: {},
