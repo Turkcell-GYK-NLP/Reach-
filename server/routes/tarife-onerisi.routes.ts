@@ -20,7 +20,9 @@ router.post('/tarife-onerisi', async (req, res) => {
     }
 
     // Python script'ini virtual environment'da çalıştır
-    const pythonScript = path.join(__dirname, '../../tarife_onerisi_sistemi.py');
+    const pythonScript = process.env.NODE_ENV === 'production' 
+      ? '/app/tarife_onerisi_sistemi.py'
+      : path.join(__dirname, '../../tarife_onerisi_sistemi.py');
     // Docker container'da /opt/venv/bin/python, local'de ../../venv/bin/python
     const venvPython = process.env.NODE_ENV === 'production' 
       ? '/opt/venv/bin/python' 
@@ -97,7 +99,9 @@ router.get('/toplu-analiz', async (req, res) => {
     const { sample_size = 100 } = req.query;
     
     // Python script'ini virtual environment'da çalıştır
-    const pythonScript = path.join(__dirname, '../../tarife_onerisi_sistemi.py');
+    const pythonScript = process.env.NODE_ENV === 'production' 
+      ? '/app/tarife_onerisi_sistemi.py'
+      : path.join(__dirname, '../../tarife_onerisi_sistemi.py');
     // Docker container'da /opt/venv/bin/python, local'de ../../venv/bin/python
     const venvPython = process.env.NODE_ENV === 'production' 
       ? '/opt/venv/bin/python' 
@@ -154,7 +158,9 @@ router.get('/toplu-analiz', async (req, res) => {
 router.get('/profil-analizi', async (req, res) => {
   try {
     // Python script'ini virtual environment'da çalıştır
-    const pythonScript = path.join(__dirname, '../../tarife_onerisi_sistemi.py');
+    const pythonScript = process.env.NODE_ENV === 'production' 
+      ? '/app/tarife_onerisi_sistemi.py'
+      : path.join(__dirname, '../../tarife_onerisi_sistemi.py');
     // Docker container'da /opt/venv/bin/python, local'de ../../venv/bin/python
     const venvPython = process.env.NODE_ENV === 'production' 
       ? '/opt/venv/bin/python' 

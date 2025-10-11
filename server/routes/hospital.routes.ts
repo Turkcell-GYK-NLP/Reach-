@@ -65,7 +65,9 @@ export function registerHospitalRoutes(app: Express): void {
     try {
       
       // Gerçek hastane verilerini oku
-      const hospitalDataPath = path.join(process.cwd(), 'hospital_api/istanbul_hospitals_detailed.json');
+      const hospitalDataPath = process.env.NODE_ENV === 'production' 
+        ? '/app/hospital_api/istanbul_hospitals_detailed.json'
+        : path.join(process.cwd(), 'hospital_api/istanbul_hospitals_detailed.json');
       let hospitalData = [];
       
       try {
