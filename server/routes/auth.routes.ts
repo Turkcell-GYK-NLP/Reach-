@@ -6,8 +6,9 @@ export function registerAuthRoutes(app: Express): void {
   // Register
   app.post("/api/auth/register", async (req, res) => {
     try {
-      const { name, email, password, age, gender, phone } = req.body || {};
-      if (!email || !password || !age) {
+      const { name, email, password, age, age_years, gender, phone } = req.body || {};
+      const userAge = age || age_years;
+      if (!email || !password || !userAge) {
         return res.status(400).json({ error: "EMAIL_PASSWORD_AGE_REQUIRED" });
       }
       
@@ -22,7 +23,7 @@ export function registerAuthRoutes(app: Express): void {
         name: name || null,
         email: email.toLowerCase(),
         password_hash: hashedPassword,
-        age_years: parseInt(age),
+        age_years: parseInt(userAge),
         location: null,
         operator: null,
         preferences: {},
