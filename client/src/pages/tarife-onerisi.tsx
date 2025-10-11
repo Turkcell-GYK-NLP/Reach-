@@ -120,16 +120,20 @@ export default function TarifeOnerisiPage() {
           const jsonString = data.raw_output.substring(jsonStart);
           const parsedData = JSON.parse(jsonString);
           
+          // API'den gelen veri yapısına göre düzelt
           const firstProfile = Object.values(parsedData)[0] as any;
-          if (firstProfile && firstProfile.ornek_sonuclar && firstProfile.ornek_sonuclar.length > 0) {
-            const firstUser = firstProfile.ornek_sonuclar[0];
+          if (firstProfile && firstProfile.ornek_kullanici && firstProfile.en_uygun_tarife) {
             setTarifeOnerisi({
-              kullanici_id: firstUser.kullanici_id,
-              en_uygun_tarife: firstUser.en_uygun_tarife,
-              skor: firstUser.skor,
-              aciklama: firstUser.aciklama,
-              kullanici_ihtiyaclari: firstUser.kullanici_ihtiyaclari,
-              alternatif_tarifeler: firstUser.alternatif_tarifeler
+              kullanici_id: firstProfile.ornek_kullanici.user_id,
+              en_uygun_tarife: firstProfile.en_uygun_tarife,
+              skor: firstProfile.skor,
+              aciklama: firstProfile.aciklama,
+              kullanici_ihtiyaclari: {
+                data_gb: firstProfile.ornek_kullanici.monthly_data_gb,
+                dakika: firstProfile.ornek_kullanici.monthly_calls_min,
+                sms: firstProfile.ornek_kullanici.monthly_sms
+              },
+              alternatif_tarifeler: [] // API'de alternatif tarifeler yok
             });
           } else {
             throw new Error('Profil verisi bulunamadı');
