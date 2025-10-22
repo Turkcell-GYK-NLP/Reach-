@@ -19,7 +19,8 @@ import {
   Heart,
   ChevronRight,
   Smartphone,
-  TrendingUp
+  TrendingUp,
+  Map
 } from "lucide-react";
 
 interface HamburgerMenuProps {
@@ -63,6 +64,13 @@ export default function HamburgerMenu({ isOpen, onClose, onNavigate }: Hamburger
       icon: BarChart3,
       path: "/social-media",
       description: "Twitter ve sosyal medya analizi"
+    },
+    {
+      id: "population-analysis",
+      title: "Nüfus Analizi",
+      icon: Map,
+      path: "/population-analysis",
+      description: "İl bazında nüfus ve demografik analiz"
     },
     {
       id: "profile",

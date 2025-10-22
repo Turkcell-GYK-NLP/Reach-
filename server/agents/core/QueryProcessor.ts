@@ -129,6 +129,12 @@ export class QueryProcessor {
       categories.push('firstaid');
     }
 
+    if (lowerQuery.includes('nüfus') || lowerQuery.includes('demografik') || lowerQuery.includes('yaş') || 
+        lowerQuery.includes('cinsiyet') || lowerQuery.includes('genç') || lowerQuery.includes('yaşlı') ||
+        lowerQuery.includes('trend') || lowerQuery.includes('analiz')) {
+      categories.push('population');
+    }
+
     return categories;
   }
 

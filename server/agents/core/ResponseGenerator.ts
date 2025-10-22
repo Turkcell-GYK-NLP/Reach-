@@ -31,6 +31,10 @@ export class ResponseGenerator {
 
     // Get RL recommendations
     const recommendationResult = toolResults.find(result => result.type === 'recommendation');
+    
+    // Get population analysis results
+    const populationResult = toolResults.find(result => result.type === 'population_analysis');
+    
     const personalizedSuggestions = recommendationResult ? 
       this.enhanceSuggestionsWithRL(combinedSuggestions, recommendationResult.data) : 
       combinedSuggestions;
@@ -43,7 +47,8 @@ export class ResponseGenerator {
       personalizedSuggestions,
       combinedActionItems,
       relevantContext,
-      recommendationResult?.data
+      recommendationResult?.data,
+      populationResult?.data
     );
 
     return {
@@ -135,7 +140,8 @@ export class ResponseGenerator {
     suggestions: string[],
     actionItems: any[],
     relevantContext: string[],
-    recommendationData?: any
+    recommendationData?: any,
+    populationData?: any
   ): Promise<{ message: string; suggestions: string[]; actionItems: any[] }> {
     try {
       const rlContext = recommendationData ? `
@@ -145,6 +151,21 @@ export class ResponseGenerator {
 - Güven Skoru: ${recommendationData.confidence}
 - Gerekçe: ${recommendationData.reasoning}
 - Alternatifler: ${recommendationData.alternatives?.map((alt: any) => alt.title).join(', ') || 'Yok'}
+` : '';
+
+      const populationContext = populationData ? `
+📊 Nüfus Analizi Verileri:
+- Analiz Türü: ${populationData.type}
+- İl: ${populationData.province || 'Genel'}
+- Yıl: ${populationData.year || '2024'}
+- Toplam Nüfus: ${populationData.total_population?.toLocaleString('tr-TR') || 'Bilinmiyor'}
+- Erkek Oranı: ${populationData.male_ratio?.toFixed(1) || 'Bilinmiyor'}%
+- Kadın Oranı: ${populationData.female_ratio?.toFixed(1) || 'Bilinmiyor'}%
+- Genç Nüfus Oranı: ${populationData.young_ratio?.toFixed(1) || 'Bilinmiyor'}%
+- Orta Yaş Nüfus Oranı: ${populationData.middle_age_ratio?.toFixed(1) || 'Bilinmiyor'}%
+- Yaşlı Nüfus Oranı: ${populationData.elderly_ratio?.toFixed(1) || 'Bilinmiyor'}%
+- Nüfus Değişimi: ${populationData.population_change_ratio?.toFixed(2) || 'Bilinmiyor'}%
+- Analiz Mesajı: ${populationData.message || 'Veri mevcut değil'}
 ` : '';
 
       const systemPrompt = `Sen REACH+ afet destek sisteminin ana AI asistanısın. 
@@ -159,6 +180,7 @@ Kullanıcı Bağlamı:
 Mevcut Bilgiler:
 ${combinedMessage}
 ${rlContext}
+${populationContext}
 
 İlgili Geçmiş:
 ${relevantContext.join('\n')}
@@ -192,6 +214,15 @@ ACİL DURUM SORGULAMA:
 - "Telefonunuz çalışıyor mu? Başka iletişim aracınız var mı?"
 - "Aileniz nerede? Onlarla iletişim kurabiliyor musunuz?"
 
+NÜFUS ANALİZİ YAKLAŞIMI:
+- Nüfus verileri mevcut olduğunda, kullanıcının sorusuna demografik bilgilerle yanıt ver
+- İl bazında nüfus analizi yaparken: "Bayburt'ta son 3 yılda genç nüfus oranı artışta" gibi ifadeler kullan
+- Yaş dağılımı hakkında sorular geldiğinde: "Bu ilde genç nüfus %X, orta yaş %Y, yaşlı nüfus %Z" şeklinde detay ver
+- Cinsiyet dağılımı sorularında: "Erkek nüfus %X, kadın nüfus %Y" şeklinde yanıtla
+- Trend analizi yaparken: "2023-2024 arası nüfus %X değişti, genç nüfus %Y değişti" gibi ifadeler kullan
+- Nüfus yoğunluğu hakkında: "Bu il nüfus yoğunluğu açısından [yüksek/orta/düşük] kategorisinde" şeklinde değerlendir
+- Kullanıcı bir yere taşınmak istediğinde: O ilin demografik yapısını analiz et ve yaşam kalitesi açısından değerlendir
+
 KURALLAR:
 - Acil durumlarda öncelik: Proaktif müdahale → Sakinleştir → Sorgula → İlk yardım → Güvenli alan
 - HEMEN "Ben 112'yi arayacağım" de ve kullanıcıyı sakinleştir
@@ -202,6 +233,7 @@ KURALLAR:
 - Kullanıcının duygusal durumunu anla ve ona göre yaklaş
 - RL önerilerini öncelikle kullan
 - Kişiselleştirilmiş önerileri vurgula
+- Nüfus analizi verilerini kullanarak kullanıcıya demografik bilgiler sağla
 
 Yanıt formatı (JSON):
 {

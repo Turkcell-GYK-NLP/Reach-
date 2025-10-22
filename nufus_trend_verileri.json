@@ -1,0 +1,5870 @@
+{
+  "2024": {
+    "Adana": {
+      "year": 2024,
+      "total_population": 2280484
+    },
+    "Adıyaman": {
+      "year": 2024,
+      "total_population": 611037
+    },
+    "Afyonkarahisar": {
+      "year": 2024,
+      "total_population": 750193
+    },
+    "Ağrı": {
+      "year": 2024,
+      "total_population": 499801
+    },
+    "Amasya": {
+      "year": 2024,
+      "total_population": 342378
+    },
+    "Ankara": {
+      "year": 2024,
+      "total_population": 5864049
+    },
+    "Antalya": {
+      "year": 2024,
+      "total_population": 2722103
+    },
+    "Artvin": {
+      "year": 2024,
+      "total_population": 169280
+    },
+    "Aydın": {
+      "year": 2024,
+      "total_population": 1165943
+    },
+    "Balıkesir": {
+      "year": 2024,
+      "total_population": 1276096
+    },
+    "Bilecik": {
+      "year": 2024,
+      "total_population": 228495
+    },
+    "Bingöl": {
+      "year": 2024,
+      "total_population": 283276
+    },
+    "Bitlis": {
+      "year": 2024,
+      "total_population": 359808
+    },
+    "Bolu": {
+      "year": 2024,
+      "total_population": 326409
+    },
+    "Burdur": {
+      "year": 2024,
+      "total_population": 275826
+    },
+    "Bursa": {
+      "year": 2024,
+      "total_population": 3238618
+    },
+    "Çanakkale": {
+      "year": 2024,
+      "total_population": 568966
+    },
+    "Çankırı": {
+      "year": 2024,
+      "total_population": 199981
+    },
+    "Çorum": {
+      "year": 2024,
+      "total_population": 521335
+    },
+    "Denizli": {
+      "year": 2024,
+      "total_population": 1061371
+    },
+    "Diyarbakır": {
+      "year": 2024,
+      "total_population": 1833684
+    },
+    "Edirne": {
+      "year": 2024,
+      "total_population": 421247
+    },
+    "Elazığ": {
+      "year": 2024,
+      "total_population": 603941
+    },
+    "Erzincan": {
+      "year": 2024,
+      "total_population": 241239
+    },
+    "Erzurum": {
+      "year": 2024,
+      "total_population": 745005
+    },
+    "Eskişehir": {
+      "year": 2024,
+      "total_population": 921630
+    },
+    "Gaziantep": {
+      "year": 2024,
+      "total_population": 2193363
+    },
+    "Giresun": {
+      "year": 2024,
+      "total_population": 455922
+    },
+    "Gümüşhane": {
+      "year": 2024,
+      "total_population": 142617
+    },
+    "Hakkari": {
+      "year": 2024,
+      "total_population": 282191
+    },
+    "Hatay": {
+      "year": 2024,
+      "total_population": 1562185
+    },
+    "Isparta": {
+      "year": 2024,
+      "total_population": 446409
+    },
+    "Mersin": {
+      "year": 2024,
+      "total_population": 1954279
+    },
+    "İstanbul": {
+      "year": 2024,
+      "total_population": 15701602
+    },
+    "İzmir": {
+      "year": 2024,
+      "total_population": 4493242
+    },
+    "Kars": {
+      "year": 2024,
+      "total_population": 272300
+    },
+    "Kastamonu": {
+      "year": 2024,
+      "total_population": 381991
+    },
+    "Kayseri": {
+      "year": 2024,
+      "total_population": 1452458
+    },
+    "Kırklareli": {
+      "year": 2024,
+      "total_population": 379031
+    },
+    "Kırşehir": {
+      "year": 2024,
+      "total_population": 244546
+    },
+    "Kocaeli": {
+      "year": 2024,
+      "total_population": 2130006
+    },
+    "Konya": {
+      "year": 2024,
+      "total_population": 2330024
+    },
+    "Kütahya": {
+      "year": 2024,
+      "total_population": 571078
+    },
+    "Malatya": {
+      "year": 2024,
+      "total_population": 750491
+    },
+    "Manisa": {
+      "year": 2024,
+      "total_population": 1475353
+    },
+    "Kahramanmaraş": {
+      "year": 2024,
+      "total_population": 1134105
+    },
+    "Mardin": {
+      "year": 2024,
+      "total_population": 895911
+    },
+    "Muğla": {
+      "year": 2024,
+      "total_population": 1081867
+    },
+    "Muş": {
+      "year": 2024,
+      "total_population": 392301
+    },
+    "Nevşehir": {
+      "year": 2024,
+      "total_population": 317952
+    },
+    "Niğde": {
+      "year": 2024,
+      "total_population": 372708
+    },
+    "Ordu": {
+      "year": 2024,
+      "total_population": 770711
+    },
+    "Rize": {
+      "year": 2024,
+      "total_population": 346977
+    },
+    "Sakarya": {
+      "year": 2024,
+      "total_population": 1110735
+    },
+    "Samsun": {
+      "year": 2024,
+      "total_population": 1382376
+    },
+    "Siirt": {
+      "year": 2024,
+      "total_population": 336453
+    },
+    "Sinop": {
+      "year": 2024,
+      "total_population": 226957
+    },
+    "Sivas": {
+      "year": 2024,
+      "total_population": 637007
+    },
+    "Tekirdağ": {
+      "year": 2024,
+      "total_population": 1187162
+    },
+    "Tokat": {
+      "year": 2024,
+      "total_population": 612674
+    },
+    "Trabzon": {
+      "year": 2024,
+      "total_population": 822270
+    },
+    "Tunceli": {
+      "year": 2024,
+      "total_population": 86612
+    },
+    "Şanlıurfa": {
+      "year": 2024,
+      "total_population": 2237745
+    },
+    "Uşak": {
+      "year": 2024,
+      "total_population": 375310
+    },
+    "Van": {
+      "year": 2024,
+      "total_population": 1118087
+    },
+    "Yozgat": {
+      "year": 2024,
+      "total_population": 413161
+    },
+    "Zonguldak": {
+      "year": 2024,
+      "total_population": 586802
+    },
+    "Aksaray": {
+      "year": 2024,
+      "total_population": 439474
+    },
+    "Bayburt": {
+      "year": 2024,
+      "total_population": 83676
+    },
+    "Karaman": {
+      "year": 2024,
+      "total_population": 262791
+    },
+    "Kırıkkale": {
+      "year": 2024,
+      "total_population": 283053
+    },
+    "Batman": {
+      "year": 2024,
+      "total_population": 654528
+    },
+    "Şırnak": {
+      "year": 2024,
+      "total_population": 570826
+    },
+    "Bartın": {
+      "year": 2024,
+      "total_population": 206715
+    },
+    "Ardahan": {
+      "year": 2024,
+      "total_population": 91354
+    },
+    "Iğdır": {
+      "year": 2024,
+      "total_population": 206857
+    },
+    "Yalova": {
+      "year": 2024,
+      "total_population": 307882
+    },
+    "Karabük": {
+      "year": 2024,
+      "total_population": 250478
+    },
+    "Kilis": {
+      "year": 2024,
+      "total_population": 156739
+    },
+    "Osmaniye": {
+      "year": 2024,
+      "total_population": 561061
+    },
+    "Düzce": {
+      "year": 2024,
+      "total_population": 412344
+    }
+  },
+  "2023": {
+    "Adana": {
+      "year": 2023,
+      "total_population": 2270298
+    },
+    "Adıyaman": {
+      "year": 2023,
+      "total_population": 604978
+    },
+    "Afyonkarahisar": {
+      "year": 2023,
+      "total_population": 751344
+    },
+    "Ağrı": {
+      "year": 2023,
+      "total_population": 511238
+    },
+    "Amasya": {
+      "year": 2023,
+      "total_population": 339529
+    },
+    "Ankara": {
+      "year": 2023,
+      "total_population": 5803482
+    },
+    "Antalya": {
+      "year": 2023,
+      "total_population": 2696249
+    },
+    "Artvin": {
+      "year": 2023,
+      "total_population": 172356
+    },
+    "Aydın": {
+      "year": 2023,
+      "total_population": 1161702
+    },
+    "Balıkesir": {
+      "year": 2023,
+      "total_population": 1273519
+    },
+    "Bilecik": {
+      "year": 2023,
+      "total_population": 228058
+    },
+    "Bingöl": {
+      "year": 2023,
+      "total_population": 285655
+    },
+    "Bitlis": {
+      "year": 2023,
+      "total_population": 359747
+    },
+    "Bolu": {
+      "year": 2023,
+      "total_population": 324789
+    },
+    "Burdur": {
+      "year": 2023,
+      "total_population": 277452
+    },
+    "Bursa": {
+      "year": 2023,
+      "total_population": 3214571
+    },
+    "Çanakkale": {
+      "year": 2023,
+      "total_population": 570499
+    },
+    "Çankırı": {
+      "year": 2023,
+      "total_population": 205501
+    },
+    "Çorum": {
+      "year": 2023,
+      "total_population": 528351
+    },
+    "Denizli": {
+      "year": 2023,
+      "total_population": 1059082
+    },
+    "Diyarbakır": {
+      "year": 2023,
+      "total_population": 1818133
+    },
+    "Edirne": {
+      "year": 2023,
+      "total_population": 419913
+    },
+    "Elazığ": {
+      "year": 2023,
+      "total_population": 604411
+    },
+    "Erzincan": {
+      "year": 2023,
+      "total_population": 243399
+    },
+    "Erzurum": {
+      "year": 2023,
+      "total_population": 749993
+    },
+    "Eskişehir": {
+      "year": 2023,
+      "total_population": 915418
+    },
+    "Gaziantep": {
+      "year": 2023,
+      "total_population": 2164134
+    },
+    "Giresun": {
+      "year": 2023,
+      "total_population": 461712
+    },
+    "Gümüşhane": {
+      "year": 2023,
+      "total_population": 148539
+    },
+    "Hakkari": {
+      "year": 2023,
+      "total_population": 287625
+    },
+    "Hatay": {
+      "year": 2023,
+      "total_population": 1544640
+    },
+    "Isparta": {
+      "year": 2023,
+      "total_population": 449777
+    },
+    "Mersin": {
+      "year": 2023,
+      "total_population": 1938389
+    },
+    "İstanbul": {
+      "year": 2023,
+      "total_population": 15655924
+    },
+    "İzmir": {
+      "year": 2023,
+      "total_population": 4479525
+    },
+    "Kars": {
+      "year": 2023,
+      "total_population": 278335
+    },
+    "Kastamonu": {
+      "year": 2023,
+      "total_population": 388990
+    },
+    "Kayseri": {
+      "year": 2023,
+      "total_population": 1445683
+    },
+    "Kırklareli": {
+      "year": 2023,
+      "total_population": 377156
+    },
+    "Kırşehir": {
+      "year": 2023,
+      "total_population": 247179
+    },
+    "Kocaeli": {
+      "year": 2023,
+      "total_population": 2102907
+    },
+    "Konya": {
+      "year": 2023,
+      "total_population": 2320241
+    },
+    "Kütahya": {
+      "year": 2023,
+      "total_population": 575674
+    },
+    "Malatya": {
+      "year": 2023,
+      "total_population": 742725
+    },
+    "Manisa": {
+      "year": 2023,
+      "total_population": 1475716
+    },
+    "Kahramanmaraş": {
+      "year": 2023,
+      "total_population": 1116618
+    },
+    "Mardin": {
+      "year": 2023,
+      "total_population": 888874
+    },
+    "Muğla": {
+      "year": 2023,
+      "total_population": 1066736
+    },
+    "Muş": {
+      "year": 2023,
+      "total_population": 399879
+    },
+    "Nevşehir": {
+      "year": 2023,
+      "total_population": 315994
+    },
+    "Niğde": {
+      "year": 2023,
+      "total_population": 377080
+    },
+    "Ordu": {
+      "year": 2023,
+      "total_population": 775800
+    },
+    "Rize": {
+      "year": 2023,
+      "total_population": 350506
+    },
+    "Sakarya": {
+      "year": 2023,
+      "total_population": 1098115
+    },
+    "Samsun": {
+      "year": 2023,
+      "total_population": 1377546
+    },
+    "Siirt": {
+      "year": 2023,
+      "total_population": 347412
+    },
+    "Sinop": {
+      "year": 2023,
+      "total_population": 229716
+    },
+    "Sivas": {
+      "year": 2023,
+      "total_population": 650401
+    },
+    "Tekirdağ": {
+      "year": 2023,
+      "total_population": 1167059
+    },
+    "Tokat": {
+      "year": 2023,
+      "total_population": 606934
+    },
+    "Trabzon": {
+      "year": 2023,
+      "total_population": 824352
+    },
+    "Tunceli": {
+      "year": 2023,
+      "total_population": 89317
+    },
+    "Şanlıurfa": {
+      "year": 2023,
+      "total_population": 2213964
+    },
+    "Uşak": {
+      "year": 2023,
+      "total_population": 377001
+    },
+    "Van": {
+      "year": 2023,
+      "total_population": 1127612
+    },
+    "Yozgat": {
+      "year": 2023,
+      "total_population": 420699
+    },
+    "Zonguldak": {
+      "year": 2023,
+      "total_population": 591492
+    },
+    "Aksaray": {
+      "year": 2023,
+      "total_population": 438504
+    },
+    "Bayburt": {
+      "year": 2023,
+      "total_population": 86047
+    },
+    "Karaman": {
+      "year": 2023,
+      "total_population": 263960
+    },
+    "Kırıkkale": {
+      "year": 2023,
+      "total_population": 285744
+    },
+    "Batman": {
+      "year": 2023,
+      "total_population": 647205
+    },
+    "Şırnak": {
+      "year": 2023,
+      "total_population": 570745
+    },
+    "Bartın": {
+      "year": 2023,
+      "total_population": 207238
+    },
+    "Ardahan": {
+      "year": 2023,
+      "total_population": 92819
+    },
+    "Iğdır": {
+      "year": 2023,
+      "total_population": 209738
+    },
+    "Yalova": {
+      "year": 2023,
+      "total_population": 304780
+    },
+    "Karabük": {
+      "year": 2023,
+      "total_population": 255242
+    },
+    "Kilis": {
+      "year": 2023,
+      "total_population": 155179
+    },
+    "Osmaniye": {
+      "year": 2023,
+      "total_population": 557666
+    },
+    "Düzce": {
+      "year": 2023,
+      "total_population": 409865
+    }
+  },
+  "2022": {
+    "Adana": {
+      "year": 2022,
+      "total_population": 2274106
+    },
+    "Adıyaman": {
+      "year": 2022,
+      "total_population": 635169
+    },
+    "Afyonkarahisar": {
+      "year": 2022,
+      "total_population": 747555
+    },
+    "Ağrı": {
+      "year": 2022,
+      "total_population": 510626
+    },
+    "Amasya": {
+      "year": 2022,
+      "total_population": 338267
+    },
+    "Ankara": {
+      "year": 2022,
+      "total_population": 5782285
+    },
+    "Antalya": {
+      "year": 2022,
+      "total_population": 2688004
+    },
+    "Artvin": {
+      "year": 2022,
+      "total_population": 169403
+    },
+    "Aydın": {
+      "year": 2022,
+      "total_population": 1148241
+    },
+    "Balıkesir": {
+      "year": 2022,
+      "total_population": 1257590
+    },
+    "Bilecik": {
+      "year": 2022,
+      "total_population": 228673
+    },
+    "Bingöl": {
+      "year": 2022,
+      "total_population": 282556
+    },
+    "Bitlis": {
+      "year": 2022,
+      "total_population": 353988
+    },
+    "Bolu": {
+      "year": 2022,
+      "total_population": 320824
+    },
+    "Burdur": {
+      "year": 2022,
+      "total_population": 273799
+    },
+    "Bursa": {
+      "year": 2022,
+      "total_population": 3194720
+    },
+    "Çanakkale": {
+      "year": 2022,
+      "total_population": 559383
+    },
+    "Çankırı": {
+      "year": 2022,
+      "total_population": 195766
+    },
+    "Çorum": {
+      "year": 2022,
+      "total_population": 524130
+    },
+    "Denizli": {
+      "year": 2022,
+      "total_population": 1056332
+    },
+    "Diyarbakır": {
+      "year": 2022,
+      "total_population": 1804880
+    },
+    "Edirne": {
+      "year": 2022,
+      "total_population": 414714
+    },
+    "Elazığ": {
+      "year": 2022,
+      "total_population": 591497
+    },
+    "Erzincan": {
+      "year": 2022,
+      "total_population": 239223
+    },
+    "Erzurum": {
+      "year": 2022,
+      "total_population": 749754
+    },
+    "Eskişehir": {
+      "year": 2022,
+      "total_population": 906617
+    },
+    "Gaziantep": {
+      "year": 2022,
+      "total_population": 2154051
+    },
+    "Giresun": {
+      "year": 2022,
+      "total_population": 450862
+    },
+    "Gümüşhane": {
+      "year": 2022,
+      "total_population": 144544
+    },
+    "Hakkari": {
+      "year": 2022,
+      "total_population": 275333
+    },
+    "Hatay": {
+      "year": 2022,
+      "total_population": 1686043
+    },
+    "Isparta": {
+      "year": 2022,
+      "total_population": 445325
+    },
+    "Mersin": {
+      "year": 2022,
+      "total_population": 1916432
+    },
+    "İstanbul": {
+      "year": 2022,
+      "total_population": 15907951
+    },
+    "İzmir": {
+      "year": 2022,
+      "total_population": 4462056
+    },
+    "Kars": {
+      "year": 2022,
+      "total_population": 274829
+    },
+    "Kastamonu": {
+      "year": 2022,
+      "total_population": 378115
+    },
+    "Kayseri": {
+      "year": 2022,
+      "total_population": 1441523
+    },
+    "Kırklareli": {
+      "year": 2022,
+      "total_population": 369347
+    },
+    "Kırşehir": {
+      "year": 2022,
+      "total_population": 244519
+    },
+    "Kocaeli": {
+      "year": 2022,
+      "total_population": 2079072
+    },
+    "Konya": {
+      "year": 2022,
+      "total_population": 2296347
+    },
+    "Kütahya": {
+      "year": 2022,
+      "total_population": 580701
+    },
+    "Malatya": {
+      "year": 2022,
+      "total_population": 812580
+    },
+    "Manisa": {
+      "year": 2022,
+      "total_population": 1468279
+    },
+    "Kahramanmaraş": {
+      "year": 2022,
+      "total_population": 1177436
+    },
+    "Mardin": {
+      "year": 2022,
+      "total_population": 870374
+    },
+    "Muğla": {
+      "year": 2022,
+      "total_population": 1048185
+    },
+    "Muş": {
+      "year": 2022,
+      "total_population": 399202
+    },
+    "Nevşehir": {
+      "year": 2022,
+      "total_population": 310011
+    },
+    "Niğde": {
+      "year": 2022,
+      "total_population": 365419
+    },
+    "Ordu": {
+      "year": 2022,
+      "total_population": 763190
+    },
+    "Rize": {
+      "year": 2022,
+      "total_population": 344016
+    },
+    "Sakarya": {
+      "year": 2022,
+      "total_population": 1080080
+    },
+    "Samsun": {
+      "year": 2022,
+      "total_population": 1368488
+    },
+    "Siirt": {
+      "year": 2022,
+      "total_population": 331311
+    },
+    "Sinop": {
+      "year": 2022,
+      "total_population": 220799
+    },
+    "Sivas": {
+      "year": 2022,
+      "total_population": 634924
+    },
+    "Tekirdağ": {
+      "year": 2022,
+      "total_population": 1142451
+    },
+    "Tokat": {
+      "year": 2022,
+      "total_population": 596454
+    },
+    "Trabzon": {
+      "year": 2022,
+      "total_population": 818023
+    },
+    "Tunceli": {
+      "year": 2022,
+      "total_population": 84366
+    },
+    "Şanlıurfa": {
+      "year": 2022,
+      "total_population": 2170110
+    },
+    "Uşak": {
+      "year": 2022,
+      "total_population": 375454
+    },
+    "Van": {
+      "year": 2022,
+      "total_population": 1128749
+    },
+    "Yozgat": {
+      "year": 2022,
+      "total_population": 418442
+    },
+    "Zonguldak": {
+      "year": 2022,
+      "total_population": 588510
+    },
+    "Aksaray": {
+      "year": 2022,
+      "total_population": 433055
+    },
+    "Bayburt": {
+      "year": 2022,
+      "total_population": 84241
+    },
+    "Karaman": {
+      "year": 2022,
+      "total_population": 260838
+    },
+    "Kırıkkale": {
+      "year": 2022,
+      "total_population": 277046
+    },
+    "Batman": {
+      "year": 2022,
+      "total_population": 634491
+    },
+    "Şırnak": {
+      "year": 2022,
+      "total_population": 557605
+    },
+    "Bartın": {
+      "year": 2022,
+      "total_population": 203351
+    },
+    "Ardahan": {
+      "year": 2022,
+      "total_population": 92481
+    },
+    "Iğdır": {
+      "year": 2022,
+      "total_population": 203594
+    },
+    "Yalova": {
+      "year": 2022,
+      "total_population": 296333
+    },
+    "Karabük": {
+      "year": 2022,
+      "total_population": 252058
+    },
+    "Kilis": {
+      "year": 2022,
+      "total_population": 147919
+    },
+    "Osmaniye": {
+      "year": 2022,
+      "total_population": 559405
+    },
+    "Düzce": {
+      "year": 2022,
+      "total_population": 405131
+    }
+  },
+  "2021": {
+    "Adana": {
+      "year": 2021,
+      "total_population": 2263373
+    },
+    "Adıyaman": {
+      "year": 2021,
+      "total_population": 632148
+    },
+    "Afyonkarahisar": {
+      "year": 2021,
+      "total_population": 744179
+    },
+    "Ağrı": {
+      "year": 2021,
+      "total_population": 524644
+    },
+    "Amasya": {
+      "year": 2021,
+      "total_population": 335331
+    },
+    "Ankara": {
+      "year": 2021,
+      "total_population": 5747325
+    },
+    "Antalya": {
+      "year": 2021,
+      "total_population": 2619832
+    },
+    "Artvin": {
+      "year": 2021,
+      "total_population": 169543
+    },
+    "Aydın": {
+      "year": 2021,
+      "total_population": 1134031
+    },
+    "Balıkesir": {
+      "year": 2021,
+      "total_population": 1250610
+    },
+    "Bilecik": {
+      "year": 2021,
+      "total_population": 228334
+    },
+    "Bingöl": {
+      "year": 2021,
+      "total_population": 283112
+    },
+    "Bitlis": {
+      "year": 2021,
+      "total_population": 352277
+    },
+    "Bolu": {
+      "year": 2021,
+      "total_population": 320014
+    },
+    "Burdur": {
+      "year": 2021,
+      "total_population": 273716
+    },
+    "Bursa": {
+      "year": 2021,
+      "total_population": 3147818
+    },
+    "Çanakkale": {
+      "year": 2021,
+      "total_population": 557276
+    },
+    "Çankırı": {
+      "year": 2021,
+      "total_population": 196515
+    },
+    "Çorum": {
+      "year": 2021,
+      "total_population": 526282
+    },
+    "Denizli": {
+      "year": 2021,
+      "total_population": 1051056
+    },
+    "Diyarbakır": {
+      "year": 2021,
+      "total_population": 1791373
+    },
+    "Edirne": {
+      "year": 2021,
+      "total_population": 412115
+    },
+    "Elazığ": {
+      "year": 2021,
+      "total_population": 588088
+    },
+    "Erzincan": {
+      "year": 2021,
+      "total_population": 237351
+    },
+    "Erzurum": {
+      "year": 2021,
+      "total_population": 756893
+    },
+    "Eskişehir": {
+      "year": 2021,
+      "total_population": 898369
+    },
+    "Gaziantep": {
+      "year": 2021,
+      "total_population": 2130432
+    },
+    "Giresun": {
+      "year": 2021,
+      "total_population": 450154
+    },
+    "Gümüşhane": {
+      "year": 2021,
+      "total_population": 150119
+    },
+    "Hakkari": {
+      "year": 2021,
+      "total_population": 278218
+    },
+    "Hatay": {
+      "year": 2021,
+      "total_population": 1670712
+    },
+    "Isparta": {
+      "year": 2021,
+      "total_population": 445678
+    },
+    "Mersin": {
+      "year": 2021,
+      "total_population": 1891145
+    },
+    "İstanbul": {
+      "year": 2021,
+      "total_population": 15840900
+    },
+    "İzmir": {
+      "year": 2021,
+      "total_population": 4425789
+    },
+    "Kars": {
+      "year": 2021,
+      "total_population": 281077
+    },
+    "Kastamonu": {
+      "year": 2021,
+      "total_population": 375592
+    },
+    "Kayseri": {
+      "year": 2021,
+      "total_population": 1434357
+    },
+    "Kırklareli": {
+      "year": 2021,
+      "total_population": 366363
+    },
+    "Kırşehir": {
+      "year": 2021,
+      "total_population": 242944
+    },
+    "Kocaeli": {
+      "year": 2021,
+      "total_population": 2033441
+    },
+    "Konya": {
+      "year": 2021,
+      "total_population": 2277017
+    },
+    "Kütahya": {
+      "year": 2021,
+      "total_population": 578640
+    },
+    "Malatya": {
+      "year": 2021,
+      "total_population": 808692
+    },
+    "Manisa": {
+      "year": 2021,
+      "total_population": 1456626
+    },
+    "Kahramanmaraş": {
+      "year": 2021,
+      "total_population": 1171298
+    },
+    "Mardin": {
+      "year": 2021,
+      "total_population": 862757
+    },
+    "Muğla": {
+      "year": 2021,
+      "total_population": 1021141
+    },
+    "Muş": {
+      "year": 2021,
+      "total_population": 405228
+    },
+    "Nevşehir": {
+      "year": 2021,
+      "total_population": 308003
+    },
+    "Niğde": {
+      "year": 2021,
+      "total_population": 363725
+    },
+    "Ordu": {
+      "year": 2021,
+      "total_population": 760872
+    },
+    "Rize": {
+      "year": 2021,
+      "total_population": 345662
+    },
+    "Sakarya": {
+      "year": 2021,
+      "total_population": 1060876
+    },
+    "Samsun": {
+      "year": 2021,
+      "total_population": 1371274
+    },
+    "Siirt": {
+      "year": 2021,
+      "total_population": 331980
+    },
+    "Sinop": {
+      "year": 2021,
+      "total_population": 218408
+    },
+    "Sivas": {
+      "year": 2021,
+      "total_population": 636121
+    },
+    "Tekirdağ": {
+      "year": 2021,
+      "total_population": 1113400
+    },
+    "Tokat": {
+      "year": 2021,
+      "total_population": 602567
+    },
+    "Trabzon": {
+      "year": 2021,
+      "total_population": 816684
+    },
+    "Tunceli": {
+      "year": 2021,
+      "total_population": 83645
+    },
+    "Şanlıurfa": {
+      "year": 2021,
+      "total_population": 2143020
+    },
+    "Uşak": {
+      "year": 2021,
+      "total_population": 373183
+    },
+    "Van": {
+      "year": 2021,
+      "total_population": 1141015
+    },
+    "Yozgat": {
+      "year": 2021,
+      "total_population": 418500
+    },
+    "Zonguldak": {
+      "year": 2021,
+      "total_population": 589684
+    },
+    "Aksaray": {
+      "year": 2021,
+      "total_population": 429069
+    },
+    "Bayburt": {
+      "year": 2021,
+      "total_population": 85042
+    },
+    "Karaman": {
+      "year": 2021,
+      "total_population": 258838
+    },
+    "Kırıkkale": {
+      "year": 2021,
+      "total_population": 275968
+    },
+    "Batman": {
+      "year": 2021,
+      "total_population": 626319
+    },
+    "Şırnak": {
+      "year": 2021,
+      "total_population": 546589
+    },
+    "Bartın": {
+      "year": 2021,
+      "total_population": 201711
+    },
+    "Ardahan": {
+      "year": 2021,
+      "total_population": 94932
+    },
+    "Iğdır": {
+      "year": 2021,
+      "total_population": 203159
+    },
+    "Yalova": {
+      "year": 2021,
+      "total_population": 291001
+    },
+    "Karabük": {
+      "year": 2021,
+      "total_population": 249287
+    },
+    "Kilis": {
+      "year": 2021,
+      "total_population": 145826
+    },
+    "Osmaniye": {
+      "year": 2021,
+      "total_population": 553012
+    },
+    "Düzce": {
+      "year": 2021,
+      "total_population": 400976
+    }
+  },
+  "2020": {
+    "Adana": {
+      "year": 2020,
+      "total_population": 2258718
+    },
+    "Adıyaman": {
+      "year": 2020,
+      "total_population": 632459
+    },
+    "Afyonkarahisar": {
+      "year": 2020,
+      "total_population": 736912
+    },
+    "Ağrı": {
+      "year": 2020,
+      "total_population": 535435
+    },
+    "Amasya": {
+      "year": 2020,
+      "total_population": 335494
+    },
+    "Ankara": {
+      "year": 2020,
+      "total_population": 5663322
+    },
+    "Antalya": {
+      "year": 2020,
+      "total_population": 2548308
+    },
+    "Artvin": {
+      "year": 2020,
+      "total_population": 169501
+    },
+    "Aydın": {
+      "year": 2020,
+      "total_population": 1119084
+    },
+    "Balıkesir": {
+      "year": 2020,
+      "total_population": 1240285
+    },
+    "Bilecik": {
+      "year": 2020,
+      "total_population": 218717
+    },
+    "Bingöl": {
+      "year": 2020,
+      "total_population": 281768
+    },
+    "Bitlis": {
+      "year": 2020,
+      "total_population": 350994
+    },
+    "Bolu": {
+      "year": 2020,
+      "total_population": 314802
+    },
+    "Burdur": {
+      "year": 2020,
+      "total_population": 267092
+    },
+    "Bursa": {
+      "year": 2020,
+      "total_population": 3101833
+    },
+    "Çanakkale": {
+      "year": 2020,
+      "total_population": 541548
+    },
+    "Çankırı": {
+      "year": 2020,
+      "total_population": 192428
+    },
+    "Çorum": {
+      "year": 2020,
+      "total_population": 530126
+    },
+    "Denizli": {
+      "year": 2020,
+      "total_population": 1040915
+    },
+    "Diyarbakır": {
+      "year": 2020,
+      "total_population": 1783431
+    },
+    "Edirne": {
+      "year": 2020,
+      "total_population": 407763
+    },
+    "Elazığ": {
+      "year": 2020,
+      "total_population": 587960
+    },
+    "Erzincan": {
+      "year": 2020,
+      "total_population": 234431
+    },
+    "Erzurum": {
+      "year": 2020,
+      "total_population": 758279
+    },
+    "Eskişehir": {
+      "year": 2020,
+      "total_population": 888828
+    },
+    "Gaziantep": {
+      "year": 2020,
+      "total_population": 2101157
+    },
+    "Giresun": {
+      "year": 2020,
+      "total_population": 448721
+    },
+    "Gümüşhane": {
+      "year": 2020,
+      "total_population": 141702
+    },
+    "Hakkari": {
+      "year": 2020,
+      "total_population": 280514
+    },
+    "Hatay": {
+      "year": 2020,
+      "total_population": 1659320
+    },
+    "Isparta": {
+      "year": 2020,
+      "total_population": 440304
+    },
+    "Mersin": {
+      "year": 2020,
+      "total_population": 1868757
+    },
+    "İstanbul": {
+      "year": 2020,
+      "total_population": 15462452
+    },
+    "İzmir": {
+      "year": 2020,
+      "total_population": 4394694
+    },
+    "Kars": {
+      "year": 2020,
+      "total_population": 284923
+    },
+    "Kastamonu": {
+      "year": 2020,
+      "total_population": 376377
+    },
+    "Kayseri": {
+      "year": 2020,
+      "total_population": 1421455
+    },
+    "Kırklareli": {
+      "year": 2020,
+      "total_population": 361737
+    },
+    "Kırşehir": {
+      "year": 2020,
+      "total_population": 243042
+    },
+    "Kocaeli": {
+      "year": 2020,
+      "total_population": 1997258
+    },
+    "Konya": {
+      "year": 2020,
+      "total_population": 2250020
+    },
+    "Kütahya": {
+      "year": 2020,
+      "total_population": 576688
+    },
+    "Malatya": {
+      "year": 2020,
+      "total_population": 806156
+    },
+    "Manisa": {
+      "year": 2020,
+      "total_population": 1450616
+    },
+    "Kahramanmaraş": {
+      "year": 2020,
+      "total_population": 1168163
+    },
+    "Mardin": {
+      "year": 2020,
+      "total_population": 854716
+    },
+    "Muğla": {
+      "year": 2020,
+      "total_population": 1000773
+    },
+    "Muş": {
+      "year": 2020,
+      "total_population": 411117
+    },
+    "Nevşehir": {
+      "year": 2020,
+      "total_population": 304962
+    },
+    "Niğde": {
+      "year": 2020,
+      "total_population": 362071
+    },
+    "Ordu": {
+      "year": 2020,
+      "total_population": 761400
+    },
+    "Rize": {
+      "year": 2020,
+      "total_population": 344359
+    },
+    "Sakarya": {
+      "year": 2020,
+      "total_population": 1042649
+    },
+    "Samsun": {
+      "year": 2020,
+      "total_population": 1356079
+    },
+    "Siirt": {
+      "year": 2020,
+      "total_population": 331070
+    },
+    "Sinop": {
+      "year": 2020,
+      "total_population": 216460
+    },
+    "Sivas": {
+      "year": 2020,
+      "total_population": 635889
+    },
+    "Tekirdağ": {
+      "year": 2020,
+      "total_population": 1081065
+    },
+    "Tokat": {
+      "year": 2020,
+      "total_population": 597861
+    },
+    "Trabzon": {
+      "year": 2020,
+      "total_population": 811901
+    },
+    "Tunceli": {
+      "year": 2020,
+      "total_population": 83443
+    },
+    "Şanlıurfa": {
+      "year": 2020,
+      "total_population": 2115256
+    },
+    "Uşak": {
+      "year": 2020,
+      "total_population": 369433
+    },
+    "Van": {
+      "year": 2020,
+      "total_population": 1149342
+    },
+    "Yozgat": {
+      "year": 2020,
+      "total_population": 419095
+    },
+    "Zonguldak": {
+      "year": 2020,
+      "total_population": 591204
+    },
+    "Aksaray": {
+      "year": 2020,
+      "total_population": 423011
+    },
+    "Bayburt": {
+      "year": 2020,
+      "total_population": 81910
+    },
+    "Karaman": {
+      "year": 2020,
+      "total_population": 254919
+    },
+    "Kırıkkale": {
+      "year": 2020,
+      "total_population": 278703
+    },
+    "Batman": {
+      "year": 2020,
+      "total_population": 620278
+    },
+    "Şırnak": {
+      "year": 2020,
+      "total_population": 537762
+    },
+    "Bartın": {
+      "year": 2020,
+      "total_population": 198979
+    },
+    "Ardahan": {
+      "year": 2020,
+      "total_population": 96161
+    },
+    "Iğdır": {
+      "year": 2020,
+      "total_population": 201314
+    },
+    "Yalova": {
+      "year": 2020,
+      "total_population": 276050
+    },
+    "Karabük": {
+      "year": 2020,
+      "total_population": 243614
+    },
+    "Kilis": {
+      "year": 2020,
+      "total_population": 142792
+    },
+    "Osmaniye": {
+      "year": 2020,
+      "total_population": 548556
+    },
+    "Düzce": {
+      "year": 2020,
+      "total_population": 395679
+    }
+  },
+  "2019": {
+    "Adana": {
+      "year": 2019,
+      "total_population": 2237940
+    },
+    "Adıyaman": {
+      "year": 2019,
+      "total_population": 626465
+    },
+    "Afyonkarahisar": {
+      "year": 2019,
+      "total_population": 729483
+    },
+    "Ağrı": {
+      "year": 2019,
+      "total_population": 536199
+    },
+    "Amasya": {
+      "year": 2019,
+      "total_population": 337800
+    },
+    "Ankara": {
+      "year": 2019,
+      "total_population": 5639076
+    },
+    "Antalya": {
+      "year": 2019,
+      "total_population": 2511700
+    },
+    "Artvin": {
+      "year": 2019,
+      "total_population": 170875
+    },
+    "Aydın": {
+      "year": 2019,
+      "total_population": 1110972
+    },
+    "Balıkesir": {
+      "year": 2019,
+      "total_population": 1228620
+    },
+    "Bilecik": {
+      "year": 2019,
+      "total_population": 219427
+    },
+    "Bingöl": {
+      "year": 2019,
+      "total_population": 279812
+    },
+    "Bitlis": {
+      "year": 2019,
+      "total_population": 348115
+    },
+    "Bolu": {
+      "year": 2019,
+      "total_population": 316126
+    },
+    "Burdur": {
+      "year": 2019,
+      "total_population": 270796
+    },
+    "Bursa": {
+      "year": 2019,
+      "total_population": 3056120
+    },
+    "Çanakkale": {
+      "year": 2019,
+      "total_population": 542157
+    },
+    "Çankırı": {
+      "year": 2019,
+      "total_population": 195789
+    },
+    "Çorum": {
+      "year": 2019,
+      "total_population": 530864
+    },
+    "Denizli": {
+      "year": 2019,
+      "total_population": 1037208
+    },
+    "Diyarbakır": {
+      "year": 2019,
+      "total_population": 1756353
+    },
+    "Edirne": {
+      "year": 2019,
+      "total_population": 413903
+    },
+    "Elazığ": {
+      "year": 2019,
+      "total_population": 591098
+    },
+    "Erzincan": {
+      "year": 2019,
+      "total_population": 234747
+    },
+    "Erzurum": {
+      "year": 2019,
+      "total_population": 762062
+    },
+    "Eskişehir": {
+      "year": 2019,
+      "total_population": 887475
+    },
+    "Gaziantep": {
+      "year": 2019,
+      "total_population": 2069364
+    },
+    "Giresun": {
+      "year": 2019,
+      "total_population": 448400
+    },
+    "Gümüşhane": {
+      "year": 2019,
+      "total_population": 164521
+    },
+    "Hakkari": {
+      "year": 2019,
+      "total_population": 280991
+    },
+    "Hatay": {
+      "year": 2019,
+      "total_population": 1628894
+    },
+    "Isparta": {
+      "year": 2019,
+      "total_population": 444914
+    },
+    "Mersin": {
+      "year": 2019,
+      "total_population": 1840425
+    },
+    "İstanbul": {
+      "year": 2019,
+      "total_population": 15519267
+    },
+    "İzmir": {
+      "year": 2019,
+      "total_population": 4367251
+    },
+    "Kars": {
+      "year": 2019,
+      "total_population": 285410
+    },
+    "Kastamonu": {
+      "year": 2019,
+      "total_population": 379405
+    },
+    "Kayseri": {
+      "year": 2019,
+      "total_population": 1407409
+    },
+    "Kırklareli": {
+      "year": 2019,
+      "total_population": 361836
+    },
+    "Kırşehir": {
+      "year": 2019,
+      "total_population": 242938
+    },
+    "Kocaeli": {
+      "year": 2019,
+      "total_population": 1953035
+    },
+    "Konya": {
+      "year": 2019,
+      "total_population": 2232374
+    },
+    "Kütahya": {
+      "year": 2019,
+      "total_population": 579257
+    },
+    "Malatya": {
+      "year": 2019,
+      "total_population": 800165
+    },
+    "Manisa": {
+      "year": 2019,
+      "total_population": 1440611
+    },
+    "Kahramanmaraş": {
+      "year": 2019,
+      "total_population": 1154102
+    },
+    "Mardin": {
+      "year": 2019,
+      "total_population": 838778
+    },
+    "Muğla": {
+      "year": 2019,
+      "total_population": 983142
+    },
+    "Muş": {
+      "year": 2019,
+      "total_population": 408809
+    },
+    "Nevşehir": {
+      "year": 2019,
+      "total_population": 303010
+    },
+    "Niğde": {
+      "year": 2019,
+      "total_population": 362861
+    },
+    "Ordu": {
+      "year": 2019,
+      "total_population": 754198
+    },
+    "Rize": {
+      "year": 2019,
+      "total_population": 343212
+    },
+    "Sakarya": {
+      "year": 2019,
+      "total_population": 1029650
+    },
+    "Samsun": {
+      "year": 2019,
+      "total_population": 1348542
+    },
+    "Siirt": {
+      "year": 2019,
+      "total_population": 330280
+    },
+    "Sinop": {
+      "year": 2019,
+      "total_population": 218243
+    },
+    "Sivas": {
+      "year": 2019,
+      "total_population": 638956
+    },
+    "Tekirdağ": {
+      "year": 2019,
+      "total_population": 1055412
+    },
+    "Tokat": {
+      "year": 2019,
+      "total_population": 612747
+    },
+    "Trabzon": {
+      "year": 2019,
+      "total_population": 808974
+    },
+    "Tunceli": {
+      "year": 2019,
+      "total_population": 84660
+    },
+    "Şanlıurfa": {
+      "year": 2019,
+      "total_population": 2073614
+    },
+    "Uşak": {
+      "year": 2019,
+      "total_population": 370509
+    },
+    "Van": {
+      "year": 2019,
+      "total_population": 1136757
+    },
+    "Yozgat": {
+      "year": 2019,
+      "total_population": 421200
+    },
+    "Zonguldak": {
+      "year": 2019,
+      "total_population": 596053
+    },
+    "Aksaray": {
+      "year": 2019,
+      "total_population": 416367
+    },
+    "Bayburt": {
+      "year": 2019,
+      "total_population": 84843
+    },
+    "Karaman": {
+      "year": 2019,
+      "total_population": 253279
+    },
+    "Kırıkkale": {
+      "year": 2019,
+      "total_population": 283017
+    },
+    "Batman": {
+      "year": 2019,
+      "total_population": 608659
+    },
+    "Şırnak": {
+      "year": 2019,
+      "total_population": 529615
+    },
+    "Bartın": {
+      "year": 2019,
+      "total_population": 198249
+    },
+    "Ardahan": {
+      "year": 2019,
+      "total_population": 97319
+    },
+    "Iğdır": {
+      "year": 2019,
+      "total_population": 199442
+    },
+    "Yalova": {
+      "year": 2019,
+      "total_population": 270976
+    },
+    "Karabük": {
+      "year": 2019,
+      "total_population": 248458
+    },
+    "Kilis": {
+      "year": 2019,
+      "total_population": 142490
+    },
+    "Osmaniye": {
+      "year": 2019,
+      "total_population": 538759
+    },
+    "Düzce": {
+      "year": 2019,
+      "total_population": 392166
+    }
+  },
+  "2018": {
+    "Adana": {
+      "year": 2018,
+      "total_population": 2220125
+    },
+    "Adıyaman": {
+      "year": 2018,
+      "total_population": 624513
+    },
+    "Afyonkarahisar": {
+      "year": 2018,
+      "total_population": 725568
+    },
+    "Ağrı": {
+      "year": 2018,
+      "total_population": 539657
+    },
+    "Amasya": {
+      "year": 2018,
+      "total_population": 337508
+    },
+    "Ankara": {
+      "year": 2018,
+      "total_population": 5503985
+    },
+    "Antalya": {
+      "year": 2018,
+      "total_population": 2426356
+    },
+    "Artvin": {
+      "year": 2018,
+      "total_population": 174010
+    },
+    "Aydın": {
+      "year": 2018,
+      "total_population": 1097746
+    },
+    "Balıkesir": {
+      "year": 2018,
+      "total_population": 1226575
+    },
+    "Bilecik": {
+      "year": 2018,
+      "total_population": 223448
+    },
+    "Bingöl": {
+      "year": 2018,
+      "total_population": 281205
+    },
+    "Bitlis": {
+      "year": 2018,
+      "total_population": 349396
+    },
+    "Bolu": {
+      "year": 2018,
+      "total_population": 311810
+    },
+    "Burdur": {
+      "year": 2018,
+      "total_population": 269926
+    },
+    "Bursa": {
+      "year": 2018,
+      "total_population": 2994521
+    },
+    "Çanakkale": {
+      "year": 2018,
+      "total_population": 540662
+    },
+    "Çankırı": {
+      "year": 2018,
+      "total_population": 216362
+    },
+    "Çorum": {
+      "year": 2018,
+      "total_population": 536483
+    },
+    "Denizli": {
+      "year": 2018,
+      "total_population": 1027782
+    },
+    "Diyarbakır": {
+      "year": 2018,
+      "total_population": 1732396
+    },
+    "Edirne": {
+      "year": 2018,
+      "total_population": 411528
+    },
+    "Elazığ": {
+      "year": 2018,
+      "total_population": 595638
+    },
+    "Erzincan": {
+      "year": 2018,
+      "total_population": 236034
+    },
+    "Erzurum": {
+      "year": 2018,
+      "total_population": 767848
+    },
+    "Eskişehir": {
+      "year": 2018,
+      "total_population": 871187
+    },
+    "Gaziantep": {
+      "year": 2018,
+      "total_population": 2028563
+    },
+    "Giresun": {
+      "year": 2018,
+      "total_population": 453912
+    },
+    "Gümüşhane": {
+      "year": 2018,
+      "total_population": 162748
+    },
+    "Hakkari": {
+      "year": 2018,
+      "total_population": 286470
+    },
+    "Hatay": {
+      "year": 2018,
+      "total_population": 1609856
+    },
+    "Isparta": {
+      "year": 2018,
+      "total_population": 441412
+    },
+    "Mersin": {
+      "year": 2018,
+      "total_population": 1814468
+    },
+    "İstanbul": {
+      "year": 2018,
+      "total_population": 15067724
+    },
+    "İzmir": {
+      "year": 2018,
+      "total_population": 4320519
+    },
+    "Kars": {
+      "year": 2018,
+      "total_population": 288878
+    },
+    "Kastamonu": {
+      "year": 2018,
+      "total_population": 383373
+    },
+    "Kayseri": {
+      "year": 2018,
+      "total_population": 1389680
+    },
+    "Kırklareli": {
+      "year": 2018,
+      "total_population": 360860
+    },
+    "Kırşehir": {
+      "year": 2018,
+      "total_population": 241868
+    },
+    "Kocaeli": {
+      "year": 2018,
+      "total_population": 1906391
+    },
+    "Konya": {
+      "year": 2018,
+      "total_population": 2205609
+    },
+    "Kütahya": {
+      "year": 2018,
+      "total_population": 577941
+    },
+    "Malatya": {
+      "year": 2018,
+      "total_population": 797036
+    },
+    "Manisa": {
+      "year": 2018,
+      "total_population": 1429643
+    },
+    "Kahramanmaraş": {
+      "year": 2018,
+      "total_population": 1144851
+    },
+    "Mardin": {
+      "year": 2018,
+      "total_population": 829195
+    },
+    "Muğla": {
+      "year": 2018,
+      "total_population": 967487
+    },
+    "Muş": {
+      "year": 2018,
+      "total_population": 407992
+    },
+    "Nevşehir": {
+      "year": 2018,
+      "total_population": 298339
+    },
+    "Niğde": {
+      "year": 2018,
+      "total_population": 364707
+    },
+    "Ordu": {
+      "year": 2018,
+      "total_population": 771932
+    },
+    "Rize": {
+      "year": 2018,
+      "total_population": 348608
+    },
+    "Sakarya": {
+      "year": 2018,
+      "total_population": 1010700
+    },
+    "Samsun": {
+      "year": 2018,
+      "total_population": 1335716
+    },
+    "Siirt": {
+      "year": 2018,
+      "total_population": 331670
+    },
+    "Sinop": {
+      "year": 2018,
+      "total_population": 219733
+    },
+    "Sivas": {
+      "year": 2018,
+      "total_population": 646608
+    },
+    "Tekirdağ": {
+      "year": 2018,
+      "total_population": 1029927
+    },
+    "Tokat": {
+      "year": 2018,
+      "total_population": 612646
+    },
+    "Trabzon": {
+      "year": 2018,
+      "total_population": 807903
+    },
+    "Tunceli": {
+      "year": 2018,
+      "total_population": 88198
+    },
+    "Şanlıurfa": {
+      "year": 2018,
+      "total_population": 2035809
+    },
+    "Uşak": {
+      "year": 2018,
+      "total_population": 367514
+    },
+    "Van": {
+      "year": 2018,
+      "total_population": 1123784
+    },
+    "Yozgat": {
+      "year": 2018,
+      "total_population": 424981
+    },
+    "Zonguldak": {
+      "year": 2018,
+      "total_population": 599698
+    },
+    "Aksaray": {
+      "year": 2018,
+      "total_population": 412172
+    },
+    "Bayburt": {
+      "year": 2018,
+      "total_population": 82274
+    },
+    "Karaman": {
+      "year": 2018,
+      "total_population": 251913
+    },
+    "Kırıkkale": {
+      "year": 2018,
+      "total_population": 286602
+    },
+    "Batman": {
+      "year": 2018,
+      "total_population": 599103
+    },
+    "Şırnak": {
+      "year": 2018,
+      "total_population": 524190
+    },
+    "Bartın": {
+      "year": 2018,
+      "total_population": 198999
+    },
+    "Ardahan": {
+      "year": 2018,
+      "total_population": 98907
+    },
+    "Iğdır": {
+      "year": 2018,
+      "total_population": 197456
+    },
+    "Yalova": {
+      "year": 2018,
+      "total_population": 262234
+    },
+    "Karabük": {
+      "year": 2018,
+      "total_population": 248014
+    },
+    "Kilis": {
+      "year": 2018,
+      "total_population": 142541
+    },
+    "Osmaniye": {
+      "year": 2018,
+      "total_population": 534415
+    },
+    "Düzce": {
+      "year": 2018,
+      "total_population": 387844
+    }
+  },
+  "2017": {
+    "Adana": {
+      "year": 2017,
+      "total_population": 2216475
+    },
+    "Adıyaman": {
+      "year": 2017,
+      "total_population": 615076
+    },
+    "Afyonkarahisar": {
+      "year": 2017,
+      "total_population": 715693
+    },
+    "Ağrı": {
+      "year": 2017,
+      "total_population": 536285
+    },
+    "Amasya": {
+      "year": 2017,
+      "total_population": 329888
+    },
+    "Ankara": {
+      "year": 2017,
+      "total_population": 5445026
+    },
+    "Antalya": {
+      "year": 2017,
+      "total_population": 2364396
+    },
+    "Artvin": {
+      "year": 2017,
+      "total_population": 166143
+    },
+    "Aydın": {
+      "year": 2017,
+      "total_population": 1080839
+    },
+    "Balıkesir": {
+      "year": 2017,
+      "total_population": 1204824
+    },
+    "Bilecik": {
+      "year": 2017,
+      "total_population": 221693
+    },
+    "Bingöl": {
+      "year": 2017,
+      "total_population": 273354
+    },
+    "Bitlis": {
+      "year": 2017,
+      "total_population": 341474
+    },
+    "Bolu": {
+      "year": 2017,
+      "total_population": 303184
+    },
+    "Burdur": {
+      "year": 2017,
+      "total_population": 264779
+    },
+    "Bursa": {
+      "year": 2017,
+      "total_population": 2936803
+    },
+    "Çanakkale": {
+      "year": 2017,
+      "total_population": 530417
+    },
+    "Çankırı": {
+      "year": 2017,
+      "total_population": 186074
+    },
+    "Çorum": {
+      "year": 2017,
+      "total_population": 528422
+    },
+    "Denizli": {
+      "year": 2017,
+      "total_population": 1018735
+    },
+    "Diyarbakır": {
+      "year": 2017,
+      "total_population": 1699901
+    },
+    "Edirne": {
+      "year": 2017,
+      "total_population": 406855
+    },
+    "Elazığ": {
+      "year": 2017,
+      "total_population": 583671
+    },
+    "Erzincan": {
+      "year": 2017,
+      "total_population": 231511
+    },
+    "Erzurum": {
+      "year": 2017,
+      "total_population": 760476
+    },
+    "Eskişehir": {
+      "year": 2017,
+      "total_population": 860620
+    },
+    "Gaziantep": {
+      "year": 2017,
+      "total_population": 2005515
+    },
+    "Giresun": {
+      "year": 2017,
+      "total_population": 437393
+    },
+    "Gümüşhane": {
+      "year": 2017,
+      "total_population": 170173
+    },
+    "Hakkari": {
+      "year": 2017,
+      "total_population": 275761
+    },
+    "Hatay": {
+      "year": 2017,
+      "total_population": 1575226
+    },
+    "Isparta": {
+      "year": 2017,
+      "total_population": 433830
+    },
+    "Mersin": {
+      "year": 2017,
+      "total_population": 1793931
+    },
+    "İstanbul": {
+      "year": 2017,
+      "total_population": 15029231
+    },
+    "İzmir": {
+      "year": 2017,
+      "total_population": 4279677
+    },
+    "Kars": {
+      "year": 2017,
+      "total_population": 287654
+    },
+    "Kastamonu": {
+      "year": 2017,
+      "total_population": 372373
+    },
+    "Kayseri": {
+      "year": 2017,
+      "total_population": 1376722
+    },
+    "Kırklareli": {
+      "year": 2017,
+      "total_population": 356050
+    },
+    "Kırşehir": {
+      "year": 2017,
+      "total_population": 234529
+    },
+    "Kocaeli": {
+      "year": 2017,
+      "total_population": 1883270
+    },
+    "Konya": {
+      "year": 2017,
+      "total_population": 2180149
+    },
+    "Kütahya": {
+      "year": 2017,
+      "total_population": 572256
+    },
+    "Malatya": {
+      "year": 2017,
+      "total_population": 786676
+    },
+    "Manisa": {
+      "year": 2017,
+      "total_population": 1413041
+    },
+    "Kahramanmaraş": {
+      "year": 2017,
+      "total_population": 1127623
+    },
+    "Mardin": {
+      "year": 2017,
+      "total_population": 809719
+    },
+    "Muğla": {
+      "year": 2017,
+      "total_population": 938751
+    },
+    "Muş": {
+      "year": 2017,
+      "total_population": 404544
+    },
+    "Nevşehir": {
+      "year": 2017,
+      "total_population": 292365
+    },
+    "Niğde": {
+      "year": 2017,
+      "total_population": 352727
+    },
+    "Ordu": {
+      "year": 2017,
+      "total_population": 742341
+    },
+    "Rize": {
+      "year": 2017,
+      "total_population": 331041
+    },
+    "Sakarya": {
+      "year": 2017,
+      "total_population": 990214
+    },
+    "Samsun": {
+      "year": 2017,
+      "total_population": 1312990
+    },
+    "Siirt": {
+      "year": 2017,
+      "total_population": 324394
+    },
+    "Sinop": {
+      "year": 2017,
+      "total_population": 207427
+    },
+    "Sivas": {
+      "year": 2017,
+      "total_population": 621301
+    },
+    "Tekirdağ": {
+      "year": 2017,
+      "total_population": 1005463
+    },
+    "Tokat": {
+      "year": 2017,
+      "total_population": 602086
+    },
+    "Trabzon": {
+      "year": 2017,
+      "total_population": 786326
+    },
+    "Tunceli": {
+      "year": 2017,
+      "total_population": 82498
+    },
+    "Şanlıurfa": {
+      "year": 2017,
+      "total_population": 1985753
+    },
+    "Uşak": {
+      "year": 2017,
+      "total_population": 364971
+    },
+    "Van": {
+      "year": 2017,
+      "total_population": 1106891
+    },
+    "Yozgat": {
+      "year": 2017,
+      "total_population": 418650
+    },
+    "Zonguldak": {
+      "year": 2017,
+      "total_population": 596892
+    },
+    "Aksaray": {
+      "year": 2017,
+      "total_population": 402404
+    },
+    "Bayburt": {
+      "year": 2017,
+      "total_population": 80417
+    },
+    "Karaman": {
+      "year": 2017,
+      "total_population": 246672
+    },
+    "Kırıkkale": {
+      "year": 2017,
+      "total_population": 278749
+    },
+    "Batman": {
+      "year": 2017,
+      "total_population": 585252
+    },
+    "Şırnak": {
+      "year": 2017,
+      "total_population": 503236
+    },
+    "Bartın": {
+      "year": 2017,
+      "total_population": 193577
+    },
+    "Ardahan": {
+      "year": 2017,
+      "total_population": 97096
+    },
+    "Iğdır": {
+      "year": 2017,
+      "total_population": 194775
+    },
+    "Yalova": {
+      "year": 2017,
+      "total_population": 251203
+    },
+    "Karabük": {
+      "year": 2017,
+      "total_population": 244453
+    },
+    "Kilis": {
+      "year": 2017,
+      "total_population": 136319
+    },
+    "Osmaniye": {
+      "year": 2017,
+      "total_population": 527724
+    },
+    "Düzce": {
+      "year": 2017,
+      "total_population": 377610
+    }
+  },
+  "2016": {
+    "Adana": {
+      "year": 2016,
+      "total_population": 2201670
+    },
+    "Adıyaman": {
+      "year": 2016,
+      "total_population": 610484
+    },
+    "Afyonkarahisar": {
+      "year": 2016,
+      "total_population": 714523
+    },
+    "Ağrı": {
+      "year": 2016,
+      "total_population": 542255
+    },
+    "Amasya": {
+      "year": 2016,
+      "total_population": 326351
+    },
+    "Ankara": {
+      "year": 2016,
+      "total_population": 5346518
+    },
+    "Antalya": {
+      "year": 2016,
+      "total_population": 2328555
+    },
+    "Artvin": {
+      "year": 2016,
+      "total_population": 168068
+    },
+    "Aydın": {
+      "year": 2016,
+      "total_population": 1068260
+    },
+    "Balıkesir": {
+      "year": 2016,
+      "total_population": 1196176
+    },
+    "Bilecik": {
+      "year": 2016,
+      "total_population": 218297
+    },
+    "Bingöl": {
+      "year": 2016,
+      "total_population": 269560
+    },
+    "Bitlis": {
+      "year": 2016,
+      "total_population": 341225
+    },
+    "Bolu": {
+      "year": 2016,
+      "total_population": 299896
+    },
+    "Burdur": {
+      "year": 2016,
+      "total_population": 261401
+    },
+    "Bursa": {
+      "year": 2016,
+      "total_population": 2901396
+    },
+    "Çanakkale": {
+      "year": 2016,
+      "total_population": 519793
+    },
+    "Çankırı": {
+      "year": 2016,
+      "total_population": 183880
+    },
+    "Çorum": {
+      "year": 2016,
+      "total_population": 527863
+    },
+    "Denizli": {
+      "year": 2016,
+      "total_population": 1005687
+    },
+    "Diyarbakır": {
+      "year": 2016,
+      "total_population": 1673119
+    },
+    "Edirne": {
+      "year": 2016,
+      "total_population": 401701
+    },
+    "Elazığ": {
+      "year": 2016,
+      "total_population": 578789
+    },
+    "Erzincan": {
+      "year": 2016,
+      "total_population": 226032
+    },
+    "Erzurum": {
+      "year": 2016,
+      "total_population": 762021
+    },
+    "Eskişehir": {
+      "year": 2016,
+      "total_population": 844842
+    },
+    "Gaziantep": {
+      "year": 2016,
+      "total_population": 1974244
+    },
+    "Giresun": {
+      "year": 2016,
+      "total_population": 444467
+    },
+    "Gümüşhane": {
+      "year": 2016,
+      "total_population": 172034
+    },
+    "Hakkari": {
+      "year": 2016,
+      "total_population": 267813
+    },
+    "Hatay": {
+      "year": 2016,
+      "total_population": 1555165
+    },
+    "Isparta": {
+      "year": 2016,
+      "total_population": 427324
+    },
+    "Mersin": {
+      "year": 2016,
+      "total_population": 1773852
+    },
+    "İstanbul": {
+      "year": 2016,
+      "total_population": 14804116
+    },
+    "İzmir": {
+      "year": 2016,
+      "total_population": 4223545
+    },
+    "Kars": {
+      "year": 2016,
+      "total_population": 289786
+    },
+    "Kastamonu": {
+      "year": 2016,
+      "total_population": 376945
+    },
+    "Kayseri": {
+      "year": 2016,
+      "total_population": 1358980
+    },
+    "Kırklareli": {
+      "year": 2016,
+      "total_population": 351684
+    },
+    "Kırşehir": {
+      "year": 2016,
+      "total_population": 229975
+    },
+    "Kocaeli": {
+      "year": 2016,
+      "total_population": 1830772
+    },
+    "Konya": {
+      "year": 2016,
+      "total_population": 2161303
+    },
+    "Kütahya": {
+      "year": 2016,
+      "total_population": 573642
+    },
+    "Malatya": {
+      "year": 2016,
+      "total_population": 781305
+    },
+    "Manisa": {
+      "year": 2016,
+      "total_population": 1396945
+    },
+    "Kahramanmaraş": {
+      "year": 2016,
+      "total_population": 1112634
+    },
+    "Mardin": {
+      "year": 2016,
+      "total_population": 796237
+    },
+    "Muğla": {
+      "year": 2016,
+      "total_population": 923773
+    },
+    "Muş": {
+      "year": 2016,
+      "total_population": 406501
+    },
+    "Nevşehir": {
+      "year": 2016,
+      "total_population": 290895
+    },
+    "Niğde": {
+      "year": 2016,
+      "total_population": 351468
+    },
+    "Ordu": {
+      "year": 2016,
+      "total_population": 750588
+    },
+    "Rize": {
+      "year": 2016,
+      "total_population": 331048
+    },
+    "Sakarya": {
+      "year": 2016,
+      "total_population": 976948
+    },
+    "Samsun": {
+      "year": 2016,
+      "total_population": 1295927
+    },
+    "Siirt": {
+      "year": 2016,
+      "total_population": 322664
+    },
+    "Sinop": {
+      "year": 2016,
+      "total_population": 205478
+    },
+    "Sivas": {
+      "year": 2016,
+      "total_population": 621224
+    },
+    "Tekirdağ": {
+      "year": 2016,
+      "total_population": 972875
+    },
+    "Tokat": {
+      "year": 2016,
+      "total_population": 602662
+    },
+    "Trabzon": {
+      "year": 2016,
+      "total_population": 779379
+    },
+    "Tunceli": {
+      "year": 2016,
+      "total_population": 82193
+    },
+    "Şanlıurfa": {
+      "year": 2016,
+      "total_population": 1940627
+    },
+    "Uşak": {
+      "year": 2016,
+      "total_population": 358736
+    },
+    "Van": {
+      "year": 2016,
+      "total_population": 1100190
+    },
+    "Yozgat": {
+      "year": 2016,
+      "total_population": 421041
+    },
+    "Zonguldak": {
+      "year": 2016,
+      "total_population": 597524
+    },
+    "Aksaray": {
+      "year": 2016,
+      "total_population": 396673
+    },
+    "Bayburt": {
+      "year": 2016,
+      "total_population": 90154
+    },
+    "Karaman": {
+      "year": 2016,
+      "total_population": 245610
+    },
+    "Kırıkkale": {
+      "year": 2016,
+      "total_population": 277984
+    },
+    "Batman": {
+      "year": 2016,
+      "total_population": 576899
+    },
+    "Şırnak": {
+      "year": 2016,
+      "total_population": 483788
+    },
+    "Bartın": {
+      "year": 2016,
+      "total_population": 192389
+    },
+    "Ardahan": {
+      "year": 2016,
+      "total_population": 98335
+    },
+    "Iğdır": {
+      "year": 2016,
+      "total_population": 192785
+    },
+    "Yalova": {
+      "year": 2016,
+      "total_population": 241665
+    },
+    "Karabük": {
+      "year": 2016,
+      "total_population": 242347
+    },
+    "Kilis": {
+      "year": 2016,
+      "total_population": 130825
+    },
+    "Osmaniye": {
+      "year": 2016,
+      "total_population": 522175
+    },
+    "Düzce": {
+      "year": 2016,
+      "total_population": 370371
+    }
+  },
+  "2015": {
+    "Adana": {
+      "year": 2015,
+      "total_population": 2183167
+    },
+    "Adıyaman": {
+      "year": 2015,
+      "total_population": 602774
+    },
+    "Afyonkarahisar": {
+      "year": 2015,
+      "total_population": 709015
+    },
+    "Ağrı": {
+      "year": 2015,
+      "total_population": 547210
+    },
+    "Amasya": {
+      "year": 2015,
+      "total_population": 322167
+    },
+    "Ankara": {
+      "year": 2015,
+      "total_population": 5270575
+    },
+    "Antalya": {
+      "year": 2015,
+      "total_population": 2288456
+    },
+    "Artvin": {
+      "year": 2015,
+      "total_population": 168370
+    },
+    "Aydın": {
+      "year": 2015,
+      "total_population": 1053506
+    },
+    "Balıkesir": {
+      "year": 2015,
+      "total_population": 1186688
+    },
+    "Bilecik": {
+      "year": 2015,
+      "total_population": 212361
+    },
+    "Bingöl": {
+      "year": 2015,
+      "total_population": 267184
+    },
+    "Bitlis": {
+      "year": 2015,
+      "total_population": 340449
+    },
+    "Bolu": {
+      "year": 2015,
+      "total_population": 291095
+    },
+    "Burdur": {
+      "year": 2015,
+      "total_population": 258339
+    },
+    "Bursa": {
+      "year": 2015,
+      "total_population": 2842547
+    },
+    "Çanakkale": {
+      "year": 2015,
+      "total_population": 513341
+    },
+    "Çankırı": {
+      "year": 2015,
+      "total_population": 180945
+    },
+    "Çorum": {
+      "year": 2015,
+      "total_population": 525180
+    },
+    "Denizli": {
+      "year": 2015,
+      "total_population": 993442
+    },
+    "Diyarbakır": {
+      "year": 2015,
+      "total_population": 1654196
+    },
+    "Edirne": {
+      "year": 2015,
+      "total_population": 402537
+    },
+    "Elazığ": {
+      "year": 2015,
+      "total_population": 574304
+    },
+    "Erzincan": {
+      "year": 2015,
+      "total_population": 222918
+    },
+    "Erzurum": {
+      "year": 2015,
+      "total_population": 762321
+    },
+    "Eskişehir": {
+      "year": 2015,
+      "total_population": 826716
+    },
+    "Gaziantep": {
+      "year": 2015,
+      "total_population": 1931836
+    },
+    "Giresun": {
+      "year": 2015,
+      "total_population": 426686
+    },
+    "Gümüşhane": {
+      "year": 2015,
+      "total_population": 151449
+    },
+    "Hakkari": {
+      "year": 2015,
+      "total_population": 278775
+    },
+    "Hatay": {
+      "year": 2015,
+      "total_population": 1533507
+    },
+    "Isparta": {
+      "year": 2015,
+      "total_population": 421766
+    },
+    "Mersin": {
+      "year": 2015,
+      "total_population": 1745221
+    },
+    "İstanbul": {
+      "year": 2015,
+      "total_population": 14657434
+    },
+    "İzmir": {
+      "year": 2015,
+      "total_population": 4168415
+    },
+    "Kars": {
+      "year": 2015,
+      "total_population": 292660
+    },
+    "Kastamonu": {
+      "year": 2015,
+      "total_population": 372633
+    },
+    "Kayseri": {
+      "year": 2015,
+      "total_population": 1341056
+    },
+    "Kırklareli": {
+      "year": 2015,
+      "total_population": 346973
+    },
+    "Kırşehir": {
+      "year": 2015,
+      "total_population": 225562
+    },
+    "Kocaeli": {
+      "year": 2015,
+      "total_population": 1780055
+    },
+    "Konya": {
+      "year": 2015,
+      "total_population": 2130544
+    },
+    "Kütahya": {
+      "year": 2015,
+      "total_population": 571463
+    },
+    "Malatya": {
+      "year": 2015,
+      "total_population": 772904
+    },
+    "Manisa": {
+      "year": 2015,
+      "total_population": 1380366
+    },
+    "Kahramanmaraş": {
+      "year": 2015,
+      "total_population": 1096610
+    },
+    "Mardin": {
+      "year": 2015,
+      "total_population": 796591
+    },
+    "Muğla": {
+      "year": 2015,
+      "total_population": 908877
+    },
+    "Muş": {
+      "year": 2015,
+      "total_population": 408728
+    },
+    "Nevşehir": {
+      "year": 2015,
+      "total_population": 286767
+    },
+    "Niğde": {
+      "year": 2015,
+      "total_population": 346114
+    },
+    "Ordu": {
+      "year": 2015,
+      "total_population": 728949
+    },
+    "Rize": {
+      "year": 2015,
+      "total_population": 328979
+    },
+    "Sakarya": {
+      "year": 2015,
+      "total_population": 953181
+    },
+    "Samsun": {
+      "year": 2015,
+      "total_population": 1279884
+    },
+    "Siirt": {
+      "year": 2015,
+      "total_population": 320351
+    },
+    "Sinop": {
+      "year": 2015,
+      "total_population": 204133
+    },
+    "Sivas": {
+      "year": 2015,
+      "total_population": 618617
+    },
+    "Tekirdağ": {
+      "year": 2015,
+      "total_population": 937910
+    },
+    "Tokat": {
+      "year": 2015,
+      "total_population": 593990
+    },
+    "Trabzon": {
+      "year": 2015,
+      "total_population": 768417
+    },
+    "Tunceli": {
+      "year": 2015,
+      "total_population": 86076
+    },
+    "Şanlıurfa": {
+      "year": 2015,
+      "total_population": 1892320
+    },
+    "Uşak": {
+      "year": 2015,
+      "total_population": 353048
+    },
+    "Van": {
+      "year": 2015,
+      "total_population": 1096397
+    },
+    "Yozgat": {
+      "year": 2015,
+      "total_population": 419440
+    },
+    "Zonguldak": {
+      "year": 2015,
+      "total_population": 595907
+    },
+    "Aksaray": {
+      "year": 2015,
+      "total_population": 386514
+    },
+    "Bayburt": {
+      "year": 2015,
+      "total_population": 78550
+    },
+    "Karaman": {
+      "year": 2015,
+      "total_population": 242196
+    },
+    "Kırıkkale": {
+      "year": 2015,
+      "total_population": 270271
+    },
+    "Batman": {
+      "year": 2015,
+      "total_population": 566633
+    },
+    "Şırnak": {
+      "year": 2015,
+      "total_population": 490184
+    },
+    "Bartın": {
+      "year": 2015,
+      "total_population": 190708
+    },
+    "Ardahan": {
+      "year": 2015,
+      "total_population": 99265
+    },
+    "Iğdır": {
+      "year": 2015,
+      "total_population": 192435
+    },
+    "Yalova": {
+      "year": 2015,
+      "total_population": 233009
+    },
+    "Karabük": {
+      "year": 2015,
+      "total_population": 236978
+    },
+    "Kilis": {
+      "year": 2015,
+      "total_population": 130655
+    },
+    "Osmaniye": {
+      "year": 2015,
+      "total_population": 512873
+    },
+    "Düzce": {
+      "year": 2015,
+      "total_population": 360388
+    }
+  },
+  "2014": {
+    "Adana": {
+      "year": 2014,
+      "total_population": 2165595
+    },
+    "Adıyaman": {
+      "year": 2014,
+      "total_population": 597835
+    },
+    "Afyonkarahisar": {
+      "year": 2014,
+      "total_population": 706371
+    },
+    "Ağrı": {
+      "year": 2014,
+      "total_population": 549435
+    },
+    "Amasya": {
+      "year": 2014,
+      "total_population": 321913
+    },
+    "Ankara": {
+      "year": 2014,
+      "total_population": 5150072
+    },
+    "Antalya": {
+      "year": 2014,
+      "total_population": 2222562
+    },
+    "Artvin": {
+      "year": 2014,
+      "total_population": 169674
+    },
+    "Aydın": {
+      "year": 2014,
+      "total_population": 1041979
+    },
+    "Balıkesir": {
+      "year": 2014,
+      "total_population": 1189057
+    },
+    "Bilecik": {
+      "year": 2014,
+      "total_population": 209925
+    },
+    "Bingöl": {
+      "year": 2014,
+      "total_population": 266019
+    },
+    "Bitlis": {
+      "year": 2014,
+      "total_population": 338023
+    },
+    "Bolu": {
+      "year": 2014,
+      "total_population": 284789
+    },
+    "Burdur": {
+      "year": 2014,
+      "total_population": 256898
+    },
+    "Bursa": {
+      "year": 2014,
+      "total_population": 2787539
+    },
+    "Çanakkale": {
+      "year": 2014,
+      "total_population": 511790
+    },
+    "Çankırı": {
+      "year": 2014,
+      "total_population": 183550
+    },
+    "Çorum": {
+      "year": 2014,
+      "total_population": 527220
+    },
+    "Denizli": {
+      "year": 2014,
+      "total_population": 978700
+    },
+    "Diyarbakır": {
+      "year": 2014,
+      "total_population": 1635048
+    },
+    "Edirne": {
+      "year": 2014,
+      "total_population": 400280
+    },
+    "Elazığ": {
+      "year": 2014,
+      "total_population": 568753
+    },
+    "Erzincan": {
+      "year": 2014,
+      "total_population": 223633
+    },
+    "Erzurum": {
+      "year": 2014,
+      "total_population": 763320
+    },
+    "Eskişehir": {
+      "year": 2014,
+      "total_population": 812320
+    },
+    "Gaziantep": {
+      "year": 2014,
+      "total_population": 1889466
+    },
+    "Giresun": {
+      "year": 2014,
+      "total_population": 429984
+    },
+    "Gümüşhane": {
+      "year": 2014,
+      "total_population": 146353
+    },
+    "Hakkari": {
+      "year": 2014,
+      "total_population": 276287
+    },
+    "Hatay": {
+      "year": 2014,
+      "total_population": 1519836
+    },
+    "Isparta": {
+      "year": 2014,
+      "total_population": 418780
+    },
+    "Mersin": {
+      "year": 2014,
+      "total_population": 1727255
+    },
+    "İstanbul": {
+      "year": 2014,
+      "total_population": 14377018
+    },
+    "İzmir": {
+      "year": 2014,
+      "total_population": 4113072
+    },
+    "Kars": {
+      "year": 2014,
+      "total_population": 296466
+    },
+    "Kastamonu": {
+      "year": 2014,
+      "total_population": 368907
+    },
+    "Kayseri": {
+      "year": 2014,
+      "total_population": 1322376
+    },
+    "Kırklareli": {
+      "year": 2014,
+      "total_population": 343723
+    },
+    "Kırşehir": {
+      "year": 2014,
+      "total_population": 222707
+    },
+    "Kocaeli": {
+      "year": 2014,
+      "total_population": 1722795
+    },
+    "Konya": {
+      "year": 2014,
+      "total_population": 2108808
+    },
+    "Kütahya": {
+      "year": 2014,
+      "total_population": 571554
+    },
+    "Malatya": {
+      "year": 2014,
+      "total_population": 769544
+    },
+    "Manisa": {
+      "year": 2014,
+      "total_population": 1367905
+    },
+    "Kahramanmaraş": {
+      "year": 2014,
+      "total_population": 1089038
+    },
+    "Mardin": {
+      "year": 2014,
+      "total_population": 788996
+    },
+    "Muğla": {
+      "year": 2014,
+      "total_population": 894509
+    },
+    "Muş": {
+      "year": 2014,
+      "total_population": 411216
+    },
+    "Nevşehir": {
+      "year": 2014,
+      "total_population": 286250
+    },
+    "Niğde": {
+      "year": 2014,
+      "total_population": 343898
+    },
+    "Ordu": {
+      "year": 2014,
+      "total_population": 724268
+    },
+    "Rize": {
+      "year": 2014,
+      "total_population": 329779
+    },
+    "Sakarya": {
+      "year": 2014,
+      "total_population": 932706
+    },
+    "Samsun": {
+      "year": 2014,
+      "total_population": 1269989
+    },
+    "Siirt": {
+      "year": 2014,
+      "total_population": 318366
+    },
+    "Sinop": {
+      "year": 2014,
+      "total_population": 204526
+    },
+    "Sivas": {
+      "year": 2014,
+      "total_population": 623116
+    },
+    "Tekirdağ": {
+      "year": 2014,
+      "total_population": 906732
+    },
+    "Tokat": {
+      "year": 2014,
+      "total_population": 597920
+    },
+    "Trabzon": {
+      "year": 2014,
+      "total_population": 766782
+    },
+    "Tunceli": {
+      "year": 2014,
+      "total_population": 86527
+    },
+    "Şanlıurfa": {
+      "year": 2014,
+      "total_population": 1845667
+    },
+    "Uşak": {
+      "year": 2014,
+      "total_population": 349459
+    },
+    "Van": {
+      "year": 2014,
+      "total_population": 1085542
+    },
+    "Yozgat": {
+      "year": 2014,
+      "total_population": 432560
+    },
+    "Zonguldak": {
+      "year": 2014,
+      "total_population": 598796
+    },
+    "Aksaray": {
+      "year": 2014,
+      "total_population": 384252
+    },
+    "Bayburt": {
+      "year": 2014,
+      "total_population": 80607
+    },
+    "Karaman": {
+      "year": 2014,
+      "total_population": 240362
+    },
+    "Kırıkkale": {
+      "year": 2014,
+      "total_population": 271092
+    },
+    "Batman": {
+      "year": 2014,
+      "total_population": 557593
+    },
+    "Şırnak": {
+      "year": 2014,
+      "total_population": 488966
+    },
+    "Bartın": {
+      "year": 2014,
+      "total_population": 189405
+    },
+    "Ardahan": {
+      "year": 2014,
+      "total_population": 100809
+    },
+    "Iğdır": {
+      "year": 2014,
+      "total_population": 192056
+    },
+    "Yalova": {
+      "year": 2014,
+      "total_population": 226514
+    },
+    "Karabük": {
+      "year": 2014,
+      "total_population": 231333
+    },
+    "Kilis": {
+      "year": 2014,
+      "total_population": 128781
+    },
+    "Osmaniye": {
+      "year": 2014,
+      "total_population": 506807
+    },
+    "Düzce": {
+      "year": 2014,
+      "total_population": 355549
+    }
+  },
+  "2013": {
+    "Adana": {
+      "year": 2013,
+      "total_population": 2149260
+    },
+    "Adıyaman": {
+      "year": 2013,
+      "total_population": 597184
+    },
+    "Afyonkarahisar": {
+      "year": 2013,
+      "total_population": 707123
+    },
+    "Ağrı": {
+      "year": 2013,
+      "total_population": 551177
+    },
+    "Amasya": {
+      "year": 2013,
+      "total_population": 321977
+    },
+    "Ankara": {
+      "year": 2013,
+      "total_population": 5045083
+    },
+    "Antalya": {
+      "year": 2013,
+      "total_population": 2158265
+    },
+    "Artvin": {
+      "year": 2013,
+      "total_population": 169334
+    },
+    "Aydın": {
+      "year": 2013,
+      "total_population": 1020957
+    },
+    "Balıkesir": {
+      "year": 2013,
+      "total_population": 1162761
+    },
+    "Bilecik": {
+      "year": 2013,
+      "total_population": 208888
+    },
+    "Bingöl": {
+      "year": 2013,
+      "total_population": 265514
+    },
+    "Bitlis": {
+      "year": 2013,
+      "total_population": 337156
+    },
+    "Bolu": {
+      "year": 2013,
+      "total_population": 283496
+    },
+    "Burdur": {
+      "year": 2013,
+      "total_population": 257267
+    },
+    "Bursa": {
+      "year": 2013,
+      "total_population": 2740970
+    },
+    "Çanakkale": {
+      "year": 2013,
+      "total_population": 502328
+    },
+    "Çankırı": {
+      "year": 2013,
+      "total_population": 190909
+    },
+    "Çorum": {
+      "year": 2013,
+      "total_population": 532080
+    },
+    "Denizli": {
+      "year": 2013,
+      "total_population": 963464
+    },
+    "Diyarbakır": {
+      "year": 2013,
+      "total_population": 1607437
+    },
+    "Edirne": {
+      "year": 2013,
+      "total_population": 398582
+    },
+    "Elazığ": {
+      "year": 2013,
+      "total_population": 568239
+    },
+    "Erzincan": {
+      "year": 2013,
+      "total_population": 219996
+    },
+    "Erzurum": {
+      "year": 2013,
+      "total_population": 766729
+    },
+    "Eskişehir": {
+      "year": 2013,
+      "total_population": 799724
+    },
+    "Gaziantep": {
+      "year": 2013,
+      "total_population": 1844438
+    },
+    "Giresun": {
+      "year": 2013,
+      "total_population": 425007
+    },
+    "Gümüşhane": {
+      "year": 2013,
+      "total_population": 141412
+    },
+    "Hakkari": {
+      "year": 2013,
+      "total_population": 273041
+    },
+    "Hatay": {
+      "year": 2013,
+      "total_population": 1503066
+    },
+    "Isparta": {
+      "year": 2013,
+      "total_population": 417774
+    },
+    "Mersin": {
+      "year": 2013,
+      "total_population": 1705774
+    },
+    "İstanbul": {
+      "year": 2013,
+      "total_population": 14160467
+    },
+    "İzmir": {
+      "year": 2013,
+      "total_population": 4061074
+    },
+    "Kars": {
+      "year": 2013,
+      "total_population": 300874
+    },
+    "Kastamonu": {
+      "year": 2013,
+      "total_population": 368093
+    },
+    "Kayseri": {
+      "year": 2013,
+      "total_population": 1295355
+    },
+    "Kırklareli": {
+      "year": 2013,
+      "total_population": 340559
+    },
+    "Kırşehir": {
+      "year": 2013,
+      "total_population": 223498
+    },
+    "Kocaeli": {
+      "year": 2013,
+      "total_population": 1676202
+    },
+    "Konya": {
+      "year": 2013,
+      "total_population": 2079225
+    },
+    "Kütahya": {
+      "year": 2013,
+      "total_population": 572059
+    },
+    "Malatya": {
+      "year": 2013,
+      "total_population": 762538
+    },
+    "Manisa": {
+      "year": 2013,
+      "total_population": 1359463
+    },
+    "Kahramanmaraş": {
+      "year": 2013,
+      "total_population": 1075706
+    },
+    "Mardin": {
+      "year": 2013,
+      "total_population": 779738
+    },
+    "Muğla": {
+      "year": 2013,
+      "total_population": 866665
+    },
+    "Muş": {
+      "year": 2013,
+      "total_population": 412553
+    },
+    "Nevşehir": {
+      "year": 2013,
+      "total_population": 285460
+    },
+    "Niğde": {
+      "year": 2013,
+      "total_population": 343658
+    },
+    "Ordu": {
+      "year": 2013,
+      "total_population": 731452
+    },
+    "Rize": {
+      "year": 2013,
+      "total_population": 328205
+    },
+    "Sakarya": {
+      "year": 2013,
+      "total_population": 917373
+    },
+    "Samsun": {
+      "year": 2013,
+      "total_population": 1261810
+    },
+    "Siirt": {
+      "year": 2013,
+      "total_population": 314153
+    },
+    "Sinop": {
+      "year": 2013,
+      "total_population": 204568
+    },
+    "Sivas": {
+      "year": 2013,
+      "total_population": 623824
+    },
+    "Tekirdağ": {
+      "year": 2013,
+      "total_population": 874475
+    },
+    "Tokat": {
+      "year": 2013,
+      "total_population": 598708
+    },
+    "Trabzon": {
+      "year": 2013,
+      "total_population": 758237
+    },
+    "Tunceli": {
+      "year": 2013,
+      "total_population": 85428
+    },
+    "Şanlıurfa": {
+      "year": 2013,
+      "total_population": 1801980
+    },
+    "Uşak": {
+      "year": 2013,
+      "total_population": 346508
+    },
+    "Van": {
+      "year": 2013,
+      "total_population": 1070113
+    },
+    "Yozgat": {
+      "year": 2013,
+      "total_population": 444211
+    },
+    "Zonguldak": {
+      "year": 2013,
+      "total_population": 601567
+    },
+    "Aksaray": {
+      "year": 2013,
+      "total_population": 382806
+    },
+    "Bayburt": {
+      "year": 2013,
+      "total_population": 75620
+    },
+    "Karaman": {
+      "year": 2013,
+      "total_population": 237939
+    },
+    "Kırıkkale": {
+      "year": 2013,
+      "total_population": 274658
+    },
+    "Batman": {
+      "year": 2013,
+      "total_population": 547581
+    },
+    "Şırnak": {
+      "year": 2013,
+      "total_population": 475255
+    },
+    "Bartın": {
+      "year": 2013,
+      "total_population": 189139
+    },
+    "Ardahan": {
+      "year": 2013,
+      "total_population": 102782
+    },
+    "Iğdır": {
+      "year": 2013,
+      "total_population": 190424
+    },
+    "Yalova": {
+      "year": 2013,
+      "total_population": 220122
+    },
+    "Karabük": {
+      "year": 2013,
+      "total_population": 230251
+    },
+    "Kilis": {
+      "year": 2013,
+      "total_population": 128586
+    },
+    "Osmaniye": {
+      "year": 2013,
+      "total_population": 498981
+    },
+    "Düzce": {
+      "year": 2013,
+      "total_population": 351509
+    }
+  },
+  "2012": {
+    "Adana": {
+      "year": 2012,
+      "total_population": 2125635
+    },
+    "Adıyaman": {
+      "year": 2012,
+      "total_population": 595261
+    },
+    "Afyonkarahisar": {
+      "year": 2012,
+      "total_population": 703948
+    },
+    "Ağrı": {
+      "year": 2012,
+      "total_population": 552404
+    },
+    "Amasya": {
+      "year": 2012,
+      "total_population": 322283
+    },
+    "Ankara": {
+      "year": 2012,
+      "total_population": 4965542
+    },
+    "Antalya": {
+      "year": 2012,
+      "total_population": 2092537
+    },
+    "Artvin": {
+      "year": 2012,
+      "total_population": 167082
+    },
+    "Aydın": {
+      "year": 2012,
+      "total_population": 1006541
+    },
+    "Balıkesir": {
+      "year": 2012,
+      "total_population": 1160731
+    },
+    "Bilecik": {
+      "year": 2012,
+      "total_population": 204116
+    },
+    "Bingöl": {
+      "year": 2012,
+      "total_population": 262507
+    },
+    "Bitlis": {
+      "year": 2012,
+      "total_population": 337253
+    },
+    "Bolu": {
+      "year": 2012,
+      "total_population": 281080
+    },
+    "Burdur": {
+      "year": 2012,
+      "total_population": 254341
+    },
+    "Bursa": {
+      "year": 2012,
+      "total_population": 2688171
+    },
+    "Çanakkale": {
+      "year": 2012,
+      "total_population": 493691
+    },
+    "Çankırı": {
+      "year": 2012,
+      "total_population": 184406
+    },
+    "Çorum": {
+      "year": 2012,
+      "total_population": 529975
+    },
+    "Denizli": {
+      "year": 2012,
+      "total_population": 950557
+    },
+    "Diyarbakır": {
+      "year": 2012,
+      "total_population": 1592167
+    },
+    "Edirne": {
+      "year": 2012,
+      "total_population": 399708
+    },
+    "Elazığ": {
+      "year": 2012,
+      "total_population": 562703
+    },
+    "Erzincan": {
+      "year": 2012,
+      "total_population": 217886
+    },
+    "Erzurum": {
+      "year": 2012,
+      "total_population": 778195
+    },
+    "Eskişehir": {
+      "year": 2012,
+      "total_population": 789750
+    },
+    "Gaziantep": {
+      "year": 2012,
+      "total_population": 1799558
+    },
+    "Giresun": {
+      "year": 2012,
+      "total_population": 419555
+    },
+    "Gümüşhane": {
+      "year": 2012,
+      "total_population": 135216
+    },
+    "Hakkari": {
+      "year": 2012,
+      "total_population": 279982
+    },
+    "Hatay": {
+      "year": 2012,
+      "total_population": 1483674
+    },
+    "Isparta": {
+      "year": 2012,
+      "total_population": 416663
+    },
+    "Mersin": {
+      "year": 2012,
+      "total_population": 1682848
+    },
+    "İstanbul": {
+      "year": 2012,
+      "total_population": 13854740
+    },
+    "İzmir": {
+      "year": 2012,
+      "total_population": 4005459
+    },
+    "Kars": {
+      "year": 2012,
+      "total_population": 304821
+    },
+    "Kastamonu": {
+      "year": 2012,
+      "total_population": 359808
+    },
+    "Kayseri": {
+      "year": 2012,
+      "total_population": 1274968
+    },
+    "Kırklareli": {
+      "year": 2012,
+      "total_population": 341218
+    },
+    "Kırşehir": {
+      "year": 2012,
+      "total_population": 221209
+    },
+    "Kocaeli": {
+      "year": 2012,
+      "total_population": 1634691
+    },
+    "Konya": {
+      "year": 2012,
+      "total_population": 2052281
+    },
+    "Kütahya": {
+      "year": 2012,
+      "total_population": 573421
+    },
+    "Malatya": {
+      "year": 2012,
+      "total_population": 762366
+    },
+    "Manisa": {
+      "year": 2012,
+      "total_population": 1346162
+    },
+    "Kahramanmaraş": {
+      "year": 2012,
+      "total_population": 1063174
+    },
+    "Mardin": {
+      "year": 2012,
+      "total_population": 773026
+    },
+    "Muğla": {
+      "year": 2012,
+      "total_population": 851145
+    },
+    "Muş": {
+      "year": 2012,
+      "total_population": 413260
+    },
+    "Nevşehir": {
+      "year": 2012,
+      "total_population": 285190
+    },
+    "Niğde": {
+      "year": 2012,
+      "total_population": 340270
+    },
+    "Ordu": {
+      "year": 2012,
+      "total_population": 741371
+    },
+    "Rize": {
+      "year": 2012,
+      "total_population": 324152
+    },
+    "Sakarya": {
+      "year": 2012,
+      "total_population": 902267
+    },
+    "Samsun": {
+      "year": 2012,
+      "total_population": 1251722
+    },
+    "Siirt": {
+      "year": 2012,
+      "total_population": 310879
+    },
+    "Sinop": {
+      "year": 2012,
+      "total_population": 201311
+    },
+    "Sivas": {
+      "year": 2012,
+      "total_population": 623535
+    },
+    "Tekirdağ": {
+      "year": 2012,
+      "total_population": 852321
+    },
+    "Tokat": {
+      "year": 2012,
+      "total_population": 613990
+    },
+    "Trabzon": {
+      "year": 2012,
+      "total_population": 757898
+    },
+    "Tunceli": {
+      "year": 2012,
+      "total_population": 86276
+    },
+    "Şanlıurfa": {
+      "year": 2012,
+      "total_population": 1762075
+    },
+    "Uşak": {
+      "year": 2012,
+      "total_population": 342269
+    },
+    "Van": {
+      "year": 2012,
+      "total_population": 1051975
+    },
+    "Yozgat": {
+      "year": 2012,
+      "total_population": 453211
+    },
+    "Zonguldak": {
+      "year": 2012,
+      "total_population": 606527
+    },
+    "Aksaray": {
+      "year": 2012,
+      "total_population": 379915
+    },
+    "Bayburt": {
+      "year": 2012,
+      "total_population": 75797
+    },
+    "Karaman": {
+      "year": 2012,
+      "total_population": 235424
+    },
+    "Kırıkkale": {
+      "year": 2012,
+      "total_population": 274727
+    },
+    "Batman": {
+      "year": 2012,
+      "total_population": 534205
+    },
+    "Şırnak": {
+      "year": 2012,
+      "total_population": 466982
+    },
+    "Bartın": {
+      "year": 2012,
+      "total_population": 188436
+    },
+    "Ardahan": {
+      "year": 2012,
+      "total_population": 106643
+    },
+    "Iğdır": {
+      "year": 2012,
+      "total_population": 190409
+    },
+    "Yalova": {
+      "year": 2012,
+      "total_population": 211799
+    },
+    "Karabük": {
+      "year": 2012,
+      "total_population": 225145
+    },
+    "Kilis": {
+      "year": 2012,
+      "total_population": 124320
+    },
+    "Osmaniye": {
+      "year": 2012,
+      "total_population": 492135
+    },
+    "Düzce": {
+      "year": 2012,
+      "total_population": 346493
+    }
+  },
+  "2011": {
+    "Adana": {
+      "year": 2011,
+      "total_population": 2108805
+    },
+    "Adıyaman": {
+      "year": 2011,
+      "total_population": 593931
+    },
+    "Afyonkarahisar": {
+      "year": 2011,
+      "total_population": 698626
+    },
+    "Ağrı": {
+      "year": 2011,
+      "total_population": 555479
+    },
+    "Amasya": {
+      "year": 2011,
+      "total_population": 323079
+    },
+    "Ankara": {
+      "year": 2011,
+      "total_population": 4890893
+    },
+    "Antalya": {
+      "year": 2011,
+      "total_population": 2043482
+    },
+    "Artvin": {
+      "year": 2011,
+      "total_population": 166394
+    },
+    "Aydın": {
+      "year": 2011,
+      "total_population": 999163
+    },
+    "Balıkesir": {
+      "year": 2011,
+      "total_population": 1154314
+    },
+    "Bilecik": {
+      "year": 2011,
+      "total_population": 203849
+    },
+    "Bingöl": {
+      "year": 2011,
+      "total_population": 262263
+    },
+    "Bitlis": {
+      "year": 2011,
+      "total_population": 336624
+    },
+    "Bolu": {
+      "year": 2011,
+      "total_population": 276506
+    },
+    "Burdur": {
+      "year": 2011,
+      "total_population": 250527
+    },
+    "Bursa": {
+      "year": 2011,
+      "total_population": 2652126
+    },
+    "Çanakkale": {
+      "year": 2011,
+      "total_population": 486445
+    },
+    "Çankırı": {
+      "year": 2011,
+      "total_population": 177211
+    },
+    "Çorum": {
+      "year": 2011,
+      "total_population": 534578
+    },
+    "Denizli": {
+      "year": 2011,
+      "total_population": 942278
+    },
+    "Diyarbakır": {
+      "year": 2011,
+      "total_population": 1570943
+    },
+    "Edirne": {
+      "year": 2011,
+      "total_population": 399316
+    },
+    "Elazığ": {
+      "year": 2011,
+      "total_population": 558556
+    },
+    "Erzincan": {
+      "year": 2011,
+      "total_population": 215277
+    },
+    "Erzurum": {
+      "year": 2011,
+      "total_population": 780847
+    },
+    "Eskişehir": {
+      "year": 2011,
+      "total_population": 781247
+    },
+    "Gaziantep": {
+      "year": 2011,
+      "total_population": 1753596
+    },
+    "Giresun": {
+      "year": 2011,
+      "total_population": 419498
+    },
+    "Gümüşhane": {
+      "year": 2011,
+      "total_population": 132374
+    },
+    "Hakkari": {
+      "year": 2011,
+      "total_population": 272165
+    },
+    "Hatay": {
+      "year": 2011,
+      "total_population": 1474223
+    },
+    "Isparta": {
+      "year": 2011,
+      "total_population": 411245
+    },
+    "Mersin": {
+      "year": 2011,
+      "total_population": 1667939
+    },
+    "İstanbul": {
+      "year": 2011,
+      "total_population": 13624240
+    },
+    "İzmir": {
+      "year": 2011,
+      "total_population": 3965232
+    },
+    "Kars": {
+      "year": 2011,
+      "total_population": 305755
+    },
+    "Kastamonu": {
+      "year": 2011,
+      "total_population": 359759
+    },
+    "Kayseri": {
+      "year": 2011,
+      "total_population": 1255349
+    },
+    "Kırklareli": {
+      "year": 2011,
+      "total_population": 340199
+    },
+    "Kırşehir": {
+      "year": 2011,
+      "total_population": 221015
+    },
+    "Kocaeli": {
+      "year": 2011,
+      "total_population": 1601720
+    },
+    "Konya": {
+      "year": 2011,
+      "total_population": 2038555
+    },
+    "Kütahya": {
+      "year": 2011,
+      "total_population": 564264
+    },
+    "Malatya": {
+      "year": 2011,
+      "total_population": 757930
+    },
+    "Manisa": {
+      "year": 2011,
+      "total_population": 1340074
+    },
+    "Kahramanmaraş": {
+      "year": 2011,
+      "total_population": 1054210
+    },
+    "Mardin": {
+      "year": 2011,
+      "total_population": 764033
+    },
+    "Muğla": {
+      "year": 2011,
+      "total_population": 838324
+    },
+    "Muş": {
+      "year": 2011,
+      "total_population": 414706
+    },
+    "Nevşehir": {
+      "year": 2011,
+      "total_population": 283247
+    },
+    "Niğde": {
+      "year": 2011,
+      "total_population": 337553
+    },
+    "Ordu": {
+      "year": 2011,
+      "total_population": 714390
+    },
+    "Rize": {
+      "year": 2011,
+      "total_population": 323012
+    },
+    "Sakarya": {
+      "year": 2011,
+      "total_population": 888556
+    },
+    "Samsun": {
+      "year": 2011,
+      "total_population": 1251729
+    },
+    "Siirt": {
+      "year": 2011,
+      "total_population": 310468
+    },
+    "Sinop": {
+      "year": 2011,
+      "total_population": 203027
+    },
+    "Sivas": {
+      "year": 2011,
+      "total_population": 627056
+    },
+    "Tekirdağ": {
+      "year": 2011,
+      "total_population": 829873
+    },
+    "Tokat": {
+      "year": 2011,
+      "total_population": 608299
+    },
+    "Trabzon": {
+      "year": 2011,
+      "total_population": 757353
+    },
+    "Tunceli": {
+      "year": 2011,
+      "total_population": 85062
+    },
+    "Şanlıurfa": {
+      "year": 2011,
+      "total_population": 1716254
+    },
+    "Uşak": {
+      "year": 2011,
+      "total_population": 339731
+    },
+    "Van": {
+      "year": 2011,
+      "total_population": 1022532
+    },
+    "Yozgat": {
+      "year": 2011,
+      "total_population": 465696
+    },
+    "Zonguldak": {
+      "year": 2011,
+      "total_population": 612406
+    },
+    "Aksaray": {
+      "year": 2011,
+      "total_population": 378823
+    },
+    "Bayburt": {
+      "year": 2011,
+      "total_population": 76724
+    },
+    "Karaman": {
+      "year": 2011,
+      "total_population": 234005
+    },
+    "Kırıkkale": {
+      "year": 2011,
+      "total_population": 274992
+    },
+    "Batman": {
+      "year": 2011,
+      "total_population": 524499
+    },
+    "Şırnak": {
+      "year": 2011,
+      "total_population": 457997
+    },
+    "Bartın": {
+      "year": 2011,
+      "total_population": 187291
+    },
+    "Ardahan": {
+      "year": 2011,
+      "total_population": 107455
+    },
+    "Iğdır": {
+      "year": 2011,
+      "total_population": 188857
+    },
+    "Yalova": {
+      "year": 2011,
+      "total_population": 206535
+    },
+    "Karabük": {
+      "year": 2011,
+      "total_population": 219728
+    },
+    "Kilis": {
+      "year": 2011,
+      "total_population": 124452
+    },
+    "Osmaniye": {
+      "year": 2011,
+      "total_population": 485357
+    },
+    "Düzce": {
+      "year": 2011,
+      "total_population": 342146
+    }
+  },
+  "2010": {
+    "Adana": {
+      "year": 2010,
+      "total_population": 2085225
+    },
+    "Adıyaman": {
+      "year": 2010,
+      "total_population": 590935
+    },
+    "Afyonkarahisar": {
+      "year": 2010,
+      "total_population": 697559
+    },
+    "Ağrı": {
+      "year": 2010,
+      "total_population": 542022
+    },
+    "Amasya": {
+      "year": 2010,
+      "total_population": 334786
+    },
+    "Ankara": {
+      "year": 2010,
+      "total_population": 4771716
+    },
+    "Antalya": {
+      "year": 2010,
+      "total_population": 1978333
+    },
+    "Artvin": {
+      "year": 2010,
+      "total_population": 164759
+    },
+    "Aydın": {
+      "year": 2010,
+      "total_population": 989862
+    },
+    "Balıkesir": {
+      "year": 2010,
+      "total_population": 1152323
+    },
+    "Bilecik": {
+      "year": 2010,
+      "total_population": 225381
+    },
+    "Bingöl": {
+      "year": 2010,
+      "total_population": 255170
+    },
+    "Bitlis": {
+      "year": 2010,
+      "total_population": 328767
+    },
+    "Bolu": {
+      "year": 2010,
+      "total_population": 271208
+    },
+    "Burdur": {
+      "year": 2010,
+      "total_population": 258868
+    },
+    "Bursa": {
+      "year": 2010,
+      "total_population": 2605495
+    },
+    "Çanakkale": {
+      "year": 2010,
+      "total_population": 490397
+    },
+    "Çankırı": {
+      "year": 2010,
+      "total_population": 179067
+    },
+    "Çorum": {
+      "year": 2010,
+      "total_population": 535405
+    },
+    "Denizli": {
+      "year": 2010,
+      "total_population": 931823
+    },
+    "Diyarbakır": {
+      "year": 2010,
+      "total_population": 1528958
+    },
+    "Edirne": {
+      "year": 2010,
+      "total_population": 390428
+    },
+    "Elazığ": {
+      "year": 2010,
+      "total_population": 552646
+    },
+    "Erzincan": {
+      "year": 2010,
+      "total_population": 224949
+    },
+    "Erzurum": {
+      "year": 2010,
+      "total_population": 769085
+    },
+    "Eskişehir": {
+      "year": 2010,
+      "total_population": 764584
+    },
+    "Gaziantep": {
+      "year": 2010,
+      "total_population": 1700763
+    },
+    "Giresun": {
+      "year": 2010,
+      "total_population": 419256
+    },
+    "Gümüşhane": {
+      "year": 2010,
+      "total_population": 129618
+    },
+    "Hakkari": {
+      "year": 2010,
+      "total_population": 251302
+    },
+    "Hatay": {
+      "year": 2010,
+      "total_population": 1480571
+    },
+    "Isparta": {
+      "year": 2010,
+      "total_population": 448298
+    },
+    "Mersin": {
+      "year": 2010,
+      "total_population": 1647899
+    },
+    "İstanbul": {
+      "year": 2010,
+      "total_population": 13255685
+    },
+    "İzmir": {
+      "year": 2010,
+      "total_population": 3948848
+    },
+    "Kars": {
+      "year": 2010,
+      "total_population": 301766
+    },
+    "Kastamonu": {
+      "year": 2010,
+      "total_population": 361222
+    },
+    "Kayseri": {
+      "year": 2010,
+      "total_population": 1234651
+    },
+    "Kırklareli": {
+      "year": 2010,
+      "total_population": 332791
+    },
+    "Kırşehir": {
+      "year": 2010,
+      "total_population": 221876
+    },
+    "Kocaeli": {
+      "year": 2010,
+      "total_population": 1560138
+    },
+    "Konya": {
+      "year": 2010,
+      "total_population": 2013845
+    },
+    "Kütahya": {
+      "year": 2010,
+      "total_population": 590496
+    },
+    "Malatya": {
+      "year": 2010,
+      "total_population": 740643
+    },
+    "Manisa": {
+      "year": 2010,
+      "total_population": 1379484
+    },
+    "Kahramanmaraş": {
+      "year": 2010,
+      "total_population": 1044816
+    },
+    "Mardin": {
+      "year": 2010,
+      "total_population": 744606
+    },
+    "Muğla": {
+      "year": 2010,
+      "total_population": 817503
+    },
+    "Muş": {
+      "year": 2010,
+      "total_population": 406886
+    },
+    "Nevşehir": {
+      "year": 2010,
+      "total_population": 282337
+    },
+    "Niğde": {
+      "year": 2010,
+      "total_population": 337931
+    },
+    "Ordu": {
+      "year": 2010,
+      "total_population": 719183
+    },
+    "Rize": {
+      "year": 2010,
+      "total_population": 319637
+    },
+    "Sakarya": {
+      "year": 2010,
+      "total_population": 872872
+    },
+    "Samsun": {
+      "year": 2010,
+      "total_population": 1252693
+    },
+    "Siirt": {
+      "year": 2010,
+      "total_population": 300695
+    },
+    "Sinop": {
+      "year": 2010,
+      "total_population": 202740
+    },
+    "Sivas": {
+      "year": 2010,
+      "total_population": 642224
+    },
+    "Tekirdağ": {
+      "year": 2010,
+      "total_population": 798109
+    },
+    "Tokat": {
+      "year": 2010,
+      "total_population": 617802
+    },
+    "Trabzon": {
+      "year": 2010,
+      "total_population": 763714
+    },
+    "Tunceli": {
+      "year": 2010,
+      "total_population": 76699
+    },
+    "Şanlıurfa": {
+      "year": 2010,
+      "total_population": 1663371
+    },
+    "Uşak": {
+      "year": 2010,
+      "total_population": 338019
+    },
+    "Van": {
+      "year": 2010,
+      "total_population": 1035418
+    },
+    "Yozgat": {
+      "year": 2010,
+      "total_population": 476096
+    },
+    "Zonguldak": {
+      "year": 2010,
+      "total_population": 619703
+    },
+    "Aksaray": {
+      "year": 2010,
+      "total_population": 377505
+    },
+    "Bayburt": {
+      "year": 2010,
+      "total_population": 74412
+    },
+    "Karaman": {
+      "year": 2010,
+      "total_population": 232633
+    },
+    "Kırıkkale": {
+      "year": 2010,
+      "total_population": 276647
+    },
+    "Batman": {
+      "year": 2010,
+      "total_population": 510200
+    },
+    "Şırnak": {
+      "year": 2010,
+      "total_population": 430109
+    },
+    "Bartın": {
+      "year": 2010,
+      "total_population": 187758
+    },
+    "Ardahan": {
+      "year": 2010,
+      "total_population": 105454
+    },
+    "Iğdır": {
+      "year": 2010,
+      "total_population": 184418
+    },
+    "Yalova": {
+      "year": 2010,
+      "total_population": 203741
+    },
+    "Karabük": {
+      "year": 2010,
+      "total_population": 227610
+    },
+    "Kilis": {
+      "year": 2010,
+      "total_population": 123135
+    },
+    "Osmaniye": {
+      "year": 2010,
+      "total_population": 479221
+    },
+    "Düzce": {
+      "year": 2010,
+      "total_population": 338188
+    }
+  },
+  "2009": {
+    "Adana": {
+      "year": 2009,
+      "total_population": 2062226
+    },
+    "Adıyaman": {
+      "year": 2009,
+      "total_population": 588475
+    },
+    "Afyonkarahisar": {
+      "year": 2009,
+      "total_population": 701326
+    },
+    "Ağrı": {
+      "year": 2009,
+      "total_population": 537665
+    },
+    "Amasya": {
+      "year": 2009,
+      "total_population": 324268
+    },
+    "Ankara": {
+      "year": 2009,
+      "total_population": 4650802
+    },
+    "Antalya": {
+      "year": 2009,
+      "total_population": 1919729
+    },
+    "Artvin": {
+      "year": 2009,
+      "total_population": 165580
+    },
+    "Aydın": {
+      "year": 2009,
+      "total_population": 979155
+    },
+    "Balıkesir": {
+      "year": 2009,
+      "total_population": 1140085
+    },
+    "Bilecik": {
+      "year": 2009,
+      "total_population": 202061
+    },
+    "Bingöl": {
+      "year": 2009,
+      "total_population": 255745
+    },
+    "Bitlis": {
+      "year": 2009,
+      "total_population": 328489
+    },
+    "Bolu": {
+      "year": 2009,
+      "total_population": 271545
+    },
+    "Burdur": {
+      "year": 2009,
+      "total_population": 251550
+    },
+    "Bursa": {
+      "year": 2009,
+      "total_population": 2550645
+    },
+    "Çanakkale": {
+      "year": 2009,
+      "total_population": 477735
+    },
+    "Çankırı": {
+      "year": 2009,
+      "total_population": 185019
+    },
+    "Çorum": {
+      "year": 2009,
+      "total_population": 540704
+    },
+    "Denizli": {
+      "year": 2009,
+      "total_population": 926362
+    },
+    "Diyarbakır": {
+      "year": 2009,
+      "total_population": 1515011
+    },
+    "Edirne": {
+      "year": 2009,
+      "total_population": 395463
+    },
+    "Elazığ": {
+      "year": 2009,
+      "total_population": 550667
+    },
+    "Erzincan": {
+      "year": 2009,
+      "total_population": 213288
+    },
+    "Erzurum": {
+      "year": 2009,
+      "total_population": 774207
+    },
+    "Eskişehir": {
+      "year": 2009,
+      "total_population": 755427
+    },
+    "Gaziantep": {
+      "year": 2009,
+      "total_population": 1653670
+    },
+    "Giresun": {
+      "year": 2009,
+      "total_population": 421860
+    },
+    "Gümüşhane": {
+      "year": 2009,
+      "total_population": 130976
+    },
+    "Hakkari": {
+      "year": 2009,
+      "total_population": 256761
+    },
+    "Hatay": {
+      "year": 2009,
+      "total_population": 1448418
+    },
+    "Isparta": {
+      "year": 2009,
+      "total_population": 420796
+    },
+    "Mersin": {
+      "year": 2009,
+      "total_population": 1640888
+    },
+    "İstanbul": {
+      "year": 2009,
+      "total_population": 12915158
+    },
+    "İzmir": {
+      "year": 2009,
+      "total_population": 3868308
+    },
+    "Kars": {
+      "year": 2009,
+      "total_population": 306536
+    },
+    "Kastamonu": {
+      "year": 2009,
+      "total_population": 359823
+    },
+    "Kayseri": {
+      "year": 2009,
+      "total_population": 1205872
+    },
+    "Kırklareli": {
+      "year": 2009,
+      "total_population": 333179
+    },
+    "Kırşehir": {
+      "year": 2009,
+      "total_population": 223102
+    },
+    "Kocaeli": {
+      "year": 2009,
+      "total_population": 1522408
+    },
+    "Konya": {
+      "year": 2009,
+      "total_population": 1992675
+    },
+    "Kütahya": {
+      "year": 2009,
+      "total_population": 571804
+    },
+    "Malatya": {
+      "year": 2009,
+      "total_population": 736884
+    },
+    "Manisa": {
+      "year": 2009,
+      "total_population": 1331957
+    },
+    "Kahramanmaraş": {
+      "year": 2009,
+      "total_population": 1037491
+    },
+    "Mardin": {
+      "year": 2009,
+      "total_population": 737852
+    },
+    "Muğla": {
+      "year": 2009,
+      "total_population": 802381
+    },
+    "Muş": {
+      "year": 2009,
+      "total_population": 404484
+    },
+    "Nevşehir": {
+      "year": 2009,
+      "total_population": 284025
+    },
+    "Niğde": {
+      "year": 2009,
+      "total_population": 339921
+    },
+    "Ordu": {
+      "year": 2009,
+      "total_population": 723507
+    },
+    "Rize": {
+      "year": 2009,
+      "total_population": 319569
+    },
+    "Sakarya": {
+      "year": 2009,
+      "total_population": 861570
+    },
+    "Samsun": {
+      "year": 2009,
+      "total_population": 1250076
+    },
+    "Siirt": {
+      "year": 2009,
+      "total_population": 303622
+    },
+    "Sinop": {
+      "year": 2009,
+      "total_population": 201134
+    },
+    "Sivas": {
+      "year": 2009,
+      "total_population": 633347
+    },
+    "Tekirdağ": {
+      "year": 2009,
+      "total_population": 783310
+    },
+    "Tokat": {
+      "year": 2009,
+      "total_population": 624439
+    },
+    "Trabzon": {
+      "year": 2009,
+      "total_population": 765127
+    },
+    "Tunceli": {
+      "year": 2009,
+      "total_population": 83061
+    },
+    "Şanlıurfa": {
+      "year": 2009,
+      "total_population": 1613737
+    },
+    "Uşak": {
+      "year": 2009,
+      "total_population": 335860
+    },
+    "Van": {
+      "year": 2009,
+      "total_population": 1022310
+    },
+    "Yozgat": {
+      "year": 2009,
+      "total_population": 487365
+    },
+    "Zonguldak": {
+      "year": 2009,
+      "total_population": 619812
+    },
+    "Aksaray": {
+      "year": 2009,
+      "total_population": 376907
+    },
+    "Bayburt": {
+      "year": 2009,
+      "total_population": 74710
+    },
+    "Karaman": {
+      "year": 2009,
+      "total_population": 231872
+    },
+    "Kırıkkale": {
+      "year": 2009,
+      "total_population": 280834
+    },
+    "Batman": {
+      "year": 2009,
+      "total_population": 497998
+    },
+    "Şırnak": {
+      "year": 2009,
+      "total_population": 430424
+    },
+    "Bartın": {
+      "year": 2009,
+      "total_population": 188449
+    },
+    "Ardahan": {
+      "year": 2009,
+      "total_population": 108169
+    },
+    "Iğdır": {
+      "year": 2009,
+      "total_population": 183486
+    },
+    "Yalova": {
+      "year": 2009,
+      "total_population": 202531
+    },
+    "Karabük": {
+      "year": 2009,
+      "total_population": 218564
+    },
+    "Kilis": {
+      "year": 2009,
+      "total_population": 122104
+    },
+    "Osmaniye": {
+      "year": 2009,
+      "total_population": 471804
+    },
+    "Düzce": {
+      "year": 2009,
+      "total_population": 335156
+    }
+  },
+  "2008": {
+    "Adana": {
+      "year": 2008,
+      "total_population": 2026319
+    },
+    "Adıyaman": {
+      "year": 2008,
+      "total_population": 585067
+    },
+    "Afyonkarahisar": {
+      "year": 2008,
+      "total_population": 697365
+    },
+    "Ağrı": {
+      "year": 2008,
+      "total_population": 532180
+    },
+    "Amasya": {
+      "year": 2008,
+      "total_population": 323675
+    },
+    "Ankara": {
+      "year": 2008,
+      "total_population": 4548939
+    },
+    "Antalya": {
+      "year": 2008,
+      "total_population": 1859275
+    },
+    "Artvin": {
+      "year": 2008,
+      "total_population": 166584
+    },
+    "Aydın": {
+      "year": 2008,
+      "total_population": 965500
+    },
+    "Balıkesir": {
+      "year": 2008,
+      "total_population": 1130276
+    },
+    "Bilecik": {
+      "year": 2008,
+      "total_population": 193169
+    },
+    "Bingöl": {
+      "year": 2008,
+      "total_population": 256091
+    },
+    "Bitlis": {
+      "year": 2008,
+      "total_population": 326897
+    },
+    "Bolu": {
+      "year": 2008,
+      "total_population": 268882
+    },
+    "Burdur": {
+      "year": 2008,
+      "total_population": 247437
+    },
+    "Bursa": {
+      "year": 2008,
+      "total_population": 2507963
+    },
+    "Çanakkale": {
+      "year": 2008,
+      "total_population": 474791
+    },
+    "Çankırı": {
+      "year": 2008,
+      "total_population": 176093
+    },
+    "Çorum": {
+      "year": 2008,
+      "total_population": 545444
+    },
+    "Denizli": {
+      "year": 2008,
+      "total_population": 917836
+    },
+    "Diyarbakır": {
+      "year": 2008,
+      "total_population": 1492828
+    },
+    "Edirne": {
+      "year": 2008,
+      "total_population": 394644
+    },
+    "Elazığ": {
+      "year": 2008,
+      "total_population": 547562
+    },
+    "Erzincan": {
+      "year": 2008,
+      "total_population": 210645
+    },
+    "Erzurum": {
+      "year": 2008,
+      "total_population": 774967
+    },
+    "Eskişehir": {
+      "year": 2008,
+      "total_population": 741739
+    },
+    "Gaziantep": {
+      "year": 2008,
+      "total_population": 1612223
+    },
+    "Giresun": {
+      "year": 2008,
+      "total_population": 421766
+    },
+    "Gümüşhane": {
+      "year": 2008,
+      "total_population": 131367
+    },
+    "Hakkari": {
+      "year": 2008,
+      "total_population": 258590
+    },
+    "Hatay": {
+      "year": 2008,
+      "total_population": 1413287
+    },
+    "Isparta": {
+      "year": 2008,
+      "total_population": 407463
+    },
+    "Mersin": {
+      "year": 2008,
+      "total_population": 1602908
+    },
+    "İstanbul": {
+      "year": 2008,
+      "total_population": 12697164
+    },
+    "İzmir": {
+      "year": 2008,
+      "total_population": 3795978
+    },
+    "Kars": {
+      "year": 2008,
+      "total_population": 312128
+    },
+    "Kastamonu": {
+      "year": 2008,
+      "total_population": 360424
+    },
+    "Kayseri": {
+      "year": 2008,
+      "total_population": 1184386
+    },
+    "Kırklareli": {
+      "year": 2008,
+      "total_population": 336942
+    },
+    "Kırşehir": {
+      "year": 2008,
+      "total_population": 222735
+    },
+    "Kocaeli": {
+      "year": 2008,
+      "total_population": 1490358
+    },
+    "Konya": {
+      "year": 2008,
+      "total_population": 1969868
+    },
+    "Kütahya": {
+      "year": 2008,
+      "total_population": 565884
+    },
+    "Malatya": {
+      "year": 2008,
+      "total_population": 733789
+    },
+    "Manisa": {
+      "year": 2008,
+      "total_population": 1316750
+    },
+    "Kahramanmaraş": {
+      "year": 2008,
+      "total_population": 1029298
+    },
+    "Mardin": {
+      "year": 2008,
+      "total_population": 750697
+    },
+    "Muğla": {
+      "year": 2008,
+      "total_population": 791424
+    },
+    "Muş": {
+      "year": 2008,
+      "total_population": 404309
+    },
+    "Nevşehir": {
+      "year": 2008,
+      "total_population": 281699
+    },
+    "Niğde": {
+      "year": 2008,
+      "total_population": 338447
+    },
+    "Ordu": {
+      "year": 2008,
+      "total_population": 719278
+    },
+    "Rize": {
+      "year": 2008,
+      "total_population": 319410
+    },
+    "Sakarya": {
+      "year": 2008,
+      "total_population": 851292
+    },
+    "Samsun": {
+      "year": 2008,
+      "total_population": 1233677
+    },
+    "Siirt": {
+      "year": 2008,
+      "total_population": 299819
+    },
+    "Sinop": {
+      "year": 2008,
+      "total_population": 200791
+    },
+    "Sivas": {
+      "year": 2008,
+      "total_population": 631112
+    },
+    "Tekirdağ": {
+      "year": 2008,
+      "total_population": 770772
+    },
+    "Tokat": {
+      "year": 2008,
+      "total_population": 617158
+    },
+    "Trabzon": {
+      "year": 2008,
+      "total_population": 748982
+    },
+    "Tunceli": {
+      "year": 2008,
+      "total_population": 86449
+    },
+    "Şanlıurfa": {
+      "year": 2008,
+      "total_population": 1574224
+    },
+    "Uşak": {
+      "year": 2008,
+      "total_population": 334111
+    },
+    "Van": {
+      "year": 2008,
+      "total_population": 1004369
+    },
+    "Yozgat": {
+      "year": 2008,
+      "total_population": 484206
+    },
+    "Zonguldak": {
+      "year": 2008,
+      "total_population": 619151
+    },
+    "Aksaray": {
+      "year": 2008,
+      "total_population": 370598
+    },
+    "Bayburt": {
+      "year": 2008,
+      "total_population": 75675
+    },
+    "Karaman": {
+      "year": 2008,
+      "total_population": 230145
+    },
+    "Kırıkkale": {
+      "year": 2008,
+      "total_population": 279325
+    },
+    "Batman": {
+      "year": 2008,
+      "total_population": 485616
+    },
+    "Şırnak": {
+      "year": 2008,
+      "total_population": 429287
+    },
+    "Bartın": {
+      "year": 2008,
+      "total_population": 185368
+    },
+    "Ardahan": {
+      "year": 2008,
+      "total_population": 112242
+    },
+    "Iğdır": {
+      "year": 2008,
+      "total_population": 184025
+    },
+    "Yalova": {
+      "year": 2008,
+      "total_population": 197412
+    },
+    "Karabük": {
+      "year": 2008,
+      "total_population": 216248
+    },
+    "Kilis": {
+      "year": 2008,
+      "total_population": 120991
+    },
+    "Osmaniye": {
+      "year": 2008,
+      "total_population": 464704
+    },
+    "Düzce": {
+      "year": 2008,
+      "total_population": 328611
+    }
+  },
+  "2007": {
+    "Adana": {
+      "year": 2007,
+      "total_population": 2006650
+    },
+    "Adıyaman": {
+      "year": 2007,
+      "total_population": 582762
+    },
+    "Afyonkarahisar": {
+      "year": 2007,
+      "total_population": 701572
+    },
+    "Ağrı": {
+      "year": 2007,
+      "total_population": 530879
+    },
+    "Amasya": {
+      "year": 2007,
+      "total_population": 328674
+    },
+    "Ankara": {
+      "year": 2007,
+      "total_population": 4466756
+    },
+    "Antalya": {
+      "year": 2007,
+      "total_population": 1789295
+    },
+    "Artvin": {
+      "year": 2007,
+      "total_population": 168092
+    },
+    "Aydın": {
+      "year": 2007,
+      "total_population": 946971
+    },
+    "Balıkesir": {
+      "year": 2007,
+      "total_population": 1118313
+    },
+    "Bilecik": {
+      "year": 2007,
+      "total_population": 203777
+    },
+    "Bingöl": {
+      "year": 2007,
+      "total_population": 251552
+    },
+    "Bitlis": {
+      "year": 2007,
+      "total_population": 327886
+    },
+    "Bolu": {
+      "year": 2007,
+      "total_population": 270417
+    },
+    "Burdur": {
+      "year": 2007,
+      "total_population": 251181
+    },
+    "Bursa": {
+      "year": 2007,
+      "total_population": 2439876
+    },
+    "Çanakkale": {
+      "year": 2007,
+      "total_population": 476128
+    },
+    "Çankırı": {
+      "year": 2007,
+      "total_population": 174012
+    },
+    "Çorum": {
+      "year": 2007,
+      "total_population": 549828
+    },
+    "Denizli": {
+      "year": 2007,
+      "total_population": 907325
+    },
+    "Diyarbakır": {
+      "year": 2007,
+      "total_population": 1460714
+    },
+    "Edirne": {
+      "year": 2007,
+      "total_population": 396462
+    },
+    "Elazığ": {
+      "year": 2007,
+      "total_population": 541258
+    },
+    "Erzincan": {
+      "year": 2007,
+      "total_population": 213538
+    },
+    "Erzurum": {
+      "year": 2007,
+      "total_population": 784941
+    },
+    "Eskişehir": {
+      "year": 2007,
+      "total_population": 724849
+    },
+    "Gaziantep": {
+      "year": 2007,
+      "total_population": 1560023
+    },
+    "Giresun": {
+      "year": 2007,
+      "total_population": 417505
+    },
+    "Gümüşhane": {
+      "year": 2007,
+      "total_population": 130825
+    },
+    "Hakkari": {
+      "year": 2007,
+      "total_population": 246469
+    },
+    "Hatay": {
+      "year": 2007,
+      "total_population": 1386224
+    },
+    "Isparta": {
+      "year": 2007,
+      "total_population": 419845
+    },
+    "Mersin": {
+      "year": 2007,
+      "total_population": 1595938
+    },
+    "İstanbul": {
+      "year": 2007,
+      "total_population": 12573836
+    },
+    "İzmir": {
+      "year": 2007,
+      "total_population": 3739353
+    },
+    "Kars": {
+      "year": 2007,
+      "total_population": 312205
+    },
+    "Kastamonu": {
+      "year": 2007,
+      "total_population": 360366
+    },
+    "Kayseri": {
+      "year": 2007,
+      "total_population": 1165088
+    },
+    "Kırklareli": {
+      "year": 2007,
+      "total_population": 333256
+    },
+    "Kırşehir": {
+      "year": 2007,
+      "total_population": 223170
+    },
+    "Kocaeli": {
+      "year": 2007,
+      "total_population": 1437926
+    },
+    "Konya": {
+      "year": 2007,
+      "total_population": 1959082
+    },
+    "Kütahya": {
+      "year": 2007,
+      "total_population": 583910
+    },
+    "Malatya": {
+      "year": 2007,
+      "total_population": 722065
+    },
+    "Manisa": {
+      "year": 2007,
+      "total_population": 1319920
+    },
+    "Kahramanmaraş": {
+      "year": 2007,
+      "total_population": 1004414
+    },
+    "Mardin": {
+      "year": 2007,
+      "total_population": 745778
+    },
+    "Muğla": {
+      "year": 2007,
+      "total_population": 766156
+    },
+    "Muş": {
+      "year": 2007,
+      "total_population": 405509
+    },
+    "Nevşehir": {
+      "year": 2007,
+      "total_population": 280058
+    },
+    "Niğde": {
+      "year": 2007,
+      "total_population": 331677
+    },
+    "Ordu": {
+      "year": 2007,
+      "total_population": 715409
+    },
+    "Rize": {
+      "year": 2007,
+      "total_population": 316252
+    },
+    "Sakarya": {
+      "year": 2007,
+      "total_population": 835222
+    },
+    "Samsun": {
+      "year": 2007,
+      "total_population": 1228959
+    },
+    "Siirt": {
+      "year": 2007,
+      "total_population": 291528
+    },
+    "Sinop": {
+      "year": 2007,
+      "total_population": 198412
+    },
+    "Sivas": {
+      "year": 2007,
+      "total_population": 638464
+    },
+    "Tekirdağ": {
+      "year": 2007,
+      "total_population": 728396
+    },
+    "Tokat": {
+      "year": 2007,
+      "total_population": 620722
+    },
+    "Trabzon": {
+      "year": 2007,
+      "total_population": 740569
+    },
+    "Tunceli": {
+      "year": 2007,
+      "total_population": 84022
+    },
+    "Şanlıurfa": {
+      "year": 2007,
+      "total_population": 1523099
+    },
+    "Uşak": {
+      "year": 2007,
+      "total_population": 334115
+    },
+    "Van": {
+      "year": 2007,
+      "total_population": 979671
+    },
+    "Yozgat": {
+      "year": 2007,
+      "total_population": 492127
+    },
+    "Zonguldak": {
+      "year": 2007,
+      "total_population": 615890
+    },
+    "Aksaray": {
+      "year": 2007,
+      "total_population": 366109
+    },
+    "Bayburt": {
+      "year": 2007,
+      "total_population": 76609
+    },
+    "Karaman": {
+      "year": 2007,
+      "total_population": 226049
+    },
+    "Kırıkkale": {
+      "year": 2007,
+      "total_population": 280234
+    },
+    "Batman": {
+      "year": 2007,
+      "total_population": 472487
+    },
+    "Şırnak": {
+      "year": 2007,
+      "total_population": 416001
+    },
+    "Bartın": {
+      "year": 2007,
+      "total_population": 182131
+    },
+    "Ardahan": {
+      "year": 2007,
+      "total_population": 112721
+    },
+    "Iğdır": {
+      "year": 2007,
+      "total_population": 181866
+    },
+    "Yalova": {
+      "year": 2007,
+      "total_population": 181758
+    },
+    "Karabük": {
+      "year": 2007,
+      "total_population": 218463
+    },
+    "Kilis": {
+      "year": 2007,
+      "total_population": 118457
+    },
+    "Osmaniye": {
+      "year": 2007,
+      "total_population": 452880
+    },
+    "Düzce": {
+      "year": 2007,
+      "total_population": 323328
+    }
+  }
+}

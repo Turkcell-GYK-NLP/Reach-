@@ -7,6 +7,7 @@ import { NotificationTool } from '../tools/notificationTool.js';
 import { WebSearchTool } from '../tools/webSearchTool.js';
 import { RecommendationTool } from '../tools/recommendationTool.js';
 import { IlkyardimTool } from '../tools/ilkyardimTool.js';
+import { PopulationAnalysisTool } from '../tools/populationAnalysisTool.js';
 
 export class ToolRegistry {
   private tools: Map<string, Tool>;
@@ -93,7 +94,8 @@ export class ToolRegistry {
       new NotificationTool(),
       new WebSearchTool(),
       new RecommendationTool(),
-      new IlkyardimTool()
+      new IlkyardimTool(),
+      new PopulationAnalysisTool()
     ];
 
     const registry = new ToolRegistry(tools);

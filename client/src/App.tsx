@@ -14,6 +14,7 @@ import SettingsPage from "@/pages/settings";
 import EmergencyContactsPage from "@/pages/emergency-contacts";
 import TarifeOnerisiPage from "@/pages/tarife-onerisi";
 import CommunityPage from "@/pages/community";
+import PopulationAnalysis from "@/pages/PopulationAnalysis";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -29,6 +30,7 @@ function Router() {
       <Route path="/emergency-contacts" component={EmergencyContactsPage} />
       <Route path="/tarife-onerisi" component={TarifeOnerisiPage} />
       <Route path="/community" component={CommunityPage} />
+      <Route path="/population-analysis" component={PopulationAnalysis} />
       <Route component={NotFound} />
     </Switch>
   );
