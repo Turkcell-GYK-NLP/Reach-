@@ -49,15 +49,28 @@ export function registerHospitalRoutes(app: Express): void {
     'Zeytinburnu': { minLat: 40.9, maxLat: 41.0, minLng: 28.8, maxLng: 29.0 }
   };
 
-  // Koordinatlardan ilçe bulma fonksiyonu
+  // Koordinatlardan ilçe bulma fonksiyonu - En yakın ilçeyi bul
   function findDistrictByCoordinates(lat: number, lng: number): string {
+    let nearestDistrict = 'Bilinmeyen';
+    let minDistance = Infinity;
+    
+    // Her ilçenin merkez noktasına olan mesafeyi hesapla
     for (const [district, bounds] of Object.entries(istanbulDistricts)) {
-      if (lat >= bounds.minLat && lat <= bounds.maxLat && 
-          lng >= bounds.minLng && lng <= bounds.maxLng) {
-        return district;
+      const centerLat = (bounds.minLat + bounds.maxLat) / 2;
+      const centerLng = (bounds.minLng + bounds.maxLng) / 2;
+      
+      // Basit Öklid mesafesi
+      const distance = Math.sqrt(
+        Math.pow(lat - centerLat, 2) + Math.pow(lng - centerLng, 2)
+      );
+      
+      if (distance < minDistance) {
+        minDistance = distance;
+        nearestDistrict = district;
       }
     }
-    return 'Bilinmeyen';
+    
+    return nearestDistrict;
   }
 
   // Get hospitals
@@ -78,8 +91,16 @@ export function registerHospitalRoutes(app: Express): void {
         hospitalData = allHospitals
           .filter((h: any) => h.name && h.name !== 'İsimsiz Hospital' && h.coordinates)
           .map((h: any, index: number) => {
-            // Koordinatlardan ilçe bilgisini hesapla
-            const district = h.address?.district || findDistrictByCoordinates(h.coordinates.latitude, h.coordinates.longitude);
+            // İlçe bilgisini al - önce address.district'e bak, yoksa koordinatlardan hesapla
+            let district = h.address?.district;
+            
+            // Eğer ilçe bilgisi yoksa veya sadece "Mahallesi" içeriyorsa, koordinatlardan bul
+            if (!district || district === 'null' || district === 'undefined') {
+              district = findDistrictByCoordinates(h.coordinates.latitude, h.coordinates.longitude);
+            }
+            
+            // İlçe adını temizle (gereksiz eklerden)
+            district = district?.replace(' Mahallesi', '').trim() || 'Bilinmeyen';
             
             return {
               id: h.osm_metadata?.id || `hospital_${index}`,
@@ -99,7 +120,6 @@ export function registerHospitalRoutes(app: Express): void {
               district: district
             };
           })
-          .slice(0, 100); // İlk 100 hastaneyi al (performans için)
           
       } catch (fileError) {
         console.error('Hastane dosyası okunamadı, mock data kullanılıyor:', fileError);

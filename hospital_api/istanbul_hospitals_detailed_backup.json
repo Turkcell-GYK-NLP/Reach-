@@ -11,7 +11,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Üsküdar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -58,7 +58,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Beyoğlu",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -105,7 +105,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Üsküdar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -152,7 +152,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Küçükçekmece",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -199,7 +199,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sarıyer",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -246,7 +246,7 @@
       "street": "Cemil Aslan Güder Sokak",
       "house_number": "8",
       "neighbourhood": "Gayrettepe",
-      "district": "Beşiktaş",
+      "district": null,
       "city": "Beşiktaş/İstanbul",
       "postcode": "34349"
     },
@@ -293,7 +293,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Üsküdar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -340,7 +340,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Pendik",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -387,7 +387,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Bağcılar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -434,7 +434,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Bakırköy",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -481,7 +481,7 @@
       "street": null,
       "house_number": "2",
       "neighbourhood": null,
-      "district": "Şişli",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -528,7 +528,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Şişli",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -575,7 +575,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Şişli",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -622,7 +622,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Gaziosmanpaşa",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -669,7 +669,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Esenyurt",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -763,7 +763,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Avcılar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -857,7 +857,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Avcılar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -904,7 +904,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Şişli",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -951,7 +951,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Beyoğlu",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -998,7 +998,7 @@
       "street": "Ortaklar Caddesi",
       "house_number": "5/A",
       "neighbourhood": null,
-      "district": "Şişli",
+      "district": null,
       "city": "İstanbul",
       "postcode": "34346"
     },
@@ -1045,7 +1045,7 @@
       "street": "ATATÜRK caddesi",
       "house_number": null,
       "neighbourhood": null,
-      "district": "Eyüpsultan",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -1092,7 +1092,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Zeytinburnu",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -1139,7 +1139,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Esenyurt",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -1186,7 +1186,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Bahçelievler",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -1233,7 +1233,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Şişli",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -1280,7 +1280,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Beyoğlu",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -1327,7 +1327,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Küçükçekmece",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -1374,7 +1374,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Beyoğlu",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -1421,7 +1421,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Esenler",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -1562,7 +1562,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Şişli",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -1703,7 +1703,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Zeytinburnu",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -1797,7 +1797,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Gaziosmanpaşa",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -1844,7 +1844,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sultangazi",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -1891,7 +1891,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sultangazi",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -1938,7 +1938,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Şişli",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -2126,7 +2126,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Beşiktaş",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -2690,7 +2690,7 @@
       "street": "Fabrikalar Cd.",
       "house_number": "34146",
       "neighbourhood": null,
-      "district": "Bakırköy",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -2737,7 +2737,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Gaziosmanpaşa",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -2784,7 +2784,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Başakşehir",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -2831,7 +2831,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Üsküdar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -2878,7 +2878,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Şişli",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -3019,7 +3019,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Üsküdar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -3113,7 +3113,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Başakşehir",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -3160,7 +3160,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Üsküdar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -3301,7 +3301,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Küçükçekmece",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -3442,7 +3442,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Fatih",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -3536,7 +3536,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Fatih",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -3583,7 +3583,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Maltepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -3771,7 +3771,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Maltepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -3818,7 +3818,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Çekmeköy",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -3912,7 +3912,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kadıköy",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -3959,7 +3959,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Üsküdar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -4100,7 +4100,7 @@
       "street": "Sultan Murat Caddesi",
       "house_number": "9",
       "neighbourhood": null,
-      "district": "Esenyurt",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -4147,7 +4147,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Maltepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -4382,7 +4382,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Ataşehir",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -4429,7 +4429,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Gebze",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -4523,7 +4523,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Ümraniye",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -4664,7 +4664,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Eyüpsultan",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -4711,7 +4711,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Pendik",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -4852,7 +4852,7 @@
       "street": "Kumru Sokak",
       "house_number": "2D",
       "neighbourhood": null,
-      "district": "Maltepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -4899,7 +4899,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Fatih",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -4946,7 +4946,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Üsküdar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -5087,7 +5087,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Ümraniye",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -5134,7 +5134,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Eyüpsultan",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -5181,7 +5181,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Bağcılar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -5228,7 +5228,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Çekmeköy",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -5275,7 +5275,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Çekmeköy",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -5369,7 +5369,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Beyoğlu",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -5463,7 +5463,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Esenyurt",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -5510,7 +5510,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Beyoğlu",
+      "district": null,
       "city": null,
       "postcode": "34437"
     },
@@ -5557,7 +5557,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Fatih",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -5651,7 +5651,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Fatih",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -5745,7 +5745,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Fatih",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -5839,7 +5839,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Üsküdar",
+      "district": null,
       "city": null,
       "postcode": "34668"
     },
@@ -5886,7 +5886,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Şişli",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -5933,7 +5933,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Üsküdar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -6074,7 +6074,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kadıköy",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -6121,7 +6121,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Maltepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -6168,7 +6168,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Beşiktaş",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -6215,7 +6215,7 @@
       "street": "İstanbul Caddesi",
       "house_number": "82",
       "neighbourhood": null,
-      "district": "Bakırköy",
+      "district": null,
       "city": "İstanbul",
       "postcode": null
     },
@@ -6403,7 +6403,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Ataşehir",
+      "district": null,
       "city": null,
       "postcode": "34752"
     },
@@ -6450,7 +6450,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Ataşehir",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -6497,7 +6497,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Ataşehir",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -6591,7 +6591,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Pendik",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -6638,7 +6638,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kadıköy",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -6732,7 +6732,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Esenyurt",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -6779,7 +6779,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Şişli",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -6826,7 +6826,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Beyoğlu",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -6873,7 +6873,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Gebze",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -6920,7 +6920,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sultangazi",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -7014,7 +7014,7 @@
       "street": "Bağdat Caddesi",
       "house_number": "150",
       "neighbourhood": null,
-      "district": "Kadıköy",
+      "district": null,
       "city": "Kadıköy/İstanbul",
       "postcode": "34726"
     },
@@ -7061,7 +7061,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Esenyurt",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -7108,7 +7108,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Üsküdar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -7343,7 +7343,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kadıköy",
+      "district": null,
       "city": null,
       "postcode": "34718"
     },
@@ -7484,7 +7484,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sarıyer",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -7531,7 +7531,7 @@
       "street": "Sultan Ahmet Caddesi",
       "house_number": "9",
       "neighbourhood": null,
-      "district": "Esenyurt",
+      "district": null,
       "city": null,
       "postcode": "34515"
     },
@@ -7578,7 +7578,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Başakşehir",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -7625,7 +7625,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sarıyer",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -7672,7 +7672,7 @@
       "street": null,
       "house_number": "95",
       "neighbourhood": null,
-      "district": "Maltepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -7719,7 +7719,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Maltepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -7813,7 +7813,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Beylikdüzü",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -7907,7 +7907,7 @@
       "street": "Adem Yavuz Caddesi",
       "house_number": "1",
       "neighbourhood": null,
-      "district": "Ümraniye",
+      "district": null,
       "city": "Ümraniye/İstanbul",
       "postcode": "34764"
     },
@@ -7954,7 +7954,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Bahçelievler",
+      "district": null,
       "city": "Bahçelievler/İstanbul",
       "postcode": null
     },
@@ -8001,7 +8001,7 @@
       "street": "Soganli Cd.",
       "house_number": "77",
       "neighbourhood": null,
-      "district": "Güngören",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -8048,7 +8048,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Bahçelievler",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -8142,7 +8142,7 @@
       "street": "Turgut Özal Bulvarı",
       "house_number": null,
       "neighbourhood": null,
-      "district": "Küçükçekmece",
+      "district": null,
       "city": "İstasyon Mh.  Küçükçekmece/İstanbul",
       "postcode": null
     },
@@ -8189,7 +8189,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Küçükçekmece",
+      "district": null,
       "city": "Istasyon Mah. Bezirgan Bahçe Mevkii Atakent Küçükçekmece/ ISTANBUL",
       "postcode": "34303"
     },
@@ -8236,7 +8236,7 @@
       "street": "Turgut Özal Cd",
       "house_number": "1",
       "neighbourhood": null,
-      "district": "Küçükçekmece",
+      "district": null,
       "city": "Atakent Mah. Altınşehir / Küçükçekmece/İstanbul",
       "postcode": "34303"
     },
@@ -8283,7 +8283,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Beykoz",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -8330,7 +8330,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kâğıthane",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -8377,7 +8377,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Çayırova",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -8471,7 +8471,7 @@
       "street": "Opr. Dr. Burhanettin Üstünel Cad",
       "house_number": "15",
       "neighbourhood": null,
-      "district": "Üsküdar",
+      "district": null,
       "city": "İstanbul",
       "postcode": null
     },
@@ -8518,7 +8518,7 @@
       "street": "Okur Sokağı",
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kadıköy",
+      "district": null,
       "city": "Kadıköy/İstanbul",
       "postcode": "34736"
     },
@@ -8612,7 +8612,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kartal",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -8659,7 +8659,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Maltepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -8706,7 +8706,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Bakırköy",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -8753,7 +8753,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Ataşehir",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -8847,7 +8847,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Bakırköy",
+      "district": null,
       "city": "Bakırköy/İstanbul",
       "postcode": null
     },
@@ -8894,7 +8894,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Üsküdar",
+      "district": null,
       "city": "Üsküdar/İstanbul",
       "postcode": null
     },
@@ -8941,7 +8941,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kadıköy",
+      "district": null,
       "city": "Kadıköy/İstanbul",
       "postcode": null
     },
@@ -9035,7 +9035,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Bahçelievler",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -9082,7 +9082,7 @@
       "street": "Maslak Çeşme Caddesi",
       "house_number": "30",
       "neighbourhood": null,
-      "district": "Küçükçekmece",
+      "district": null,
       "city": null,
       "postcode": "34295"
     },
@@ -9129,7 +9129,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Ataşehir",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -9176,7 +9176,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Arnavutköy",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -9317,7 +9317,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Maltepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -9458,7 +9458,7 @@
       "street": "İncirli Caddesi",
       "house_number": "22",
       "neighbourhood": null,
-      "district": "Bakırköy",
+      "district": null,
       "city": "Bakırköy/İstanbul",
       "postcode": null
     },
@@ -9505,7 +9505,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kadıköy",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -9552,7 +9552,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Beşiktaş",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -9599,7 +9599,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Üsküdar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -9646,7 +9646,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Üsküdar",
+      "district": null,
       "city": null,
       "postcode": "34662"
     },
@@ -9740,7 +9740,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Bahçelievler",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -9881,7 +9881,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Küçükçekmece",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -9975,7 +9975,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Bahçelievler",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -10022,7 +10022,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Bahçelievler",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -10210,7 +10210,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Pendik",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -10351,7 +10351,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sultangazi",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -10445,7 +10445,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Beykoz",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -10492,7 +10492,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sultangazi",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -10539,7 +10539,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Başakşehir",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -10680,7 +10680,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sancaktepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -10868,7 +10868,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Bağcılar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -11009,7 +11009,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Beykoz",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -11056,7 +11056,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Tuzla",
+      "district": null,
       "city": null,
       "postcode": "34947"
     },
@@ -11103,7 +11103,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kartal",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -11244,7 +11244,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Tuzla",
+      "district": null,
       "city": null,
       "postcode": "34947"
     },
@@ -11291,7 +11291,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Arnavutköy",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -11338,7 +11338,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Tuzla",
+      "district": null,
       "city": null,
       "postcode": "34947"
     },
@@ -11479,7 +11479,7 @@
       "street": "Abide-i Hürriyet Caddesi",
       "house_number": null,
       "neighbourhood": "Hürriyet Mahallesi",
-      "district": "Şişli",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -11573,7 +11573,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Maltepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -11714,7 +11714,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Pendik",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -11855,7 +11855,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kadıköy",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -11902,7 +11902,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Ataşehir",
+      "district": null,
       "city": null,
       "postcode": "34750"
     },
@@ -11949,7 +11949,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Maltepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -11996,7 +11996,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Maltepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -12090,7 +12090,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Maltepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -12184,7 +12184,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Bağcılar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -12231,7 +12231,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kartal",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -12278,7 +12278,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Ataşehir",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -12325,7 +12325,7 @@
       "street": "Çeçen Sokağı",
       "house_number": "52",
       "neighbourhood": null,
-      "district": "Üsküdar",
+      "district": null,
       "city": null,
       "postcode": "34660"
     },
@@ -12372,7 +12372,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Ataşehir",
+      "district": null,
       "city": null,
       "postcode": "34758"
     },
@@ -12466,7 +12466,7 @@
       "street": "Vedat Günyol Caddesi",
       "house_number": "36",
       "neighbourhood": null,
-      "district": "Ataşehir",
+      "district": null,
       "city": null,
       "postcode": "34750"
     },
@@ -12560,7 +12560,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Üsküdar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -12607,7 +12607,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Üsküdar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -12701,7 +12701,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Bahçelievler",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -12889,7 +12889,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Beykoz",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -13124,7 +13124,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sancaktepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -13171,7 +13171,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kartal",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -13218,7 +13218,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Bahçelievler",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -13265,7 +13265,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sarıyer",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -13312,7 +13312,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Beylikdüzü",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -13359,7 +13359,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Ataşehir",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -13500,7 +13500,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Tuzla",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -13735,7 +13735,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kadıköy",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -13782,7 +13782,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kadıköy",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -13876,7 +13876,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sultangazi",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -13970,7 +13970,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Üsküdar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -14064,7 +14064,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sarıyer",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -14158,7 +14158,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Maltepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -14440,7 +14440,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Adalar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -14487,7 +14487,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sultangazi",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -14675,7 +14675,7 @@
       "street": null,
       "house_number": "52",
       "neighbourhood": null,
-      "district": "Tuzla",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -14722,7 +14722,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Maltepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -14769,7 +14769,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sancaktepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -14816,7 +14816,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sancaktepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -14863,7 +14863,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sancaktepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -15004,7 +15004,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kadıköy",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -15051,7 +15051,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Ataşehir",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -15098,7 +15098,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Bakırköy",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -15145,7 +15145,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Esenyurt",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -15192,7 +15192,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kadıköy",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -15286,7 +15286,7 @@
       "street": "Hanzade Sokağı",
       "house_number": "1",
       "neighbourhood": "Şifa Mahallesi",
-      "district": "Tuzla",
+      "district": null,
       "city": "İstanbul - Kocaeli İl Sınırı",
       "postcode": "34950"
     },
@@ -15333,7 +15333,7 @@
       "street": null,
       "house_number": "1",
       "neighbourhood": null,
-      "district": "Güngören",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -15380,7 +15380,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Bahçelievler",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -15427,7 +15427,7 @@
       "street": null,
       "house_number": "1/1",
       "neighbourhood": null,
-      "district": "Güngören",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -15474,7 +15474,7 @@
       "street": null,
       "house_number": "2",
       "neighbourhood": null,
-      "district": "Bahçelievler",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -15521,7 +15521,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Bahçelievler",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -15568,7 +15568,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sancaktepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -15615,7 +15615,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sarıyer",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -15662,7 +15662,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sarıyer",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -15709,7 +15709,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sarıyer",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -15756,7 +15756,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sarıyer",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -15803,7 +15803,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sarıyer",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -15850,7 +15850,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sarıyer",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -16038,7 +16038,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Esenler",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -16085,7 +16085,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Esenler",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -16132,7 +16132,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Esenler",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -16179,7 +16179,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Esenler",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -16226,7 +16226,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Esenler",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -16273,7 +16273,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Esenler",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -16320,7 +16320,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Esenler",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -16367,7 +16367,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Küçükçekmece",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -16414,7 +16414,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Güngören",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -16461,7 +16461,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kâğıthane",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -16508,7 +16508,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Esenyurt",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -16555,7 +16555,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Sarıyer",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -16602,7 +16602,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kadıköy",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -16649,7 +16649,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Maltepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -16696,7 +16696,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Ataşehir",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -16790,7 +16790,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Pendik",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -16884,7 +16884,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Avcılar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -16931,7 +16931,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Avcılar",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -17025,7 +17025,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Gaziosmanpaşa",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -17072,7 +17072,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Gaziosmanpaşa",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -17213,7 +17213,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kartal",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -17307,7 +17307,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Pendik",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -17354,7 +17354,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Ataşehir",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -17401,7 +17401,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Ataşehir",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -17448,7 +17448,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Maltepe",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -17495,7 +17495,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kartal",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -17542,7 +17542,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Çekmeköy",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -17589,7 +17589,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Gebze",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -17683,7 +17683,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Bahçelievler",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -17730,7 +17730,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Zeytinburnu",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -17777,7 +17777,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Zeytinburnu",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -17824,7 +17824,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Üsküdar",
+      "district": null,
       "city": "Üsküdar/İstanbul",
       "postcode": null
     },
@@ -17871,7 +17871,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Gebze",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -17918,7 +17918,7 @@
       "street": null,
       "house_number": null,
       "neighbourhood": null,
-      "district": "Kâğıthane",
+      "district": null,
       "city": null,
       "postcode": null
     },
@@ -17965,7 +17965,7 @@
       "street": "İncirli Caddesi",
       "house_number": null,
       "neighbourhood": null,
-      "district": "Bakırköy",
+      "district": null,
       "city": "Bakırköy/İstanbul",
       "postcode": null
     },
@@ -17998,241 +17998,6 @@
       "type": "relation",
       "version": "None",
       "timestamp": null
-    }
-  },
-  {
-    "name": "Büyükçekmece Mimar Sinan Devlet Hastanesi",
-    "facility_type": "hospital",
-    "coordinates": {
-      "latitude": 40.9925,
-      "longitude": 28.5833
-    },
-    "address": {
-      "full_address": "Mimar Sinan Merkez Mahallesi, D-100 Karayolu Caddesi No:62, 34535 Büyükçekmece/İstanbul",
-      "street": "D-100 Karayolu Caddesi",
-      "house_number": "62",
-      "neighbourhood": "Mimar Sinan Merkez Mahallesi",
-      "district": "Büyükçekmece",
-      "city": "İstanbul",
-      "postcode": "34535"
-    },
-    "contact": {
-      "phone": "0212 909 90 00",
-      "fax": null,
-      "email": null,
-      "website": "https://buyukcekmecedh.saglik.gov.tr/"
-    },
-    "medical_info": {
-      "emergency": "yes",
-      "beds": "200",
-      "operator": "Sağlık Bakanlığı",
-      "operator_type": "public",
-      "speciality": "Genel",
-      "healthcare": "hospital",
-      "medical_system": "public"
-    },
-    "accessibility": {
-      "wheelchair": "yes",
-      "opening_hours": "24/7"
-    },
-    "additional_info": {
-      "description": "Büyükçekmece ilçesinin tek devlet hastanesi",
-      "wikipedia": null,
-      "wikidata": null
-    },
-    "osm_metadata": {
-      "id": "buyukcekmece_mimar_sinan_dh",
-      "type": "node",
-      "version": "1",
-      "timestamp": "2024-01-01T00:00:00Z"
-    }
-  },
-  {
-    "name": "Çatalca Devlet Hastanesi",
-    "facility_type": "hospital",
-    "coordinates": {
-      "latitude": 41.1414,
-      "longitude": 28.4619
-    },
-    "address": {
-      "full_address": "Çatalca Merkez, İstanbul",
-      "street": null,
-      "house_number": null,
-      "neighbourhood": "Çatalca Merkez",
-      "district": "Çatalca",
-      "city": "İstanbul",
-      "postcode": null
-    },
-    "contact": {
-      "phone": "0212 789 00 00",
-      "fax": null,
-      "email": null,
-      "website": null
-    },
-    "medical_info": {
-      "emergency": "yes",
-      "beds": "50",
-      "operator": "Sağlık Bakanlığı",
-      "operator_type": "public",
-      "speciality": "Genel",
-      "healthcare": "hospital",
-      "medical_system": "public"
-    },
-    "accessibility": {
-      "wheelchair": "yes",
-      "opening_hours": "24/7"
-    },
-    "additional_info": {
-      "description": "Çatalca ilçesinin devlet hastanesi",
-      "wikipedia": null,
-      "wikidata": null
-    },
-    "osm_metadata": {
-      "id": "catalca_devlet_hastanesi",
-      "type": "node",
-      "version": "1",
-      "timestamp": "2024-01-01T00:00:00Z"
-    }
-  },
-  {
-    "name": "Kağıthane Devlet Hastanesi",
-    "facility_type": "hospital",
-    "coordinates": {
-      "latitude": 41.0719,
-      "longitude": 28.9667
-    },
-    "address": {
-      "full_address": "Kağıthane Merkez, İstanbul",
-      "street": null,
-      "house_number": null,
-      "neighbourhood": "Kağıthane Merkez",
-      "district": "Kağıthane",
-      "city": "İstanbul",
-      "postcode": null
-    },
-    "contact": {
-      "phone": "0212 320 00 00",
-      "fax": null,
-      "email": null,
-      "website": null
-    },
-    "medical_info": {
-      "emergency": "yes",
-      "beds": "100",
-      "operator": "Sağlık Bakanlığı",
-      "operator_type": "public",
-      "speciality": "Genel",
-      "healthcare": "hospital",
-      "medical_system": "public"
-    },
-    "accessibility": {
-      "wheelchair": "yes",
-      "opening_hours": "24/7"
-    },
-    "additional_info": {
-      "description": "Kağıthane ilçesinin devlet hastanesi",
-      "wikipedia": null,
-      "wikidata": null
-    },
-    "osm_metadata": {
-      "id": "kagithane_devlet_hastanesi",
-      "type": "node",
-      "version": "1",
-      "timestamp": "2024-01-01T00:00:00Z"
-    }
-  },
-  {
-    "name": "Silivri Devlet Hastanesi",
-    "facility_type": "hospital",
-    "coordinates": {
-      "latitude": 41.0739,
-      "longitude": 28.2464
-    },
-    "address": {
-      "full_address": "Silivri Merkez, İstanbul",
-      "street": null,
-      "house_number": null,
-      "neighbourhood": "Silivri Merkez",
-      "district": "Silivri",
-      "city": "İstanbul",
-      "postcode": null
-    },
-    "contact": {
-      "phone": "0212 727 00 00",
-      "fax": null,
-      "email": null,
-      "website": null
-    },
-    "medical_info": {
-      "emergency": "yes",
-      "beds": "75",
-      "operator": "Sağlık Bakanlığı",
-      "operator_type": "public",
-      "speciality": "Genel",
-      "healthcare": "hospital",
-      "medical_system": "public"
-    },
-    "accessibility": {
-      "wheelchair": "yes",
-      "opening_hours": "24/7"
-    },
-    "additional_info": {
-      "description": "Silivri ilçesinin devlet hastanesi",
-      "wikipedia": null,
-      "wikidata": null
-    },
-    "osm_metadata": {
-      "id": "silivri_devlet_hastanesi",
-      "type": "node",
-      "version": "1",
-      "timestamp": "2024-01-01T00:00:00Z"
-    }
-  },
-  {
-    "name": "Şile Devlet Hastanesi",
-    "facility_type": "hospital",
-    "coordinates": {
-      "latitude": 41.175,
-      "longitude": 29.6167
-    },
-    "address": {
-      "full_address": "Şile Merkez, İstanbul",
-      "street": null,
-      "house_number": null,
-      "neighbourhood": "Şile Merkez",
-      "district": "Şile",
-      "city": "İstanbul",
-      "postcode": null
-    },
-    "contact": {
-      "phone": "0216 712 00 00",
-      "fax": null,
-      "email": null,
-      "website": null
-    },
-    "medical_info": {
-      "emergency": "yes",
-      "beds": "50",
-      "operator": "Sağlık Bakanlığı",
-      "operator_type": "public",
-      "speciality": "Genel",
-      "healthcare": "hospital",
-      "medical_system": "public"
-    },
-    "accessibility": {
-      "wheelchair": "yes",
-      "opening_hours": "24/7"
-    },
-    "additional_info": {
-      "description": "Şile ilçesinin devlet hastanesi",
-      "wikipedia": null,
-      "wikidata": null
-    },
-    "osm_metadata": {
-      "id": "sile_devlet_hastanesi",
-      "type": "node",
-      "version": "1",
-      "timestamp": "2024-01-01T00:00:00Z"
     }
   }
 ]
