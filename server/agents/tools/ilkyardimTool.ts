@@ -16,11 +16,11 @@ export interface IlkyardimSearchResult {
 }
 
 export class IlkyardimTool extends BaseTool {
+  name = 'ilkyardim';
+  description = 'İlkyardım Bilgi Tabanı';
+
   constructor() {
-    super('ilkyardim', 'İlkyardım Bilgi Tabanı', [
-      'ilkyardım', 'first aid', 'kalp masajı', 'kanama', 'kırık', 'yanık', 
-      'bilinç kaybı', 'zehirlenme', 'yaralanma', 'acil', 'tedavi', 'müdahale'
-    ]);
+    super();
   }
 
   async execute(params: { query: string; userContext: any }): Promise<any> {
@@ -79,7 +79,12 @@ export class IlkyardimTool extends BaseTool {
       const pythonScript = path.join(process.cwd(), 'ilkyardim_search.py');
       const pythonProcess = spawn('python3', [pythonScript, query], {
         cwd: process.cwd(),
-        env: { ...process.env, PATH: process.env.PATH }
+        env: { 
+          ...process.env, 
+          PATH: process.env.PATH,
+          VIRTUAL_ENV: path.join(process.cwd(), 'venv'),
+          PYTHONPATH: path.join(process.cwd(), 'venv', 'lib', 'python3.11', 'site-packages')
+        }
       });
 
       let output = '';
@@ -154,7 +159,9 @@ export class IlkyardimTool extends BaseTool {
       'bayılma', 'fainting', 'ağrı', 'pain', 'kan', 'blood',
       'yara', 'wound', 'şok', 'shock', 'boğulma', 'choking',
       'burkulma', 'sprain', 'çıkık', 'dislocation', 'donma', 'frostbite',
-      'sıcak çarpması', 'heat stroke', 'hayvan ısırığı', 'animal bite'
+      'sıcak çarpması', 'heat stroke', 'hayvan ısırığı', 'animal bite',
+      'yaşam üçgeni', 'life triangle', 'deprem', 'earthquake', 'güvenli alan',
+      'masa', 'table', 'sıra', 'desk', 'korunma', 'protection'
     ];
 
     const queryLower = query.toLowerCase();
@@ -230,7 +237,7 @@ export class IlkyardimTool extends BaseTool {
 ‼️ **BEBEKLERDE:** Yüzüstü, sırt vurma + göğüs basısı`
     };
 
-    return emergencyResponses[emergencyType] || 
+    return emergencyResponses[emergencyType as keyof typeof emergencyResponses] || 
            '🚨 Acil durumlarda hemen 112\'yi arayın ve profesyonel yardım isteyin.';
   }
 }

@@ -66,8 +66,8 @@ export class CoreAgent {
       const memoryContext = await this.memory.getContext(userContext.userId);
       const relevantContext = await this.memory.getRelevantContext(userContext.userId, query);
 
-      // 5. Execute tools
-      const toolResults = await this.toolOrchestrator.executeTools(query, enhancedUserContext);
+      // 5. Execute tools with ReAct Pattern
+      const toolResults = await this.toolOrchestrator.executeReActTools(query, enhancedUserContext);
       console.log(`🔧 Tool results: ${toolResults.length} results`);
 
       // 6. Supervisor coordination

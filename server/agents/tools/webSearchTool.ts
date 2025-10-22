@@ -272,6 +272,78 @@ export class WebSearchTool extends BaseTool {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
+  /**
+   * Static data fallback - Python ve JSON fallback başarısız olursa
+   */
+  private async performStaticDataFallback(query: string, location: string): Promise<SearchResult[]> {
+    console.log(`📚 Static data fallback: "${query}" in ${location}`);
+    
+    const lowerQuery = query.toLowerCase();
+    
+    // Hastane araması için static data
+    if (lowerQuery.includes('hastane') || lowerQuery.includes('doktor')) {
+      return [{
+        title: 'Hastane Bilgisi - Acil Durum',
+        url: 'local://hastane-bilgi',
+        snippet: 'Acil durumlarda hastane bilgileri',
+        content: `Acil durumlarda hastane bilgileri için:
+• 112 Acil Çağrı Merkezi'ni arayın
+• En yakın sağlık kuruluşuna başvurun
+• Ambulans hizmeti için 112'yi arayın
+• Acil servis bilgileri için hastaneleri arayın`,
+        relevanceScore: 0.7,
+        publishDate: new Date().toISOString()
+      }];
+    }
+    
+    // İlkyardım araması için static data
+    if (lowerQuery.includes('ilkyardım') || lowerQuery.includes('yaşam üçgeni')) {
+      return [{
+        title: 'İlkyardım Bilgileri - Yaşam Üçgeni',
+        url: 'local://ilkyardim-bilgi',
+        snippet: 'Deprem anında yaşam üçgeni oluşturma',
+        content: `Deprem anında yaşam üçgeni oluşturmak için:
+1. Sağlam masa, sıra veya yatak yanına geçin
+2. Çömel, kapan, tutun pozisyonu alın
+3. Başınızı ve boynunuzu koruyacak şekilde kapanın
+4. Pencerelerden, ağır eşyalardan uzak durun
+5. Asansör kullanmayın, merdivenlerden inmeyin
+6. Dışarı çıkmaya çalışmayın, içeride kalın`,
+        relevanceScore: 0.8,
+        publishDate: new Date().toISOString()
+      }];
+    }
+    
+    // Konum araması için static data
+    if (lowerQuery.includes('konum') || lowerQuery.includes('nerede')) {
+      return [{
+        title: 'Konum Bilgileri',
+        url: 'local://konum-bilgi',
+        snippet: 'Konum ve güvenli alan bilgileri',
+        content: `Konum bilgileri için:
+• GPS koordinatlarınızı kontrol edin
+• En yakın güvenli alanları arayın
+• Toplanma alanlarını öğrenin
+• Acil durum planınızı hazırlayın`,
+        relevanceScore: 0.6,
+        publishDate: new Date().toISOString()
+      }];
+    }
+    
+    // Genel fallback
+    return [{
+      title: 'Genel Bilgi',
+      url: 'local://genel-bilgi',
+      snippet: 'Genel bilgi ve yardım',
+      content: `"${query}" konusunda detaylı bilgi için:
+• 112 Acil Çağrı Merkezi'ni arayın
+• Daha spesifik bir soru sorun
+• Acil durumlarda profesyonel yardım alın`,
+      relevanceScore: 0.4,
+      publishDate: new Date().toISOString()
+    }];
+  }
+
   private async searchToplanmaAlanlari(query: string, location: string): Promise<SearchResult[]> {
     console.log(`🔍 searchToplanmaAlanlari çağrıldı - Query: "${query}", Location: "${location}"`);
     
@@ -286,6 +358,13 @@ export class WebSearchTool extends BaseTool {
         console.log('⚠️ FAISS search sonuç vermedi veya yetersiz, fallback kullanılıyor...');
         const fallbackResults = await this.performFallbackSearch(query, location);
         console.log(`📊 Fallback sonuçları: ${fallbackResults.length} adet`);
+        
+        // Fallback de sonuç vermezse, static data fallback'i kullan
+        if (fallbackResults.length === 0) {
+          console.log('⚠️ Fallback de sonuç vermedi, static data fallback kullanılıyor...');
+          return await this.performStaticDataFallback(query, location);
+        }
+        
         return fallbackResults;
       }
       
@@ -295,6 +374,13 @@ export class WebSearchTool extends BaseTool {
       console.error('❌ FAISS arama hatası, fallback kullanılıyor:', error);
       const fallbackResults = await this.performFallbackSearch(query, location);
       console.log(`📊 Fallback sonuçları: ${fallbackResults.length} adet`);
+      
+      // Fallback de sonuç vermezse, static data fallback'i kullan
+      if (fallbackResults.length === 0) {
+        console.log('⚠️ Fallback de sonuç vermedi, static data fallback kullanılıyor...');
+        return await this.performStaticDataFallback(query, location);
+      }
+      
       return fallbackResults;
     }
   }
@@ -306,7 +392,12 @@ export class WebSearchTool extends BaseTool {
     const pythonScript = path.join(process.cwd(), 'faiss_search.py');
     const pythonProcess = spawn('python3', [pythonScript, query], {
       cwd: process.cwd(),
-      env: { ...process.env, PATH: process.env.PATH }
+      env: { 
+        ...process.env, 
+        PATH: process.env.PATH,
+        VIRTUAL_ENV: path.join(process.cwd(), 'venv'),
+        PYTHONPATH: path.join(process.cwd(), 'venv', 'lib', 'python3.11', 'site-packages')
+      }
     });
 
     return new Promise((resolve, reject) => {

@@ -10,10 +10,12 @@ export class LocationTool extends BaseTool {
 
   private keywords = [
     'konum', 'nerede', 'güvenli alan', 'toplanma', 'toplanma alanı',
-    'hastane', 'yol tarifi', 'nasıl giderim', 'yakın', 'mesafe', 
+    'hastane', 'hastaneler', 'en yakın hastane', 'yakın hastane', 'hastane nerede',
+    'yol tarifi', 'nasıl giderim', 'yakın', 'mesafe', 'en yakın',
     'koordinat', 'park', 'meydan', 'esenler', 'menderes', 'bağcılar',
     'kadıköy', 'beşiktaş', 'şişli', 'fatih', 'beyoğlu', 'üsküdar',
-    'sarıyer', 'ataşehir', 'mahalle', 'ilçe', 'bölge'
+    'sarıyer', 'ataşehir', 'mahalle', 'ilçe', 'bölge', 'sağlık',
+    'doktor', 'acil servis', 'ambulans', 'tıbbi', 'medikal'
   ];
 
   async execute(input: ToolInput): Promise<ToolResult | null> {
@@ -30,7 +32,7 @@ export class LocationTool extends BaseTool {
       // Kullanıcının konum bilgisini al
       const userLocation = userContext.location;
       const userDistrict = userLocation?.district || 'Esenler';
-      const userNeighborhood = userLocation?.neighborhood || 'Menderes';
+      const userNeighborhood = (userLocation as any)?.neighborhood || 'Menderes';
       
       console.log(`📍 LocationTool: User location - ${userDistrict}, ${userNeighborhood}`);
       
@@ -72,7 +74,12 @@ export class LocationTool extends BaseTool {
         const searchQuery = query.toLowerCase().includes(district.toLowerCase()) ? query : `${district} ${query}`;
         const pythonProcess = spawn(pythonCmd, [pythonScript, searchQuery], {
           cwd: process.cwd(),
-          env: { ...process.env, PATH: process.env.PATH }
+          env: { 
+            ...process.env, 
+            PATH: process.env.PATH,
+            VIRTUAL_ENV: path.join(process.cwd(), 'venv'),
+            PYTHONPATH: path.join(process.cwd(), 'venv', 'lib', 'python3.11', 'site-packages')
+          }
         });
 
         const result = await new Promise<any[]>((resolve, reject) => {
@@ -123,7 +130,7 @@ export class LocationTool extends BaseTool {
           return result;
         }
       } catch (pythonError) {
-        console.log('Python FAISS araması başarısız, fallback kullanılıyor:', pythonError.message);
+        console.log('Python FAISS araması başarısız, fallback kullanılıyor:', (pythonError as Error).message);
       }
 
       // Fallback: Direkt JSON dosyalarından arama
