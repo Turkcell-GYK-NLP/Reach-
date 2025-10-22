@@ -4,9 +4,11 @@ import { api } from "@/lib/api";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Eye, EyeOff, Mail, Lock, User, Heart, Shield, Zap, Users } from "lucide-react";
 
 export default function AuthPage() {
+  const [showLanding, setShowLanding] = useState(true);
   const [mode, setMode] = useState<"login" | "register">("register");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -30,7 +32,16 @@ export default function AuthPage() {
   const registerMutation = useMutation({
     mutationFn: (data: { name?: string; email: string; password: string; ageYears: number; gender?: string; phone?: string }) => api.register(data),
     onSuccess: (res) => {
-      localStorage.setItem("auth", JSON.stringify(res));
+      // Demo için kullanıcı konumunu Esenler olarak ayarla
+      const authData = {
+        ...res,
+        user: {
+          ...res.user,
+          location: "Esenler, İstanbul",
+          operator: "Türk Telekom"
+        }
+      };
+      localStorage.setItem("auth", JSON.stringify(authData));
       window.location.href = "/dashboard";
     },
     onError: (e: any) => setError(e?.message || "Kayıt başarısız"),
@@ -39,7 +50,16 @@ export default function AuthPage() {
   const loginMutation = useMutation({
     mutationFn: (data: { email: string; password: string }) => api.login(data),
     onSuccess: (res) => {
-      localStorage.setItem("auth", JSON.stringify(res));
+      // Demo için kullanıcı konumunu Esenler olarak ayarla
+      const authData = {
+        ...res,
+        user: {
+          ...res.user,
+          location: "Esenler, İstanbul",
+          operator: "Türk Telekom"
+        }
+      };
+      localStorage.setItem("auth", JSON.stringify(authData));
       window.location.href = "/dashboard";
     },
     onError: (e: any) => setError(e?.message || "Giriş başarısız"),
@@ -60,6 +80,84 @@ export default function AuthPage() {
       loginMutation.mutate({ email, password });
     }
   };
+
+  // Landing Page Component
+  if (showLanding) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center p-4">
+        <div className="w-full max-w-md text-center">
+          {/* Logo */}
+          <div className="flex items-center justify-center mb-8">
+            <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-purple-700 rounded-3xl flex items-center justify-center shadow-2xl">
+              <Heart className="text-white" size={40} />
+            </div>
+          </div>
+          
+          {/* App Name */}
+          <h1 className="text-4xl font-bold text-gray-800 mb-4">REACH+</h1>
+          <p className="text-xl text-gray-600 mb-2">Akıllı Destek Servisi</p>
+          
+          {/* Description */}
+          <p className="text-gray-600 mb-12 leading-relaxed">
+            Acil durumlarda size en iyi desteği sunan AI destekli platforma hoş geldiniz. 
+            Güvenliğiniz ve sağlığınız için 7/24 yanınızdayız.
+          </p>
+
+          {/* Features */}
+          <div className="space-y-4 mb-12">
+            <div className="flex items-center justify-center space-x-3">
+              <div className="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
+                <Shield className="w-5 h-5 text-blue-600" />
+              </div>
+              <span className="text-gray-700 font-medium">7/24 Güvenlik ve Destek</span>
+            </div>
+            <div className="flex items-center justify-center space-x-3">
+              <div className="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center">
+                <Zap className="w-5 h-5 text-purple-600" />
+              </div>
+              <span className="text-gray-700 font-medium">Anlık Acil Durum Bildirimleri</span>
+            </div>
+            <div className="flex items-center justify-center space-x-3">
+              <div className="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">
+                <Users className="w-5 h-5 text-green-600" />
+              </div>
+              <span className="text-gray-700 font-medium">Topluluk Desteği</span>
+            </div>
+          </div>
+
+          {/* Action Buttons */}
+          <div className="space-y-4">
+            <Button 
+              className="w-full h-14 bg-gradient-to-r from-blue-600 to-purple-700 hover:from-blue-700 hover:to-purple-800 text-white font-semibold text-lg rounded-xl transition-all duration-200 transform hover:scale-[1.02] shadow-lg"
+              onClick={() => {
+                setMode("register");
+                setShowLanding(false);
+              }}
+            >
+              Kayıt Ol
+            </Button>
+            
+            <Button 
+              variant="outline"
+              className="w-full h-14 border-2 border-gray-300 hover:border-blue-500 text-gray-700 hover:text-blue-600 font-semibold text-lg rounded-xl transition-all duration-200 transform hover:scale-[1.02]"
+              onClick={() => {
+                setMode("login");
+                setShowLanding(false);
+              }}
+            >
+              Giriş Yap
+            </Button>
+          </div>
+
+          {/* Footer */}
+          <div className="text-center mt-12 text-sm text-gray-500">
+            <p>© 2024 REACH+. Tüm hakları saklıdır.</p>
+            <p className="mt-1">Gizlilik Politikası | Kullanım Şartları</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex">
@@ -137,7 +235,7 @@ export default function AuthPage() {
               {mode === "register" && (
                 <>
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-gray-700">Ad Soyad (Opsiyonel)</label>
+                    <label className="text-sm font-medium text-gray-700">Ad Soyad</label>
                     <div className="relative">
                       <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
                       <Input 
@@ -151,29 +249,31 @@ export default function AuthPage() {
                   
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-700">Yaş</label>
-                    <div className="relative">
-                      <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
-                      <Input 
-                        type="number"
-                        placeholder="Yaşınız" 
-                        value={ageYears} 
-                        onChange={(e) => setAgeYears(e.target.value)}
-                        className="pl-10 h-12 border-gray-200 focus:border-blue-500 focus:ring-blue-500"
-                      />
-                    </div>
+                    <Select value={ageYears} onValueChange={setAgeYears}>
+                      <SelectTrigger className="h-12 border-gray-200 focus:border-blue-500 focus:ring-blue-500">
+                        <SelectValue placeholder="Yaşınızı seçin" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {Array.from({ length: 101 }, (_, i) => (
+                          <SelectItem key={i} value={i.toString()}>
+                            {i}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
                   </div>
                   
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-gray-700">Cinsiyet (Opsiyonel)</label>
-                    <div className="relative">
-                      <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
-                      <Input 
-                        placeholder="Cinsiyet" 
-                        value={gender} 
-                        onChange={(e) => setGender(e.target.value)}
-                        className="pl-10 h-12 border-gray-200 focus:border-blue-500 focus:ring-blue-500"
-                      />
-                    </div>
+                    <label className="text-sm font-medium text-gray-700">Cinsiyet</label>
+                    <Select value={gender} onValueChange={setGender}>
+                      <SelectTrigger className="h-12 border-gray-200 focus:border-blue-500 focus:ring-blue-500">
+                        <SelectValue placeholder="Cinsiyetinizi seçin" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="kadın">Kadın</SelectItem>
+                        <SelectItem value="erkek">Erkek</SelectItem>
+                      </SelectContent>
+                    </Select>
                   </div>
                   
                   <div className="space-y-2">
@@ -246,7 +346,7 @@ export default function AuthPage() {
                 )}
               </Button>
 
-              <div className="text-center">
+              <div className="text-center space-y-2">
                 <button 
                   className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
                   onClick={() => setMode(mode === "register" ? "login" : "register")}
@@ -256,6 +356,15 @@ export default function AuthPage() {
                     : "Hesabınız yok mu? Kayıt olun"
                   }
                 </button>
+                
+                <div>
+                  <button 
+                    className="text-gray-500 hover:text-gray-700 transition-colors text-sm"
+                    onClick={() => setShowLanding(true)}
+                  >
+                    ← Ana sayfaya dön
+                  </button>
+                </div>
               </div>
             </CardContent>
           </Card>
