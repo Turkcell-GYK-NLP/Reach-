@@ -618,8 +618,7 @@ export default function ChatInterface({ onOpenHospitalModal }: ChatInterfaceProp
                         {message.suggestions.map((suggestion: any, index: number) => (
                           <li 
                             key={index}
-                            className="flex items-start gap-2 cursor-pointer hover:opacity-80 transition-opacity"
-                            onClick={() => handleSendMessage(suggestion)}
+                            className="flex items-start gap-2"
                           >
                             <span className="text-xs mt-1">•</span>
                             <span className="text-xs">{suggestion}</span>

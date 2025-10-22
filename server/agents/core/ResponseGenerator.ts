@@ -49,7 +49,7 @@ export class ResponseGenerator {
     return {
       message: finalResponse.message,
       suggestions: finalResponse.suggestions,
-      actionItems: finalResponse.actionItems,
+      actionItems: [], // Action items'ı kaldırıyoruz - sadece suggestions gösterilecek
       toolResults: toolResults,
       confidence: this.calculateOverallConfidence(agentResponses, toolResults),
       timestamp: new Date()
@@ -227,7 +227,7 @@ Lütfen yanıtınızı JSON formatında verin.`;
       return {
         message: result.message || combinedMessage,
         suggestions: result.suggestions || suggestions,
-        actionItems: result.actionItems || actionItems
+        actionItems: [] // Action items'ı kaldırıyoruz
       };
 
     } catch (error) {
@@ -235,7 +235,7 @@ Lütfen yanıtınızı JSON formatında verin.`;
       return {
         message: combinedMessage,
         suggestions: suggestions,
-        actionItems: actionItems
+        actionItems: [] // Action items'ı kaldırıyoruz
       };
     }
   }
