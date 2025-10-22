@@ -35,7 +35,27 @@ export class PopulationAnalysisTool extends BaseTool {
   private loadPopulationData(): void {
     try {
       // Tam veriyi yükle (cinsiyet ve yaş verileri ile)
-      const dataPath = path.join(process.cwd(), 'nufus_verileri.json');
+      // Production ortamında dosya yolu sorunları için farklı yollar dene
+      const possiblePaths = [
+        path.join(process.cwd(), 'nufus_verileri.json'),
+        path.join(__dirname, '../../../nufus_verileri.json'),
+        path.join(__dirname, '../../../../nufus_verileri.json'),
+        './nufus_verileri.json'
+      ];
+      
+      let dataPath = null;
+      for (const testPath of possiblePaths) {
+        if (fs.existsSync(testPath)) {
+          dataPath = testPath;
+          console.log(`✅ Nüfus verileri dosyası bulundu: ${testPath}`);
+          break;
+        }
+      }
+      
+      if (!dataPath) {
+        throw new Error(`Nüfus verileri dosyası bulunamadı. Denenen yollar: ${possiblePaths.join(', ')}`);
+      }
+      
       const rawData = fs.readFileSync(dataPath, 'utf-8');
       this.populationData = JSON.parse(rawData);
       console.log('✅ Nüfus verileri yüklendi (cinsiyet ve yaş verileri ile)');
@@ -245,8 +265,22 @@ export class PopulationAnalysisTool extends BaseTool {
     // 2023 verilerini trend dosyasından al
     let data2023 = null;
     try {
-      const trendDataPath = path.join(process.cwd(), 'nufus_trend_verileri.json');
-      if (fs.existsSync(trendDataPath)) {
+      const possibleTrendPaths = [
+        path.join(process.cwd(), 'nufus_trend_verileri.json'),
+        path.join(__dirname, '../../../nufus_trend_verileri.json'),
+        path.join(__dirname, '../../../../nufus_trend_verileri.json'),
+        './nufus_trend_verileri.json'
+      ];
+      
+      let trendDataPath = null;
+      for (const testPath of possibleTrendPaths) {
+        if (fs.existsSync(testPath)) {
+          trendDataPath = testPath;
+          break;
+        }
+      }
+      
+      if (trendDataPath) {
         const trendRawData = fs.readFileSync(trendDataPath, 'utf-8');
         const trendData = JSON.parse(trendRawData);
         data2023 = trendData['2023'];
@@ -347,8 +381,22 @@ export class PopulationAnalysisTool extends BaseTool {
   getPopulationTrendData(province: string): any {
     try {
       // Trend verilerini ayrı dosyadan yükle
-      const trendDataPath = path.join(process.cwd(), 'nufus_trend_verileri.json');
-      if (fs.existsSync(trendDataPath)) {
+      const possibleTrendPaths = [
+        path.join(process.cwd(), 'nufus_trend_verileri.json'),
+        path.join(__dirname, '../../../nufus_trend_verileri.json'),
+        path.join(__dirname, '../../../../nufus_trend_verileri.json'),
+        './nufus_trend_verileri.json'
+      ];
+      
+      let trendDataPath = null;
+      for (const testPath of possibleTrendPaths) {
+        if (fs.existsSync(testPath)) {
+          trendDataPath = testPath;
+          break;
+        }
+      }
+      
+      if (trendDataPath) {
         const trendRawData = fs.readFileSync(trendDataPath, 'utf-8');
         const trendData = JSON.parse(trendRawData);
         

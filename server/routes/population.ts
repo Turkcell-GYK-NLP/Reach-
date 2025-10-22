@@ -10,19 +10,28 @@ const populationTool = new PopulationAnalysisTool();
  */
 router.get('/map-data', async (req, res) => {
   try {
+    console.log('🔍 Nüfus harita verisi isteniyor...');
     const mapData = populationTool.getMapData();
     
     if (!mapData) {
-      return res.status(500).json({ error: 'Nüfus verileri yüklenemedi' });
+      console.error('❌ Nüfus verileri null döndü');
+      return res.status(500).json({ 
+        error: 'Nüfus verileri yüklenemedi',
+        details: 'PopulationAnalysisTool.getMapData() null döndü. Veri dosyaları kontrol edilmeli.'
+      });
     }
     
+    console.log(`✅ ${mapData.length} il için nüfus verisi döndürülüyor`);
     res.json({
       success: true,
       data: mapData
     });
   } catch (error) {
-    console.error('Harita verisi hatası:', error);
-    res.status(500).json({ error: 'Harita verisi alınamadı' });
+    console.error('❌ Harita verisi hatası:', error);
+    res.status(500).json({ 
+      error: 'Harita verisi alınamadı',
+      details: error instanceof Error ? error.message : 'Bilinmeyen hata'
+    });
   }
 });
 

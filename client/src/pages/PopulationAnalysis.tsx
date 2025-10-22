@@ -94,15 +94,20 @@ export default function PopulationAnalysis() {
 
   const loadMapData = async () => {
     try {
+      console.log('🔍 Nüfus harita verisi yükleniyor...');
       const response = await fetch('/api/population/map-data');
       const result = await response.json();
       
       if (result.success) {
+        console.log(`✅ ${result.data.length} il için nüfus verisi yüklendi`);
         setMapData(result.data);
+        setLoading(false);
+      } else {
+        console.error('❌ API hatası:', result.error, result.details);
         setLoading(false);
       }
     } catch (error) {
-      console.error('Harita verisi yüklenemedi:', error);
+      console.error('❌ Harita verisi yüklenemedi:', error);
       setLoading(false);
     }
   };
