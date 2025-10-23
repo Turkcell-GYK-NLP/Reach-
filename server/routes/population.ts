@@ -1,5 +1,10 @@
 import { Router } from 'express';
 import { PopulationAnalysisTool } from '../agents/tools/populationAnalysisTool.js';
+import { fileURLToPath } from 'url';
+import path from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const router = Router();
 const populationTool = new PopulationAnalysisTool();
@@ -11,13 +16,24 @@ const populationTool = new PopulationAnalysisTool();
 router.get('/map-data', async (req, res) => {
   try {
     console.log('🔍 Nüfus harita verisi isteniyor...');
+    console.log('Current working directory:', process.cwd());
+    console.log('__dirname:', __dirname);
+    
     const mapData = populationTool.getMapData();
     
     if (!mapData) {
       console.error('❌ Nüfus verileri null döndü');
+      console.error('PopulationAnalysisTool instance:', populationTool);
+      console.error('Population data loaded:', populationTool['populationData'] ? 'Yes' : 'No');
+      
       return res.status(500).json({ 
         error: 'Nüfus verileri yüklenemedi',
-        details: 'PopulationAnalysisTool.getMapData() null döndü. Veri dosyaları kontrol edilmeli.'
+        details: 'PopulationAnalysisTool.getMapData() null döndü. Veri dosyaları kontrol edilmeli.',
+        debug: {
+          workingDirectory: process.cwd(),
+          dirname: __dirname,
+          dataLoaded: populationTool['populationData'] ? true : false
+        }
       });
     }
     
@@ -30,7 +46,8 @@ router.get('/map-data', async (req, res) => {
     console.error('❌ Harita verisi hatası:', error);
     res.status(500).json({ 
       error: 'Harita verisi alınamadı',
-      details: error instanceof Error ? error.message : 'Bilinmeyen hata'
+      details: error instanceof Error ? error.message : 'Bilinmeyen hata',
+      stack: error instanceof Error ? error.stack : undefined
     });
   }
 });

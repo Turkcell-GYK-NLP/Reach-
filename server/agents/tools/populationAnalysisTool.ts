@@ -2,6 +2,10 @@ import { BaseTool } from './baseTool.js';
 import { ToolResult, ToolInput } from '../types.js';
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 interface PopulationData {
   year: number;
@@ -40,11 +44,20 @@ export class PopulationAnalysisTool extends BaseTool {
         path.join(process.cwd(), 'nufus_verileri.json'),
         path.join(__dirname, '../../../nufus_verileri.json'),
         path.join(__dirname, '../../../../nufus_verileri.json'),
-        './nufus_verileri.json'
+        path.join(__dirname, '../../../../../nufus_verileri.json'),
+        './nufus_verileri.json',
+        '/app/nufus_verileri.json', // Docker container path
+        path.join(process.cwd(), '..', 'nufus_verileri.json'),
+        path.join(process.cwd(), '..', '..', 'nufus_verileri.json')
       ];
+      
+      console.log('🔍 Nüfus verileri dosyası aranıyor...');
+      console.log('Current working directory:', process.cwd());
+      console.log('__dirname:', __dirname);
       
       let dataPath = null;
       for (const testPath of possiblePaths) {
+        console.log(`Denenen yol: ${testPath}`);
         if (fs.existsSync(testPath)) {
           dataPath = testPath;
           console.log(`✅ Nüfus verileri dosyası bulundu: ${testPath}`);
@@ -53,12 +66,15 @@ export class PopulationAnalysisTool extends BaseTool {
       }
       
       if (!dataPath) {
+        console.error('❌ Hiçbir yolda nüfus verileri dosyası bulunamadı');
+        console.error('Denenen yollar:', possiblePaths);
         throw new Error(`Nüfus verileri dosyası bulunamadı. Denenen yollar: ${possiblePaths.join(', ')}`);
       }
       
       const rawData = fs.readFileSync(dataPath, 'utf-8');
       this.populationData = JSON.parse(rawData);
       console.log('✅ Nüfus verileri yüklendi (cinsiyet ve yaş verileri ile)');
+      console.log(`📊 Toplam ${Object.keys(this.populationData?.['2024'] || {}).length} il verisi yüklendi`);
     } catch (error) {
       console.error('❌ Nüfus verileri yüklenemedi:', error);
       this.populationData = null;
@@ -269,13 +285,20 @@ export class PopulationAnalysisTool extends BaseTool {
         path.join(process.cwd(), 'nufus_trend_verileri.json'),
         path.join(__dirname, '../../../nufus_trend_verileri.json'),
         path.join(__dirname, '../../../../nufus_trend_verileri.json'),
-        './nufus_trend_verileri.json'
+        path.join(__dirname, '../../../../../nufus_trend_verileri.json'),
+        './nufus_trend_verileri.json',
+        '/app/nufus_trend_verileri.json', // Docker container path
+        path.join(process.cwd(), '..', 'nufus_trend_verileri.json'),
+        path.join(process.cwd(), '..', '..', 'nufus_trend_verileri.json')
       ];
       
+      console.log('🔍 Trend verileri dosyası aranıyor...');
       let trendDataPath = null;
       for (const testPath of possibleTrendPaths) {
+        console.log(`Trend dosyası denenen yol: ${testPath}`);
         if (fs.existsSync(testPath)) {
           trendDataPath = testPath;
+          console.log(`✅ Trend verileri dosyası bulundu: ${testPath}`);
           break;
         }
       }
@@ -284,6 +307,9 @@ export class PopulationAnalysisTool extends BaseTool {
         const trendRawData = fs.readFileSync(trendDataPath, 'utf-8');
         const trendData = JSON.parse(trendRawData);
         data2023 = trendData['2023'];
+        console.log('✅ 2023 trend verileri yüklendi');
+      } else {
+        console.warn('⚠️ Trend verileri dosyası bulunamadı, sadece 2024 verileri kullanılacak');
       }
     } catch (error) {
       console.error('❌ Trend verileri yüklenemedi:', error);
@@ -385,13 +411,20 @@ export class PopulationAnalysisTool extends BaseTool {
         path.join(process.cwd(), 'nufus_trend_verileri.json'),
         path.join(__dirname, '../../../nufus_trend_verileri.json'),
         path.join(__dirname, '../../../../nufus_trend_verileri.json'),
-        './nufus_trend_verileri.json'
+        path.join(__dirname, '../../../../../nufus_trend_verileri.json'),
+        './nufus_trend_verileri.json',
+        '/app/nufus_trend_verileri.json', // Docker container path
+        path.join(process.cwd(), '..', 'nufus_trend_verileri.json'),
+        path.join(process.cwd(), '..', '..', 'nufus_trend_verileri.json')
       ];
       
+      console.log(`🔍 ${province} ili için trend verileri aranıyor...`);
       let trendDataPath = null;
       for (const testPath of possibleTrendPaths) {
+        console.log(`Trend dosyası denenen yol: ${testPath}`);
         if (fs.existsSync(testPath)) {
           trendDataPath = testPath;
+          console.log(`✅ Trend verileri dosyası bulundu: ${testPath}`);
           break;
         }
       }
@@ -415,7 +448,10 @@ export class PopulationAnalysisTool extends BaseTool {
           }
         }
         
+        console.log(`✅ ${province} ili için ${result.length} yıllık trend verisi bulundu`);
         return result.sort((a, b) => a.year - b.year);
+      } else {
+        console.warn(`⚠️ ${province} ili için trend verileri dosyası bulunamadı`);
       }
     } catch (error) {
       console.error('❌ Trend verileri yüklenemedi:', error);
