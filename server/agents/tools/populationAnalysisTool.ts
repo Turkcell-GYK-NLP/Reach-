@@ -45,10 +45,13 @@ export class PopulationAnalysisTool extends BaseTool {
         path.join(__dirname, '../../../nufus_verileri.json'),
         path.join(__dirname, '../../../../nufus_verileri.json'),
         path.join(__dirname, '../../../../../nufus_verileri.json'),
+        path.join(__dirname, '../../../../../../nufus_verileri.json'),
         './nufus_verileri.json',
         '/app/nufus_verileri.json', // Docker container path
+        '/app/dist/nufus_verileri.json', // Docker container dist path
         path.join(process.cwd(), '..', 'nufus_verileri.json'),
-        path.join(process.cwd(), '..', '..', 'nufus_verileri.json')
+        path.join(process.cwd(), '..', '..', 'nufus_verileri.json'),
+        path.join(process.cwd(), '..', '..', '..', 'nufus_verileri.json')
       ];
       
       console.log('🔍 Nüfus verileri dosyası aranıyor...');
@@ -286,10 +289,13 @@ export class PopulationAnalysisTool extends BaseTool {
         path.join(__dirname, '../../../nufus_trend_verileri.json'),
         path.join(__dirname, '../../../../nufus_trend_verileri.json'),
         path.join(__dirname, '../../../../../nufus_trend_verileri.json'),
+        path.join(__dirname, '../../../../../../nufus_trend_verileri.json'),
         './nufus_trend_verileri.json',
         '/app/nufus_trend_verileri.json', // Docker container path
+        '/app/dist/nufus_trend_verileri.json', // Docker container dist path
         path.join(process.cwd(), '..', 'nufus_trend_verileri.json'),
-        path.join(process.cwd(), '..', '..', 'nufus_trend_verileri.json')
+        path.join(process.cwd(), '..', '..', 'nufus_trend_verileri.json'),
+        path.join(process.cwd(), '..', '..', '..', 'nufus_trend_verileri.json')
       ];
       
       console.log('🔍 Trend verileri dosyası aranıyor...');
@@ -412,10 +418,13 @@ export class PopulationAnalysisTool extends BaseTool {
         path.join(__dirname, '../../../nufus_trend_verileri.json'),
         path.join(__dirname, '../../../../nufus_trend_verileri.json'),
         path.join(__dirname, '../../../../../nufus_trend_verileri.json'),
+        path.join(__dirname, '../../../../../../nufus_trend_verileri.json'),
         './nufus_trend_verileri.json',
         '/app/nufus_trend_verileri.json', // Docker container path
+        '/app/dist/nufus_trend_verileri.json', // Docker container dist path
         path.join(process.cwd(), '..', 'nufus_trend_verileri.json'),
-        path.join(process.cwd(), '..', '..', 'nufus_trend_verileri.json')
+        path.join(process.cwd(), '..', '..', 'nufus_trend_verileri.json'),
+        path.join(process.cwd(), '..', '..', '..', 'nufus_trend_verileri.json')
       ];
       
       console.log(`🔍 ${province} ili için trend verileri aranıyor...`);
