@@ -129,6 +129,7 @@ export class MemStorage implements IStorage {
       id,
       name: insertUser.name || null,
       email: insertUser.email,
+      passwordHash: (insertUser as any).passwordHash || null,
       phone: insertUser.phone || null,
       ageYears: insertUser.ageYears,
       gender: insertUser.gender || null,
@@ -137,7 +138,7 @@ export class MemStorage implements IStorage {
       deletedAt: null,
       createdAt: new Date(),
       updatedAt: new Date(),
-    };
+    } as any;
     this.users.set(id, user);
     if ((user as any).email) {
       this.emailToUserId.set(((user as any).email as string).toLowerCase(), id);

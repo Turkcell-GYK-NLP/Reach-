@@ -9,11 +9,22 @@ echo "=========================================="
 wait_for_postgres() {
     echo "⏳ Waiting for PostgreSQL to be ready..."
     
+    # If DATABASE_URL exists, extract connection info from it
+    if [ -n "$DATABASE_URL" ]; then
+        # Extract host from DATABASE_URL
+        # Format: postgresql://user:pass@host:port/dbname
+        PG_HOST=$(echo $DATABASE_URL | sed -n 's/.*@\([^:]*\):.*/\1/p')
+        PG_PORT=$(echo $DATABASE_URL | sed -n 's/.*:\([0-9]*\)\/.*/\1/p')
+    else
+        PG_HOST="$PGHOST"
+        PG_PORT="${PGPORT:-5432}"
+    fi
+    
     max_attempts=30
     attempt=0
     
     while [ $attempt -lt $max_attempts ]; do
-        if pg_isready -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" > /dev/null 2>&1; then
+        if pg_isready -h "$PG_HOST" -p "$PG_PORT" > /dev/null 2>&1; then
             echo "✅ PostgreSQL is ready!"
             return 0
         fi
@@ -31,18 +42,20 @@ wait_for_postgres() {
 check_database() {
     echo "🔍 Checking database status..."
     
-    # Check if we can connect
-    if ! PGPASSWORD="$PGPASSWORD" psql -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE" -c '\dt' > /dev/null 2>&1; then
-        echo "⚠️  Database connection failed or no tables found"
-        return 1
-    fi
-    
-    # Check if users table exists
-    table_count=$(PGPASSWORD="$PGPASSWORD" psql -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE" -t -c "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='public' AND table_name='users';" 2>/dev/null | xargs)
+    # Check if users table exists with correct schema
+    table_count=$(psql "$DATABASE_URL" -t -c "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='public' AND table_name='users';" 2>/dev/null | xargs)
     
     if [ "$table_count" = "1" ]; then
-        echo "✅ Database already initialized"
-        return 0
+        # Check if password_hash column exists
+        column_count=$(psql "$DATABASE_URL" -t -c "SELECT COUNT(*) FROM information_schema.columns WHERE table_name='users' AND column_name='password_hash';" 2>/dev/null | xargs)
+        
+        if [ "$column_count" = "1" ]; then
+            echo "✅ Database already initialized with correct schema"
+            return 0
+        else
+            echo "⚠️  Database exists but schema is outdated"
+            return 1
+        fi
     else
         echo "⚠️  Database needs initialization"
         return 1
@@ -53,14 +66,19 @@ check_database() {
 init_database() {
     echo "🗄️  Initializing database schema..."
     
-    cd /python-app || cd /app
+    cd /app
     
-    if python3 database.py; then
-        echo "✅ Database schema created successfully"
-    else
-        echo "❌ ERROR: Database initialization failed"
-        exit 1
-    fi
+    # Create basic extensions first
+    echo "   Creating PostgreSQL extensions..."
+    psql "$DATABASE_URL" > /dev/null 2>&1 <<-EOSQL || echo "   ⚠️  Extension creation skipped (may already exist)"
+		CREATE EXTENSION IF NOT EXISTS pgcrypto;
+		CREATE EXTENSION IF NOT EXISTS citext;
+	EOSQL
+    
+    echo "   Running migrations..."
+    run_migrations
+    
+    echo "✅ Database schema created successfully"
 }
 
 # Function to create FAISS indices
@@ -108,19 +126,23 @@ run_migrations() {
     
     # Check if Drizzle migrations exist
     if [ -d "migrations" ] && [ "$(ls -A migrations/*.sql 2>/dev/null)" ]; then
-        echo "   Found Drizzle migrations, applying..."
+        echo "   Found migrations, applying..."
         
-        # Apply each migration file
+        # Apply each migration file in order
         for migration_file in migrations/*.sql; do
             if [ -f "$migration_file" ]; then
-                echo "   Applying $(basename "$migration_file")..."
-                PGPASSWORD="$PGPASSWORD" psql -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE" -f "$migration_file" > /dev/null 2>&1 || true
+                migration_name=$(basename "$migration_file")
+                echo "   Applying $migration_name..."
+                
+                # Apply migration using DATABASE_URL, ignore errors for already existing objects
+                psql "$DATABASE_URL" -v ON_ERROR_STOP=0 -f "$migration_file" 2>&1 | \
+                    grep -v "already exists" | grep -v "does not exist" | grep -v "^$" || true
             fi
         done
         
-        echo "   ✅ Migrations applied"
+        echo "   ✅ Migrations completed"
     else
-        echo "   ℹ️  No migrations found, skipping"
+        echo "   ℹ️  No migrations found"
     fi
 }
 
@@ -129,8 +151,17 @@ main() {
     echo ""
     echo "🔧 Environment:"
     echo "   NODE_ENV: $NODE_ENV"
-    echo "   DATABASE: $PGDATABASE"
-    echo "   HOST: $PGHOST:$PGPORT"
+    
+    if [ -n "$DATABASE_URL" ]; then
+        # Extract and display host from DATABASE_URL (hide password)
+        DB_HOST=$(echo $DATABASE_URL | sed -n 's/.*@\([^:]*\):.*/\1/p')
+        DB_NAME=$(echo $DATABASE_URL | sed -n 's/.*\/\([^?]*\).*/\1/p')
+        echo "   DATABASE: $DB_NAME"
+        echo "   HOST: $DB_HOST"
+    else
+        echo "   DATABASE: $PGDATABASE"
+        echo "   HOST: $PGHOST:$PGPORT"
+    fi
     echo ""
     
     # Wait for PostgreSQL

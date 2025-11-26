@@ -20,16 +20,18 @@ export function registerAuthRoutes(app: Express): void {
         return res.status(409).json({ error: "EMAIL_ALREADY_EXISTS" });
       }
       
-      // Hash'leme yapmadan direkt kayıt
+      // Şifreyi hash'le
+      const passwordHash = await hashPassword(password);
+      
       const user = await storage.createUser({
         name: name || null,
         email: email.toLowerCase(),
-        password_hash: null, // Hash'leme yapmıyoruz
-        age_years: parseInt(userAge),
-        location: null,
-        operator: null,
-        preferences: {},
-        notifications_enabled: true
+        passwordHash: passwordHash,
+        phone: phone || null,
+        ageYears: parseInt(userAge),
+        gender: gender || null,
+        locale: "tr-TR",
+        isActive: true
       } as any);
       
       const token = signToken(
@@ -47,6 +49,7 @@ export function registerAuthRoutes(app: Express): void {
         token 
       });
     } catch (error: any) {
+      console.error("Register error:", error);
       if (error?.message === "EMAIL_ALREADY_EXISTS") {
         return res.status(409).json({ error: "EMAIL_ALREADY_EXISTS" });
       }
@@ -70,9 +73,20 @@ export function registerAuthRoutes(app: Express): void {
       
       console.log("Login: User found:", { id: user.id, email: user.email });
       
-      // Basit password kontrolü - hash kullanmadan
-      // Sadece kullanıcı var mı kontrol ediyoruz, şifre kontrolü yapmıyoruz
-      console.log("Login: Password verification skipped - direct login");
+      // Şifre kontrolü yap
+      const passwordHash = (user as any).passwordHash;
+      if (!passwordHash) {
+        console.log("Login: No password hash found for user");
+        return res.status(401).json({ error: "INVALID_CREDENTIALS" });
+      }
+      
+      const isValid = await verifyPassword(password, passwordHash);
+      if (!isValid) {
+        console.log("Login: Invalid password");
+        return res.status(401).json({ error: "INVALID_CREDENTIALS" });
+      }
+      
+      console.log("Login: Password verified successfully");
       
       const token = signToken(
         { sub: user.id, email: email.toLowerCase() }, 
@@ -89,6 +103,7 @@ export function registerAuthRoutes(app: Express): void {
         token 
       });
     } catch (error) {
+      console.error("Login error:", error);
       res.status(400).json({ error: "LOGIN_FAILED", details: error });
     }
   });
